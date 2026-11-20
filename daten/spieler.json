@@ -1,0 +1,271 @@
+{
+  "hinweis": "Spieler mit heutiger Lizenz beim Club LUZE (tablesoccer.org, memberships). Nur Namen, keine Kennungen.",
+  "club": "LUZE",
+  "abgerufen": "2026-11-20",
+  "saisons": [
+    193,
+    192
+  ],
+  "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&member=LUZE",
+  "spieler": [
+    {
+      "id": "adrian-lang",
+      "name": "Adrian Lang",
+      "schreibweisen": [
+        "LANG Adrian"
+      ]
+    },
+    {
+      "id": "adrian-schuler",
+      "name": "Adrian Schuler",
+      "schreibweisen": [
+        "SCHULER Adrian"
+      ]
+    },
+    {
+      "id": "alain-baumann",
+      "name": "Alain Baumann",
+      "schreibweisen": [
+        "BAUMANN Alain"
+      ]
+    },
+    {
+      "id": "aline-christen",
+      "name": "Aline Christen",
+      "schreibweisen": [
+        "CHRISTEN Aline"
+      ]
+    },
+    {
+      "id": "an-cosi",
+      "name": "An Cosi",
+      "schreibweisen": [
+        "COSI An"
+      ]
+    },
+    {
+      "id": "andreas-chervet",
+      "name": "Andreas Chervet",
+      "schreibweisen": [
+        "CHERVET Andreas"
+      ]
+    },
+    {
+      "id": "andy-abart",
+      "name": "Andy Abart",
+      "schreibweisen": [
+        "ABART Andy"
+      ]
+    },
+    {
+      "id": "arpad-wicki",
+      "name": "Arpad Wicki",
+      "schreibweisen": [
+        "WICKI Arpad"
+      ]
+    },
+    {
+      "id": "carsten-schedding",
+      "name": "Carsten Schedding",
+      "schreibweisen": [
+        "SCHEDDING Carsten"
+      ]
+    },
+    {
+      "id": "cornelia-knellwolf",
+      "name": "Cornelia Knellwolf",
+      "schreibweisen": [
+        "KNELLWOLF Cornelia"
+      ]
+    },
+    {
+      "id": "daniel-flueler",
+      "name": "Daniel Flüeler",
+      "schreibweisen": [
+        "FLÜELER Daniel"
+      ]
+    },
+    {
+      "id": "fabio-di-crescenzo",
+      "name": "Fabio Di Crescenzo",
+      "schreibweisen": [
+        "DI CRESCENZO Fabio"
+      ]
+    },
+    {
+      "id": "fabio-marty",
+      "name": "Fabio Marty",
+      "schreibweisen": [
+        "MARTY Fabio"
+      ]
+    },
+    {
+      "id": "hannes-wallimann",
+      "name": "Hannes Wallimann",
+      "schreibweisen": [
+        "WALLIMANN Hannes"
+      ]
+    },
+    {
+      "id": "jan-angara",
+      "name": "Jan Angara",
+      "schreibweisen": [
+        "ANGARA Jan"
+      ]
+    },
+    {
+      "id": "jeremias-gotz",
+      "name": "Jeremias Götz",
+      "schreibweisen": [
+        "GÖTZ Jeremias"
+      ]
+    },
+    {
+      "id": "jorge-rodriguez",
+      "name": "Jorge Rodriguez",
+      "schreibweisen": [
+        "RODRIGUEZ Jorge"
+      ]
+    },
+    {
+      "id": "luca-escribano",
+      "name": "Luca Escribano",
+      "schreibweisen": [
+        "ESCRIBANO Luca"
+      ]
+    },
+    {
+      "id": "manuel-ragonesi",
+      "name": "Manuel Ragonesi",
+      "schreibweisen": [
+        "RAGONESI Manuel"
+      ]
+    },
+    {
+      "id": "marc-burri",
+      "name": "Marc Burri",
+      "schreibweisen": [
+        "BURRI Marc"
+      ]
+    },
+    {
+      "id": "marcel-streiff",
+      "name": "Marcel Streiff",
+      "schreibweisen": [
+        "STREIFF Marcel"
+      ]
+    },
+    {
+      "id": "marina-von-allmen",
+      "name": "Marina Von Allmen",
+      "schreibweisen": [
+        "VON ALLMEN Marina"
+      ]
+    },
+    {
+      "id": "martin-felder",
+      "name": "Martin Felder",
+      "schreibweisen": [
+        "FELDER Martin"
+      ]
+    },
+    {
+      "id": "matteo-cosi",
+      "name": "Matteo Cosi",
+      "schreibweisen": [
+        "COSI Matteo"
+      ]
+    },
+    {
+      "id": "matthias-amacher",
+      "name": "Matthias Amacher",
+      "schreibweisen": [
+        "AMACHER Matthias"
+      ]
+    },
+    {
+      "id": "michele-sabbatini",
+      "name": "Michele Sabbatini",
+      "schreibweisen": [
+        "SABBATINI Michele"
+      ]
+    },
+    {
+      "id": "pascal-felber",
+      "name": "Pascal Felber",
+      "schreibweisen": [
+        "FELBER Pascal"
+      ]
+    },
+    {
+      "id": "peter-felder",
+      "name": "Peter Felder",
+      "schreibweisen": [
+        "FELDER Peter"
+      ]
+    },
+    {
+      "id": "rayan-van-stokkum",
+      "name": "Rayan Van Stokkum",
+      "schreibweisen": [
+        "VAN STOKKUM Rayan"
+      ]
+    },
+    {
+      "id": "reto-odermatt",
+      "name": "Reto Odermatt",
+      "schreibweisen": [
+        "ODERMATT Reto"
+      ]
+    },
+    {
+      "id": "sandro-colombo",
+      "name": "Sandro Colombo",
+      "schreibweisen": [
+        "COLOMBO Sandro"
+      ]
+    },
+    {
+      "id": "sascha-ernst",
+      "name": "Sascha Ernst",
+      "schreibweisen": [
+        "ERNST Sascha"
+      ]
+    },
+    {
+      "id": "silvio-fischer",
+      "name": "Silvio Fischer",
+      "schreibweisen": [
+        "FISCHER Silvio"
+      ]
+    },
+    {
+      "id": "tomas-karajan",
+      "name": "Tomas Karajan",
+      "schreibweisen": [
+        "KARAJAN Tomas"
+      ]
+    },
+    {
+      "id": "urs-morgenegg",
+      "name": "Urs Morgenegg",
+      "schreibweisen": [
+        "MORGENEGG Urs"
+      ]
+    },
+    {
+      "id": "valentin-knellwolf",
+      "name": "Valentin Knellwolf",
+      "schreibweisen": [
+        "KNELLWOLF Valentin"
+      ]
+    },
+    {
+      "id": "vullnet-fazliu",
+      "name": "Vullnet Fazliu",
+      "schreibweisen": [
+        "FAZLIU Vullnet"
+      ]
+    }
+  ]
+}

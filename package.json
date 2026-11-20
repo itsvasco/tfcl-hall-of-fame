@@ -1,0 +1,16 @@
+{
+  "name": "tfcl-hall-of-fame",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hall of Fame der Spieler mit Lizenz beim TFC Luzern: Daten und Werkzeuge",
+  "scripts": {
+    "spieler": "node tools/spieler.mjs --club LUZE",
+    "erneuern": "node tools/erneuern.mjs",
+    "test": "node tools/erneuern-test.mjs && node tools/datenschutz-pruefen.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.5.438",
+    "playwright-core": "1.65.1"
+  }
+}

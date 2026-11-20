@@ -1,0 +1,35 @@
+{
+  "hinweis": "Pflegedatei. nicht_nennen: Namen (jede Schreibweise) oder ids; wer hier steht, fehlt im Schnappschuss und steht bei anderen nur als «Partner». Saisons und Turniere sind die belegten Quellen, siehe README.",
+  "club": "LUZE",
+  "clubname": "TFC Luzern",
+  "nicht_nennen": [],
+  "ranglisten": {
+    "cms": [
+      { "nr": 191, "saison": 2025, "status": "Schlussstand" },
+      { "nr": 192, "saison": 2026, "status": "Schlussstand" }
+    ],
+    "archiv": [
+      { "saison": 2019, "status": "Schlussstand", "staende": ["20191016043842"] },
+      { "saison": 2024, "status": "stabil", "staende": ["20241016032348", "20250124021613"] }
+    ],
+    "offen": [
+      "Jahresrangliste 2017, 2018, 2021, 2022 und alles vor 2017: nur über archivierte Spielerseiten mit Verbandsnummern belegbar, nicht aufgenommen",
+      "Jahresrangliste 2023: der Archivstand vom 2023-12-03 liegt vor dem Saisonende (2023-12-10), ein Schlussstand ist ohne Spielerseiten nicht belegt",
+      "Jahresrangliste 2020: keine eigene Saison"
+    ]
+  },
+  "nati_turniere": [
+    "ws-leonhart-2024", "ws-leonhart-2025", "ws-leonhart-2026/cs", "world-cup-2025",
+    "ws-garlando-2024", "ws-garlando-2026", "ws-bonzini-2024", "ws-bonzini-2025", "ws-bonzini-2026"
+  ],
+  "clubliga_muster": "luzern|tfcl|luze",
+  "clubliga_jahre": [2017, 2018, 2019, 2023, 2024, 2025, 2026],
+  "fordere": {
+    "luzern": {
+      "20": { "saison": "2018/19", "jahr": 2019 },
+      "24": { "saison": "2019/20", "jahr": 2020 },
+      "31": { "saison": "2021/22", "jahr": 2022 },
+      "33": { "saison": "2022/23", "jahr": 2023 }
+    }
+  }
+}
