@@ -24,3 +24,10 @@ jobs:
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Zweiter Versuch (GitHub findet das Artefakt manchmal erst spaeter)
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 20
+      - id: deployment2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
