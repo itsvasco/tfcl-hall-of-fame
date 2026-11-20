@@ -1,5 +1,6 @@
 # Entscheidungen
 
+- 2026-11-21: Clubliga-Titel bleiben beim Team und stehen nicht unter den Namen der Spieler (Vasco zu Jorges fünf Super-League-Titeln: «nein soll es nicht»). Verworfen: Teamaufstellungen beim Club anfragen und je Person zählen.
 - 2026-11-20 (CEO, Bugfix Runde 1): Jorge Rodriguez hat eine LUZE-Lizenz. Seine echten Podestplätze zählen in die Gesamtzahl wie bei allen Lizenzierten; nur Vasco (Ehrenmitglied ohne Lizenz) zählt in keine Summe. Fester Platz und Spruch bleiben für beide. Test: «Lizenzierter mit festem Platz».
 - 2026-11-20 (CEO, Bugfix Runde 1): Der öffentliche Schnappschuss nennt keine Namen von Nicht-Lizenzierten ausser Vasco. SM-Partner ohne Lizenz stehen als «Partner». `nicht_gleich` in `daten/pflege.json` trägt nur einen Kurzwert des Namens, nicht den Namen.
 - 2026-11-20 (CEO, Bugfix Runde 1): `tools/datenschutz-pruefen.mjs` prüft «Spielerprofil als Quelle» nur in `daten/` und `site/`, nicht in Code unter `tools/`. Die übrigen Verbote gelten überall.
