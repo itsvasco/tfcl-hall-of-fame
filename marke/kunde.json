@@ -1,0 +1,15 @@
+{
+  "name": "TFC Luzern Hall of Fame",
+  "inhaber": "Vasco Oliveira",
+  "leistung": ["Markenpaket"],
+  "paketVersion": "1.26.0",
+  "projekte": [
+    {
+      "name": "Hall of Fame TFC Luzern",
+      "pfad": "~/Claude/vascooliveira/projekte/tfcl-hall-of-fame",
+      "version": "1.26.0",
+      "angebunden": true
+    }
+  ],
+  "notiz": "Seite für den Tischfussball Club Luzern (A-498). Farben aus dem Logo des Clubs (Blau #0871B5, Weiss) und von tfcluzern.com (Schwarz, Dunkelblau). Angelegt 2026-11-20."
+}

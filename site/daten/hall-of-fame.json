@@ -1,0 +1,1400 @@
+{
+  "club": "LUZE",
+  "clubname": "TFC Luzern",
+  "erstellt": "2026-11-20",
+  "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club. Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen.",
+  "spieler_mit_lizenz": 37,
+  "gesamt": {
+    "podestplaetze": 80,
+    "gold": 32,
+    "silber": 18,
+    "bronze": 30,
+    "personen": 17
+  },
+  "bereiche": [
+    {
+      "schluessel": "sm",
+      "titel": "Schweizermeisterschaft",
+      "einheit": "Medaillen je Person",
+      "anker": "sm",
+      "daten": "sm",
+      "summe": {
+        "podestplaetze": 36,
+        "gold": 15,
+        "silber": 9,
+        "bronze": 12,
+        "personen": 7
+      }
+    },
+    {
+      "schluessel": "nati",
+      "titel": "Nati",
+      "einheit": "Medaillen je Person",
+      "anker": "nati",
+      "daten": "nati",
+      "summe": {
+        "podestplaetze": 7,
+        "gold": 0,
+        "silber": 1,
+        "bronze": 6,
+        "personen": 5
+      }
+    },
+    {
+      "schluessel": "ranglisten",
+      "titel": "Jahresrangliste",
+      "einheit": "Podestplätze je Person",
+      "anker": "ranglisten",
+      "daten": "ranglisten",
+      "summe": {
+        "podestplaetze": 6,
+        "gold": 4,
+        "silber": 0,
+        "bronze": 2,
+        "personen": 4
+      }
+    },
+    {
+      "schluessel": "liga",
+      "titel": "Clubliga",
+      "einheit": "Podestplätze je Team",
+      "anker": "liga",
+      "daten": "liga",
+      "summe": {
+        "podestplaetze": 14,
+        "gold": 6,
+        "silber": 4,
+        "bronze": 4
+      }
+    },
+    {
+      "schluessel": "fordere",
+      "titel": "Fordere-Liga",
+      "untertitel": "Bar-foos-League Luzern, Finaltag",
+      "einheit": "Podestplätze je Person",
+      "anker": "fordere",
+      "daten": "fordere",
+      "summe": {
+        "podestplaetze": 17,
+        "gold": 7,
+        "silber": 4,
+        "bronze": 6,
+        "personen": 9
+      }
+    }
+  ],
+  "verzeichnis": [
+    {
+      "id": "hannes-wallimann",
+      "name": "Hannes Wallimann",
+      "gold": 8,
+      "silber": 6,
+      "bronze": 6,
+      "summe": 20,
+      "bereiche": {
+        "sm": 18,
+        "nati": 1,
+        "ranglisten": 1
+      }
+    },
+    {
+      "id": "rayan-van-stokkum",
+      "name": "Rayan Van Stokkum",
+      "gold": 7,
+      "silber": 3,
+      "bronze": 2,
+      "summe": 12,
+      "bereiche": {
+        "sm": 8,
+        "nati": 1,
+        "ranglisten": 3
+      }
+    },
+    {
+      "id": "peter-felder",
+      "name": "Peter Felder",
+      "gold": 4,
+      "silber": 1,
+      "bronze": 4,
+      "summe": 9,
+      "bereiche": {
+        "sm": 4,
+        "nati": 2,
+        "fordere": 3
+      }
+    },
+    {
+      "id": "martin-felder",
+      "name": "Martin Felder",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 4,
+      "summe": 4,
+      "bereiche": {
+        "sm": 2,
+        "nati": 2
+      }
+    },
+    {
+      "id": "silvio-fischer",
+      "name": "Silvio Fischer",
+      "gold": 1,
+      "silber": 0,
+      "bronze": 2,
+      "summe": 3,
+      "bereiche": {
+        "fordere": 3
+      }
+    },
+    {
+      "id": "matteo-cosi",
+      "name": "Matteo Cosi",
+      "gold": 1,
+      "silber": 1,
+      "bronze": 0,
+      "summe": 2,
+      "bereiche": {
+        "ranglisten": 1,
+        "fordere": 1
+      }
+    },
+    {
+      "id": "michele-sabbatini",
+      "name": "Michele Sabbatini",
+      "gold": 1,
+      "silber": 1,
+      "bronze": 0,
+      "summe": 2,
+      "bereiche": {
+        "fordere": 2
+      }
+    },
+    {
+      "id": "reto-odermatt",
+      "name": "Reto Odermatt",
+      "gold": 1,
+      "silber": 1,
+      "bronze": 0,
+      "summe": 2,
+      "bereiche": {
+        "fordere": 2
+      }
+    },
+    {
+      "id": "alain-baumann",
+      "name": "Alain Baumann",
+      "gold": 1,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 2,
+      "bereiche": {
+        "fordere": 2
+      }
+    },
+    {
+      "id": "adrian-schuler",
+      "name": "Adrian Schuler",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 2,
+      "summe": 2,
+      "bereiche": {
+        "sm": 2
+      }
+    },
+    {
+      "id": "pascal-felber",
+      "name": "Pascal Felber",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 2,
+      "summe": 2,
+      "bereiche": {
+        "fordere": 2
+      }
+    },
+    {
+      "id": "jorge-rodriguez",
+      "name": "Jorge Rodriguez",
+      "gold": 1,
+      "silber": 0,
+      "bronze": 0,
+      "summe": 1,
+      "bereiche": {
+        "fordere": 1
+      }
+    },
+    {
+      "id": "luca-escribano",
+      "name": "Luca Escribano",
+      "gold": 1,
+      "silber": 0,
+      "bronze": 0,
+      "summe": 1,
+      "bereiche": {
+        "ranglisten": 1
+      }
+    },
+    {
+      "id": "marc-burri",
+      "name": "Marc Burri",
+      "gold": 0,
+      "silber": 1,
+      "bronze": 0,
+      "summe": 1,
+      "bereiche": {
+        "sm": 1
+      }
+    },
+    {
+      "id": "arpad-wicki",
+      "name": "Arpad Wicki",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 1,
+      "bereiche": {
+        "sm": 1
+      }
+    },
+    {
+      "id": "daniel-flueler",
+      "name": "Daniel Flüeler",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 1,
+      "bereiche": {
+        "nati": 1
+      }
+    },
+    {
+      "id": "vullnet-fazliu",
+      "name": "Vullnet Fazliu",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 1,
+      "bereiche": {
+        "fordere": 1
+      }
+    }
+  ],
+  "sm": {
+    "abgerufen": "2026-11-20",
+    "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+    "personen": [
+      {
+        "id": "hannes-wallimann",
+        "gold": 8,
+        "silber": 6,
+        "bronze": 4,
+        "summe": 18,
+        "platzierungen": [
+          {
+            "jahr": 2025,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2021,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Lukas Bärtsch",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2019,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2019,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 2,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2018,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2017,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2017,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 2,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "event": "Event 2",
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "event": "Event 1",
+            "kategorie": "Mixed",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Sandra Gäumann",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "event": "Event 2",
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "event": "Event 2",
+            "kategorie": "Mixed",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Sandra Gäumann",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2014,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Pascal Salzgeber",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2013,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Marc Burri",
+                "id": "marc-burri"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2013,
+            "event": null,
+            "kategorie": "Mixed",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Sandra Gäumann",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "rayan-van-stokkum",
+        "gold": 5,
+        "silber": 2,
+        "bronze": 1,
+        "summe": 8,
+        "platzierungen": [
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Nino Friedli",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Junioren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "event": null,
+            "kategorie": "Junioren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Gianni Riva",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Junioren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Simona Burri",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2021,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Belmin Karadzi",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2019,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Belmin Karadzi",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "peter-felder",
+        "gold": 2,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 4,
+        "platzierungen": [
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Mixed",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Natalie Krieg",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Adrian Schuler",
+                "id": "adrian-schuler"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2015,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Adrian Schuler",
+                "id": "adrian-schuler"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "marc-burri",
+        "gold": 0,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2013,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Hannes Wallimann",
+                "id": "hannes-wallimann"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "adrian-schuler",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2022,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Peter Felder",
+                "id": "peter-felder"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2015,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 3,
+            "partner": [
+              {
+                "name": "Peter Felder",
+                "id": "peter-felder"
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "martin-felder",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2025,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2018,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "arpad-wicki",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2010,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      }
+    ]
+  },
+  "nati": {
+    "abgerufen": "2026-11-20",
+    "eintraege": [
+      {
+        "jahr": 2025,
+        "turnier": "World Cup",
+        "team": "Herren",
+        "rang": 3,
+        "kader": 9,
+        "personen": [
+          "martin-felder",
+          "peter-felder"
+        ],
+        "quelle": "https://app.tablesoccer.org/p/world-cup-2025",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "jahr": 2024,
+        "turnier": "World Series Leonhart",
+        "team": "Junioren",
+        "rang": 2,
+        "kader": 5,
+        "personen": [
+          "rayan-van-stokkum"
+        ],
+        "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2024",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "jahr": 2024,
+        "turnier": "World Series Garlando",
+        "team": "Herren",
+        "rang": 3,
+        "kader": 6,
+        "personen": [
+          "hannes-wallimann",
+          "martin-felder",
+          "peter-felder"
+        ],
+        "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "jahr": 2024,
+        "turnier": "World Series Garlando",
+        "team": "Senioren",
+        "rang": 3,
+        "kader": 5,
+        "personen": [
+          "daniel-flueler"
+        ],
+        "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+        "abgerufen": "2026-11-20"
+      }
+    ]
+  },
+  "ranglisten": {
+    "abgerufen": "2026-11-20",
+    "saisons": [
+      {
+        "saison": 2026,
+        "status": "Schlussstand"
+      },
+      {
+        "saison": 2025,
+        "status": "Schlussstand"
+      },
+      {
+        "saison": 2024,
+        "status": "stabil"
+      },
+      {
+        "saison": 2019,
+        "status": "Schlussstand"
+      }
+    ],
+    "personen": [
+      {
+        "id": "rayan-van-stokkum",
+        "gold": 2,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": 2026,
+            "status": "Schlussstand",
+            "kategorie": "Junior Einzel",
+            "rang": 1,
+            "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=192&rule=1&category=309",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": 2025,
+            "status": "Schlussstand",
+            "kategorie": "Junior Einzel",
+            "rang": 1,
+            "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=191&rule=1&category=309",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": 2025,
+            "status": "Schlussstand",
+            "kategorie": "Junior Doppel",
+            "rang": 3,
+            "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=191&rule=1&category=313",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "luca-escribano",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": 2019,
+            "status": "Schlussstand",
+            "kategorie": "Neulinge Doppel",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20191016043842/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "matteo-cosi",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": 2019,
+            "status": "Schlussstand",
+            "kategorie": "Neulinge Doppel",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20191016043842/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "hannes-wallimann",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": 2024,
+            "status": "stabil",
+            "kategorie": "Open Doppel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250124021613/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      }
+    ]
+  },
+  "liga": {
+    "abgerufen": "2026-11-20",
+    "eintraege": [
+      {
+        "saison": "2026",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2025",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2025",
+        "liga": "Challenge League",
+        "team": "TFCL 2",
+        "rang": 3,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2024",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2024",
+        "liga": "Challenge League",
+        "team": "TFC Luzern 2",
+        "rang": 3,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2023",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 2,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2023",
+        "liga": "Women League",
+        "team": "TFC Luzern Damen",
+        "rang": 2,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2023",
+        "liga": "Challenge League",
+        "team": "TFC Luzern 2",
+        "rang": 3,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2019",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 2,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2019",
+        "liga": "Women League",
+        "team": "TFC Luzern Damen",
+        "rang": 2,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2019",
+        "liga": "Challenge League",
+        "team": "TFC Luzern 2",
+        "rang": 3,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2018",
+        "liga": "Super League",
+        "team": "TFC Luzern 1",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2018",
+        "liga": "Women League",
+        "team": "TFC Luzern woman 1",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
+        "abgerufen": "2026-11-20"
+      },
+      {
+        "saison": "2017",
+        "liga": "Super League",
+        "team": "TFC Luzern",
+        "rang": 1,
+        "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+        "abgerufen": "2026-11-20"
+      }
+    ]
+  },
+  "fordere": {
+    "abgerufen": "2026-11-20",
+    "seite": "https://fordere.ch",
+    "divisionen": [
+      "Luzern"
+    ],
+    "saisons": [
+      {
+        "saison": "2022/23",
+        "jahr": 2023
+      },
+      {
+        "saison": "2021/22",
+        "jahr": 2022
+      },
+      {
+        "saison": "2019/20",
+        "jahr": 2020
+      },
+      {
+        "saison": "2018/19",
+        "jahr": 2019
+      }
+    ],
+    "personen": [
+      {
+        "id": "peter-felder",
+        "gold": 2,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": "2022/23",
+            "jahr": 2023,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 2,
+            "rang_quelle": "abgeleitet",
+            "team": "De Töggu ond de Chaschte",
+            "quelle": "https://fordere.ch/api/seasons/33/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2021/22",
+            "jahr": 2022,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "De Töggu ond de Chaschte",
+            "quelle": "https://fordere.ch/api/seasons/31/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2019/20",
+            "jahr": 2020,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "De Töggu ond de Chaschte",
+            "quelle": "https://fordere.ch/api/seasons/24/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "michele-sabbatini",
+        "gold": 1,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2021/22",
+            "jahr": 2022,
+            "division": "Luzern",
+            "liga": "2. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "Veteranos",
+            "quelle": "https://fordere.ch/api/seasons/31/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2018/19",
+            "jahr": 2019,
+            "division": "Luzern",
+            "liga": "3. Liga",
+            "tischart": "Garlando",
+            "rang": 2,
+            "rang_quelle": "abgeleitet",
+            "team": "Veteranos",
+            "quelle": "https://fordere.ch/api/seasons/20/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "reto-odermatt",
+        "gold": 1,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2022/23",
+            "jahr": 2023,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "Hüpfburgamateure",
+            "quelle": "https://fordere.ch/api/seasons/33/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2021/22",
+            "jahr": 2022,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 2,
+            "rang_quelle": "abgeleitet",
+            "team": "Hüpfburgprofis",
+            "quelle": "https://fordere.ch/api/seasons/31/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "silvio-fischer",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": "2021/22",
+            "jahr": 2022,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "Desi zwöi",
+            "quelle": "https://fordere.ch/api/seasons/31/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2019/20",
+            "jahr": 2020,
+            "division": "Luzern",
+            "liga": "2. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "Fisherman's",
+            "quelle": "https://fordere.ch/api/seasons/24/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2018/19",
+            "jahr": 2019,
+            "division": "Luzern",
+            "liga": "2. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "Borussia Scheisskasten",
+            "quelle": "https://fordere.ch/api/seasons/20/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "alain-baumann",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2022/23",
+            "jahr": 2023,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "Vulain",
+            "quelle": "https://fordere.ch/api/seasons/33/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2019/20",
+            "jahr": 2020,
+            "division": "Luzern",
+            "liga": "2. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "Fisherman's",
+            "quelle": "https://fordere.ch/api/seasons/24/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "jorge-rodriguez",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2018/19",
+            "jahr": 2019,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 1,
+            "rang_quelle": "abgeleitet",
+            "team": "Tornado Team",
+            "quelle": "https://fordere.ch/api/seasons/20/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "matteo-cosi",
+        "gold": 0,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2019/20",
+            "jahr": 2020,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 2,
+            "rang_quelle": "abgeleitet",
+            "team": "Sie mitem Grosse",
+            "quelle": "https://fordere.ch/api/seasons/24/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "pascal-felber",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2019/20",
+            "jahr": 2020,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "Selectiongroove",
+            "quelle": "https://fordere.ch/api/seasons/24/final-day",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "saison": "2018/19",
+            "jahr": 2019,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "P not P",
+            "quelle": "https://fordere.ch/api/seasons/20/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "vullnet-fazliu",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2022/23",
+            "jahr": 2023,
+            "division": "Luzern",
+            "liga": "1. Liga",
+            "tischart": "Garlando",
+            "rang": 3,
+            "rang_quelle": "abgeleitet",
+            "team": "Vulain",
+            "quelle": "https://fordere.ch/api/seasons/33/final-day",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      }
+    ]
+  },
+  "offen": [
+    "SM 2023 Herren Doppel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
+    "SM 2024 Herren Doppel Rang 2: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
+    "SM 2024 Herren Einzel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
+    "SM 2015 Junioren Doppel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
+    "SM 2015 Junioren Einzel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
+    "Jahresrangliste 2017, 2018, 2021, 2022 und alles vor 2017: nur über archivierte Spielerseiten mit Verbandsnummern belegbar, nicht aufgenommen",
+    "Jahresrangliste 2023: der Archivstand vom 2023-12-03 liegt vor dem Saisonende (2023-12-10), ein Schlussstand ist ohne Spielerseiten nicht belegt",
+    "Jahresrangliste 2020: keine eigene Saison",
+    "Fordere Luzern 2019/20: «3/4. Liga Single-KO Final Turnier 2020» ist ein KO, aber Liga oder Tischart nicht eindeutig, übersprungen (Podest mit Lizenz: Michele Sabbatini Rang 2)",
+    "Fordere Luzern 2021/22: «Cup» ist ein KO, aber Liga oder Tischart nicht eindeutig, übersprungen"
+  ]
+}

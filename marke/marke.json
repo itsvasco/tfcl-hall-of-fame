@@ -1,0 +1,16 @@
+{
+  "name": "TFC Luzern Hall of Fame",
+  "eingabe": {
+    "flaeche": "#F4F7FB",
+    "akzent": "#0871B5",
+    "akzentDunkel": "#5BAEE6",
+    "dunkelTon": "akzent",
+    "schrift": "Work Sans",
+    "modus": "auto",
+    "sprache": "de-CH"
+  },
+  "form": {
+    "rundung": "rund"
+  },
+  "herkunft": "Logo des TFC Luzern (Schild, Blau #0871B5 und Weiss, Quelle tfcluzern.com), Seite des Clubs in Schwarz mit dunklem Marineblau (#253A56 als Akzent der Squarespace-Vorlage). Blau ist der einzige Akzent; Gold, Silber und Bronze der Podestplätze bleiben Zeichen für den Rang, nicht Markenfarben."
+}
