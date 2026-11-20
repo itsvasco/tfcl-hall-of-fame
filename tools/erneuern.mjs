@@ -310,7 +310,7 @@ const sum = (liste) => ({ podestplaetze: liste.reduce((n, p) => n + p.summe, 0),
 // ---------- Turniere und Champions League ----------
 const SERIEN = ['P4P', 'STF', 'WS', 'ITSF', 'ITSF-Tour', 'DTFB', 'Bundesliga'];
 // FAST (altes Turniersystem der ITSF): Quelle ist die Schlussrangliste eines Wettbewerbs, ohne Spieler-ID (playerId=0).
-const FAST_QUELLE = /^https:\/\/extranet\.fast4foos\.org\/fast\/tournament\/players_station\/players_station_competition\.jsp\?tournamentId=0&originalTournamentId=\d+&lang=de&competitionId=0&originalCompetitionId=\d+&playerId=0&view=final_ranking$/;
+const FAST_QUELLE = /^https:\/\/extranet\.fast4foos\.org\/fast\/tournament\/players_station\/players_station_competition\.jsp\?tournamentId=0&originalTournamentId=\d+&lang=de&competitionId=0&originalCompetitionId=\d+&playerId=0&barCode=null&screenIndex=-1&view=final_ranking$/;
 const LAENDER = { Spain: 'Spanien', Italy: 'Italien', Germany: 'Deutschland', Switzerland: 'Schweiz', France: 'Frankreich', Austria: 'Österreich', Portugal: 'Portugal', Netherlands: 'Niederlande', Belgium: 'Belgien', Poland: 'Polen' };
 const ortDeutsch = (o) => String(o || '').split(', ').map((t) => LAENDER[t] || t).join(', ');
 const TAG = /^\d{4}-\d{2}-\d{2}$/;

@@ -238,7 +238,7 @@ await test('Turniere: Fremde Serie, Rang 4, unbekannte Person, ohne Quelle brech
   await wirft(() => bauT(PFLEGE_T, eine({ quelle: 'http://unsicher.example' })), /Quelle/);
 });
 await test('Turniere aus FAST: ITSF-Tour nur mit Wettbewerbsseite, nie mit Spieler-ID', async () => {
-  const fast = 'https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=652277329&playerId=0&view=final_ranking';
+  const fast = 'https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=652277329&playerId=0&barCode=null&screenIndex=-1&view=final_ranking';
   const eine = (x) => mitT({ turniere: async () => ({ eintraege: [{ ...TU.eintraege[1], ...x }] }) });
   const s = await bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour', quelle: fast }));
   assert.equal(s.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
