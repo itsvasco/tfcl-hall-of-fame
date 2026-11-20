@@ -28,7 +28,7 @@
 .rangliste, .rang__eintraege { list-style: none; margin: 0; padding: 0; }
 .rangliste { border-block-end: var(--border-w) solid var(--border-subtle); }
 .rangliste[hidden], .teams[hidden] { display: none; }
-.rang { position: relative; display: grid; grid-template-columns: var(--space-2xl) minmax(0, 1fr) auto; gap: var(--space-md); align-items: start; padding-block: var(--space-lg); border-block-start: var(--border-w) solid var(--border-subtle); }
+.rang { position: relative; display: grid; grid-template-columns: var(--space-2xl) minmax(0, 1fr) 7rem; gap: var(--space-md); align-items: start; padding-block: var(--space-lg); border-block-start: var(--border-w) solid var(--border-subtle); }
 .rang__nr { font-size: var(--text-2xl); font-weight: var(--fw-extrabold); font-variant-numeric: tabular-nums; line-height: 1.1; }
 .rang h3 { font-size: var(--text-xl); margin: 0; }
 .rang__titel { margin: var(--space-3xs) 0 var(--space-sm); color: var(--ink-muted); }
@@ -45,13 +45,44 @@
 .teams .rang__eintraege { border-block-start: var(--border-w) solid var(--border-subtle); }
 
 @media (max-width: 719px) {
-  .rang { grid-template-columns: var(--space-xl) minmax(0, 1fr); gap: var(--space-sm); }
-  .rang__zahl { position: absolute; inset-block-start: var(--space-lg); inset-inline-end: 0; }
-  .rang h3, .rang__titel { padding-inline-end: var(--space-4xl); }
+  /* Die Zahl steht in einer festen Spalte rechts neben Name und Titel (kein absolutes Setzen): Überlappung ist vom Aufbau her unmöglich.
+     .rang__text löst sich auf, damit Name, Titel und Chips in Spalte 2 stehen und der Aufklapp-Kasten bis an den rechten Rand reicht. */
+  .rang { grid-template-columns: var(--space-xl) minmax(0, 1fr) 5.5rem; column-gap: var(--space-sm); row-gap: 0; }
+  .rang__text { display: contents; }
+  .rang__nr { grid-column: 1; grid-row: 1 / span 3; }
+  .rang__kopf { grid-column: 2; grid-row: 1; }
+  .rang__titel { grid-column: 2; grid-row: 2; }
+  .rang__chips { grid-column: 2 / -1; grid-row: 3; }
+  .rang__zahl { grid-column: 3; grid-row: 1 / span 2; }
+  .rang .aufklapp { grid-column: 2 / -1; grid-row: 4; }
   .rang__eintraege li { grid-template-columns: auto minmax(0, 1fr); gap: var(--space-3xs) var(--space-md); }
   .rang__jahr { grid-area: 1 / 1; }
   .rang__metall { grid-area: 1 / 2; justify-self: end; }
   .rang__was { grid-area: 2 / 1 / 3 / -1; }
   .rang__eintraege li > a { grid-area: 3 / 1 / 4 / -1; }
   #champions li { grid-template-columns: auto minmax(0, 1fr); }
+  /* Einstieg: Wappen klein neben dem Text, damit die Leitzahl schon auf dem ersten Bildschirm beginnt */
+  .logo-flaeche { padding: var(--space-md); }
+  .logo-flaeche img { inline-size: min(100%, 7rem); }
 }
+
+/* Champions-Zahl steht im Kopf der Sektion, nicht in einer Zeile der Rangliste */
+.champions__kopf .rang__zahl { inline-size: auto; }
+
+/* Metalle: drei Stufen aus den Tokens der Marke, ohne eigene Farben (Marke kennt nur Akzent, Tinte und Flächen) */
+.metall--gold { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.metall--gold::before { background: var(--accent-ink); }
+.metall--silber { background: var(--accent-soft); color: var(--ink); border-color: var(--accent-soft); }
+.metall--silber::before { background: var(--ink-muted); }
+.metall--bronze { background: none; color: var(--ink); border-color: var(--border-strong); }
+.metall--bronze::before { background: var(--border-strong); }
+
+/* Podest der Leitzahl: Silber links, Gold in der Mitte, Bronze rechts; Höhe und Fläche staffeln die Plätze */
+.podest { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: end; gap: var(--space-xs); margin: 0; }
+.podest__stufe { display: grid; align-content: end; justify-items: center; gap: var(--space-3xs); padding: var(--space-md) var(--space-xs); border-radius: var(--r-md) var(--r-md) 0 0; text-align: center; border: var(--border-w) solid var(--border-strong); }
+.podest__stufe dt { order: 2; font-size: var(--text-sm); font-weight: var(--fw-semibold); }
+.podest__stufe dd { order: 1; margin: 0; font-family: var(--font-data); font-variant-numeric: tabular-nums; font-size: var(--text-3xl); font-weight: var(--fw-extrabold); line-height: 1; }
+.podest__stufe small { order: 3; font-size: var(--text-2xs); }
+.podest__stufe--gold { order: 2; min-block-size: 11rem; background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.podest__stufe--silber { order: 1; min-block-size: 8.5rem; background: var(--accent-soft); color: var(--ink); border-color: var(--accent-soft); }
+.podest__stufe--bronze { order: 3; min-block-size: 6.5rem; background: var(--surface-raised); color: var(--ink); }

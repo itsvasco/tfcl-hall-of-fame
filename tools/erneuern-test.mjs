@@ -5,7 +5,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import assert from 'node:assert/strict';
-import { personen, smAbleiten, ranglisteCms, archivLesen, ranglisteArchiv, natiAbleiten, pdfLesen, ligaAbleiten, raengeVon, fordereAbleiten, bauen, haupt, vorNach } from './erneuern.mjs';
+import { personen, kurzwert, smAbleiten, ranglisteCms, archivLesen, ranglisteArchiv, natiAbleiten, pdfLesen, ligaAbleiten, raengeVon, fordereAbleiten, bauen, haupt, vorNach } from './erneuern.mjs';
 import { anzeigeName, schluessel } from './gemeinsam.mjs';
 import { lizenzen, alsDatei } from './spieler.mjs';
 import { pruefeText } from './datenschutz-pruefen.mjs';
@@ -104,7 +104,7 @@ await test('SM: Zählung, Partner mit Namen, Fremde nie als Eintrag', () => {
   const r = smAbleiten(SM, P, DATUM);
   const a = r.eintraege.get('anna-muster'); const b = r.eintraege.get('beat-beispiel');
   assert.equal(a.length, 2); assert.equal(b.length, 2); // Anna: 2024 Doppel Rang 1 und 2; Beat: 2025 Einzel Rang 1, 2024 Doppel Rang 2
-  const doppel1 = a.find((e) => e.rang === 1); assert.deepEqual(doppel1.partner, [{ name: 'Peter Partner', id: null }]);
+  const doppel1 = a.find((e) => e.rang === 1); assert.deepEqual(doppel1.partner, [{ name: 'Partner', id: null }]); // Partner ohne Lizenz nie mit Namen
   const doppel2 = b.find((e) => e.kategorie === 'Herren Doppel'); assert.deepEqual(doppel2.partner, [{ name: 'Anna Muster', id: 'anna-muster' }]);
   assert.ok([...r.eintraege.keys()].every((k) => ['anna-muster', 'beat-beispiel'].includes(k)));
   assert.ok(a.every((e) => e.quelle.startsWith('https://') && e.abgerufen === DATUM));
@@ -112,7 +112,7 @@ await test('SM: Zählung, Partner mit Namen, Fremde nie als Eintrag', () => {
 });
 await test('SM: Name mit Zusatz wird als offen gemeldet, nicht gezählt', () => {
   const r = smAbleiten(SM, P, DATUM);
-  assert.ok(r.offen.some((o) => o.includes('Beispiel Beat H.')));
+  assert.ok(r.offen.some((o) => o.includes('Beat Beispiel') && !o.includes('Beispiel Beat H.'))); // nennt nur die Lizenz, nie den Rohnamen
   assert.ok(!r.eintraege.get('beat-beispiel').some((e) => e.jahr === 2016));
 });
 await test('Jahresrangliste cms: Rang 1 bis 3, Fremde und Rang 4 nie', () => {
@@ -178,13 +178,13 @@ await test('Zählung im Schnappschuss: je Bereich und gesamt', async () => {
     assert.match(e.quelle, /^https:\/\//); assert.match(e.abgerufen, /^\d{4}-\d{2}-\d{2}$/);
   }
 });
-await test('Gegenprobe: Name ohne Lizenz taucht nie auf (ausser als Partner-Text in der SM)', async () => {
+await test('Gegenprobe: Name ohne Lizenz taucht nie auf (auch nicht als Partner in der SM)', async () => {
   const s = await bauen({ spielerDatei: SPIELER, pflege: PFLEGE, holen: holen(), datum: DATUM });
   const ohneSm = alsText({ ...s, sm: null });
   for (const n of ['Fremd', 'Nobody', 'Dritter', 'Andere']) assert.ok(!ohneSm.includes(n), `${n} ausserhalb der SM`);
   assert.ok(!alsText(s.verzeichnis).includes('Fremd'));
   assert.ok(!alsText(s.sm).includes('Fremd')); // auch in der SM nur als Einzelplatz, nie als Partner (Franz steht allein)
-  assert.ok(alsText(s.sm).includes('Peter Partner')); // Partner ohne Lizenz steht mit Namen
+  assert.ok(!alsText(s.sm).includes('Peter') && !alsText(s.sm).includes('Partner Peter')); // Partner ohne Lizenz steht nie mit Namen
 });
 await test('Gegenprobe: bekannte Fremdnamen in Spalten und Kadern ändern die Zahlen nicht', async () => {
   const mehr = { ...holen(), sm: async () => ({ ...SM, 'Men Singles': { ...SM['Men Singles'], '2020': { 1: { rank: 1, players: [{ name: 'Gast Gabi' }] } } } }) };
@@ -356,6 +356,65 @@ await test('Abbruch: Exit 1, bestehender Schnappschuss bleibt unverändert', asy
     assert.notEqual(fs.readFileSync(path.join(dir, 'hall-of-fame.json'), 'utf8'), 'ALT');
     assert.equal(await haupt(['--falsch'], { daten: dir, holen: holen() }), 2);
   } finally { console.error = stumm; fs.rmSync(dir, { recursive: true, force: true }); }
+});
+
+
+// ---------- Entscheide 2026-11-20 (Bugfix Runde 1) ----------
+await test('Partner ohne Lizenz steht nie mit Namen; Ehrenmitglied als Partner schon; offen nennt nie einen fremden Namen', async () => {
+  const s = await bauT({ ...PFLEGE_T, ehrenmitglieder: ['Peter Partner'], feste_plaetze: [], fotos: {} }, mitT({ turniere: async () => ({ eintraege: TU.eintraege.slice(0, 2) }) }));
+  assert.ok(s.sm.personen.flatMap((p) => p.platzierungen).some((e) => e.partner.some((x) => x.name === 'Peter Partner')), 'Ehrenmitglied bleibt benannt');
+  const o = await bauen({ spielerDatei: SPIELER, pflege: PFLEGE, holen: holen(), datum: DATUM });
+  assert.ok(!alsText(o).includes('Peter') && !alsText(o).includes('Fremd'), 'kein Name ohne Lizenz im ganzen Schnappschuss');
+  const mitZusatz = o.offen.filter((x) => /ähnelt/.test(x));
+  assert.ok(mitZusatz.length && mitZusatz.every((x) => !/Beispiel Beat H\./.test(x) && /Beat Beispiel/.test(x)), 'die Zeile nennt nur den Namen mit Lizenz');
+});
+await test('nicht_gleich wird gelesen: der Name mit Zusatz steht nicht in offen, ohne Eintrag schon', async () => {
+  const mit = await bauen({ spielerDatei: SPIELER, pflege: { ...PFLEGE, nicht_gleich: { [kurzwert('Beispiel Beat H.')]: 'Vasco: nein' } }, holen: holen(), datum: DATUM });
+  const ohne = await bauen({ spielerDatei: SPIELER, pflege: PFLEGE, holen: holen(), datum: DATUM });
+  assert.equal(ohne.offen.filter((x) => /ähnelt/.test(x)).length, 1);
+  assert.equal(mit.offen.filter((x) => /ähnelt/.test(x)).length, 0);
+  assert.equal(kurzwert('Beispiel Beat H.'), kurzwert('H. Beat Beispiel'));
+  assert.equal(mit.gesamt.podestplaetze, ohne.gesamt.podestplaetze, 'zählt in beiden Fällen nicht');
+});
+await test('Lizenzierter mit festem Platz (wie Jorge) zählt mit seinen Podestplätzen in Gesamtzahl und Bereichssummen; nur das Ehrenmitglied nicht', async () => {
+  const mit = await bauT(); const ohneFest = await bauT({ ...PFLEGE_T, feste_plaetze: [], fotos: {} });
+  const dario = mit.verzeichnis.find((p) => p.id === 'dario-drei');
+  assert.ok(dario.summe > 0 && dario.fest === 2 && !dario.ehrenmitglied);
+  assert.deepEqual(mit.gesamt, ohneFest.gesamt, 'feste Plätze ändern keine Summe');
+  assert.deepEqual(mit.bereiche.map((b) => b.summe), ohneFest.bereiche.map((b) => b.summe));
+  const ohneDario = await bauT({ ...PFLEGE_T, nicht_nennen: ['dario-drei'] });
+  assert.equal(mit.gesamt.podestplaetze - ohneDario.gesamt.podestplaetze, dario.summe, 'Darios Podestplätze stecken in der Gesamtzahl');
+  assert.equal(mit.gesamt.personen - ohneDario.gesamt.personen, 1);
+  const erika = mit.verzeichnis.find((p) => p.id === 'erika-ehre'); assert.ok(erika.ehrenmitglied && erika.summe > 0);
+  const ohneErika = await bauT({ ...PFLEGE_T, ehrenmitglieder: [], fotos: {} }, mitT({ turniere: async () => ({ eintraege: TU.eintraege.slice(0, 2) }) }));
+  assert.deepEqual(mit.gesamt, ohneErika.gesamt, 'das Ehrenmitglied ändert keine Summe');
+});
+await test('Datenschutzprüfung: Spielerprofil als Quelle zählt in daten/ und site/, nicht in tools/; die übrigen Verbote gelten überall', () => {
+  const q = (...a) => a.join('');
+  const profil = `https://x.example/index.php?${q('task=spieler', '_details')}&id=1`;
+  assert.equal(pruefeText(profil, 'tools/x.mjs').length, 0, 'Code unter tools/ darf die Adresse nennen');
+  assert.equal(pruefeText(q('const k = "p4p', 'placements";'), 'tools/p4p.mjs').length, 0);
+  assert.ok(pruefeText(profil, 'daten/x.json').length >= 1, 'Daten');
+  assert.ok(pruefeText(`<a href="${profil}">Quelle</a>`, 'site/x.html').length >= 1, 'Seite');
+  assert.ok(pruefeText(`<a href="https://x.example/${q('spieler', '/4711')}">`, 'site/js/x.js').length >= 1, 'Text unter site/');
+  assert.ok(pruefeText(`{ ${q('"i', 'd"')}: 4711 }`, 'tools/x.mjs').length >= 1, 'andere Verbote gelten in tools/');
+  assert.ok(pruefeText(`mail ${q('jemand', '@', 'beispiel.ch')}`, 'tools/x.mjs').length >= 1);
+});
+
+await test('Seite: jede id steht genau einmal, Suche mit Filter nennt den Bereich, Rohdaten-Links sagen es, Podest statt Zusatzzeile', async () => {
+  const html = fs.readFileSync(new URL('../site/index.html', import.meta.url), 'utf8');
+  const ids = [...html.matchAll(/\sid="([^"]+)"/g)].map((x) => x[1]);
+  assert.deepEqual(ids.filter((x, i) => ids.indexOf(x) !== i), [], 'doppelte id (die Champions-League-Liste überschrieb die Sektion)');
+  const s = await bauT(); const m = R.modell(s);
+  const mitFilter = R.satzText(m, { bereich: 'turniere', q: 'Anna' }, 0); const ohneTreffer = R.satzText(m, { bereich: 'turniere', q: 'Zzzz' }, 0);
+  assert.match(R.satzText(m, { bereich: 'liga', q: 'Anna' }, 0), /Clubliga zählt Teams/);
+  assert.match(R.satzText(m, { bereich: 'nati', q: 'Erika' }, 0), /Bereich Nati steht keine Person.*Über alle Bereiche findet die Suche 1 Person/);
+  assert.match(ohneTreffer, /Die Suche kennt Vor- und Nachnamen/); assert.ok(mitFilter);
+  assert.match(R.satzText(m, { bereich: 'alle', q: '' }, 7), /^7 Personen stehen in der Rangliste/);
+  const roh = R.teamsHtml({ teams: [{ saison: '2025/26', liga: 'X', team: 'Y', rang: 1, quelle: 'https://fordere.ch/api/seasons/9/final-day' }] });
+  assert.match(roh, />Rohdaten fordere\.ch \(JSON\)</);
+  const leit = R.leitHtml(m); assert.ok(!/Stand \d/.test(leit.split('podest')[1]), 'der Stand steht nur in der Quellenzeile'); assert.match(leit, /podest__stufe--gold/);
+  assert.match(R.zeileHtml(R.zeilen(m, { bereich: 'alle', q: '' })[2]), /marke metall metall--(gold|silber|bronze)/);
 });
 
 console.log(`${ok} Tests bestanden${fehler.length ? `, ${fehler.length} FEHLER:\n- ${fehler.join('\n- ')}` : ''}`);

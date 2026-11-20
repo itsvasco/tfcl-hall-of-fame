@@ -6,6 +6,7 @@
 // Exit 0 = geschrieben, 1 = eine Quelle ist nicht erreichbar oder hat ihr Format verändert (nichts geschrieben), 2 = falscher Aufruf.
 // Mitglied heisst hier nur: heutige Lizenz beim Club (spieler.json). Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen.
 import fs from 'node:fs';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { QuelleVeraendert, schluessel, anzeigeName, slug, heute as heuteDatum, liesJson, schreibeJson } from './gemeinsam.mjs';
@@ -53,7 +54,11 @@ const SM_KATEGORIEN = {
 };
 export const SM_QUELLE = 'https://tournaments.swisstablesoccer.ch/hall-of-fame/';
 
-export function smAbleiten(antwort, P, datum) {
+// Namen, die nicht zu einer Lizenz gehören (pflege.nicht_gleich), stehen als Kurzwert (SHA-256 des Namensschlüssels, 16 Zeichen),
+// damit auch das öffentliche Repo keinen Namen ohne Lizenz trägt. Neuen Eintrag berechnen: node -e "import('./tools/erneuern.mjs').then(m=>console.log(m.kurzwert('Nachname Vorname')))".
+export const kurzwert = (name) => createHash('sha256').update(schluessel(name)).digest('hex').slice(0, 16);
+
+export function smAbleiten(antwort, P, datum, nichtGleich = {}) {
   hart(antwort && typeof antwort === 'object' && !Array.isArray(antwort), 'SM: Antwort ist kein Objekt');
   const eintraege = new Map(); // id -> platzierungen
   const offen = [];
@@ -70,12 +75,12 @@ export function smAbleiten(antwort, P, datum) {
         for (const s of spieler) if (!s.person && !P.gesperrt(s.roh)) {
           const ohneInitial = schluessel(s.roh.replace(/\b\p{Lu}\.(?=\s|$)/gu, ''));
           const nahe = P.alle.find((x) => schluessel(x.name) === ohneInitial && schluessel(x.name) !== schluessel(s.roh));
-          if (nahe) offen.push(`SM ${jahr} ${SM_KATEGORIEN[kat]} Rang ${e.rank}: «${s.roh}» ähnelt der Lizenz «${nahe.name}» (Zusatz im Namen), nicht gezählt`);
+          if (nahe && !Object.hasOwn(nichtGleich, kurzwert(s.roh))) offen.push(`SM ${jahr} ${SM_KATEGORIEN[kat]} Rang ${e.rank}: ein Name mit Zusatz ähnelt der Lizenz «${nahe.name}», nicht gezählt`);
         }
         for (const s of spieler.filter((x) => x.person)) {
           const partner = spieler.filter((x) => x !== s).map((x) => (x.person
             ? { name: x.person.name, id: x.person.id }
-            : { name: P.gesperrt(x.roh) ? 'Partner' : vorNach(x.roh), id: null }));
+            : { name: 'Partner', id: null })); // Partner ohne Lizenz nie mit Namen (Vasco, 2026-11-20)
           const l = eintraege.get(s.person.id) || []; eintraege.set(s.person.id, l);
           l.push({ jahr, event, kategorie: SM_KATEGORIEN[kat], rang: Number(e.rank), partner, quelle: SM_QUELLE, abgerufen: datum });
         }
@@ -351,7 +356,7 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   const offen = [];
 
   // 1. Schweizermeisterschaft
-  const sm = smAbleiten(await holen.sm(), P, datum); offen.push(...sm.offen);
+  const sm = smAbleiten(await holen.sm(), P, datum, pflege.nicht_gleich || {}); offen.push(...sm.offen);
 
   // 2. Jahresrangliste
   const rl = new Map(); const rlSaisons = [];

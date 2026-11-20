@@ -115,9 +115,18 @@ export function leadText() {
 export function satzText(m, auswahl, anzahl) {
   const q = (auswahl.q || '').trim();
   const b = m.bereiche.find((x) => x.k === auswahl.bereich);
-  if (q) return anzahl ? `${pl(anzahl, 'Person', 'Personen')} gefunden.` : 'Keine Person gefunden. Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.';
+  if (q) {
+    if (anzahl) return `${pl(anzahl, 'Person', 'Personen')} gefunden.`;
+    /* Mit Filter: nennen, dass der Bereich leer ist und wie viele Personen die Suche über alle Bereiche findet. */
+    if (b) {
+      const ueberall = zeilen(m, { bereich: 'alle', q }).length;
+      const hier = auswahl.bereich === 'liga' ? 'Die Clubliga zählt Teams, keine Personen.' : `Im Bereich ${b.titel} steht keine Person mit diesem Namen.`;
+      return ueberall ? `${hier} Über alle Bereiche findet die Suche ${pl(ueberall, 'Person', 'Personen')}. Wähle «Alle Bereiche».` : `${hier} Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.`;
+    }
+    return 'Keine Person gefunden. Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.';
+  }
   if (auswahl.bereich === 'alle') {
-    return `${pl(m.gesamt.personen, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Die Clubliga zählt je Team und steht darum darunter. Ehrenmitglieder stehen oben und zählen in keine Summe.`;
+    return `${pl(anzahl, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Oben stehen die festen Plätze. Das Ehrenmitglied zählt in keine Summe. Die Clubliga zählt je Team und steht darum darunter.`;
   }
   const s = b.summe;
   switch (auswahl.bereich) {
@@ -135,9 +144,10 @@ export function satzText(m, auswahl, anzahl) {
 
 const quelleText = (u) => {
   const h = new URL(u).hostname;
+  /* Schnittstellen zeigen nur Rohdaten (JSON). Der Link sagt das, damit niemand eine Seite erwartet. */
   return h === 'tournaments.swisstablesoccer.ch' || h === 'api.swisstablesoccer.ch' ? 'Quelle beim Verband'
-    : h === 'app.tablesoccer.org' ? 'Quelle auf Coral' : h === 'api.tablesoccer.org' ? 'Quelle auf tablesoccer.org'
-    : h === 'fordere.ch' ? 'Quelle auf fordere.ch' : 'Quelle';
+    : h === 'app.tablesoccer.org' ? 'Quelle auf Coral' : h === 'api.tablesoccer.org' ? 'Rohdaten tablesoccer.org (JSON)'
+    : h === 'fordere.ch' ? 'Rohdaten fordere.ch (JSON)' : 'Quelle';
 };
 const link = (u, wofuer) => `<a href="${esc(u)}" rel="noopener" aria-label="${esc(`${quelleText(u)}: ${wofuer}`)}">${esc(quelleText(u))}</a>`;
 
@@ -158,7 +168,7 @@ function eintragHtml(e) {
   return `<li><span class="rang__jahr t-data">${esc(jahrAnzeige(e))}</span><span class="rang__was">${esc(t)}</span><b class="rang__metall">${METALL[e.rang]}</b>${link(e.quelle, `${t} ${jahrAnzeige(e)}`)}</li>`;
 }
 
-const chips = (z) => [['Gold', z.gold], ['Silber', z.silber], ['Bronze', z.bronze]].filter(([, n]) => n).map(([w, n]) => `<span class="marke">${w} ${fmt(n)}</span>`).join('');
+const chips = (z) => [['Gold', z.gold], ['Silber', z.silber], ['Bronze', z.bronze]].filter(([, n]) => n).map(([w, n]) => `<span class="marke metall metall--${w.toLowerCase()}">${w} ${fmt(n)}</span>`).join('');
 
 export function zeileHtml(r) {
   const n = r.z.summe;
@@ -191,10 +201,10 @@ export function leitHtml(m) {
     + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten, die Fordere-Liga Luzern und die Turniere je Person, dazu die Clubliga je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
     + (m.champions.summe.teilnahmen ? `<p class="leitzahl__lead">Dazu kommen ${pl(m.champions.summe.teilnahmen, 'Teilnahme', 'Teilnahmen')} an der Champions League. Sie stehen weiter unten und zählen in keine Summe.</p>` : '')
     + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org, players4players.de und fordere.ch, abgerufen am ${stand}.</p></div>`
-    + `<dl class="leitzahl__neben">`
-    + `<div><dt>Gold</dt><dd>${fmt(g.gold)}</dd><small>Rang 1, Stand ${stand}</small></div>`
-    + `<div><dt>Silber</dt><dd>${fmt(g.silber)}</dd><small>Rang 2, Stand ${stand}</small></div>`
-    + `<div><dt>Bronze</dt><dd>${fmt(g.bronze)}</dd><small>Rang 3, Stand ${stand}</small></div>`
+    + `<dl class="podest">`
+    + `<div class="podest__stufe podest__stufe--gold"><dt>Gold</dt><dd>${fmt(g.gold)}</dd><small>Rang 1</small></div>`
+    + `<div class="podest__stufe podest__stufe--silber"><dt>Silber</dt><dd>${fmt(g.silber)}</dd><small>Rang 2</small></div>`
+    + `<div class="podest__stufe podest__stufe--bronze"><dt>Bronze</dt><dd>${fmt(g.bronze)}</dd><small>Rang 3</small></div>`
     + `</dl></div>`;
 }
 

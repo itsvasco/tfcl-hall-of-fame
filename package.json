@@ -7,7 +7,8 @@
   "scripts": {
     "spieler": "node tools/spieler.mjs --club LUZE",
     "erneuern": "node tools/erneuern.mjs",
-    "test": "node tools/erneuern-test.mjs && node tools/datenschutz-pruefen.mjs"
+    "test": "node tools/erneuern-test.mjs && node tools/datenschutz-pruefen.mjs",
+    "vorpruefung-vorbereiten": "cp briefing.md site/briefing.md"
   },
   "dependencies": {
     "pdfjs-dist": "6.5.438",

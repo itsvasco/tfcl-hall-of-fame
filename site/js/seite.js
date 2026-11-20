@@ -22,7 +22,7 @@ function zeichneAlles() {
   el('teams').innerHTML = teamsHtml(m);
   el('champions-lead').textContent = championsLead(m);
   el('champions-zahl').innerHTML = championsZahl(m);
-  el('champions').innerHTML = championsHtml(m);
+  el('champions-liste').innerHTML = championsHtml(m);
   el('stand').textContent = datumLang(m.stand);
   zeichneListe();
 }

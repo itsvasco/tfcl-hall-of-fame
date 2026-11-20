@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Prüft das ganze Repo, jeden Commit aller Zweige (git log --all -p) und den Arbeitsstand, auf Daten, die nie hineingehören:
-// Spieler-IDs, Punkte, Coral-Kennungen, Mailadressen ausser der Kontaktadresse, Schlüssel.
+// Spieler-IDs, Punkte, Coral-Kennungen, Mailadressen ausser der Kontaktadresse, Schlüssel. Spielerprofile als Quelle nur in daten/ und site/ (Daten und Texte), nicht in Code unter tools/.
 // Aufruf: node tools/datenschutz-pruefen.mjs   (Exit 0 = 0 Treffer, 1 = Treffer, 2 = Aufruf oder Git-Fehler)
 // Vor einem Commit mit git add vormerken, dann prüfen: der Arbeitsstand umfasst alle verfolgten Dateien.
 // Die Muster stehen hier zerlegt, damit diese Datei sich nicht selbst trifft.
@@ -20,7 +20,6 @@ const ERLAUBTE_MAILS = new Set([...(pflege.kontakt ? [].concat(pflege.kontakt) :
 const ALLE = [
   { name: 'Mailadresse', re: /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g, erlaubt: (t) => ERLAUBTE_MAILS.has(t.toLowerCase()) || /@example\.(com|org|net)$/i.test(t) },
   { name: 'Schlüssel oder Token', re: new RegExp([z('s', 'k-[A-Za-z0-9]{20,}'), z('gh', 'p_[A-Za-z0-9]{20,}'), z('AK', 'IA[0-9A-Z]{16}'), z('ey', 'J[A-Za-z0-9_-]{20,}\\.[A-Za-z0-9_-]{10,}'), z('-----BEGIN', ' [A-Z ]*PRIVATE KEY'), z('(?:api|secret)[_-]?', 'key["\']?\\s*[:=]\\s*["\'][^"\']{8,}')].join('|'), 'gi') },
-  { name: 'Spielerprofil als Quelle', re: new RegExp([z('task=spieler', '_details'), z('p4p', 'placements'), z('s3\\.tablesoccer', '\\.org/person'), z('/spieler', '/\\d+')].join('|'), 'gi') },
   { name: 'Zahlen-ID als Feld', re: /"(?:id|spieler_id|player_id|playerId|verbandsnummer)"\s*:\s*\d+/gi },
 ];
 // Zusätzlich für Daten und Texte (nicht für Code, der die Feldnamen lesen muss)
@@ -31,13 +30,18 @@ const DATEN = [
   { name: 'Kennung aus sechs Zeichen mit Ziffer', re: /"(?=[A-Z0-9]*\d)(?=[A-Z0-9]*[A-Z])[A-Z0-9]{6}"/g },
   { name: 'Bild der Verbandsplattform', re: new RegExp(z('s3\\.', 'tablesoccer\\.org'), 'gi') },
 ];
+// Nur für Daten und Texte unter daten/ und site/ (nicht für Code unter tools/, der solche Adressen lesen muss, um sie zu meiden)
+const DATEN_UND_SITE = [
+  { name: 'Spielerprofil als Quelle', re: new RegExp([z('task=spieler', '_details'), z('p4p', 'placements'), z('s3\\.tablesoccer', '\\.org/person'), z('/spieler', '/\\d+')].join('|'), 'gi') },
+];
+const istDatenOderSite = (datei) => /^(daten|site)\//.test(datei);
 const istDaten = (datei) => /^daten\//.test(datei) || /\.md$/.test(datei);
 const ausnahme = (datei) => datei === 'package-lock.json' || /\.(zip|png|jpe?g|webp|gif|ico|woff2?|ttf|pdf)$/i.test(datei);
 
 function git(args) { return execFileSync('git', args, { cwd: WURZEL, encoding: 'utf8', maxBuffer: 256 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }); }
 
 function pruefeZeile(datei, zeile, herkunft, treffer) {
-  for (const r of [...ALLE, ...(istDaten(datei) ? DATEN : [])]) {
+  for (const r of [...ALLE, ...(istDaten(datei) ? DATEN : []), ...(istDatenOderSite(datei) ? DATEN_UND_SITE : [])]) {
     r.re.lastIndex = 0;
     for (const m of zeile.matchAll(r.re)) if (!(r.erlaubt && r.erlaubt(m[0]))) treffer.push(`${herkunft} ${datei}: ${r.name} («${m[0].slice(0, 40)}»)`);
   }

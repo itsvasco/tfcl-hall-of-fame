@@ -377,7 +377,7 @@
             "rang": 2,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -391,7 +391,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -414,7 +414,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -437,7 +437,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Lukas Bärtsch",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -451,7 +451,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -474,7 +474,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -488,7 +488,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -511,7 +511,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -525,7 +525,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Sandra Gäumann",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -548,7 +548,7 @@
             "rang": 3,
             "partner": [
               {
-                "name": "Sandra Gäumann",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -562,7 +562,7 @@
             "rang": 2,
             "partner": [
               {
-                "name": "Pascal Salzgeber",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -590,7 +590,7 @@
             "rang": 2,
             "partner": [
               {
-                "name": "Sandra Gäumann",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -613,7 +613,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Nino Friedli",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -645,7 +645,7 @@
             "rang": 2,
             "partner": [
               {
-                "name": "Gianni Riva",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -668,7 +668,7 @@
             "rang": 2,
             "partner": [
               {
-                "name": "Simona Burri",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -682,7 +682,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Belmin Karadzi",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -696,7 +696,7 @@
             "rang": 3,
             "partner": [
               {
-                "name": "Belmin Karadzi",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -728,7 +728,7 @@
             "rang": 1,
             "partner": [
               {
-                "name": "Natalie Krieg",
+                "name": "Partner",
                 "id": null
               }
             ],
@@ -2454,11 +2454,6 @@
     ]
   },
   "offen": [
-    "SM 2023 Herren Doppel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
-    "SM 2024 Herren Doppel Rang 2: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
-    "SM 2024 Herren Einzel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
-    "SM 2015 Junioren Doppel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
-    "SM 2015 Junioren Einzel Rang 1: «Felder Martin H.» ähnelt der Lizenz «Martin Felder» (Zusatz im Namen), nicht gezählt",
     "Jahresrangliste 2017, 2018, 2021, 2022 und alles vor 2017: nur über archivierte Spielerseiten mit Verbandsnummern belegbar, nicht aufgenommen",
     "Jahresrangliste 2023: der Archivstand vom 2023-12-03 liegt vor dem Saisonende (2023-12-10), ein Schlussstand ist ohne Spielerseiten nicht belegt",
     "Jahresrangliste 2020: keine eigene Saison",
