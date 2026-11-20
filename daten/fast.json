@@ -1625,5 +1625,271 @@
       "land": "SVK",
       "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
     }
-  ]
+  ],
+  "nati_ohne_kader": {
+    "hinweis": "Medaillen Schweizer Nationalteams in FAST. FAST nennt kein Kader, darum zählt keine davon (Nati zählt je Person im Kader).",
+    "medaillen": [
+      {
+        "jahr": 2014,
+        "datum": "2014-07-11",
+        "turnier": "Garlando WCS - 2014",
+        "wettbewerb": "Men National Team",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9054711&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2014,
+        "datum": "2014-07-11",
+        "turnier": "Garlando WCS - 2014",
+        "wettbewerb": "Women National Team",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9055863&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2015,
+        "datum": "2015-09-11",
+        "turnier": "World Championship Series Leonhart - 2015",
+        "wettbewerb": "Women National Team",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10880217&lang=de&competitionId=0&originalCompetitionId=11471193&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2015,
+        "datum": "2015-09-11",
+        "turnier": "World Championship Series Leonhart - 2015",
+        "wettbewerb": "Senior National Team",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10880217&lang=de&competitionId=0&originalCompetitionId=11471746&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2016,
+        "datum": "2016-07-21",
+        "turnier": "World Series by Garlando - 2016",
+        "wettbewerb": "Men National Teams",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12398514&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2016,
+        "datum": "2016-07-21",
+        "turnier": "World Series by Garlando - 2016",
+        "wettbewerb": "Women National Teams",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12399208&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2016,
+        "datum": "2016-07-21",
+        "turnier": "World Series by Garlando - 2016",
+        "wettbewerb": "Senior National Team",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12399841&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2016,
+        "datum": "2016-10-28",
+        "turnier": "Sofia International Series II - 2016",
+        "wettbewerb": "Senior National team",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11914039&lang=de&competitionId=0&originalCompetitionId=37307166&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2017,
+        "datum": "2017-04-12",
+        "turnier": "Hamburg - 2017",
+        "wettbewerb": "NATIONS - Women",
+        "team": "SWITZERLAND2600",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=37652437&lang=de&competitionId=0&originalCompetitionId=37652734&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2017,
+        "datum": "2017-04-12",
+        "turnier": "Hamburg - 2017",
+        "wettbewerb": "NATIONS - Seniors",
+        "team": "SWITZERLAND2600",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=37652437&lang=de&competitionId=0&originalCompetitionId=37652472&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2017,
+        "datum": "2017-07-06",
+        "turnier": "World Series by Garlando - 2017",
+        "wettbewerb": "NATIONS - Mens",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116543003&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2017,
+        "datum": "2017-07-06",
+        "turnier": "World Series by Garlando - 2017",
+        "wettbewerb": "NATIONS - Women",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116543006&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2018,
+        "datum": "2018-06-21",
+        "turnier": "World Series by Garlando 2018",
+        "wettbewerb": "NATIONS - Men",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218048723&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2018,
+        "datum": "2018-06-21",
+        "turnier": "World Series by Garlando 2018",
+        "wettbewerb": "NATIONS - Women",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218048725&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2018,
+        "datum": "2018-09-13",
+        "turnier": "World Series by Leonhart 2018",
+        "wettbewerb": "NATIONS - Women",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157255179&lang=de&competitionId=0&originalCompetitionId=247119311&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2018,
+        "datum": "2018-11-01",
+        "turnier": "World Series by Roberto Sport 2018",
+        "wettbewerb": "RB NATIONS - Men",
+        "team": "SUISSE",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=247384774&lang=de&competitionId=0&originalCompetitionId=247385604&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2019,
+        "datum": "2019-04-18",
+        "turnier": "World Series by Garlando 2019",
+        "wettbewerb": "NATIONS Men",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310962263&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2019,
+        "datum": "2019-04-18",
+        "turnier": "World Series by Garlando 2019",
+        "wettbewerb": "NATIONS Women",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310935288&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2019,
+        "datum": "2019-07-02",
+        "turnier": "Murcia - 2019",
+        "wettbewerb": "NATIONS - Seniors",
+        "team": "SWITZERLAND 2200",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=281368164&lang=de&competitionId=0&originalCompetitionId=281368199&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-08-11",
+        "turnier": "World Series by Garlando 2022",
+        "wettbewerb": "Nations Cup Men",
+        "team": "SWITZERLAND 1",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=527211067&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-08-11",
+        "turnier": "World Series by Garlando 2022",
+        "wettbewerb": "Nations Cup Women",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=527211071&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-08-11",
+        "turnier": "World Series by Garlando 2022",
+        "wettbewerb": "Nations Cup Seniors",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=527211074&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-09-01",
+        "turnier": "World Series by Leonhart 2022",
+        "wettbewerb": "Nation Cup Juniors",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=477930415&lang=de&competitionId=0&originalCompetitionId=617476487&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-09-01",
+        "turnier": "World Series by Leonhart 2022",
+        "wettbewerb": "Nation Cup Men",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=477930415&lang=de&competitionId=0&originalCompetitionId=617476482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2023,
+        "datum": "2023-07-13",
+        "turnier": "World Series by Garlando 2023",
+        "wettbewerb": "Men National Team",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=657315809&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2023,
+        "datum": "2023-07-13",
+        "turnier": "World Series by Garlando 2023",
+        "wettbewerb": "Senior National Team",
+        "team": "SWITZERLAND",
+        "rang": 1,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=657315814&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2023,
+        "datum": "2023-08-24",
+        "turnier": "World Series by Leonhart 2023",
+        "wettbewerb": "Juniors Nations",
+        "team": "SWITZERLAND",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=660540686&lang=de&competitionId=0&originalCompetitionId=660957155&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2023,
+        "datum": "2023-09-16",
+        "turnier": "3 Nations Paralympic - ITSF International Tour 2023",
+        "wettbewerb": "National teams",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=670073934&lang=de&competitionId=0&originalCompetitionId=700538922&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2024,
+        "datum": "2024-09-13",
+        "turnier": "4 Nations Paralympic - ITSF 750 WT 2024",
+        "wettbewerb": "Disabled Nations",
+        "team": "SWITZERLAND",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722886745&lang=de&competitionId=0&originalCompetitionId=722886785&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      }
+    ]
+  }
 }
