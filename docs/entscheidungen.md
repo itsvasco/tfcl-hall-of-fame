@@ -1,5 +1,10 @@
 # Entscheidungen
 
+- 2026-11-21: FAST-Turniere stehen in drei Serien: «WS» (World Series), «ITSF» (World Cup), «ITSF-Tour» (alle übrigen ITSF-Turniere, auch die Schweizer mit ITSF-Wertung). Grund: dieselben Werte im TFCZ; Schweizer ITSF-Turniere unter «STF» hätten die Quellenregel des Verbands aufgeweicht. Verworfen: je Turnier Verband oder Ausland von Hand zuordnen.
+- 2026-11-21: Ein FAST-Platz, der schon unter P4P, Verband oder Coral steht (gleiche Person, gleicher Rang, gleiche Disziplinart, Turnierfenster ±2 Tage), zählt nicht noch einmal. Turniere mit «P4P» im Namen zählen nur unter P4P.
+- 2026-11-21: Namenstreffer in FAST mit fremder Lizenz (Arpad Wicki, SVK) zählen erst nach Vascos Bestätigung; sie stehen vorbereitet in `daten/fast.json` unter `zurueckgestellt`.
+- 2026-11-21: Champions League 2017 (Rang 2), 2018 und 2022 (je Rang 9) aus FAST zählen als Teilnahmen ohne Kader: FAST zeigt keine Aufstellungen. Jorges Silber 2017 ist damit für den Club belegt, für ihn persönlich nicht.
+
 - 2026-11-21: Clubliga-Titel bleiben beim Team und stehen nicht unter den Namen der Spieler (Vasco zu Jorges fünf Super-League-Titeln: «nein soll es nicht»). Verworfen: Teamaufstellungen beim Club anfragen und je Person zählen.
 - 2026-11-20 (CEO, Bugfix Runde 1): Jorge Rodriguez hat eine LUZE-Lizenz. Seine echten Podestplätze zählen in die Gesamtzahl wie bei allen Lizenzierten; nur Vasco (Ehrenmitglied ohne Lizenz) zählt in keine Summe. Fester Platz und Spruch bleiben für beide. Test: «Lizenzierter mit festem Platz».
 - 2026-11-20 (CEO, Bugfix Runde 1): Der öffentliche Schnappschuss nennt keine Namen von Nicht-Lizenzierten ausser Vasco. SM-Partner ohne Lizenz stehen als «Partner». `nicht_gleich` in `daten/pflege.json` trägt nur einen Kurzwert des Namens, nicht den Namen.

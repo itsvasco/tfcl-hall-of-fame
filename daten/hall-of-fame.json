@@ -5,11 +5,11 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 150,
-    "gold": 54,
-    "silber": 36,
-    "bronze": 60,
-    "personen": 20
+    "podestplaetze": 268,
+    "gold": 102,
+    "silber": 74,
+    "bronze": 92,
+    "personen": 22
   },
   "bereiche": [
     {
@@ -90,11 +90,11 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 70,
-        "gold": 22,
-        "silber": 18,
-        "bronze": 30,
-        "personen": 15
+        "podestplaetze": 188,
+        "gold": 70,
+        "silber": 56,
+        "bronze": 62,
+        "personen": 17
       }
     }
   ],
@@ -132,43 +132,43 @@
     {
       "id": "hannes-wallimann",
       "name": "Hannes Wallimann",
-      "gold": 13,
-      "silber": 8,
-      "bronze": 10,
-      "summe": 31,
+      "gold": 41,
+      "silber": 22,
+      "bronze": 24,
+      "summe": 87,
       "bereiche": {
         "sm": 18,
         "nati": 1,
         "ranglisten": 1,
-        "turniere": 11
+        "turniere": 67
       }
     },
     {
       "id": "rayan-van-stokkum",
       "name": "Rayan Van Stokkum",
-      "gold": 11,
-      "silber": 8,
-      "bronze": 7,
-      "summe": 26,
+      "gold": 23,
+      "silber": 19,
+      "bronze": 13,
+      "summe": 55,
       "bereiche": {
         "sm": 8,
         "nati": 1,
         "ranglisten": 3,
-        "turniere": 14
+        "turniere": 43
       }
     },
     {
       "id": "peter-felder",
       "name": "Peter Felder",
-      "gold": 7,
-      "silber": 6,
-      "bronze": 7,
-      "summe": 20,
+      "gold": 10,
+      "silber": 14,
+      "bronze": 12,
+      "summe": 36,
       "bereiche": {
         "sm": 4,
         "nati": 2,
         "fordere": 3,
-        "turniere": 11
+        "turniere": 27
       }
     },
     {
@@ -181,6 +181,30 @@
       "bereiche": {
         "sm": 1,
         "turniere": 13
+      }
+    },
+    {
+      "id": "adrian-schuler",
+      "name": "Adrian Schuler",
+      "gold": 2,
+      "silber": 3,
+      "bronze": 7,
+      "summe": 12,
+      "bereiche": {
+        "sm": 2,
+        "turniere": 10
+      }
+    },
+    {
+      "id": "reto-odermatt",
+      "name": "Reto Odermatt",
+      "gold": 3,
+      "silber": 1,
+      "bronze": 4,
+      "summe": 8,
+      "bereiche": {
+        "fordere": 2,
+        "turniere": 6
       }
     },
     {
@@ -197,40 +221,51 @@
       }
     },
     {
-      "id": "reto-odermatt",
-      "name": "Reto Odermatt",
+      "id": "matteo-cosi",
+      "name": "Matteo Cosi",
       "gold": 3,
-      "silber": 1,
-      "bronze": 3,
-      "summe": 7,
+      "silber": 2,
+      "bronze": 0,
+      "summe": 5,
       "bereiche": {
-        "fordere": 2,
-        "turniere": 5
+        "ranglisten": 1,
+        "fordere": 1,
+        "turniere": 3
       }
     },
     {
-      "id": "adrian-schuler",
-      "name": "Adrian Schuler",
-      "gold": 1,
+      "id": "luca-escribano",
+      "name": "Luca Escribano",
+      "gold": 2,
       "silber": 1,
-      "bronze": 2,
+      "bronze": 1,
       "summe": 4,
       "bereiche": {
-        "sm": 2,
+        "ranglisten": 1,
+        "turniere": 3
+      }
+    },
+    {
+      "id": "pascal-felber",
+      "name": "Pascal Felber",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 4,
+      "summe": 4,
+      "bereiche": {
+        "fordere": 2,
         "turniere": 2
       }
     },
     {
-      "id": "matteo-cosi",
-      "name": "Matteo Cosi",
-      "gold": 2,
-      "silber": 1,
-      "bronze": 0,
+      "id": "manuel-ragonesi",
+      "name": "Manuel Ragonesi",
+      "gold": 1,
+      "silber": 0,
+      "bronze": 2,
       "summe": 3,
       "bereiche": {
-        "ranglisten": 1,
-        "fordere": 1,
-        "turniere": 1
+        "turniere": 3
       }
     },
     {
@@ -257,18 +292,6 @@
       }
     },
     {
-      "id": "pascal-felber",
-      "name": "Pascal Felber",
-      "gold": 0,
-      "silber": 0,
-      "bronze": 3,
-      "summe": 3,
-      "bereiche": {
-        "fordere": 2,
-        "turniere": 1
-      }
-    },
-    {
       "id": "michele-sabbatini",
       "name": "Michele Sabbatini",
       "gold": 1,
@@ -291,18 +314,6 @@
       }
     },
     {
-      "id": "luca-escribano",
-      "name": "Luca Escribano",
-      "gold": 1,
-      "silber": 0,
-      "bronze": 1,
-      "summe": 2,
-      "bereiche": {
-        "ranglisten": 1,
-        "turniere": 1
-      }
-    },
-    {
       "id": "marc-burri",
       "name": "Marc Burri",
       "gold": 0,
@@ -315,14 +326,25 @@
       }
     },
     {
-      "id": "manuel-ragonesi",
-      "name": "Manuel Ragonesi",
-      "gold": 0,
+      "id": "fabio-di-crescenzo",
+      "name": "Fabio Di Crescenzo",
+      "gold": 1,
       "silber": 0,
-      "bronze": 2,
-      "summe": 2,
+      "bronze": 0,
+      "summe": 1,
       "bereiche": {
-        "turniere": 2
+        "turniere": 1
+      }
+    },
+    {
+      "id": "fabio-marty",
+      "name": "Fabio Marty",
+      "gold": 0,
+      "silber": 1,
+      "bronze": 0,
+      "summe": 1,
+      "bereiche": {
+        "turniere": 1
       }
     },
     {
@@ -1156,6 +1178,7 @@
     "abgerufen": "2026-11-20",
     "serien": [
       "ITSF",
+      "ITSF-Tour",
       "P4P",
       "STF",
       "WS"
@@ -1163,10 +1186,10 @@
     "personen": [
       {
         "id": "hannes-wallimann",
-        "gold": 5,
-        "silber": 2,
-        "bronze": 4,
-        "summe": 11,
+        "gold": 33,
+        "silber": 16,
+        "bronze": 18,
+        "summe": 67,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -1229,6 +1252,556 @@
             "abgerufen": "2026-11-20"
           },
           {
+            "jahr": 2024,
+            "datum": "2024-04-20",
+            "turnier": "STS Teufenthal Open - ITSF 250 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708289361&lang=de&competitionId=0&originalCompetitionId=708289363&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-01-20",
+            "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708135534&lang=de&competitionId=0&originalCompetitionId=708285397&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-07-13",
+            "turnier": "World Series by Garlando 2023",
+            "serie": "WS",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=652277329&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280484&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-05-27",
+            "turnier": "Swiss Tablesoccer Series St. Gallen - ITSF Pro Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=647140874&lang=de&competitionId=0&originalCompetitionId=647140876&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-01-28",
+            "turnier": "Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=635731167&lang=de&competitionId=0&originalCompetitionId=635731180&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-01-28",
+            "turnier": "Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=635731167&lang=de&competitionId=0&originalCompetitionId=635731268&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-08-11",
+            "turnier": "World Series by Garlando 2022",
+            "serie": "WS",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=521567580&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-07-30",
+            "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Mixed Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210652&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-07-30",
+            "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210703&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-04-30",
+            "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Pro Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=489733420&lang=de&competitionId=0&originalCompetitionId=489733422&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-01-08",
+            "turnier": "Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482267097&lang=de&competitionId=0&originalCompetitionId=482267099&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-01-08",
+            "turnier": "Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482267097&lang=de&competitionId=0&originalCompetitionId=482267177&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2021,
+            "datum": "2021-09-18",
+            "turnier": "STS Riggisberg - ITSF Master Tour 2021",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=439951090&lang=de&competitionId=0&originalCompetitionId=439951103&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2021,
+            "datum": "2021-08-07",
+            "turnier": "STS Liestal - ITSF Master Tour 2021",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=436045552&lang=de&competitionId=0&originalCompetitionId=436045565&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-02-01",
+            "turnier": "Jahreseröffnungsturnier 2020",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=429041245&lang=de&competitionId=0&originalCompetitionId=429041335&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-10-05",
+            "turnier": "Gams Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=383561215&lang=de&competitionId=0&originalCompetitionId=383561217&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-06-01",
+            "turnier": "Simmental Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Mixed Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=318483924&lang=de&competitionId=0&originalCompetitionId=328284787&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-06-01",
+            "turnier": "Simmental Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=318483924&lang=de&competitionId=0&originalCompetitionId=318483926&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-04-18",
+            "turnier": "World Series by Garlando 2019",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310183224&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-04-18",
+            "turnier": "World Series by Garlando 2019",
+            "serie": "WS",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310183098&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Mixed Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835769&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=302153251&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-01-26",
+            "turnier": "Saisoneröffnungsturnier 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=296044056&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-01-26",
+            "turnier": "Saisoneröffnungsturnier 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=296044134&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-09-29",
+            "turnier": "Buchs Pro Tour",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=247164114&lang=de&competitionId=0&originalCompetitionId=247164116&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-09-01",
+            "turnier": "Simmental Open 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=246982504&lang=de&competitionId=0&originalCompetitionId=246982506&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-09-01",
+            "turnier": "Simmental Open 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=246982504&lang=de&competitionId=0&originalCompetitionId=246982584&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-06-21",
+            "turnier": "World Series by Garlando 2018",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047419&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-06-21",
+            "turnier": "World Series by Garlando 2018",
+            "serie": "WS",
+            "disziplin": "Classic Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047316&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-05-05",
+            "turnier": "Goldach Pro Tour 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971153&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-05-05",
+            "turnier": "Goldach Pro Tour 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-03-10",
+            "turnier": "Haldenstein Masters 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157254645&lang=de&competitionId=0&originalCompetitionId=157254647&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-03-10",
+            "turnier": "Haldenstein Masters 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157254645&lang=de&competitionId=0&originalCompetitionId=157254735&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-03",
+            "turnier": "Austrian National Championships 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=163605060&lang=de&competitionId=0&originalCompetitionId=163607917&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-03",
+            "turnier": "Austrian National Championships 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=163605060&lang=de&competitionId=0&originalCompetitionId=163609234&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-09-14",
+            "turnier": "World Series by Leonhart - 2017",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=136272631&lang=de&competitionId=0&originalCompetitionId=136272765&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-08-26",
+            "turnier": "Simmental Open 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=117020461&lang=de&competitionId=0&originalCompetitionId=117020551&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-08-26",
+            "turnier": "Simmental Open 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=117020461&lang=de&competitionId=0&originalCompetitionId=117020463&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-07-06",
+            "turnier": "World Series by Garlando - 2017",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=115651651&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-05-05",
+            "turnier": "Copenhagen Open 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115589752&lang=de&competitionId=0&originalCompetitionId=115590441&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-03-10",
+            "turnier": "Czech Leonhart Championship 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Saturday DYP",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005717&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-01-07",
+            "turnier": "Lucerne Pro Tour 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390270&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-03",
+            "turnier": "Simmental Pro Tour 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34165073&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-03",
+            "turnier": "Simmental Pro Tour 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34164995&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-07-21",
+            "turnier": "World Series by Garlando - 2016",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12395735&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-07-21",
+            "turnier": "World Series by Garlando - 2016",
+            "serie": "WS",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12390830&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-02-27",
+            "turnier": "TSS Goldach Pro Tour - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11795758&lang=de&competitionId=0&originalCompetitionId=11795760&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-02-27",
+            "turnier": "TSS Goldach Pro Tour - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11795758&lang=de&competitionId=0&originalCompetitionId=11795838&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-11-21",
+            "turnier": "Tablesoccer Switzerland Pro Tour - 2015",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11373615&lang=de&competitionId=0&originalCompetitionId=11373695&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-07-10",
+            "turnier": "Garlando WCS - 2015",
+            "serie": "WS",
+            "disziplin": "Doubles - P",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9389560&lang=de&competitionId=0&originalCompetitionId=11351909&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-02-27",
+            "turnier": "Danube Open - 2015",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10876551&lang=de&competitionId=0&originalCompetitionId=10876570&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-02-27",
+            "turnier": "Danube Open - 2015",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10876551&lang=de&competitionId=0&originalCompetitionId=10877612&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-11-22",
+            "turnier": "Thun Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9279922&lang=de&competitionId=0&originalCompetitionId=9280001&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-11-22",
+            "turnier": "Thun Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9279922&lang=de&competitionId=0&originalCompetitionId=9279923&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
             "jahr": 2014,
             "datum": "2014-10-04",
             "turnier": "Swiss Open 2014",
@@ -1237,6 +1810,16 @@
             "rang": 3,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-08-30",
+            "turnier": "Goldach Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9031521&lang=de&competitionId=0&originalCompetitionId=9031522&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2014,
@@ -1282,10 +1865,10 @@
       },
       {
         "id": "rayan-van-stokkum",
-        "gold": 4,
-        "silber": 5,
-        "bronze": 5,
-        "summe": 14,
+        "gold": 16,
+        "silber": 16,
+        "bronze": 11,
+        "summe": 43,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -1425,6 +2008,577 @@
             "disziplin": "Junior U19 Doubles",
             "rang": 3,
             "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-09-06",
+            "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297486&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-09-06",
+            "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297544&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-09-06",
+            "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297422&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-07-20",
+            "turnier": "1. Saar Youth Trophy - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "U19 Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708191148&lang=de&competitionId=0&originalCompetitionId=708242088&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-05-24",
+            "turnier": "London Masters - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708359635&lang=de&competitionId=0&originalCompetitionId=708359770&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-04-19",
+            "turnier": "25th Czech Rosengart Championship 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708288717&lang=de&competitionId=0&originalCompetitionId=708288794&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-04-19",
+            "turnier": "25th Czech Rosengart Championship 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708288717&lang=de&competitionId=0&originalCompetitionId=708288852&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-03-23",
+            "turnier": "STS Richterswil Open - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junioren U19 Doppel",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708161634&lang=de&competitionId=0&originalCompetitionId=708161711&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-03-23",
+            "turnier": "STS Richterswil Open - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junioren U19 Einzel",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708161634&lang=de&competitionId=0&originalCompetitionId=708161769&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-02-24",
+            "turnier": "Open National Hoenheim - ITSF Master Series 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708147026&lang=de&competitionId=0&originalCompetitionId=708147103&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-02-24",
+            "turnier": "Open National Hoenheim - ITSF Master Series 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708147026&lang=de&competitionId=0&originalCompetitionId=708147161&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-01-12",
+            "turnier": "2. Austrian Leonhart Masters - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708134508&lang=de&competitionId=0&originalCompetitionId=708134643&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-11-18",
+            "turnier": "2. ITSF YOUTH MASTERS - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "U19 Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=671025156&lang=de&competitionId=0&originalCompetitionId=671025236&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-10-27",
+            "turnier": "Hungarian Leonhart Open - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "U19 Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=700476004&lang=de&competitionId=0&originalCompetitionId=706035868&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-08-04",
+            "turnier": "Roberto Sport Prague Masters 2023 - ITSF Master Series 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=670072431&lang=de&competitionId=0&originalCompetitionId=670072508&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-08-04",
+            "turnier": "Roberto Sport Prague Masters 2023 - ITSF Master Series 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=670072431&lang=de&competitionId=0&originalCompetitionId=670072566&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-07-13",
+            "turnier": "World Series by Garlando 2023",
+            "serie": "WS",
+            "disziplin": "U16 Classic Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=657315930&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-07-13",
+            "turnier": "World Series by Garlando 2023",
+            "serie": "WS",
+            "disziplin": "U16 Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=670023273&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280548&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280606&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-05-18",
+            "turnier": "World Series by Bonzini 2023",
+            "serie": "WS",
+            "disziplin": "Junior U16 Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=638154605&lang=de&competitionId=0&originalCompetitionId=638154758&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-04-29",
+            "turnier": "ITSF Youth Masters Hamburg - ITSF Master Series 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "U16 Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=647139850&lang=de&competitionId=0&originalCompetitionId=647145657&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-10-07",
+            "turnier": "Sofia Grand Masters XIII 2022 - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=598585404&lang=de&competitionId=0&originalCompetitionId=598585481&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-10-07",
+            "turnier": "Sofia Grand Masters XIII 2022 - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=598585404&lang=de&competitionId=0&originalCompetitionId=598585539&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-08-27",
+            "turnier": "ITSF Pro Tour Ottweiler - ITSF Pro Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=490256588&lang=de&competitionId=0&originalCompetitionId=490256626&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-08-11",
+            "turnier": "World Series by Garlando 2022",
+            "serie": "WS",
+            "disziplin": "U16 J. Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=527761340&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-07-30",
+            "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210679&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-07-30",
+            "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210737&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-03-04",
+            "turnier": "Vienna Open II.- ITSF Master Tour 2022",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482266759&lang=de&competitionId=0&originalCompetitionId=482266894&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "peter-felder",
+        "gold": 6,
+        "silber": 13,
+        "bronze": 8,
+        "summe": 27,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-08-15",
+            "turnier": "STS26 - Zürich - ITSF 250",
+            "serie": "STF",
+            "disziplin": "Open Mixed",
+            "rang": 2,
+            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-10-11",
+            "turnier": "STS Teufenthal - 2025/06 - ITSF 500 WT 2025",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://app.tablesoccer.org/p/Z5GBMZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-06-23",
+            "turnier": "World Cup 2025",
+            "serie": "ITSF",
+            "disziplin": "Men Classic",
+            "rang": 1,
+            "ort": "Zaragoza, Spanien",
+            "titel": "Weltmeister",
+            "quelle": "https://app.tablesoccer.org/p/world-cup-2025",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-06-07",
+            "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-02-22",
+            "turnier": "STS Luzern (Rothenburg) - 2025/02",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-02-22",
+            "turnier": "STS Luzern (Rothenburg) - 2025/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-04-20",
+            "turnier": "STS Teufenthal Open - ITSF 250 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708289361&lang=de&competitionId=0&originalCompetitionId=710121063&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-01-20",
+            "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708135534&lang=de&competitionId=0&originalCompetitionId=708135614&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280572&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-10-08",
+            "turnier": "Swiss Open 2022",
+            "serie": "P4P",
+            "disziplin": "Offenes Einzel",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/183",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-06-21",
+            "turnier": "World Series by Garlando 2018",
+            "serie": "WS",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047419&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-05-05",
+            "turnier": "Goldach Pro Tour 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971153&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-05-05",
+            "turnier": "Goldach Pro Tour 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-07-06",
+            "turnier": "World Series by Garlando - 2017",
+            "serie": "WS",
+            "disziplin": "Goalie War",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-05-13",
+            "turnier": "ITSF Pro Tour Pfullingen 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49520149&lang=de&competitionId=0&originalCompetitionId=49520229&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-03-04",
+            "turnier": "ITSF Pro Tour Haldenstein 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45795786&lang=de&competitionId=0&originalCompetitionId=45795866&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-01-07",
+            "turnier": "Lucerne Pro Tour 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390270&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-01-07",
+            "turnier": "Lucerne Pro Tour 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390348&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-03",
+            "turnier": "Simmental Pro Tour 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34165073&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-11-12",
+            "turnier": "Capricorn Pro Tour 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34163169&lang=de&competitionId=0&originalCompetitionId=34163249&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-10-01",
+            "turnier": "Swiss Open 2016",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-11-22",
+            "turnier": "Thun Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9279922&lang=de&competitionId=0&originalCompetitionId=9279923&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-10-04",
+            "turnier": "Swiss Open 2014",
+            "serie": "P4P",
+            "disziplin": "Neulinge Einzel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-10-04",
+            "turnier": "Swiss Open 2014",
+            "serie": "P4P",
+            "disziplin": "Neulinge Doppel",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-09-20",
+            "turnier": "Capricorn Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9119519&lang=de&competitionId=0&originalCompetitionId=9119520&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-07-11",
+            "turnier": "Garlando WCS - 2014",
+            "serie": "WS",
+            "disziplin": "Doubles - R",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9052429&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-01-25",
+            "turnier": "Maritim Open 2014",
+            "serie": "P4P",
+            "disziplin": "D.Y.P.",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/116",
             "abgerufen": "2026-11-20"
           }
         ]
@@ -1569,102 +2723,80 @@
         ]
       },
       {
-        "id": "peter-felder",
-        "gold": 3,
-        "silber": 5,
-        "bronze": 3,
-        "summe": 11,
+        "id": "adrian-schuler",
+        "gold": 2,
+        "silber": 3,
+        "bronze": 5,
+        "summe": 10,
         "platzierungen": [
           {
-            "jahr": 2026,
-            "datum": "2026-08-15",
-            "turnier": "STS26 - Zürich - ITSF 250",
-            "serie": "STF",
-            "disziplin": "Open Mixed",
-            "rang": 2,
-            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-10-11",
-            "turnier": "STS Teufenthal - 2025/06 - ITSF 500 WT 2025",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 2,
-            "quelle": "https://app.tablesoccer.org/p/Z5GBMZ",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-06-23",
-            "turnier": "World Cup 2025",
-            "serie": "ITSF",
-            "disziplin": "Men Classic",
-            "rang": 1,
-            "ort": "Zaragoza, Spanien",
-            "titel": "Weltmeister",
-            "quelle": "https://app.tablesoccer.org/p/world-cup-2025",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-06-07",
-            "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
-            "serie": "STF",
+            "jahr": 2019,
+            "datum": "2019-08-24",
+            "turnier": "Haldenstein Masters 2019",
+            "serie": "ITSF-Tour",
             "disziplin": "Open Doubles",
             "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=328276202&lang=de&competitionId=0&originalCompetitionId=328276204&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
-            "jahr": 2025,
-            "datum": "2025-02-22",
-            "turnier": "STS Luzern (Rothenburg) - 2025/02",
-            "serie": "STF",
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=302153251&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-05-05",
+            "turnier": "Goldach Pro Tour 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971153&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-01-06",
+            "turnier": "Jahreseröffnungsturnier 2018",
+            "serie": "ITSF-Tour",
             "disziplin": "Open Singles",
             "rang": 2,
-            "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157253328&lang=de&competitionId=0&originalCompetitionId=157253418&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
-            "jahr": 2025,
-            "datum": "2025-02-22",
-            "turnier": "STS Luzern (Rothenburg) - 2025/02",
-            "serie": "STF",
+            "jahr": 2017,
+            "datum": "2017-08-26",
+            "turnier": "Simmental Open 2017",
+            "serie": "ITSF-Tour",
             "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
-            "abgerufen": "2026-11-20"
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=117020461&lang=de&competitionId=0&originalCompetitionId=117020463&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
-            "jahr": 2022,
-            "datum": "2022-10-08",
-            "turnier": "Swiss Open 2022",
-            "serie": "P4P",
-            "disziplin": "Offenes Einzel",
-            "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/183",
-            "abgerufen": "2026-11-20"
+            "jahr": 2017,
+            "datum": "2017-01-07",
+            "turnier": "Lucerne Pro Tour 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390270&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2016,
             "datum": "2016-10-01",
             "turnier": "Swiss Open 2016",
             "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2014,
-            "datum": "2014-10-04",
-            "turnier": "Swiss Open 2014",
-            "serie": "P4P",
             "disziplin": "Neulinge Einzel",
             "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
             "abgerufen": "2026-11-20"
           },
           {
@@ -1679,13 +2811,62 @@
           },
           {
             "jahr": 2014,
-            "datum": "2014-01-25",
-            "turnier": "Maritim Open 2014",
-            "serie": "P4P",
-            "disziplin": "D.Y.P.",
+            "datum": "2014-09-20",
+            "turnier": "Capricorn Pro Tour - 2014",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
             "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/116",
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9119519&lang=de&competitionId=0&originalCompetitionId=9119520&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2014,
+            "datum": "2014-07-11",
+            "turnier": "Garlando WCS - 2014",
+            "serie": "WS",
+            "disziplin": "Doubles - R",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9052429&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "matteo-cosi",
+        "gold": 2,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-09-05",
+            "turnier": "STS26 - Val d'Iliez",
+            "serie": "STF",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doppel",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835773&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-01-26",
+            "turnier": "Saisoneröffnungsturnier 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=302789692&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1693,8 +2874,8 @@
         "id": "reto-odermatt",
         "gold": 2,
         "silber": 0,
-        "bronze": 3,
-        "summe": 5,
+        "bronze": 4,
+        "summe": 6,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -1745,6 +2926,16 @@
             "rang": 1,
             "quelle": "https://app.tablesoccer.org/p/69NPJ6",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-05-06",
+            "turnier": "Goldach ITSF Masters 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49519545&lang=de&competitionId=0&originalCompetitionId=49519547&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1847,50 +3038,99 @@
         ]
       },
       {
-        "id": "adrian-schuler",
+        "id": "luca-escribano",
         "gold": 1,
         "silber": 1,
-        "bronze": 0,
-        "summe": 2,
+        "bronze": 1,
+        "summe": 3,
         "platzierungen": [
           {
-            "jahr": 2016,
-            "datum": "2016-10-01",
-            "turnier": "Swiss Open 2016",
-            "serie": "P4P",
-            "disziplin": "Neulinge Einzel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
+            "jahr": 2026,
+            "datum": "2026-08-15",
+            "turnier": "STS26 - Zürich - ITSF 250",
+            "serie": "STF",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
             "abgerufen": "2026-11-20"
           },
           {
-            "jahr": 2014,
-            "datum": "2014-10-04",
-            "turnier": "Swiss Open 2014",
-            "serie": "P4P",
-            "disziplin": "Neulinge Doppel",
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doppel",
             "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835773&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-01-26",
+            "turnier": "Saisoneröffnungsturnier 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=302789692&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
       {
-        "id": "matteo-cosi",
+        "id": "manuel-ragonesi",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-03-01",
+            "turnier": "STRT26 CFTJS - OD - 2026/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/6AYJA6",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-08-02",
+            "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
+            "serie": "STF",
+            "disziplin": "Open Mixed",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/63DVK7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-08-24",
+            "turnier": "World Series by Leonhart 2023",
+            "serie": "WS",
+            "disziplin": "Thursday DYP",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=660540686&lang=de&competitionId=0&originalCompetitionId=670084108&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "fabio-di-crescenzo",
         "gold": 1,
         "silber": 0,
         "bronze": 0,
         "summe": 1,
         "platzierungen": [
           {
-            "jahr": 2026,
-            "datum": "2026-09-05",
-            "turnier": "STS26 - Val d'Iliez",
-            "serie": "STF",
-            "disziplin": "Amateur Doppel",
+            "jahr": 2017,
+            "datum": "2017-03-04",
+            "turnier": "ITSF Pro Tour Haldenstein 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doubles",
             "rang": 1,
-            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45795786&lang=de&competitionId=0&originalCompetitionId=45933972&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1924,6 +3164,25 @@
         ]
       },
       {
+        "id": "fabio-marty",
+        "gold": 0,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2018,
+            "datum": "2018-01-06",
+            "turnier": "Jahreseröffnungsturnier 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Neuling Doppel",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157253328&lang=de&competitionId=0&originalCompetitionId=157253382&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
         "id": "jan-angara",
         "gold": 0,
         "silber": 1,
@@ -1943,7 +3202,7 @@
         ]
       },
       {
-        "id": "manuel-ragonesi",
+        "id": "pascal-felber",
         "gold": 0,
         "silber": 0,
         "bronze": 2,
@@ -1960,33 +3219,14 @@
             "abgerufen": "2026-11-20"
           },
           {
-            "jahr": 2025,
-            "datum": "2025-08-02",
-            "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
-            "serie": "STF",
-            "disziplin": "Open Mixed",
+            "jahr": 2017,
+            "datum": "2017-05-06",
+            "turnier": "Goldach ITSF Masters 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
             "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/63DVK7",
-            "abgerufen": "2026-11-20"
-          }
-        ]
-      },
-      {
-        "id": "luca-escribano",
-        "gold": 0,
-        "silber": 0,
-        "bronze": 1,
-        "summe": 1,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-08-15",
-            "turnier": "STS26 - Zürich - ITSF 250",
-            "serie": "STF",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49519545&lang=de&competitionId=0&originalCompetitionId=49519547&playerId=0&view=final_ranking",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -2005,25 +3245,6 @@
             "disziplin": "Neulinge Doppel",
             "rang": 3,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/83",
-            "abgerufen": "2026-11-20"
-          }
-        ]
-      },
-      {
-        "id": "pascal-felber",
-        "gold": 0,
-        "silber": 0,
-        "bronze": 1,
-        "summe": 1,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-03-01",
-            "turnier": "STRT26 CFTJS - OD - 2026/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/6AYJA6",
             "abgerufen": "2026-11-20"
           }
         ]
@@ -2052,8 +3273,8 @@
   "champions": {
     "abgerufen": "2026-11-20",
     "summe": {
-      "teilnahmen": 3,
-      "podest": 0
+      "teilnahmen": 6,
+      "podest": 1
     },
     "teilnahmen": [
       {
@@ -2117,6 +3338,45 @@
         ],
         "quelle": "https://app.tablesoccer.org/p/G63WD6",
         "abgerufen": "2026-11-20"
+      },
+      {
+        "jahr": 2022,
+        "datum": "2022-11-19",
+        "wettbewerb": "European Champions League 2022",
+        "klasse": "Men",
+        "ort": "",
+        "rang": 9,
+        "teams": 19,
+        "podest": false,
+        "spieler": [],
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=577487501&lang=de&competitionId=0&originalCompetitionId=577487502&playerId=0&view=final_ranking",
+        "abgerufen": "2026-11-21"
+      },
+      {
+        "jahr": 2018,
+        "datum": "2018-11-30",
+        "wettbewerb": "European Champions League 2018",
+        "klasse": "Men",
+        "ort": "",
+        "rang": 9,
+        "teams": 20,
+        "podest": false,
+        "spieler": [],
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=281441138&lang=de&competitionId=0&originalCompetitionId=281441139&playerId=0&view=final_ranking",
+        "abgerufen": "2026-11-21"
+      },
+      {
+        "jahr": 2017,
+        "datum": "2017-09-14",
+        "wettbewerb": "European Champions League 2017",
+        "klasse": "Men",
+        "ort": "",
+        "rang": 2,
+        "teams": 15,
+        "podest": true,
+        "spieler": [],
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=136272631&lang=de&competitionId=0&originalCompetitionId=136280421&playerId=0&view=final_ranking",
+        "abgerufen": "2026-11-21"
       }
     ]
   },
@@ -2463,7 +3723,10 @@
     "STF 2019 bis August 2024: archivierte Verbandsseiten, noch nicht ausgewertet",
     "DTFB und Bundesliga: noch nicht durchsucht",
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
-    "ITSF World Series vor 2024 und World Cups vor 2025: Coral liefert nichts",
-    "Vor 2023 liefert Coral keine Champions League; frühere Teilnahmen sind nicht belegt"
+    "ITSF bis 2024 aus FAST nachgetragen (daten/fast.json, 850 Turniere der ITSF-Liste, die FAST noch kennt). Offen: 446 Turniere 2005 bis 2014, von denen das Web-Archiv nur die Startseite hält, ohne Rangliste je Wettbewerb",
+    "FAST kennt nur Turniere mit ITSF-Wertung; Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter",
+    "FAST: 10 Podestplätze von «Arpad Wicki» mit Lizenz SVK zurückgestellt, bis Vasco bestätigt, dass es der Arpad Wicki des TFCL ist",
+    "FAST: Medaillen der Schweizer Nationalteams 2014 bis 2023 gefunden, FAST zeigt aber keine Kader; keiner Person zugeordnet",
+    "Champions League 2014 bis 2022 in FAST durchsucht: TFC Luzern 2017 (Rang 2), 2018 und 2022 (je Rang 9). FAST zeigt keinen Kader und keinen Ort; vor 2014 nicht belegt"
   ]
 }

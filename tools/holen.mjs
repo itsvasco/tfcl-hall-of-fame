@@ -21,9 +21,10 @@ export const echt = {
   rangliste: (saison, kategorie, seite) => holeJson(`${TS}?tour=78&season=${saison}&rule=1&category=${kategorie}&page=${seite}`),
   archiv: (zeitstempel) => text(`https://web.archive.org/web/${zeitstempel}/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten`),
   coral: (slugs) => holeTurniere(slugs),
-  // Handdateien, vom Sammelskript (tools/turniere-sammeln.mjs) erzeugt
-  turniere: async () => hand('turniere.json'),
-  champions: async () => hand('champions-league.json'),
+  // Handdateien, vom Sammelskript (tools/turniere-sammeln.mjs) erzeugt, dazu daten/fast.json (FAST, das alte
+  // Turniersystem der ITSF bis 2024, von Hand nachgeführt und vom Sammelskript nie überschrieben)
+  turniere: async () => { const t = hand('turniere.json'); return { ...t, eintraege: [...t.eintraege, ...hand('fast.json').eintraege] }; },
+  champions: async () => { const c = hand('champions-league.json'); return { ...c, teilnahmen: [...c.teilnahmen, ...(hand('fast.json').champions || [])] }; },
   fordere: (nr) => holeJson(`https://fordere.ch/api/seasons/${nr}/final-day`),
   // PDF der Clubliga als Textstücke mit Lage: [{ seite, x, y, str }]
   async pdf(jahr) {

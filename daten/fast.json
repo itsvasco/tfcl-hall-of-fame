@@ -1,0 +1,1629 @@
+{
+  "abgerufen": "2026-11-21",
+  "hinweis": "Handdatei: Podestplätze aus FAST, dem alten Turniersystem der ITSF (bis 2024). Quelle je Eintrag die Schlussrangliste des Wettbewerbs in FAST. Bereits vorhandene Plätze (P4P, Verband, Coral, DTFB) stehen nicht doppelt hier.",
+  "turnierliste": {
+    "quelle": "https://web.archive.org/web/20241202125719/https://www.tablesoccer.org/page/rankings",
+    "turniere": 1301,
+    "jahre": "2005 bis 2024",
+    "abrufbar_in_fast": 850,
+    "nur_archiv": 446
+  },
+  "eintraege": [
+    {
+      "jahr": 2024,
+      "datum": "2024-09-06",
+      "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297486&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-09-06",
+      "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297544&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-09-06",
+      "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=722297409&lang=de&competitionId=0&originalCompetitionId=722297422&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-07-20",
+      "turnier": "1. Saar Youth Trophy - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "U19 Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708191148&lang=de&competitionId=0&originalCompetitionId=708242088&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-24",
+      "turnier": "London Masters - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708359635&lang=de&competitionId=0&originalCompetitionId=708359770&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-20",
+      "turnier": "STS Teufenthal Open - ITSF 250 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708289361&lang=de&competitionId=0&originalCompetitionId=710121063&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-20",
+      "turnier": "STS Teufenthal Open - ITSF 250 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708289361&lang=de&competitionId=0&originalCompetitionId=708289363&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-19",
+      "turnier": "25th Czech Rosengart Championship 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708288717&lang=de&competitionId=0&originalCompetitionId=708288794&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-19",
+      "turnier": "25th Czech Rosengart Championship 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708288717&lang=de&competitionId=0&originalCompetitionId=708288852&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-03-23",
+      "turnier": "STS Richterswil Open - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junioren U19 Doppel",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708161634&lang=de&competitionId=0&originalCompetitionId=708161711&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-03-23",
+      "turnier": "STS Richterswil Open - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junioren U19 Einzel",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708161634&lang=de&competitionId=0&originalCompetitionId=708161769&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-02-24",
+      "turnier": "Open National Hoenheim - ITSF Master Series 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708147026&lang=de&competitionId=0&originalCompetitionId=708147103&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-02-24",
+      "turnier": "Open National Hoenheim - ITSF Master Series 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708147026&lang=de&competitionId=0&originalCompetitionId=708147161&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708135534&lang=de&competitionId=0&originalCompetitionId=708285397&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708135534&lang=de&competitionId=0&originalCompetitionId=708135614&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-01-12",
+      "turnier": "2. Austrian Leonhart Masters - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708134508&lang=de&competitionId=0&originalCompetitionId=708134643&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-11-18",
+      "turnier": "2. ITSF YOUTH MASTERS - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "U19 Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=671025156&lang=de&competitionId=0&originalCompetitionId=671025236&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-10-27",
+      "turnier": "Hungarian Leonhart Open - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "U19 Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=700476004&lang=de&competitionId=0&originalCompetitionId=706035868&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-08-24",
+      "turnier": "World Series by Leonhart 2023",
+      "serie": "WS",
+      "disziplin": "Thursday DYP",
+      "rang": 1,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=660540686&lang=de&competitionId=0&originalCompetitionId=670084108&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-08-04",
+      "turnier": "Roberto Sport Prague Masters 2023 - ITSF Master Series 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=670072431&lang=de&competitionId=0&originalCompetitionId=670072508&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-08-04",
+      "turnier": "Roberto Sport Prague Masters 2023 - ITSF Master Series 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=670072431&lang=de&competitionId=0&originalCompetitionId=670072566&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-07-13",
+      "turnier": "World Series by Garlando 2023",
+      "serie": "WS",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=652277329&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-07-13",
+      "turnier": "World Series by Garlando 2023",
+      "serie": "WS",
+      "disziplin": "U16 Classic Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=657315930&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-07-13",
+      "turnier": "World Series by Garlando 2023",
+      "serie": "WS",
+      "disziplin": "U16 Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652277322&lang=de&competitionId=0&originalCompetitionId=670023273&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280548&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280606&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280484&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280572&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-27",
+      "turnier": "Swiss Tablesoccer Series St. Gallen - ITSF Pro Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=647140874&lang=de&competitionId=0&originalCompetitionId=647140876&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-18",
+      "turnier": "World Series by Bonzini 2023",
+      "serie": "WS",
+      "disziplin": "Junior U16 Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=638154605&lang=de&competitionId=0&originalCompetitionId=638154758&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-04-29",
+      "turnier": "ITSF Youth Masters Hamburg - ITSF Master Series 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "U16 Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=647139850&lang=de&competitionId=0&originalCompetitionId=647145657&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-01-28",
+      "turnier": "Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=635731167&lang=de&competitionId=0&originalCompetitionId=635731180&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-01-28",
+      "turnier": "Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=635731167&lang=de&competitionId=0&originalCompetitionId=635731268&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-10-07",
+      "turnier": "Sofia Grand Masters XIII 2022 - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=598585404&lang=de&competitionId=0&originalCompetitionId=598585481&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-10-07",
+      "turnier": "Sofia Grand Masters XIII 2022 - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=598585404&lang=de&competitionId=0&originalCompetitionId=598585539&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-27",
+      "turnier": "ITSF Pro Tour Ottweiler - ITSF Pro Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=490256588&lang=de&competitionId=0&originalCompetitionId=490256626&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-11",
+      "turnier": "World Series by Garlando 2022",
+      "serie": "WS",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=521567580&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-11",
+      "turnier": "World Series by Garlando 2022",
+      "serie": "WS",
+      "disziplin": "U16 J. Singles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=527761340&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210679&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210737&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Mixed Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210652&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=526210602&lang=de&competitionId=0&originalCompetitionId=526210703&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-04-30",
+      "turnier": "Swiss Tablesoccer Series Riggisberg - ITSF Pro Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=489733420&lang=de&competitionId=0&originalCompetitionId=489733422&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-03-04",
+      "turnier": "Vienna Open II.- ITSF Master Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482266759&lang=de&competitionId=0&originalCompetitionId=482266894&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-01-08",
+      "turnier": "Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482267097&lang=de&competitionId=0&originalCompetitionId=482267099&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-01-08",
+      "turnier": "Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482267097&lang=de&competitionId=0&originalCompetitionId=482267177&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2021,
+      "datum": "2021-09-18",
+      "turnier": "STS Riggisberg - ITSF Master Tour 2021",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=439951090&lang=de&competitionId=0&originalCompetitionId=439951103&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2021,
+      "datum": "2021-08-07",
+      "turnier": "STS Liestal - ITSF Master Tour 2021",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=436045552&lang=de&competitionId=0&originalCompetitionId=436045565&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2020,
+      "datum": "2020-02-01",
+      "turnier": "Jahreseröffnungsturnier 2020",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=429041245&lang=de&competitionId=0&originalCompetitionId=429041335&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-10-05",
+      "turnier": "Gams Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=383561215&lang=de&competitionId=0&originalCompetitionId=383561217&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-08-24",
+      "turnier": "Haldenstein Masters 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=328276202&lang=de&competitionId=0&originalCompetitionId=328276204&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-06-01",
+      "turnier": "Simmental Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Mixed Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=318483924&lang=de&competitionId=0&originalCompetitionId=328284787&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-06-01",
+      "turnier": "Simmental Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=318483924&lang=de&competitionId=0&originalCompetitionId=318483926&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-04-18",
+      "turnier": "World Series by Garlando 2019",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310183224&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-04-18",
+      "turnier": "World Series by Garlando 2019",
+      "serie": "WS",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=310183091&lang=de&competitionId=0&originalCompetitionId=310183098&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-03-30",
+      "turnier": "Riggisberg Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Mixed Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835769&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-03-30",
+      "turnier": "Riggisberg Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=302153251&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-03-30",
+      "turnier": "Riggisberg Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=302153251&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-03-30",
+      "turnier": "Riggisberg Open 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Rookie Doppel",
+      "rang": 2,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835773&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-01-26",
+      "turnier": "Saisoneröffnungsturnier 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=296044056&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-01-26",
+      "turnier": "Saisoneröffnungsturnier 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=296044134&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-01-26",
+      "turnier": "Saisoneröffnungsturnier 2019",
+      "serie": "ITSF-Tour",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=302789692&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-09-29",
+      "turnier": "Buchs Pro Tour",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=247164114&lang=de&competitionId=0&originalCompetitionId=247164116&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-09-01",
+      "turnier": "Simmental Open 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=246982504&lang=de&competitionId=0&originalCompetitionId=246982506&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-09-01",
+      "turnier": "Simmental Open 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=246982504&lang=de&competitionId=0&originalCompetitionId=246982584&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-06-21",
+      "turnier": "World Series by Garlando 2018",
+      "serie": "WS",
+      "disziplin": "Classic Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047316&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-06-21",
+      "turnier": "World Series by Garlando 2018",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047419&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-06-21",
+      "turnier": "World Series by Garlando 2018",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=218047286&lang=de&competitionId=0&originalCompetitionId=218047419&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-05-05",
+      "turnier": "Goldach Pro Tour 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971153&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-05-05",
+      "turnier": "Goldach Pro Tour 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971153&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-05-05",
+      "turnier": "Goldach Pro Tour 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-05-05",
+      "turnier": "Goldach Pro Tour 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-03-10",
+      "turnier": "Haldenstein Masters 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157254645&lang=de&competitionId=0&originalCompetitionId=157254647&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-03-10",
+      "turnier": "Haldenstein Masters 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157254645&lang=de&competitionId=0&originalCompetitionId=157254735&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-01-06",
+      "turnier": "Jahreseröffnungsturnier 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Neuling Doppel",
+      "rang": 2,
+      "personen": [
+        "fabio-marty"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157253328&lang=de&competitionId=0&originalCompetitionId=157253382&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-01-06",
+      "turnier": "Jahreseröffnungsturnier 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157253328&lang=de&competitionId=0&originalCompetitionId=157253418&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-03",
+      "turnier": "Austrian National Championships 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=163605060&lang=de&competitionId=0&originalCompetitionId=163607917&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-03",
+      "turnier": "Austrian National Championships 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=163605060&lang=de&competitionId=0&originalCompetitionId=163609234&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-09-14",
+      "turnier": "World Series by Leonhart - 2017",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=136272631&lang=de&competitionId=0&originalCompetitionId=136272765&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-08-26",
+      "turnier": "Simmental Open 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "adrian-schuler",
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=117020461&lang=de&competitionId=0&originalCompetitionId=117020463&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-08-26",
+      "turnier": "Simmental Open 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=117020461&lang=de&competitionId=0&originalCompetitionId=117020551&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-07-06",
+      "turnier": "World Series by Garlando - 2017",
+      "serie": "WS",
+      "disziplin": "Goalie War",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-07-06",
+      "turnier": "World Series by Garlando - 2017",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=115651651&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-05-13",
+      "turnier": "ITSF Pro Tour Pfullingen 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49520149&lang=de&competitionId=0&originalCompetitionId=49520229&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-05-06",
+      "turnier": "Goldach ITSF Masters 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "pascal-felber",
+        "reto-odermatt"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49519545&lang=de&competitionId=0&originalCompetitionId=49519547&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-05-05",
+      "turnier": "Copenhagen Open 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115589752&lang=de&competitionId=0&originalCompetitionId=115590441&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-03-10",
+      "turnier": "Czech Leonhart Championship 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Saturday DYP",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005717&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-03-04",
+      "turnier": "ITSF Pro Tour Haldenstein 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45795786&lang=de&competitionId=0&originalCompetitionId=45795866&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-03-04",
+      "turnier": "ITSF Pro Tour Haldenstein 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "fabio-di-crescenzo"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45795786&lang=de&competitionId=0&originalCompetitionId=45933972&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-01-07",
+      "turnier": "Lucerne Pro Tour 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390270&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-01-07",
+      "turnier": "Lucerne Pro Tour 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390270&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-01-07",
+      "turnier": "Lucerne Pro Tour 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45390268&lang=de&competitionId=0&originalCompetitionId=45390348&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-03",
+      "turnier": "Simmental Pro Tour 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34164995&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-03",
+      "turnier": "Simmental Pro Tour 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34165073&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-03",
+      "turnier": "Simmental Pro Tour 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34165073&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-11-12",
+      "turnier": "Capricorn Pro Tour 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34163169&lang=de&competitionId=0&originalCompetitionId=34163249&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-07-21",
+      "turnier": "World Series by Garlando - 2016",
+      "serie": "WS",
+      "disziplin": "Mixed Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12395735&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-07-21",
+      "turnier": "World Series by Garlando - 2016",
+      "serie": "WS",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11823564&lang=de&competitionId=0&originalCompetitionId=12390830&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-02-27",
+      "turnier": "TSS Goldach Pro Tour - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11795758&lang=de&competitionId=0&originalCompetitionId=11795760&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-02-27",
+      "turnier": "TSS Goldach Pro Tour - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11795758&lang=de&competitionId=0&originalCompetitionId=11795838&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-11-21",
+      "turnier": "Tablesoccer Switzerland Pro Tour - 2015",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=11373615&lang=de&competitionId=0&originalCompetitionId=11373695&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-07-10",
+      "turnier": "Garlando WCS - 2015",
+      "serie": "WS",
+      "disziplin": "Doubles - P",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9389560&lang=de&competitionId=0&originalCompetitionId=11351909&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-02-27",
+      "turnier": "Danube Open - 2015",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10876551&lang=de&competitionId=0&originalCompetitionId=10877612&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-02-27",
+      "turnier": "Danube Open - 2015",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=10876551&lang=de&competitionId=0&originalCompetitionId=10876570&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-11-22",
+      "turnier": "Thun Pro Tour - 2014",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann",
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9279922&lang=de&competitionId=0&originalCompetitionId=9279923&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-11-22",
+      "turnier": "Thun Pro Tour - 2014",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9279922&lang=de&competitionId=0&originalCompetitionId=9280001&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-09-20",
+      "turnier": "Capricorn Pro Tour - 2014",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9119519&lang=de&competitionId=0&originalCompetitionId=9119520&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-08-30",
+      "turnier": "Goldach Pro Tour - 2014",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9031521&lang=de&competitionId=0&originalCompetitionId=9031522&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-07-11",
+      "turnier": "Garlando WCS - 2014",
+      "serie": "WS",
+      "disziplin": "Doubles - R",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9052429&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    }
+  ],
+  "champions": [
+    {
+      "jahr": 2017,
+      "datum": "2017-09-14",
+      "wettbewerb": "European Champions League 2017",
+      "klasse": "Men",
+      "ort": "",
+      "rang": 2,
+      "teams": 15,
+      "kader": [],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=136272631&lang=de&competitionId=0&originalCompetitionId=136280421&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-11-30",
+      "wettbewerb": "European Champions League 2018",
+      "klasse": "Men",
+      "ort": "",
+      "rang": 9,
+      "teams": 20,
+      "kader": [],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=281441138&lang=de&competitionId=0&originalCompetitionId=281441139&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-11-19",
+      "wettbewerb": "European Champions League 2022",
+      "klasse": "Men",
+      "ort": "",
+      "rang": 9,
+      "teams": 19,
+      "kader": [],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=577487501&lang=de&competitionId=0&originalCompetitionId=577487502&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    }
+  ],
+  "zurueckgestellt": [
+    {
+      "jahr": 2016,
+      "datum": "2016-12-02",
+      "turnier": "Czech Leonhart Open V - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "FRIDAY DYP",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-02",
+      "turnier": "Czech Leonhart Open V - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "AMATEUR DOUBLES",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-03-23",
+      "turnier": "Czech LEONHART Championship 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Amateur Doubles",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-11-30",
+      "turnier": "Czech LEONHART Open VII",
+      "serie": "ITSF-Tour",
+      "disziplin": "Doubles - A",
+      "rang": 2,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-03-10",
+      "turnier": "Czech Leonhart Championship 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Amateur Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-16",
+      "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Classic Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-12-01",
+      "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
+      "serie": "ITSF-Tour",
+      "disziplin": "Classic Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-07-26",
+      "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Men Classic Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-31",
+      "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Classic Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-10-18",
+      "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Classic Doubles",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "SVK",
+      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
+    }
+  ]
+}

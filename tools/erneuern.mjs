@@ -308,7 +308,9 @@ const id2name = (P, id) => (P.alle.find((x) => x.id === id) || { name: id }).nam
 const sum = (liste) => ({ podestplaetze: liste.reduce((n, p) => n + p.summe, 0), gold: liste.reduce((n, p) => n + p.gold, 0), silber: liste.reduce((n, p) => n + p.silber, 0), bronze: liste.reduce((n, p) => n + p.bronze, 0), personen: liste.length });
 
 // ---------- Turniere und Champions League ----------
-const SERIEN = ['P4P', 'STF', 'WS', 'ITSF', 'DTFB', 'Bundesliga'];
+const SERIEN = ['P4P', 'STF', 'WS', 'ITSF', 'ITSF-Tour', 'DTFB', 'Bundesliga'];
+// FAST (altes Turniersystem der ITSF): Quelle ist die Schlussrangliste eines Wettbewerbs, ohne Spieler-ID (playerId=0).
+const FAST_QUELLE = /^https:\/\/extranet\.fast4foos\.org\/fast\/tournament\/players_station\/players_station_competition\.jsp\?tournamentId=0&originalTournamentId=\d+&lang=de&competitionId=0&originalCompetitionId=\d+&playerId=0&view=final_ranking$/;
 const LAENDER = { Spain: 'Spanien', Italy: 'Italien', Germany: 'Deutschland', Switzerland: 'Schweiz', France: 'Frankreich', Austria: 'Österreich', Portugal: 'Portugal', Netherlands: 'Niederlande', Belgium: 'Belgien', Poland: 'Polen' };
 const ortDeutsch = (o) => String(o || '').split(', ').map((t) => LAENDER[t] || t).join(', ');
 const TAG = /^\d{4}-\d{2}-\d{2}$/;
@@ -324,6 +326,8 @@ export function turniereAbleiten(datei, P, bekannt) {
     hart(TAG.test(e.datum) && Number(e.datum.slice(0, 4)) === e.jahr, `Turniere: Datum oder Jahr falsch (${e.turnier})`);
     hart(e.turnier && e.disziplin && https(e.quelle) && TAG.test(e.abgerufen), `Turniere: Turnier, Disziplin, Quelle oder Abrufdatum fehlt (${e.turnier})`);
     hart(Array.isArray(e.personen) && e.personen.length, `Turniere: Eintrag ohne Personen (${e.turnier})`);
+    hart(e.serie !== 'ITSF-Tour' || FAST_QUELLE.test(e.quelle), `Turniere: ITSF-Tour ohne FAST-Wettbewerbsseite als Quelle (${e.turnier})`);
+    hart(!/fast4foos/.test(e.quelle) || FAST_QUELLE.test(e.quelle), `Turniere: FAST-Quelle nicht in der Form der Wettbewerbsseite (${e.turnier})`);
     for (const id of e.personen) hart(bekannt.has(id), `Turniere: Person ${id} steht nicht in der Spielerliste (${e.turnier})`);
     const ids = e.personen.filter((id) => P.alle.some((s) => s.id === id));
     if (!ids.length) continue;
@@ -341,6 +345,7 @@ export function championsAbleiten(datei, P, bekannt) {
     hart(Number.isInteger(t.rang) && t.rang >= 1 && Number.isInteger(t.teams) && t.teams >= t.rang, `Champions League: Rang oder Feldgrösse falsch (${t.wettbewerb})`);
     hart(TAG.test(t.datum) && Number(t.datum.slice(0, 4)) === t.jahr && t.wettbewerb && https(t.quelle) && TAG.test(t.abgerufen), `Champions League: Datum, Wettbewerb, Quelle oder Abrufdatum fehlt (${t.wettbewerb})`);
     for (const id of t.kader || []) hart(bekannt.has(id), `Champions League: Person ${id} steht nicht in der Spielerliste`);
+    hart(!/fast4foos/.test(t.quelle) || FAST_QUELLE.test(t.quelle), `Champions League: FAST-Quelle nicht in der Form der Wettbewerbsseite (${t.wettbewerb})`);
     return { jahr: t.jahr, datum: t.datum, wettbewerb: t.wettbewerb, klasse: t.klasse, ort: ortDeutsch(t.ort), rang: t.rang, teams: t.teams, podest: t.rang <= 3, spieler: (t.kader || []).filter((id) => lizenz.has(id)).map((id) => id2name(P, id)).sort((a, b) => a.localeCompare(b, 'de')), quelle: t.quelle, abgerufen: t.abgerufen };
   }).sort((a, b) => b.datum.localeCompare(a.datum));
   return { teilnahmen, offen: datei.offen || [] };

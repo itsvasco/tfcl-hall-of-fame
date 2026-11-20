@@ -134,7 +134,7 @@ export function satzText(m, auswahl, anzahl) {
     case 'nati': return `Im Kader der Schweizer Nati holten ${pl(s.personen, 'Person', 'Personen')} zusammen ${pl(s.podestplaetze, 'Medaille', 'Medaillen')}. Coral nennt nicht, wer gespielt hat; gezählt ist jede Person im gemeldeten Kader.`;
     case 'ranglisten': return `Auf den Jahresranglisten des Verbands standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Gezählt sind nur Schlussstände.`;
     case 'fordere': return `Am Finaltag der Fordere-Liga Luzern standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest.`;
-    case 'turniere': return `An Turnieren von P4P, vom Verband, der World Series und am World Cup standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Ein Doppel zählt für jeden Partner mit Lizenz.`;
+    case 'turniere': return `An Turnieren von P4P, vom Verband, der ITSF, der World Series und am World Cup standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Ein Doppel zählt für jeden Partner mit Lizenz.`;
     case 'liga': return `In der Clubliga holten die Teams des TFC Luzern ${pl(s.podestplaetze, 'Podestplatz', 'Podestplätze')}. Der Verband nennt keine Spieler, darum stehen hier die Teams.`;
     default: return '';
   }
@@ -147,7 +147,7 @@ const quelleText = (u) => {
   /* Schnittstellen zeigen nur Rohdaten (JSON). Der Link sagt das, damit niemand eine Seite erwartet. */
   return h === 'tournaments.swisstablesoccer.ch' || h === 'api.swisstablesoccer.ch' ? 'Quelle beim Verband'
     : h === 'app.tablesoccer.org' ? 'Quelle auf Coral' : h === 'api.tablesoccer.org' ? 'Rohdaten tablesoccer.org (JSON)'
-    : h === 'fordere.ch' ? 'Rohdaten fordere.ch (JSON)' : 'Quelle';
+    : h === 'fordere.ch' ? 'Rohdaten fordere.ch (JSON)' : h === 'extranet.fast4foos.org' ? 'Quelle in FAST (ITSF)' : 'Quelle';
 };
 const link = (u, wofuer) => `<a href="${esc(u)}" rel="noopener" aria-label="${esc(`${quelleText(u)}: ${wofuer}`)}">${esc(quelleText(u))}</a>`;
 
@@ -157,7 +157,7 @@ function eintragText(e) {
     case 'nati': return `Nati ${e.team}, ${e.turnier}`;
     case 'ranglisten': return `Jahresrangliste, ${e.kategorie}`;
     case 'fordere': return `Fordere-Liga Luzern, ${e.liga} ${e.tischart}`;
-    case 'turniere': return `${e.serie === 'P4P' ? 'P4P' : e.serie === 'STF' ? 'Verbandsturnier' : e.serie === 'WS' ? 'World Series' : e.serie === 'ITSF' ? 'ITSF' : e.serie}, ${e.turnier}, ${e.kategorie}${e.wm ? `, Weltmeister${e.ort ? ` in ${e.ort}` : ''}` : ''}`;
+    case 'turniere': return `${e.serie === 'P4P' ? 'P4P' : e.serie === 'STF' ? 'Verbandsturnier' : e.serie === 'WS' ? 'World Series' : e.serie === 'ITSF' ? 'ITSF' : e.serie === 'ITSF-Tour' ? 'ITSF-Turnier' : e.serie}, ${e.turnier}, ${e.kategorie}${e.wm ? `, Weltmeister${e.ort ? ` in ${e.ort}` : ''}` : ''}`;
     default: return '';
   }
 }
@@ -200,7 +200,7 @@ export function leitHtml(m) {
     + `<h2 class="leitzahl__titel"><span class="leitzahl__zahl">${fmt(g.podestplaetze)}</span>Podestplätze holten die Spieler des TFC Luzern</h2>`
     + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten, die Fordere-Liga Luzern und die Turniere je Person, dazu die Clubliga je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
     + (m.champions.summe.teilnahmen ? `<p class="leitzahl__lead">Dazu kommen ${pl(m.champions.summe.teilnahmen, 'Teilnahme', 'Teilnahmen')} an der Champions League. Sie stehen weiter unten und zählen in keine Summe.</p>` : '')
-    + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org, players4players.de und fordere.ch, abgerufen am ${stand}.</p></div>`
+    + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org, FAST (ITSF), players4players.de und fordere.ch, abgerufen am ${stand}.</p></div>`
     + `<dl class="podest">`
     + `<div class="podest__stufe podest__stufe--gold"><dt>Gold</dt><dd>${fmt(g.gold)}</dd><small>Rang 1</small></div>`
     + `<div class="podest__stufe podest__stufe--silber"><dt>Silber</dt><dd>${fmt(g.silber)}</dd><small>Rang 2</small></div>`
@@ -212,7 +212,7 @@ export function leitHtml(m) {
 
 export function championsLead(m) {
   const t = m.champions.teilnahmen;
-  const orte = [...new Set(t.map((x) => String(x.ort).split(',')[0]))];
+  const orte = [...new Set(t.map((x) => String(x.ort).split(',')[0]).filter(Boolean))];
   const reise = orte.length > 1 ? `${orte.slice(0, -1).join(', ')} und ${orte.at(-1)}` : orte[0] || '';
   const podest = m.champions.summe.podest;
   return `Der TFC Luzern tritt an, wenn Clubs aus ganz Europa um die Krone spielen. ${pl(t.length, 'Teilnahme ist', 'Teilnahmen sind')} belegt. ${podest ? `${pl(podest, 'Podestplatz ist', 'Podestplätze sind')} dabei.` : 'Ein Pokal fehlt noch im Regal.'} Die Reisen nach ${reise} nimmt uns trotzdem keiner mehr. Darum zählt hier das Dabeisein, und es steht in keiner Summe der Podestplätze.`;
@@ -222,7 +222,7 @@ export const championsZahl = (m) => `<b>${fmt(m.champions.summe.teilnahmen)}</b>
 
 export function championsHtml(m) {
   return m.champions.teilnahmen.map((t) => {
-    const was = `${t.wettbewerb}, ${t.klasse}, ${t.ort}. Rang ${t.rang} von ${t.teams} Teams${t.podest ? ', Podest' : ''}.${t.spieler.length ? ` Im Kader ${t.spieler.length === 1 ? 'stand' : 'standen'} ${t.spieler.join(', ')}.` : ''}`;
+    const was = `${t.wettbewerb}, ${t.klasse}${t.ort ? `, ${t.ort}` : ''}. Rang ${t.rang} von ${t.teams} Teams${t.podest ? ', Podest' : ''}.${t.spieler.length ? ` Im Kader ${t.spieler.length === 1 ? 'stand' : 'standen'} ${t.spieler.join(', ')}.` : ''}`;
     return `<li><span class="rang__jahr t-data">${esc(t.jahr)}</span><span class="rang__was">${esc(was)}</span>${link(t.quelle, `${t.wettbewerb} ${t.jahr}`)}</li>`;
   }).join('');
 }

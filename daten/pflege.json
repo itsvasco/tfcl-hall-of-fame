@@ -154,13 +154,16 @@
   "champions_muster": "luz|lucern|tfcl",
   "p4p_wahl": {},
   "champions_offen": [
-    "Vor 2023 liefert Coral keine Champions League; frühere Teilnahmen sind nicht belegt"
+    "Champions League 2014 bis 2022 in FAST durchsucht: TFC Luzern 2017 (Rang 2), 2018 und 2022 (je Rang 9). FAST zeigt keinen Kader und keinen Ort; vor 2014 nicht belegt"
   ],
   "turniere_offen": [
     "STF 2019 bis August 2024: archivierte Verbandsseiten, noch nicht ausgewertet",
     "DTFB und Bundesliga: noch nicht durchsucht",
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
-    "ITSF World Series vor 2024 und World Cups vor 2025: Coral liefert nichts"
+    "ITSF bis 2024 aus FAST nachgetragen (daten/fast.json, 850 Turniere der ITSF-Liste, die FAST noch kennt). Offen: 446 Turniere 2005 bis 2014, von denen das Web-Archiv nur die Startseite hält, ohne Rangliste je Wettbewerb",
+    "FAST kennt nur Turniere mit ITSF-Wertung; Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter",
+    "FAST: 10 Podestplätze von «Arpad Wicki» mit Lizenz SVK zurückgestellt, bis Vasco bestätigt, dass es der Arpad Wicki des TFCL ist",
+    "FAST: Medaillen der Schweizer Nationalteams 2014 bis 2023 gefunden, FAST zeigt aber keine Kader; keiner Person zugeordnet"
   ],
   "fotos": {
     "Vasco Oliveira": {
