@@ -8,7 +8,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { QuelleVeraendert, schluessel, anzeigeName, heute as heuteDatum, liesJson, schreibeJson } from './gemeinsam.mjs';
+import { QuelleVeraendert, schluessel, anzeigeName, slug, heute as heuteDatum, liesJson, schreibeJson } from './gemeinsam.mjs';
 import { echt, URL_ARCHIV, URL_PDF } from './holen.mjs';
 
 const HIER = path.dirname(fileURLToPath(import.meta.url));
@@ -302,9 +302,52 @@ function personenBlock(map, P) {
 const id2name = (P, id) => (P.alle.find((x) => x.id === id) || { name: id }).name;
 const sum = (liste) => ({ podestplaetze: liste.reduce((n, p) => n + p.summe, 0), gold: liste.reduce((n, p) => n + p.gold, 0), silber: liste.reduce((n, p) => n + p.silber, 0), bronze: liste.reduce((n, p) => n + p.bronze, 0), personen: liste.length });
 
+// ---------- Turniere und Champions League ----------
+const SERIEN = ['P4P', 'STF', 'WS', 'ITSF', 'DTFB', 'Bundesliga'];
+const LAENDER = { Spain: 'Spanien', Italy: 'Italien', Germany: 'Deutschland', Switzerland: 'Schweiz', France: 'Frankreich', Austria: 'Österreich', Portugal: 'Portugal', Netherlands: 'Niederlande', Belgium: 'Belgien', Poland: 'Polen' };
+const ortDeutsch = (o) => String(o || '').split(', ').map((t) => LAENDER[t] || t).join(', ');
+const TAG = /^\d{4}-\d{2}-\d{2}$/;
+const https = (u) => { try { return new URL(u).protocol === 'https:'; } catch { return false; } };
+
+// datei: Handdatei daten/turniere.json. Gibt { eintraege (Einzelplätze je Person), offen }. Personen ohne Eintrag in P (nicht_nennen) fallen weg.
+export function turniereAbleiten(datei, P, bekannt) {
+  hart(datei && Array.isArray(datei.eintraege), 'turniere.json: eintraege fehlt');
+  const aus = [];
+  for (const e of datei.eintraege) {
+    hart(SERIEN.includes(e.serie), `Turniere: fremde Serie «${e.serie}»`);
+    hart([1, 2, 3].includes(e.rang), `Turniere: Rang ${e.rang} ausserhalb 1 bis 3 (${e.turnier})`);
+    hart(TAG.test(e.datum) && Number(e.datum.slice(0, 4)) === e.jahr, `Turniere: Datum oder Jahr falsch (${e.turnier})`);
+    hart(e.turnier && e.disziplin && https(e.quelle) && TAG.test(e.abgerufen), `Turniere: Turnier, Disziplin, Quelle oder Abrufdatum fehlt (${e.turnier})`);
+    hart(Array.isArray(e.personen) && e.personen.length, `Turniere: Eintrag ohne Personen (${e.turnier})`);
+    for (const id of e.personen) hart(bekannt.has(id), `Turniere: Person ${id} steht nicht in der Spielerliste (${e.turnier})`);
+    const ids = e.personen.filter((id) => P.alle.some((s) => s.id === id));
+    if (!ids.length) continue;
+    const wm = e.serie === 'ITSF' && e.rang === 1 && /world cup/i.test(e.turnier);
+    aus.push({ jahr: e.jahr, datum: e.datum, turnier: e.turnier, serie: e.serie, disziplin: e.disziplin, rang: e.rang, ...(e.ort ? { ort: ortDeutsch(e.ort) } : {}), ...(wm ? { titel: 'Weltmeister' } : {}), personen: ids, quelle: e.quelle, abgerufen: e.abgerufen });
+  }
+  return { eintraege: aus, offen: datei.offen || [] };
+}
+
+// Teilnahmen des Clubs an der Champions League. Der Kader zeigt nur Personen mit Lizenz LUZE (nie Ehrenmitglieder, nie Fremde).
+export function championsAbleiten(datei, P, bekannt) {
+  hart(datei && Array.isArray(datei.teilnahmen), 'champions-league.json: teilnahmen fehlt');
+  const lizenz = new Set(P.alle.filter((s) => !s.ehrenmitglied).map((s) => s.id));
+  const teilnahmen = datei.teilnahmen.map((t) => {
+    hart(Number.isInteger(t.rang) && t.rang >= 1 && Number.isInteger(t.teams) && t.teams >= t.rang, `Champions League: Rang oder Feldgrösse falsch (${t.wettbewerb})`);
+    hart(TAG.test(t.datum) && Number(t.datum.slice(0, 4)) === t.jahr && t.wettbewerb && https(t.quelle) && TAG.test(t.abgerufen), `Champions League: Datum, Wettbewerb, Quelle oder Abrufdatum fehlt (${t.wettbewerb})`);
+    for (const id of t.kader || []) hart(bekannt.has(id), `Champions League: Person ${id} steht nicht in der Spielerliste`);
+    return { jahr: t.jahr, datum: t.datum, wettbewerb: t.wettbewerb, klasse: t.klasse, ort: ortDeutsch(t.ort), rang: t.rang, teams: t.teams, podest: t.rang <= 3, spieler: (t.kader || []).filter((id) => lizenz.has(id)).map((id) => id2name(P, id)).sort((a, b) => a.localeCompare(b, 'de')), quelle: t.quelle, abgerufen: t.abgerufen };
+  }).sort((a, b) => b.datum.localeCompare(a.datum));
+  return { teilnahmen, offen: datei.offen || [] };
+}
+
 export async function bauen({ spielerDatei, pflege, holen, datum }) {
-  const P = personen(spielerDatei, pflege.nicht_nennen || []);
-  hart(P.alle.length, 'spieler.json ohne Spieler');
+  // Ehrenmitglieder (pflege.ehrenmitglieder) haben keine Lizenz, werden aber mit ihren Podestplätzen gesucht und zählen nicht in die Summen.
+  const ehrenNamen = pflege.ehrenmitglieder || [];
+  const ehren = ehrenNamen.map((n) => ({ id: slug(n), name: n, ehrenmitglied: true }));
+  const bekannt = new Set([...spielerDatei.spieler.map((s) => s.id), ...ehren.map((x) => x.id)]);
+  const P = personen({ ...spielerDatei, spieler: [...spielerDatei.spieler, ...ehren.filter((x) => !spielerDatei.spieler.some((s) => s.id === x.id))] }, pflege.nicht_nennen || []);
+  hart(P.alle.filter((s) => !s.ehrenmitglied).length, 'spieler.json ohne Spieler');
   const offen = [];
 
   // 1. Schweizermeisterschaft
@@ -344,34 +387,61 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   for (const nr of Object.keys(fSaisons)) fAntworten[nr] = await holen.fordere(nr);
   const fordere = fordereAbleiten(fAntworten, fSaisons, P, datum); offen.push(...fordere.offen);
 
+  // 6. Turniere und 7. Champions League (Handdateien, vom Sammelskript erzeugt)
+  const tu = turniereAbleiten(holen.turniere ? await holen.turniere() : { eintraege: [] }, P, bekannt); offen.push(...tu.offen);
+  const tuPersonen = new Map();
+  for (const e of tu.eintraege) for (const id of e.personen) { const l = tuPersonen.get(id) || []; tuPersonen.set(id, l); const { personen: _p, ...rest } = e; l.push(rest); }
+  for (const l of tuPersonen.values()) l.sort((a, b) => b.datum.localeCompare(a.datum) || a.rang - b.rang || a.turnier.localeCompare(b.turnier, 'de'));
+  const cl = championsAbleiten(holen.champions ? await holen.champions() : { teilnahmen: [] }, P, bekannt); offen.push(...cl.offen);
+
   // Ergebnis
-  const smB = personenBlock(sm.eintraege, P); const rlB = personenBlock(rl, P); const naB = personenBlock(natiPersonen, P); const foB = personenBlock(fordere.eintraege, P);
+  const smB = personenBlock(sm.eintraege, P); const rlB = personenBlock(rl, P); const naB = personenBlock(natiPersonen, P); const foB = personenBlock(fordere.eintraege, P); const tuB = personenBlock(tuPersonen, P);
+  const zaehlt = (p) => !P.alle.find((s) => s.id === p.id)?.ehrenmitglied; // Ehrenmitglieder zählen in keine Summe
   const ligaSumme = { podestplaetze: liga.eintraege.length, ...zaehle(liga.eintraege) };
   const bereiche = [
-    { schluessel: 'sm', titel: 'Schweizermeisterschaft', einheit: 'Medaillen je Person', anker: 'sm', daten: 'sm', summe: sum(smB) },
-    { schluessel: 'nati', titel: 'Nati', einheit: 'Medaillen je Person', anker: 'nati', daten: 'nati', summe: sum(naB) },
-    { schluessel: 'ranglisten', titel: 'Jahresrangliste', einheit: 'Podestplätze je Person', anker: 'ranglisten', daten: 'ranglisten', summe: sum(rlB) },
+    { schluessel: 'sm', titel: 'Schweizermeisterschaft', einheit: 'Medaillen je Person', anker: 'sm', daten: 'sm', summe: sum(smB.filter(zaehlt)) },
+    { schluessel: 'nati', titel: 'Nati', einheit: 'Medaillen je Person', anker: 'nati', daten: 'nati', summe: sum(naB.filter(zaehlt)) },
+    { schluessel: 'ranglisten', titel: 'Jahresrangliste', einheit: 'Podestplätze je Person', anker: 'ranglisten', daten: 'ranglisten', summe: sum(rlB.filter(zaehlt)) },
     { schluessel: 'liga', titel: 'Clubliga', einheit: 'Podestplätze je Team', anker: 'liga', daten: 'liga', summe: ligaSumme },
-    { schluessel: 'fordere', titel: 'Fordere-Liga', untertitel: 'Bar-foos-League Luzern, Finaltag', einheit: 'Podestplätze je Person', anker: 'fordere', daten: 'fordere', summe: sum(foB) },
+    { schluessel: 'fordere', titel: 'Fordere-Liga', untertitel: 'Bar-foos-League Luzern, Finaltag', einheit: 'Podestplätze je Person', anker: 'fordere', daten: 'fordere', summe: sum(foB.filter(zaehlt)) },
+    { schluessel: 'turniere', titel: 'Turniere', untertitel: 'P4P, Verbandsturniere, World Series und World Cup', einheit: 'Podestplätze je Person', anker: 'turniere', daten: 'turniere', summe: sum(tuB.filter(zaehlt)) },
   ];
   // Personenverzeichnis mit Gesamtzahl (Liga zählt je Team, steht nicht darin)
   const proPerson = new Map();
-  for (const [bereich, block] of [['sm', smB], ['nati', naB], ['ranglisten', rlB], ['fordere', foB]]) for (const p of block) {
+  for (const [bereich, block] of [['sm', smB], ['nati', naB], ['ranglisten', rlB], ['fordere', foB], ['turniere', tuB]]) for (const p of block) {
     const e = proPerson.get(p.id) || { id: p.id, name: id2name(P, p.id), gold: 0, silber: 0, bronze: 0, summe: 0, bereiche: {} };
     proPerson.set(p.id, e); e.gold += p.gold; e.silber += p.silber; e.bronze += p.bronze; e.summe += p.summe; e.bereiche[bereich] = p.summe;
   }
-  const verzeichnis = [...proPerson.values()].sort((a, b) => b.summe - a.summe || b.gold - a.gold || b.silber - a.silber || a.name.localeCompare(b.name, 'de'));
-  const gesamt = { podestplaetze: verzeichnis.reduce((n, p) => n + p.summe, 0) + ligaSumme.podestplaetze, gold: verzeichnis.reduce((n, p) => n + p.gold, 0) + ligaSumme.gold, silber: verzeichnis.reduce((n, p) => n + p.silber, 0) + ligaSumme.silber, bronze: verzeichnis.reduce((n, p) => n + p.bronze, 0) + ligaSumme.bronze, personen: verzeichnis.length };
+  // Feste Plätze (pflege.feste_plaetze): Name und Spruch in Reihenfolge, ganz oben, auch ohne Podestplatz. nicht_nennen gewinnt.
+  const feste = [];
+  for (const f of pflege.feste_plaetze || []) {
+    const sp = P.finde(f.name); if (!sp) continue;
+    hart(f.spruch && typeof f.spruch === 'string', `feste_plaetze: Spruch für ${f.name} fehlt`);
+    const e = proPerson.get(sp.id) || { id: sp.id, name: sp.name, gold: 0, silber: 0, bronze: 0, summe: 0, bereiche: {} };
+    proPerson.set(sp.id, e); e.fest = feste.length + 1; e.spruch = f.spruch; feste.push(sp.id);
+  }
+  for (const [id, e] of proPerson) if (P.alle.find((s) => s.id === id)?.ehrenmitglied) e.ehrenmitglied = true;
+  // Fotos (pflege.fotos): nur die hier genannten Personen haben eines (Vasco, 2026-11-20: «als einziger ein foto»), Datei im Ordner site/
+  for (const [name, f] of Object.entries(pflege.fotos || {})) {
+    const sp = P.finde(name); const e = sp && proPerson.get(sp.id); if (!e) continue;
+    hart(f.datei && f.alt, `fotos: Datei oder Alt-Text für ${name} fehlt`);
+    e.foto = f.datei; e.foto_alt = f.alt;
+  }
+  const verzeichnis = [...proPerson.values()].sort((a, b) => (a.fest || 1e9) - (b.fest || 1e9) || b.summe - a.summe || b.gold - a.gold || b.silber - a.silber || a.name.localeCompare(b.name, 'de'));
+  const zaehler = verzeichnis.filter((p) => !p.ehrenmitglied);
+  const gesamt = { podestplaetze: zaehler.reduce((n, p) => n + p.summe, 0) + ligaSumme.podestplaetze, gold: zaehler.reduce((n, p) => n + p.gold, 0) + ligaSumme.gold, silber: zaehler.reduce((n, p) => n + p.silber, 0) + ligaSumme.silber, bronze: zaehler.reduce((n, p) => n + p.bronze, 0) + ligaSumme.bronze, personen: zaehler.filter((p) => p.summe > 0).length };
   const nur = (b) => b.map(({ id, gold, silber, bronze, summe, platzierungen }) => ({ id, gold, silber, bronze, summe, platzierungen }));
   return {
     club: spielerDatei.club, clubname: pflege.clubname, erstellt: datum,
-    hinweis: 'Podestplätze der Spieler mit heutiger Lizenz beim Club. Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen.',
-    spieler_mit_lizenz: P.alle.length,
+    hinweis: 'Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.',
+    spieler_mit_lizenz: P.alle.filter((s) => !s.ehrenmitglied).length,
     gesamt, bereiche, verzeichnis,
     sm: { abgerufen: datum, quelle: SM_QUELLE, personen: nur(smB) },
     nati: { abgerufen: datum, eintraege: nati.eintraege },
     ranglisten: { abgerufen: datum, saisons: rlSaisons.sort((a, b) => b.saison - a.saison), personen: nur(rlB) },
     liga: { abgerufen: datum, eintraege: liga.eintraege },
+    turniere: { abgerufen: datum, serien: [...new Set(tu.eintraege.map((e) => e.serie))].sort(), personen: nur(tuB) },
+    champions: { abgerufen: datum, summe: { teilnahmen: cl.teilnahmen.length, podest: cl.teilnahmen.filter((t) => t.podest).length }, teilnahmen: cl.teilnahmen },
     fordere: { abgerufen: datum, seite: 'https://fordere.ch', divisionen: ['Luzern'], saisons: fordere.saisons, personen: nur(foB) },
     offen,
   };

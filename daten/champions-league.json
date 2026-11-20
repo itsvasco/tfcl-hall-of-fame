@@ -1,0 +1,68 @@
+{
+  "abgerufen": "2026-11-20",
+  "hinweis": "Handdatei, vom Sammelskript erzeugt. Teilnahmen des Clubs; Kader nur mit Lizenz LUZE.",
+  "teilnahmen": [
+    {
+      "jahr": 2026,
+      "datum": "2026-02-06",
+      "wettbewerb": "ITSF World Champions League Finals 2026",
+      "klasse": "Men Team",
+      "ort": "Messina, Italy",
+      "rang": 10,
+      "teams": 29,
+      "kader": [
+        "fabio-di-crescenzo",
+        "hannes-wallimann",
+        "manuel-ragonesi",
+        "martin-felder",
+        "pascal-felber",
+        "peter-felder",
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z85OGZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-11-15",
+      "wettbewerb": "European Champions League 2024",
+      "klasse": "Men",
+      "ort": "Genova, Italy",
+      "rang": 14,
+      "teams": 24,
+      "kader": [
+        "fabio-di-crescenzo",
+        "hannes-wallimann",
+        "manuel-ragonesi",
+        "martin-felder",
+        "pascal-felber",
+        "tomas-karajan",
+        "vullnet-fazliu"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/AZ8QX7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-11-18",
+      "wettbewerb": "European Champions League 2023",
+      "klasse": "Men",
+      "ort": "Roma, Italy",
+      "rang": 5,
+      "teams": 23,
+      "kader": [
+        "hannes-wallimann",
+        "manuel-ragonesi",
+        "peter-felder",
+        "reto-odermatt",
+        "tomas-karajan",
+        "vullnet-fazliu"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G63WD6",
+      "abgerufen": "2026-11-20"
+    }
+  ],
+  "offen": [
+    "Vor 2023 liefert Coral keine Champions League; frühere Teilnahmen sind nicht belegt"
+  ]
+}

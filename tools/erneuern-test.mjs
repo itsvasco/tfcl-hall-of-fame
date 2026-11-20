@@ -9,6 +9,9 @@ import { personen, smAbleiten, ranglisteCms, archivLesen, ranglisteArchiv, natiA
 import { anzeigeName, schluessel } from './gemeinsam.mjs';
 import { lizenzen, alsDatei } from './spieler.mjs';
 import { pruefeText } from './datenschutz-pruefen.mjs';
+import { coralAbleiten, championsAbleiten, doppelte, turnierName, turnierDatum } from './turniere.mjs';
+import { galerie, platzierungen, ergebnis } from './p4p.mjs';
+import * as R from '../site/js/rendern.js';
 
 let ok = 0; const fehler = [];
 async function test(name, fn) { try { await fn(); ok++; } catch (f) { fehler.push(`${name}: ${f.message}`); } }
@@ -201,6 +204,123 @@ await test('nicht_nennen entfernt eine Person überall, Partner wird «Partner»
 await test('Lauf ist wiederholbar: gleiche Eingaben, gleicher Schnappschuss', async () => {
   const a = await bauen({ spielerDatei: SPIELER, pflege: PFLEGE, holen: holen(), datum: DATUM }); const b = await bauen({ spielerDatei: SPIELER, pflege: PFLEGE, holen: holen(), datum: DATUM });
   assert.equal(alsText(a), alsText(b));
+});
+
+
+// ---------- Turniere, Champions League, Ehrenmitglied, feste Plätze ----------
+const TU = { eintraege: [
+  { jahr: 2025, datum: '2025-06-23', turnier: 'ITSF World Cup 2025', serie: 'ITSF', disziplin: 'Men Classic', rang: 1, ort: 'Zaragoza, Spain', personen: ['anna-muster'], quelle: 'https://app.tablesoccer.org/p/AAA111', abgerufen: DATUM },
+  { jahr: 2024, datum: '2024-05-04', turnier: 'STRT Beispiel', serie: 'STF', disziplin: 'Open Doubles', rang: 3, personen: ['beat-beispiel', 'anna-muster'], quelle: 'https://app.tablesoccer.org/p/BBB222', abgerufen: DATUM },
+  { jahr: 2023, datum: '2023-09-02', turnier: 'Swiss Open 2023', serie: 'P4P', disziplin: 'Amateur Einzel', rang: 2, personen: ['erika-ehre'], quelle: 'https://www.players4players.de/index.php/de/p4presults/9', abgerufen: DATUM },
+] };
+const CL = { teilnahmen: [
+  { jahr: 2024, datum: '2024-11-15', wettbewerb: 'European Champions League 2024', klasse: 'Men', ort: 'Genova, Italy', rang: 14, teams: 24, kader: ['anna-muster', 'dario-drei'], quelle: 'https://app.tablesoccer.org/p/CCC333', abgerufen: DATUM },
+  { jahr: 2023, datum: '2023-11-18', wettbewerb: 'European Champions League 2023', klasse: 'Men', ort: 'Roma, Italy', rang: 2, teams: 23, kader: ['anna-muster'], quelle: 'https://app.tablesoccer.org/p/DDD444', abgerufen: DATUM },
+] };
+const PFLEGE_T = { ...PFLEGE, ehrenmitglieder: ['Erika Ehre'], feste_plaetze: [{ name: 'Erika Ehre', spruch: 'Erste, weil sie es kann.' }, { name: 'Dario Drei', spruch: 'Zweiter, weil jemand muss.' }], fotos: { 'Erika Ehre': { datei: 'bilder/erika.webp', alt: 'Erika Ehre, lächelnd' } } };
+const mitT = (o = {}) => holen({ turniere: async () => TU, champions: async () => CL, ...o });
+const bauT = (pflege = PFLEGE_T, h = mitT()) => bauen({ spielerDatei: SPIELER, pflege, holen: h, datum: DATUM });
+
+await test('Turniere: Zählung je Person, Weltmeister, Ort auf Deutsch, Quelle je Eintrag', async () => {
+  const s = await bauT({ ...PFLEGE_T, ehrenmitglieder: [], feste_plaetze: [], fotos: {} }, mitT({ turniere: async () => ({ eintraege: TU.eintraege.slice(0, 2) }) }));
+  const b = s.bereiche.find((x) => x.schluessel === 'turniere');
+  assert.deepEqual([b.summe.podestplaetze, b.summe.gold, b.summe.bronze, b.summe.personen], [3, 1, 2, 2]); // Doppel zählt für beide
+  const anna = s.turniere.personen.find((p) => p.id === 'anna-muster');
+  const wm = anna.platzierungen.find((e) => e.titel === 'Weltmeister');
+  assert.equal(wm.ort, 'Zaragoza, Spanien'); assert.match(wm.quelle, /^https:\/\//);
+  assert.equal(s.gesamt.podestplaetze, 12 + 3);
+});
+await test('Turniere: Fremde Serie, Rang 4, unbekannte Person, ohne Quelle brechen ab', async () => {
+  const eine = (x) => mitT({ turniere: async () => ({ eintraege: [{ ...TU.eintraege[1], ...x }] }) });
+  await wirft(() => bauT(PFLEGE_T, eine({ serie: 'Fantasie' })), /fremde Serie/);
+  await wirft(() => bauT(PFLEGE_T, eine({ rang: 4 })), /Rang 4/);
+  await wirft(() => bauT(PFLEGE_T, eine({ personen: ['wer-auch-immer'] })), /nicht in der Spielerliste/);
+  await wirft(() => bauT(PFLEGE_T, eine({ quelle: 'http://unsicher.example' })), /Quelle/);
+});
+await test('Champions League: eigene Zahl, nicht in den Podestplätzen, Kader nur mit Lizenz', async () => {
+  const s = await bauT();
+  assert.equal(s.champions.summe.teilnahmen, 2); assert.equal(s.champions.summe.podest, 1);
+  assert.equal(s.champions.teilnahmen[0].jahr, 2024);
+  assert.deepEqual(s.champions.teilnahmen[0].spieler, ['Anna Muster', 'Dario Drei']);
+  assert.equal(s.champions.teilnahmen[1].podest, true);
+  const ohne = await bauT(PFLEGE_T, mitT({ champions: async () => ({ teilnahmen: [] }) }));
+  assert.equal(ohne.gesamt.podestplaetze, s.gesamt.podestplaetze, 'Teilnahmen ändern die Summe nicht');
+});
+await test('Champions League Gegenprobe: Spieler ohne Lizenz und Ehrenmitglied stehen nie im Kader, Quelle und Rang werden geprüft', async () => {
+  const s = await bauT(PFLEGE_T, mitT({ champions: async () => ({ teilnahmen: [{ ...CL.teilnahmen[0], kader: ['anna-muster', 'erika-ehre'] }] }) }));
+  assert.deepEqual(s.champions.teilnahmen[0].spieler, ['Anna Muster']);
+  const cd = (x) => mitT({ champions: async () => ({ teilnahmen: [{ ...CL.teilnahmen[0], ...x }] }) });
+  await wirft(() => bauT(PFLEGE_T, cd({ rang: 30 })), /Rang oder Feldgrösse/);
+  await wirft(() => bauT(PFLEGE_T, cd({ kader: ['wilson-saq'] })), /nicht in der Spielerliste/);
+  // Coral-Ableitung: nur bestätigte Meldungen des Wettbewerbs, Fremde (Wilson Saq) nie
+  const v = { tournament: { name: 'European Champions League 2025', start_at: '2025-11-14 09:00', address: { meta: { locality: { name: 'Genova' }, country: { name: 'Italy' } } } },
+    competitions: { 1: { id: 1, name: 'Men', status: 'finished', standings: { 1: 10, 2: 77 } } }, teams: { 77: { id: 77, name: 'TFC Lucerne 1', rename: '' }, 10: { id: 10, name: 'Anderer Club' } },
+    players: { 1: { first_name: 'Anna', last_name: 'Muster' }, 2: { first_name: 'Wilson', last_name: 'Saq' }, 3: { first_name: 'Dario', last_name: 'Drei' } },
+    competition_players: { a: { competition_id: 1, team_id: 77, player_id: 1, status: 'confirmed' }, b: { competition_id: 1, team_id: 77, player_id: 2, status: 'confirmed' }, c: { competition_id: 1, team_id: 77, player_id: 3, status: 'removed' }, d: { competition_id: 2, team_id: 77, player_id: 3, status: 'confirmed' } } };
+  const t = championsAbleiten(v, { code: 'XXX999' }, P, /luz|lucern|tfcl/i, DATUM);
+  assert.equal(t.length, 1); assert.deepEqual(t[0].kader, ['anna-muster']); assert.equal(t[0].rang, 2); assert.equal(t[0].teams, 2);
+});
+await test('Coral-Ableitung: Doppel in geteiltem Team, Weltmeister, Nati und Fremde nie', () => {
+  const v = { tournament: { name: 'World Cup 2025', start_at: '2025-06-23 07:30', address: { meta: { locality: { name: 'Zaragoza' }, country: { name: 'Spain' } } } },
+    competitions: { 1: { id: 1, name: 'Men Classic', status: 'finished', team_category: { short_name: 'MD', player_count: 2 }, standings: { 1: 5, 2: 6 } },
+      2: { id: 2, name: 'Men Doubles', status: 'finished', team_category: { short_name: 'MD', player_count: 2 }, standings: { 1: 6, 2: 5 } },
+      3: { id: 3, name: 'Men National Team', status: 'finished', team_category: { short_name: 'MN42', player_count: 4 }, standings: { 1: 5 } } },
+    players: { 1: { first_name: 'Anna', last_name: 'Muster' }, 2: { first_name: 'Fremd', last_name: 'Franz' } },
+    competition_players: { a: { competition_id: 1, team_id: 5, player_id: 1, status: 'confirmed' }, b: { competition_id: 1, team_id: 5, player_id: 2, status: 'confirmed' }, c: { competition_id: 2, team_id: 5, player_id: 2, status: 'confirmed' }, d: { competition_id: 3, team_id: 5, player_id: 1, status: 'confirmed' } } };
+  const e = coralAbleiten(v, { code: 'WWW111', name: 'World Cup 2025', start_on: '2025-06-23', serie: 'ITSF' }, P, DATUM);
+  assert.equal(e.length, 1, 'nur Men Classic (Doppel 2 ohne Mitglied, Nati zählt nicht)'); assert.equal(e[0].rang, 1); assert.equal(e[0].disziplin, 'Men Classic');
+  assert.deepEqual(e[0].personen, ['anna-muster']); assert.equal(e[0].ort, 'Zaragoza, Spain');
+  assert.equal(turnierName('[Imported] STRT Bern - 2024-12-29'), 'STRT Bern'); assert.equal(turnierDatum({ start_on: '2025-01-01' }, '[Imported] STRT Bern - 2024-12-29'), '2024-12-29');
+  const d = doppelte([{ serie: 'P4P', datum: '2026-10-10', rang: 1, personen: ['a'], disziplin: 'Neulinge Einzel' }, { serie: 'STF', datum: '2026-10-11', rang: 1, personen: ['a'], disziplin: 'Neulinge Einzel' }]);
+  assert.equal(d.length, 1);
+});
+await test('P4P: Galerie, Platzierungen und Ergebnisseite werden gelesen, ein Umbau bricht ab', () => {
+  const zeilen = Array.from({ length: 1100 }, (_, i) => `<tr><td>${i}</td><td><a href="/de/p4pplayer/${100 + i}">${100 + i}</a></td><td>Nach${i}</td><td>Vor${i}</td><td>Ort</td><td>CH</td><td>N</td><td>N</td></tr>`).join('');
+  assert.equal(galerie(zeilen).length, 1100);
+  assert.throws(() => galerie('<html>neu</html>'), /Galerie/);
+  const pl = platzierungen('<th data-sortable="true" data-field="OE">OE</th><th data-sortable="true" data-field="AE">AE</th><tbody><tr><td>Swiss Open 2024</td><td>1</td><td>7</td></tr></tbody>');
+  assert.deepEqual(pl, [{ turnier: 'Swiss Open 2024', code: 'OE', rang: 1 }]);
+  const html = 'block-p4p-content<h2>Swiss Open 2024 &ndash; 05.10.2024</h2><h5><a name="OE">Offenes Einzel</a></h5><table><tr><td>1</td><td>Anna Muster</td></tr></table>';
+  const e = ergebnis(html); assert.equal(e.datum, '2024-10-05'); assert.equal(e.disziplinen.OE.zeilen[0].namen[0], 'Anna Muster');
+});
+await test('Ehrenmitglied: erscheint mit Podestplätzen, zählt in keine Summe, Fremde nie', async () => {
+  const s = await bauT();
+  const e = s.verzeichnis.find((p) => p.id === 'erika-ehre');
+  assert.ok(e && e.ehrenmitglied && e.summe === 1 && e.foto === 'bilder/erika.webp');
+  const b = s.bereiche.find((x) => x.schluessel === 'turniere');
+  assert.equal(b.summe.podestplaetze, 3); // Erikas Podestplatz zählt nicht
+  assert.equal(s.gesamt.personen, s.verzeichnis.filter((p) => !p.ehrenmitglied && p.summe > 0).length);
+  assert.equal(s.spieler_mit_lizenz, 4);
+  assert.ok(!alsText(s).includes('Franz') && !alsText(s).includes('Nobody'));
+  const ohne = await bauT({ ...PFLEGE_T, ehrenmitglieder: [], feste_plaetze: [], fotos: {} }, mitT({ turniere: async () => ({ eintraege: TU.eintraege.slice(0, 2) }) }));
+  assert.ok(!ohne.verzeichnis.some((p) => p.id === 'erika-ehre'), 'ohne Eintrag in pflege kein Ehrenmitglied');
+  assert.equal(ohne.gesamt.podestplaetze, s.gesamt.podestplaetze, 'das Ehrenmitglied ändert keine Summe');
+  assert.ok(!alsText(s.verzeichnis.filter((p) => p.foto)).includes('anna'), 'nur Erika hat ein Foto');
+});
+await test('Feste Plätze: Ehrenmitglied Platz 1, Dario Platz 2 auch ohne Podest, alle anderen danach unverändert', async () => {
+  const s = await bauT();
+  assert.deepEqual(s.verzeichnis.slice(0, 2).map((p) => p.id), ['erika-ehre', 'dario-drei']);
+  assert.equal(s.verzeichnis[0].spruch, 'Erste, weil sie es kann.');
+  const rest = s.verzeichnis.slice(2).map((p) => p.id);
+  const normal = (await bauT({ ...PFLEGE_T, ehrenmitglieder: [], feste_plaetze: [], fotos: {} }, mitT({ turniere: async () => ({ eintraege: TU.eintraege.slice(0, 2) }) }))).verzeichnis.map((p) => p.id).filter((i) => i !== 'dario-drei');
+  assert.deepEqual(rest, normal.filter((i) => i !== 'erika-ehre'), 'Reihenfolge der anderen bleibt');
+  // Seite: Rang 1 und 2 sind fest
+  const m = R.modell(s); const rs = R.zeilen(m, { bereich: 'alle', q: '' });
+  assert.deepEqual(rs.slice(0, 2).map((r) => [r.p.id, r.rang]), [['erika-ehre', 1], ['dario-drei', 2]]);
+  assert.ok(rs[2].rang === 3); assert.match(R.zeileHtml(rs[0]), /Erste, weil sie es kann\./); assert.match(R.zeileHtml(rs[0]), /Ehrenmitglied/);
+  const nurSm = R.zeilen(m, { bereich: 'sm', q: '' }); assert.ok(nurSm.every((r) => r.rang >= 1) && !nurSm.some((r) => r.p.fest && !r.e.length));
+});
+await test('nicht_nennen gewinnt gegen Ehrenmitglied, feste Plätze und Foto', async () => {
+  const s = await bauT({ ...PFLEGE_T, nicht_nennen: ['Erika Ehre', 'dario-drei'] });
+  const t = alsText(s);
+  assert.ok(!t.includes('Erika') && !t.includes('erika') && !t.includes('Erste, weil') && !t.includes('Zweiter, weil') && !t.includes('dario'), 'beide fehlen überall');
+});
+await test('Champions League und Titel auf der Seite: Weltmeister steht direkt nach Nati-Gold', async () => {
+  const s = await bauT(); const m = R.modell(s);
+  const lead = R.championsLead(m); assert.match(lead, /2 Teilnahmen/); assert.ok(!/—|–/.test(lead));
+  assert.match(R.championsHtml(m), /Genova, Italien|Genova, Italy/); assert.match(R.championsHtml(m), /Rang 14 von 24/);
+  const nati = { bereich: 'nati', rang: 1, team: 'Herren', jahr: 2025 }; const sm = { bereich: 'sm', rang: 1, kategorie: 'Herren Doppel', jahr: 2025 }; const wmE = { bereich: 'turniere', rang: 1, kategorie: 'Men Classic', jahr: 2025, wm: true };
+  assert.match(R.hoechsterTitel([sm, wmE]), /^Weltmeister Men Classic 2025/); assert.match(R.hoechsterTitel([wmE, nati, sm]), /^Nati-Gold/);
 });
 
 // ---------- Datenschutzprüfung ----------

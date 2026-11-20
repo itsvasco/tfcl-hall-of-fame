@@ -16,7 +16,7 @@ const PFEIL = '<svg class="symbol symbol--klein symbol--pfeil" viewBox="0 0 24 2
 
 export function modell(j) {
   if (!j || !Array.isArray(j.verzeichnis) || !j.gesamt || !Array.isArray(j.bereiche)) throw new Error('Schnappschuss hat ein fremdes Format');
-  const personen = new Map(j.verzeichnis.map((p) => [p.id, { id: p.id, name: p.name, eintraege: [], soll: p.summe }]));
+  const personen = new Map(j.verzeichnis.map((p) => [p.id, { id: p.id, name: p.name, eintraege: [], soll: p.summe, fest: p.fest || 0, spruch: p.spruch || '', ehren: !!p.ehrenmitglied, foto: p.foto || null, fotoAlt: p.foto_alt || '' }]));
   const hinzu = (id, e) => {
     const p = personen.get(id);
     if (!p) throw new Error(`Person ${id} fehlt im Verzeichnis`);
@@ -32,6 +32,7 @@ export function modell(j) {
   for (const e of j.nati.eintraege) for (const id of e.personen) hinzu(id, { bereich: 'nati', jahr: e.jahr, rang: e.rang, team: e.team, turnier: e.turnier, quelle: e.quelle });
   for (const p of j.ranglisten.personen) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'ranglisten', jahr: x.saison, rang: x.rang, kategorie: x.kategorie, quelle: x.quelle });
   for (const p of j.fordere.personen) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'fordere', jahr: x.jahr, saison: x.saison, rang: x.rang, liga: x.liga, tischart: x.tischart, quelle: x.quelle });
+  for (const p of (j.turniere ? j.turniere.personen : [])) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'turniere', jahr: x.jahr, rang: x.rang, kategorie: x.disziplin, serie: x.serie, turnier: x.turnier, ort: x.ort || '', wm: x.titel === 'Weltmeister', quelle: x.quelle });
   for (const p of personen.values()) {
     if (p.eintraege.length !== p.soll) throw new Error(`${p.name}: ${p.eintraege.length} Einträge, Verzeichnis nennt ${p.soll}`);
     p.eintraege.sort((a, b) => b.jahr - a.jahr || a.rang - b.rang || a.bereich.localeCompare(b.bereich));
@@ -39,7 +40,9 @@ export function modell(j) {
   const teams = j.liga.eintraege.map((e) => ({ saison: e.saison, liga: e.liga, team: e.team, rang: e.rang, quelle: e.quelle }))
     .sort((a, b) => b.saison - a.saison || a.rang - b.rang);
   const bereiche = j.bereiche.map((b) => ({ k: b.schluessel, titel: b.titel, summe: b.summe }));
-  return { stand: j.erstellt, lizenzen: j.spieler_mit_lizenz, gesamt: j.gesamt, bereiche, personen: [...personen.values()], teams };
+  const cl = j.champions || { teilnahmen: [], summe: { teilnahmen: 0, podest: 0 } };
+  const champions = { summe: cl.summe, teilnahmen: cl.teilnahmen.map((t) => ({ jahr: t.jahr, wettbewerb: t.wettbewerb, klasse: t.klasse, ort: t.ort, rang: t.rang, teams: t.teams, podest: !!t.podest, spieler: t.spieler || [], quelle: t.quelle })) };
+  return { stand: j.erstellt, lizenzen: j.spieler_mit_lizenz, gesamt: j.gesamt, bereiche, personen: [...personen.values()], teams, champions };
 }
 
 export const zaehle = (liste) => {
@@ -50,10 +53,11 @@ export const zaehle = (liste) => {
 
 /* ---------- Höchster Titel unter dem Namen (Regel 13 der Hall of Fame des TFCZ) ---------- */
 
-const BEREICH_REIHE = { sm: 0, ranglisten: 1, liga: 3, fordere: 4, nati: 5 };
+const BEREICH_REIHE = { sm: 0, ranglisten: 1, turniere: 2, liga: 3, fordere: 4, nati: 5 };
 const klasse = (k = '') => /^(open|herren|offen)/i.test(k) ? 0 : /damen/i.test(k) ? 2 : /senioren/i.test(k) ? 3 : /mixed/i.test(k) ? 4 : /junior/i.test(k) ? 8 : 9;
-const stufe = (e) => e.bereich === 'nati' && e.rang === 1 ? 0 : e.bereich === 'sm' && e.rang === 1 ? 1 : e.bereich === 'nati' && e.rang === 2 ? 2 : e.bereich === 'nati' && e.rang === 3 ? 3 : 4;
-const kennung = (e) => `${e.bereich}|${e.kategorie || e.team || ''}|${e.rang}`;
+/* Reihenfolge: Nati-Gold, Weltmeister (World Cup), Schweizer Meister, Nati-Silber, Nati-Bronze, alles andere. */
+const stufe = (e) => e.bereich === 'nati' && e.rang === 1 ? 0 : e.wm ? 1 : e.bereich === 'sm' && e.rang === 1 ? 2 : e.bereich === 'nati' && e.rang === 2 ? 3 : e.bereich === 'nati' && e.rang === 3 ? 4 : 5;
+const kennung = (e) => `${e.bereich}|${e.kategorie || e.team || ''}|${e.rang}${e.wm ? '|wm' : ''}`;
 const vergleich = (a, b) => stufe(a) - stufe(b) || a.rang - b.rang || BEREICH_REIHE[a.bereich] - BEREICH_REIHE[b.bereich] || klasse(a.kategorie) - klasse(b.kategorie);
 
 function titelWort(e) {
@@ -63,11 +67,13 @@ function titelWort(e) {
     case 'sm': return e.rang === 1 ? `Schweizer Meister ${k}` : `${e.rang}. Rang Schweizermeisterschaft ${k}`;
     case 'ranglisten': return e.rang === 1 ? `Jahresbester ${k}` : `${e.rang}. Rang Jahresrangliste ${k}`;
     case 'fordere': return e.rang === 1 ? 'Fordere-Sieg' : `${e.rang}. Rang Fordere-Liga`;
+    case 'turniere': return e.wm ? `Weltmeister ${k} ${e.jahr}` : e.rang === 1 ? `Turniersieg ${k}` : `${e.rang}. Rang an Turnieren ${k}`;
     default: return `${e.rang}. Rang`;
   }
 }
 
 export function hoechsterTitel(liste) {
+  if (!liste.length) return '';
   const gruppen = new Map();
   for (const e of liste) { const k = kennung(e); gruppen.set(k, { e, n: (gruppen.get(k)?.n || 0) + 1 }); }
   const beste = [...gruppen.values()].sort((a, b) => vergleich(a.e, b.e) || b.n - a.n || titelWort(a.e).localeCompare(titelWort(b.e), 'de'))[0];
@@ -84,14 +90,18 @@ export function zeilen(m, auswahl = { bereich: 'alle', q: '' }) {
   const aus = [];
   for (const p of m.personen) {
     const e = auswahl.bereich === 'alle' ? p.eintraege : p.eintraege.filter((x) => x.bereich === auswahl.bereich);
-    if (!e.length || (q && !glatt(p.name).includes(q))) continue;
+    if ((!e.length && !(auswahl.bereich === 'alle' && p.fest)) || (q && !glatt(p.name).includes(q))) continue;
     aus.push({ p, e, z: zaehle(e) });
   }
-  aus.sort((a, b) => b.z.summe - a.z.summe || b.z.gold - a.z.gold || b.z.silber - a.z.silber || b.z.bronze - a.z.bronze || a.p.name.localeCompare(b.p.name, 'de'));
+  /* Feste Plätze (daten/pflege.json, feste_plaetze) stehen in der Rangliste aller Bereiche zuerst, in ihrer Reihenfolge. */
+  const feste = auswahl.bereich === 'alle' ? aus.filter((r) => r.p.fest).sort((a, b) => a.p.fest - b.p.fest) : [];
+  const rest = aus.filter((r) => !feste.includes(r));
+  rest.sort((a, b) => b.z.summe - a.z.summe || b.z.gold - a.z.gold || b.z.silber - a.z.silber || b.z.bronze - a.z.bronze || a.p.name.localeCompare(b.p.name, 'de'));
   /* Gleiche Zahlen teilen sich den Rang. */
   const gleich = (a, b) => a.z.summe === b.z.summe && a.z.gold === b.z.gold && a.z.silber === b.z.silber && a.z.bronze === b.z.bronze;
-  aus.forEach((r, i) => { r.rang = i && gleich(aus[i - 1], r) ? aus[i - 1].rang : i + 1; });
-  return aus;
+  feste.forEach((r, i) => { r.rang = i + 1; });
+  rest.forEach((r, i) => { r.rang = i && gleich(rest[i - 1], r) ? rest[i - 1].rang : feste.length + i + 1; });
+  return [...feste, ...rest];
 }
 
 /* ---------- Sätze ---------- */
@@ -107,7 +117,7 @@ export function satzText(m, auswahl, anzahl) {
   const b = m.bereiche.find((x) => x.k === auswahl.bereich);
   if (q) return anzahl ? `${pl(anzahl, 'Person', 'Personen')} gefunden.` : 'Keine Person gefunden. Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.';
   if (auswahl.bereich === 'alle') {
-    return `${pl(m.gesamt.personen, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Die Clubliga zählt je Team und steht darum darunter.`;
+    return `${pl(m.gesamt.personen, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Die Clubliga zählt je Team und steht darum darunter. Ehrenmitglieder stehen oben und zählen in keine Summe.`;
   }
   const s = b.summe;
   switch (auswahl.bereich) {
@@ -115,6 +125,7 @@ export function satzText(m, auswahl, anzahl) {
     case 'nati': return `Im Kader der Schweizer Nati holten ${pl(s.personen, 'Person', 'Personen')} zusammen ${pl(s.podestplaetze, 'Medaille', 'Medaillen')}. Coral nennt nicht, wer gespielt hat; gezählt ist jede Person im gemeldeten Kader.`;
     case 'ranglisten': return `Auf den Jahresranglisten des Verbands standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Gezählt sind nur Schlussstände.`;
     case 'fordere': return `Am Finaltag der Fordere-Liga Luzern standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest.`;
+    case 'turniere': return `An Turnieren von P4P, vom Verband, der World Series und am World Cup standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Ein Doppel zählt für jeden Partner mit Lizenz.`;
     case 'liga': return `In der Clubliga holten die Teams des TFC Luzern ${pl(s.podestplaetze, 'Podestplatz', 'Podestplätze')}. Der Verband nennt keine Spieler, darum stehen hier die Teams.`;
     default: return '';
   }
@@ -136,6 +147,7 @@ function eintragText(e) {
     case 'nati': return `Nati ${e.team}, ${e.turnier}`;
     case 'ranglisten': return `Jahresrangliste, ${e.kategorie}`;
     case 'fordere': return `Fordere-Liga Luzern, ${e.liga} ${e.tischart}`;
+    case 'turniere': return `${e.serie === 'P4P' ? 'P4P' : e.serie === 'STF' ? 'Verbandsturnier' : e.serie === 'WS' ? 'World Series' : e.serie === 'ITSF' ? 'ITSF' : e.serie}, ${e.turnier}, ${e.kategorie}${e.wm ? `, Weltmeister${e.ort ? ` in ${e.ort}` : ''}` : ''}`;
     default: return '';
   }
 }
@@ -150,9 +162,14 @@ const chips = (z) => [['Gold', z.gold], ['Silber', z.silber], ['Bronze', z.bronz
 
 export function zeileHtml(r) {
   const n = r.z.summe;
-  return `<li class="rang"><span class="rang__nr" aria-label="Rang ${r.rang}">${r.rang}</span><div class="rang__text"><h3>${esc(r.p.name)}</h3><p class="rang__titel">${esc(hoechsterTitel(r.e))}</p><div class="rang__chips">${chips(r.z)}</div>`
-    + `<details class="aufklapp"><summary>${pl(n, 'Podestplatz', 'Podestplätze')} ansehen${PFEIL}</summary><ul class="rang__eintraege">${r.e.map(eintragHtml).join('')}</ul></details></div>`
-    + `<div class="rang__zahl"><b>${fmt(n)}</b><small>${n === 1 ? 'Podestplatz' : 'Podestplätze'}</small></div></li>`;
+  const foto = r.p.foto ? `<img class="rang__foto" src="${esc(r.p.foto)}" alt="${esc(r.p.fotoAlt)}" width="160" height="160" loading="lazy" decoding="async">` : '';
+  const ehren = r.p.ehren ? '<span class="marke">Ehrenmitglied, zählt in keine Summe</span>' : '';
+  const titel = r.p.spruch || hoechsterTitel(r.e);
+  const aufklapp = n ? `<details class="aufklapp"><summary>${pl(n, 'Podestplatz', 'Podestplätze')} ansehen${PFEIL}</summary><ul class="rang__eintraege">${r.e.map(eintragHtml).join('')}</ul></details>` : '';
+  const zahl = `<b>${fmt(n)}</b><small>${n === 1 ? 'Podestplatz' : 'Podestplätze'}</small>`;
+  return `<li class="rang"><span class="rang__nr" aria-label="Rang ${r.rang}">${r.rang}</span><div class="rang__text"><div class="rang__kopf">${foto}<h3>${esc(r.p.name)}</h3>${ehren}</div><p class="rang__titel">${esc(titel)}</p><div class="rang__chips">${chips(r.z)}</div>`
+    + `${aufklapp}</div>`
+    + `<div class="rang__zahl">${zahl}</div></li>`;
 }
 
 export const listeHtml = (rs) => rs.map(zeileHtml).join('');
@@ -171,11 +188,31 @@ export function leitHtml(m) {
   const stand = datumLang(m.stand);
   return `<div class="leitzahl__aufbau"><div class="leitzahl__haupt">`
     + `<h2 class="leitzahl__titel"><span class="leitzahl__zahl">${fmt(g.podestplaetze)}</span>Podestplätze holten die Spieler des TFC Luzern</h2>`
-    + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten und die Fordere-Liga Luzern je Person, dazu die Clubliga je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
-    + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org und fordere.ch, abgerufen am ${stand}.</p></div>`
+    + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten, die Fordere-Liga Luzern und die Turniere je Person, dazu die Clubliga je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
+    + (m.champions.summe.teilnahmen ? `<p class="leitzahl__lead">Dazu kommen ${pl(m.champions.summe.teilnahmen, 'Teilnahme', 'Teilnahmen')} an der Champions League. Sie stehen weiter unten und zählen in keine Summe.</p>` : '')
+    + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org, players4players.de und fordere.ch, abgerufen am ${stand}.</p></div>`
     + `<dl class="leitzahl__neben">`
     + `<div><dt>Gold</dt><dd>${fmt(g.gold)}</dd><small>Rang 1, Stand ${stand}</small></div>`
     + `<div><dt>Silber</dt><dd>${fmt(g.silber)}</dd><small>Rang 2, Stand ${stand}</small></div>`
     + `<div><dt>Bronze</dt><dd>${fmt(g.bronze)}</dd><small>Rang 3, Stand ${stand}</small></div>`
     + `</dl></div>`;
+}
+
+/* ---------- Champions League ---------- */
+
+export function championsLead(m) {
+  const t = m.champions.teilnahmen;
+  const orte = [...new Set(t.map((x) => String(x.ort).split(',')[0]))];
+  const reise = orte.length > 1 ? `${orte.slice(0, -1).join(', ')} und ${orte.at(-1)}` : orte[0] || '';
+  const podest = m.champions.summe.podest;
+  return `Der TFC Luzern tritt an, wenn Clubs aus ganz Europa um die Krone spielen. ${pl(t.length, 'Teilnahme ist', 'Teilnahmen sind')} belegt. ${podest ? `${pl(podest, 'Podestplatz ist', 'Podestplätze sind')} dabei.` : 'Ein Pokal fehlt noch im Regal.'} Die Reisen nach ${reise} nimmt uns trotzdem keiner mehr. Darum zählt hier das Dabeisein, und es steht in keiner Summe der Podestplätze.`;
+}
+
+export const championsZahl = (m) => `<b>${fmt(m.champions.summe.teilnahmen)}</b><small>${m.champions.summe.teilnahmen === 1 ? 'Teilnahme' : 'Teilnahmen'}</small>`;
+
+export function championsHtml(m) {
+  return m.champions.teilnahmen.map((t) => {
+    const was = `${t.wettbewerb}, ${t.klasse}, ${t.ort}. Rang ${t.rang} von ${t.teams} Teams${t.podest ? ', Podest' : ''}.${t.spieler.length ? ` Im Kader ${t.spieler.length === 1 ? 'stand' : 'standen'} ${t.spieler.join(', ')}.` : ''}`;
+    return `<li><span class="rang__jahr t-data">${esc(t.jahr)}</span><span class="rang__was">${esc(was)}</span>${link(t.quelle, `${t.wettbewerb} ${t.jahr}`)}</li>`;
+  }).join('');
 }

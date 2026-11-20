@@ -83,5 +83,89 @@
         "jahr": 2023
       }
     }
+  },
+  "ehrenmitglieder": [
+    "Vasco Oliveira"
+  ],
+  "feste_plaetze": [
+    {
+      "name": "Vasco Oliveira",
+      "spruch": "Ich bin Erster, weil ichs kann."
+    },
+    {
+      "name": "Jorge Rodriguez",
+      "spruch": "Aktueller Weltmeister im Fussball."
+    }
+  ],
+  "stf_saisons": [
+    191,
+    192,
+    193
+  ],
+  "itsf_turniere": [
+    {
+      "kurz": "world-cup-2025",
+      "serie": "ITSF"
+    },
+    {
+      "kurz": "ws-leonhart-2024",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-leonhart-2025",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-leonhart-2026/cs",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-garlando-2024",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-garlando-2026",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-bonzini-2024",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-bonzini-2025",
+      "serie": "WS"
+    },
+    {
+      "kurz": "ws-bonzini-2026",
+      "serie": "WS"
+    }
+  ],
+  "champions_turniere": [
+    {
+      "seite": "https://app.tablesoccer.org/p/G63WD6"
+    },
+    {
+      "seite": "https://app.tablesoccer.org/p/AZ8QX7"
+    },
+    {
+      "seite": "https://app.tablesoccer.org/p/Z85OGZ"
+    }
+  ],
+  "champions_muster": "luz|lucern|tfcl",
+  "p4p_wahl": {},
+  "champions_offen": [
+    "Vor 2023 liefert Coral keine Champions League; frühere Teilnahmen sind nicht belegt"
+  ],
+  "turniere_offen": [
+    "STF 2019 bis August 2024: archivierte Verbandsseiten, noch nicht ausgewertet",
+    "DTFB und Bundesliga: noch nicht durchsucht",
+    "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
+    "ITSF World Series vor 2024 und World Cups vor 2025: Coral liefert nichts"
+  ],
+  "fotos": {
+    "Vasco Oliveira": {
+      "datei": "bilder/vasco-oliveira.webp",
+      "alt": "Vasco Oliveira, Ehrenmitglied, lächelnd im blauen Trikot"
+    }
   }
 }

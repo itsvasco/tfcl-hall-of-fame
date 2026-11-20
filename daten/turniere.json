@@ -1,0 +1,892 @@
+{
+  "abgerufen": "2026-11-20",
+  "hinweis": "Handdatei, vom Sammelskript erzeugt. Personen als Namenskennung der Spielerliste, Quelle je Eintrag.",
+  "eintraege": [
+    {
+      "jahr": 2026,
+      "datum": "2026-11-06",
+      "turnier": "P4P Championship 2026",
+      "serie": "P4P",
+      "disziplin": "Amateur Einzel",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/210",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-10-14",
+      "turnier": "World Series Leonhart 2026",
+      "serie": "WS",
+      "disziplin": "Junior Under 19 Classic",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2026/cs",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-10-14",
+      "turnier": "World Series Leonhart 2026",
+      "serie": "WS",
+      "disziplin": "Senior Over 63 Doubles",
+      "rang": 2,
+      "personen": [
+        "daniel-flueler"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2026/cs",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-10-10",
+      "turnier": "Swiss Open 2026",
+      "serie": "P4P",
+      "disziplin": "Neulinge Einzel",
+      "rang": 1,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/209",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-10-02",
+      "turnier": "STRT - TFC Zürich - OD - 2026/06",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZMP2AZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-09-05",
+      "turnier": "STS26 - Val d'Iliez",
+      "serie": "STF",
+      "disziplin": "Amateur Doppel",
+      "rang": 1,
+      "personen": [
+        "matteo-cosi",
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-09-05",
+      "turnier": "STS26 - Val d'Iliez",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-08-29",
+      "turnier": "TFC Bern Pro Regio Turnier Open Air 2026",
+      "serie": "STF",
+      "disziplin": "Open Air Offenes Doppel",
+      "rang": 1,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZWLQE7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-08-15",
+      "turnier": "STS26 - Zürich - ITSF 250",
+      "serie": "STF",
+      "disziplin": "Amateur Einzel",
+      "rang": 3,
+      "personen": [
+        "luca-escribano"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-08-15",
+      "turnier": "STS26 - Zürich - ITSF 250",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-08-15",
+      "turnier": "STS26 - Zürich - ITSF 250",
+      "serie": "STF",
+      "disziplin": "Open Mixed",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-07-27",
+      "turnier": "STRT - TFC Zürich - OE - 2026/10",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z8RW56",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-06-04",
+      "turnier": "World Series Bonzini 2026",
+      "serie": "WS",
+      "disziplin": "Junior Mixed",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-bonzini-2026",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-06-04",
+      "turnier": "World Series Bonzini 2026",
+      "serie": "WS",
+      "disziplin": "Junior U19 Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-bonzini-2026",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-03-01",
+      "turnier": "STRT26 CFTJS - OD - 2026/02",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi",
+        "pascal-felber"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6AYJA6",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-02-19",
+      "turnier": "STRT Zürich - OE - 2026/02",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZV3AB7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-02-06",
+      "turnier": "STRT Zürich - OD - 2026/02",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki",
+        "tomas-karajan"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-01-16",
+      "turnier": "STRT Zürich - OD - 2026/01",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z8524Z",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-01-10",
+      "turnier": "STS26 - Luzern - Jahreseröffnungsturnier",
+      "serie": "STF",
+      "disziplin": "Junior Under 19 Singles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6EL8MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-01-10",
+      "turnier": "STS26 - Luzern - Jahreseröffnungsturnier",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6EL8MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2026,
+      "datum": "2026-01-10",
+      "turnier": "STS26 - Luzern - Jahreseröffnungsturnier",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/6EL8MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-12-11",
+      "turnier": "STRT26 - TFC Zürich - OD - Herbst Tour",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z452W7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-10-11",
+      "turnier": "STS Teufenthal - 2025/06 - ITSF 500 WT 2025",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z5GBMZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-10-11",
+      "turnier": "STS Teufenthal - 2025/06 - ITSF 500 WT 2025",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z5GBMZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-08-14",
+      "turnier": "World Series Leonhart 2025",
+      "serie": "WS",
+      "disziplin": "Junior U19 Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2025",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-08-14",
+      "turnier": "World Series Leonhart 2025",
+      "serie": "WS",
+      "disziplin": "Junior U19 Singles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2025",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-08-02",
+      "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
+      "serie": "STF",
+      "disziplin": "Open Mixed",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/63DVK7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-08-02",
+      "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/63DVK7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-07-19",
+      "turnier": "STRT Zürich - OD - 2025/10 - Leonhart",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZOX5AZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-06-23",
+      "turnier": "World Cup 2025",
+      "serie": "ITSF",
+      "disziplin": "Men Classic",
+      "rang": 1,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/world-cup-2025",
+      "abgerufen": "2026-11-20",
+      "ort": "Zaragoza, Spain"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-06-07",
+      "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-06-07",
+      "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-05-31",
+      "turnier": "STRT Seetal - OD, MX - 2025/02",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ZM33L7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-05-24",
+      "turnier": "Münchberg Open 2025",
+      "serie": "P4P",
+      "disziplin": "Offenes Doppel",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/201",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-05-08",
+      "turnier": "World Series Bonzini 2025",
+      "serie": "WS",
+      "disziplin": "Junior U19 Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-bonzini-2025",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-04-12",
+      "turnier": "STS Zürich (Urdorf) - 2025/03",
+      "serie": "STF",
+      "disziplin": "Junior Under 19 Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/DZWRB7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-04-12",
+      "turnier": "STS Zürich (Urdorf) - 2025/03",
+      "serie": "STF",
+      "disziplin": "Junior Under 19 Singles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/DZWRB7",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-22",
+      "turnier": "STS Luzern (Rothenburg) - 2025/02",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "martin-felder",
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-22",
+      "turnier": "STS Luzern (Rothenburg) - 2025/02",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-22",
+      "turnier": "STS Luzern (Rothenburg) - 2025/02",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-22",
+      "turnier": "STS Luzern (Rothenburg) - 2025/02",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-22",
+      "turnier": "STS Luzern (Rothenburg) - 2025/02",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "jan-angara"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-12-29",
+      "turnier": "STRT Bern",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann",
+        "reto-odermatt"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/69NPJ6",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-10-31",
+      "turnier": "World Series Garlando 2024",
+      "serie": "WS",
+      "disziplin": "Junior U19 Classic",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-10-31",
+      "turnier": "World Series Garlando 2024",
+      "serie": "WS",
+      "disziplin": "Junior U19 Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-10-31",
+      "turnier": "World Series Garlando 2024",
+      "serie": "WS",
+      "disziplin": "Senior O63 Classic",
+      "rang": 2,
+      "personen": [
+        "daniel-flueler"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-01-06",
+      "turnier": "Allgäu Open 2024",
+      "serie": "P4P",
+      "disziplin": "Pro-Am",
+      "rang": 2,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/192",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-10-08",
+      "turnier": "Swiss Open 2022",
+      "serie": "P4P",
+      "disziplin": "Offenes Einzel",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/183",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2020,
+      "datum": "2020-01-04",
+      "turnier": "Allgäu Open 2020",
+      "serie": "P4P",
+      "disziplin": "D.Y.P.",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2020,
+      "datum": "2020-01-04",
+      "turnier": "Allgäu Open 2020",
+      "serie": "P4P",
+      "disziplin": "Elite Doppel",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-10-07",
+      "turnier": "Swiss Open 2017",
+      "serie": "P4P",
+      "disziplin": "Neulinge Doppel",
+      "rang": 1,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/157",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-04-08",
+      "turnier": "Hessische Meisterschaft 2017",
+      "serie": "P4P",
+      "disziplin": "Amateur Doppel",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/153",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-01-28",
+      "turnier": "Maritim Open 2017",
+      "serie": "P4P",
+      "disziplin": "Amateur Doppel",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/150",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-10-01",
+      "turnier": "Swiss Open 2016",
+      "serie": "P4P",
+      "disziplin": "Amateur Einzel",
+      "rang": 1,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-10-01",
+      "turnier": "Swiss Open 2016",
+      "serie": "P4P",
+      "disziplin": "Neulinge Einzel",
+      "rang": 1,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/148",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-09-05",
+      "turnier": "Südbadische Meisterschaft 2015",
+      "serie": "P4P",
+      "disziplin": "Amateur Doppel",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2015,
+      "datum": "2015-09-05",
+      "turnier": "Südbadische Meisterschaft 2015",
+      "serie": "P4P",
+      "disziplin": "Amateur Einzel",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-10-04",
+      "turnier": "Swiss Open 2014",
+      "serie": "P4P",
+      "disziplin": "Neulinge Doppel",
+      "rang": 2,
+      "personen": [
+        "peter-felder",
+        "adrian-schuler"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-10-04",
+      "turnier": "Swiss Open 2014",
+      "serie": "P4P",
+      "disziplin": "Neulinge Einzel",
+      "rang": 1,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-10-04",
+      "turnier": "Swiss Open 2014",
+      "serie": "P4P",
+      "disziplin": "Pro-Am",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/126",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-01-25",
+      "turnier": "Maritim Open 2014",
+      "serie": "P4P",
+      "disziplin": "Amateur Doppel",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/116",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2014,
+      "datum": "2014-01-25",
+      "turnier": "Maritim Open 2014",
+      "serie": "P4P",
+      "disziplin": "D.Y.P.",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/116",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2013,
+      "datum": "2013-10-25",
+      "turnier": "Deutsche Meisterschaft 2013",
+      "serie": "P4P",
+      "disziplin": "Amateur Doppel",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/115",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2013,
+      "datum": "2013-09-14",
+      "turnier": "Swiss Open 2013",
+      "serie": "P4P",
+      "disziplin": "Amateur Einzel",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2013,
+      "datum": "2013-09-14",
+      "turnier": "Swiss Open 2013",
+      "serie": "P4P",
+      "disziplin": "Neulinge Einzel",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2011,
+      "datum": "2011-09-03",
+      "turnier": "Swiss Open 2011",
+      "serie": "P4P",
+      "disziplin": "Neulinge Doppel",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann",
+        "arpad-wicki"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/93",
+      "abgerufen": "2026-11-20"
+    },
+    {
+      "jahr": 2010,
+      "datum": "2010-09-11",
+      "turnier": "Swiss Open 2010",
+      "serie": "P4P",
+      "disziplin": "Neulinge Doppel",
+      "rang": 3,
+      "personen": [
+        "marc-burri"
+      ],
+      "quelle": "https://www.players4players.de/index.php/de/p4presults/83",
+      "abgerufen": "2026-11-20"
+    }
+  ],
+  "offen": [
+    "STF Saison 191: die Abfrage liefert höchstens 50 Turniere, vollständig nur über die Orte",
+    "STF 2019 bis August 2024: archivierte Verbandsseiten, noch nicht ausgewertet",
+    "DTFB und Bundesliga: noch nicht durchsucht",
+    "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
+    "ITSF World Series vor 2024 und World Cups vor 2025: Coral liefert nichts"
+  ]
+}

@@ -1,7 +1,13 @@
 // Die Abrufe der Quellen. Jede Funktion liefert Rohdaten und wirft bei Fehlern; geschrieben wird hier nichts.
 // erneuern.mjs bekommt diese Funktionen als Parameter, der Test setzt feste Eingaben ein (kein Netz).
 import { getDocument } from 'pdfjs-dist/legacy/build/pdf.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { TS, holeJson } from './gemeinsam.mjs';
+
+const DATEN = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'daten');
+const hand = (datei) => JSON.parse(fs.readFileSync(path.join(DATEN, datei), 'utf8'));
 import { holeTurniere } from './coral.mjs';
 
 async function text(url) {
@@ -15,6 +21,9 @@ export const echt = {
   rangliste: (saison, kategorie, seite) => holeJson(`${TS}?tour=78&season=${saison}&rule=1&category=${kategorie}&page=${seite}`),
   archiv: (zeitstempel) => text(`https://web.archive.org/web/${zeitstempel}/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten`),
   coral: (slugs) => holeTurniere(slugs),
+  // Handdateien, vom Sammelskript (tools/turniere-sammeln.mjs) erzeugt
+  turniere: async () => hand('turniere.json'),
+  champions: async () => hand('champions-league.json'),
   fordere: (nr) => holeJson(`https://fordere.ch/api/seasons/${nr}/final-day`),
   // PDF der Clubliga als Textstücke mit Lage: [{ seite, x, y, str }]
   async pdf(jahr) {

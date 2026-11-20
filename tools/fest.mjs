@@ -32,6 +32,9 @@ const teile = {
   satz: R.satzText(m, { bereich: 'alle', q: '' }, alle.length),
   liste: R.listeHtml(alle),
   teams: R.teamsHtml(m),
+  'champions-lead': R.championsLead(m),
+  'champions-zahl': R.championsZahl(m),
+  champions: R.championsHtml(m),
   stand: R.datumLang(m.stand),
   kontakt: `<a class="btn btn--zwei btn--gross" href="mailto:${R.esc(kontakt)}">Vasco schreiben</a><span class="t-muted">${R.esc(kontakt)}</span>`,
 };

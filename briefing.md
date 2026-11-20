@@ -10,8 +10,9 @@ eigenen Namen finden. Angesprochen mit «du».
 
 ## Angebot
 Eine Seite mit allen Podestplätzen der Spieler, die heute eine Lizenz beim TFC Luzern haben:
-Schweizermeisterschaft, Jahresrangliste, Nati, Clubliga, Fordere-Liga Luzern. Turniere folgen
-in einem zweiten Schritt.
+Schweizermeisterschaft, Jahresrangliste, Nati, Clubliga, Fordere-Liga Luzern und Turniere (P4P,
+Verbandsturniere, World Series, World Cup). Ein eigener Abschnitt würdigt die Teilnahmen des Clubs an der
+Champions League; sie zählen nicht in die Summe der Podestplätze.
 
 ## Problem
 Die Erfolge stehen verstreut bei Verband, Coral, Liga-PDFs und fordere.ch. Niemand im Club sieht
@@ -31,7 +32,7 @@ Verbandsquelle. Keine Punkte, keine Spieler-IDs.
 
 ## Bilder
 Logo und Farben des TFC Luzern, von seiner Website geholt (Vasco, 2026-11-20: «nimm das Logo von
-ihnen und die Farben»). Keine Fotos; Gesamtzahl und Podest tragen den Einstieg.
+ihnen und die Farben»). Ein Foto: Vasco Oliveira als Ehrenmitglied (Vasco, 2026-11-20: «von mir nimmst du als einziger ein foto»), aus der Galerie des TFCZ, 160 px, ohne EXIF, XMP und Farbprofil (`site/bilder/vasco-oliveira.webp`). Sonst keine Fotos; Gesamtzahl und Podest tragen den Einstieg.
 
 Quelle des Logos (geholt am 2026-11-20): Schild «TFCL Tischfussballclub Luzern» von
 https://www.tfcluzern.com (Kopfzeile, Squarespace-Bild `IMG_20230504_213754_335.png`,

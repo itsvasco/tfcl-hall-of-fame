@@ -1,7 +1,7 @@
 /* Hall of Fame TFC Luzern: lädt den Schnappschuss und macht Suche und Filter. Das HTML trägt den Anfangszustand
    schon fest (tools/fest.mjs, derselbe Code wie hier, js/rendern.js); beim Laden wird aus dem frischen Schnappschuss
    nachgezeichnet, damit ein neuerer Stand auch ohne neuen Bau erscheint. */
-import { modell, zeilen, listeHtml, teamsHtml, satzText, filterHtml, leitHtml, datumLang } from './rendern.js';
+import { modell, zeilen, listeHtml, teamsHtml, satzText, filterHtml, leitHtml, datumLang, championsLead, championsZahl, championsHtml } from './rendern.js';
 
 const DATEI = 'daten/hall-of-fame.json';
 const el = (id) => document.getElementById(id);
@@ -20,6 +20,9 @@ function zeichneAlles() {
   el('leit').innerHTML = leitHtml(m);
   el('filter').innerHTML = filterHtml(m, auswahl.bereich);
   el('teams').innerHTML = teamsHtml(m);
+  el('champions-lead').textContent = championsLead(m);
+  el('champions-zahl').innerHTML = championsZahl(m);
+  el('champions').innerHTML = championsHtml(m);
   el('stand').textContent = datumLang(m.stand);
   zeichneListe();
 }
