@@ -10,4 +10,4 @@ Statische Seite ohne Server. Quelle der Seite ist nur der Schnappschuss `daten/h
 - `tools/fest.mjs`: schreibt Texte und Zahlen fest ins HTML und kopiert den Schnappschuss nach `site/daten/`.
 - Marke in `marke/` (Kern 1.26.0 des Brand Systems), Seite `site/index.html`.
 - Stand 2026-11-20: 150 Podestplätze (54/36/60), 20 Personen; Turniere 70 (22/18/30, 15 Personen: P4P 24 Einträge, STF 32, WS 10, ITSF 1); Champions League 3 Teilnahmen (2023 Rom Rang 5 von 23, 2024 Genua Rang 14 von 24, 2026 Messina Rang 10 von 29), ausserhalb der Summe.
-- Deploy: GitHub Pages (Vasco, 2026-11-20). Offen: Repo anlegen und Pages einschalten.
+- Deploy: GitHub Pages über `.github/workflows/pages.yml` (Ordner `site/`), jeder Push auf main veröffentlicht. Repo `itsvasco/tfcl-hall-of-fame` öffentlich seit 2026-11-20 (Vasco: «mach du das»). Schlägt «deploy-pages» mit «No artifacts» fehl, den Lauf einmal wiederholen (`gh run rerun`).
