@@ -5,11 +5,11 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 280,
-    "gold": 105,
-    "silber": 76,
-    "bronze": 99,
-    "personen": 22
+    "podestplaetze": 340,
+    "gold": 123,
+    "silber": 100,
+    "bronze": 117,
+    "personen": 25
   },
   "bereiche": [
     {
@@ -90,11 +90,11 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 200,
-        "gold": 73,
-        "silber": 58,
-        "bronze": 69,
-        "personen": 17
+        "podestplaetze": 260,
+        "gold": 91,
+        "silber": 82,
+        "bronze": 87,
+        "personen": 24
       }
     }
   ],
@@ -103,12 +103,12 @@
       "id": "vasco-oliveira",
       "name": "Vasco Oliveira",
       "gold": 2,
-      "silber": 1,
-      "bronze": 2,
-      "summe": 5,
+      "silber": 2,
+      "bronze": 3,
+      "summe": 7,
       "bereiche": {
         "fordere": 1,
-        "turniere": 4
+        "turniere": 6
       },
       "fest": 1,
       "spruch": "Ich bin Erster, weil ichs kann.",
@@ -120,11 +120,12 @@
       "id": "jorge-rodriguez",
       "name": "Jorge Rodriguez",
       "gold": 1,
-      "silber": 0,
+      "silber": 1,
       "bronze": 0,
-      "summe": 1,
+      "summe": 2,
       "bereiche": {
-        "fordere": 1
+        "fordere": 1,
+        "turniere": 1
       },
       "fest": 2,
       "spruch": "Aktueller Weltmeister im Fussball."
@@ -132,43 +133,43 @@
     {
       "id": "hannes-wallimann",
       "name": "Hannes Wallimann",
-      "gold": 41,
-      "silber": 22,
-      "bronze": 24,
-      "summe": 87,
+      "gold": 45,
+      "silber": 26,
+      "bronze": 25,
+      "summe": 96,
       "bereiche": {
         "sm": 18,
         "nati": 1,
         "ranglisten": 1,
-        "turniere": 67
+        "turniere": 76
       }
     },
     {
       "id": "rayan-van-stokkum",
       "name": "Rayan Van Stokkum",
-      "gold": 23,
-      "silber": 20,
-      "bronze": 14,
-      "summe": 57,
+      "gold": 24,
+      "silber": 21,
+      "bronze": 15,
+      "summe": 60,
       "bereiche": {
         "sm": 8,
         "nati": 1,
         "ranglisten": 3,
-        "turniere": 45
+        "turniere": 48
       }
     },
     {
       "id": "peter-felder",
       "name": "Peter Felder",
-      "gold": 10,
-      "silber": 14,
-      "bronze": 12,
-      "summe": 36,
+      "gold": 11,
+      "silber": 16,
+      "bronze": 15,
+      "summe": 42,
       "bereiche": {
         "sm": 4,
         "nati": 2,
         "fordere": 3,
-        "turniere": 27
+        "turniere": 33
       }
     },
     {
@@ -176,35 +177,59 @@
       "name": "Arpad Wicki",
       "gold": 7,
       "silber": 3,
-      "bronze": 14,
-      "summe": 24,
+      "bronze": 15,
+      "summe": 25,
       "bereiche": {
         "sm": 1,
-        "turniere": 23
-      }
-    },
-    {
-      "id": "adrian-schuler",
-      "name": "Adrian Schuler",
-      "gold": 2,
-      "silber": 3,
-      "bronze": 7,
-      "summe": 12,
-      "bereiche": {
-        "sm": 2,
-        "turniere": 10
+        "turniere": 24
       }
     },
     {
       "id": "reto-odermatt",
       "name": "Reto Odermatt",
-      "gold": 3,
-      "silber": 1,
-      "bronze": 4,
-      "summe": 8,
+      "gold": 6,
+      "silber": 3,
+      "bronze": 6,
+      "summe": 15,
       "bereiche": {
         "fordere": 2,
-        "turniere": 6
+        "turniere": 13
+      }
+    },
+    {
+      "id": "adrian-schuler",
+      "name": "Adrian Schuler",
+      "gold": 3,
+      "silber": 3,
+      "bronze": 9,
+      "summe": 15,
+      "bereiche": {
+        "sm": 2,
+        "turniere": 13
+      }
+    },
+    {
+      "id": "matteo-cosi",
+      "name": "Matteo Cosi",
+      "gold": 4,
+      "silber": 5,
+      "bronze": 1,
+      "summe": 10,
+      "bereiche": {
+        "ranglisten": 1,
+        "fordere": 1,
+        "turniere": 8
+      }
+    },
+    {
+      "id": "manuel-ragonesi",
+      "name": "Manuel Ragonesi",
+      "gold": 2,
+      "silber": 0,
+      "bronze": 7,
+      "summe": 9,
+      "bereiche": {
+        "turniere": 9
       }
     },
     {
@@ -221,28 +246,51 @@
       }
     },
     {
-      "id": "matteo-cosi",
-      "name": "Matteo Cosi",
+      "id": "luca-escribano",
+      "name": "Luca Escribano",
       "gold": 3,
       "silber": 2,
-      "bronze": 0,
-      "summe": 5,
+      "bronze": 1,
+      "summe": 6,
       "bereiche": {
         "ranglisten": 1,
-        "fordere": 1,
+        "turniere": 5
+      }
+    },
+    {
+      "id": "alain-baumann",
+      "name": "Alain Baumann",
+      "gold": 2,
+      "silber": 2,
+      "bronze": 1,
+      "summe": 5,
+      "bereiche": {
+        "fordere": 2,
         "turniere": 3
       }
     },
     {
-      "id": "luca-escribano",
-      "name": "Luca Escribano",
-      "gold": 2,
-      "silber": 1,
-      "bronze": 1,
-      "summe": 4,
+      "id": "silvio-fischer",
+      "name": "Silvio Fischer",
+      "gold": 1,
+      "silber": 2,
+      "bronze": 2,
+      "summe": 5,
       "bereiche": {
-        "ranglisten": 1,
-        "turniere": 3
+        "fordere": 3,
+        "turniere": 2
+      }
+    },
+    {
+      "id": "daniel-flueler",
+      "name": "Daniel Flüeler",
+      "gold": 0,
+      "silber": 2,
+      "bronze": 3,
+      "summe": 5,
+      "bereiche": {
+        "nati": 1,
+        "turniere": 4
       }
     },
     {
@@ -258,36 +306,47 @@
       }
     },
     {
-      "id": "manuel-ragonesi",
-      "name": "Manuel Ragonesi",
-      "gold": 1,
-      "silber": 0,
-      "bronze": 2,
+      "id": "an-cosi",
+      "name": "An Cosi",
+      "gold": 2,
+      "silber": 1,
+      "bronze": 0,
       "summe": 3,
       "bereiche": {
         "turniere": 3
       }
     },
     {
-      "id": "silvio-fischer",
-      "name": "Silvio Fischer",
-      "gold": 1,
-      "silber": 0,
-      "bronze": 2,
-      "summe": 3,
-      "bereiche": {
-        "fordere": 3
-      }
-    },
-    {
-      "id": "daniel-flueler",
-      "name": "Daniel Flüeler",
+      "id": "tomas-karajan",
+      "name": "Tomas Karajan",
       "gold": 0,
       "silber": 2,
       "bronze": 1,
       "summe": 3,
       "bereiche": {
-        "nati": 1,
+        "turniere": 3
+      }
+    },
+    {
+      "id": "vullnet-fazliu",
+      "name": "Vullnet Fazliu",
+      "gold": 0,
+      "silber": 2,
+      "bronze": 1,
+      "summe": 3,
+      "bereiche": {
+        "fordere": 1,
+        "turniere": 2
+      }
+    },
+    {
+      "id": "fabio-di-crescenzo",
+      "name": "Fabio Di Crescenzo",
+      "gold": 2,
+      "silber": 0,
+      "bronze": 0,
+      "summe": 2,
+      "bereiche": {
         "turniere": 2
       }
     },
@@ -297,17 +356,6 @@
       "gold": 1,
       "silber": 1,
       "bronze": 0,
-      "summe": 2,
-      "bereiche": {
-        "fordere": 2
-      }
-    },
-    {
-      "id": "alain-baumann",
-      "name": "Alain Baumann",
-      "gold": 1,
-      "silber": 0,
-      "bronze": 1,
       "summe": 2,
       "bereiche": {
         "fordere": 2
@@ -326,8 +374,8 @@
       }
     },
     {
-      "id": "fabio-di-crescenzo",
-      "name": "Fabio Di Crescenzo",
+      "id": "urs-morgenegg",
+      "name": "Urs Morgenegg",
       "gold": 1,
       "silber": 0,
       "bronze": 0,
@@ -359,25 +407,14 @@
       }
     },
     {
-      "id": "tomas-karajan",
-      "name": "Tomas Karajan",
+      "id": "marina-von-allmen",
+      "name": "Marina Von Allmen",
       "gold": 0,
-      "silber": 0,
-      "bronze": 1,
+      "silber": 1,
+      "bronze": 0,
       "summe": 1,
       "bereiche": {
         "turniere": 1
-      }
-    },
-    {
-      "id": "vullnet-fazliu",
-      "name": "Vullnet Fazliu",
-      "gold": 0,
-      "silber": 0,
-      "bronze": 1,
-      "summe": 1,
-      "bereiche": {
-        "fordere": 1
       }
     }
   ],
@@ -1186,10 +1223,10 @@
     "personen": [
       {
         "id": "hannes-wallimann",
-        "gold": 33,
-        "silber": 16,
-        "bronze": 18,
-        "summe": 67,
+        "gold": 37,
+        "silber": 20,
+        "bronze": 19,
+        "summe": 76,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -1253,6 +1290,26 @@
           },
           {
             "jahr": 2024,
+            "datum": "2024-09-07",
+            "turnier": "Swiss Tablesoccer Serie (STS) Simmental",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320205630/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=283",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-05-04",
+            "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320212941/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=260",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
             "datum": "2024-04-20",
             "turnier": "STS Teufenthal Open - ITSF 250 WT 2024",
             "serie": "ITSF-Tour",
@@ -1263,12 +1320,32 @@
           },
           {
             "jahr": 2024,
+            "datum": "2024-02-23",
+            "turnier": "STRT Zürich",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320223546/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=233",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
             "datum": "2024-01-20",
             "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
             "serie": "ITSF-Tour",
             "disziplin": "Open Doubles",
             "rang": 1,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708135534&lang=de&competitionId=0&originalCompetitionId=708285397&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-12-29",
+            "turnier": "STRT Bern",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320212143/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=229",
             "abgerufen": "2026-11-21"
           },
           {
@@ -1303,6 +1380,26 @@
           },
           {
             "jahr": 2023,
+            "datum": "2023-05-06",
+            "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+            "serie": "STF",
+            "disziplin": "Mixed",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-05-06",
+            "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
             "datum": "2023-01-28",
             "turnier": "Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023",
             "serie": "ITSF-Tour",
@@ -1329,6 +1426,16 @@
             "disziplin": "Open Singles",
             "rang": 3,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=521567249&lang=de&competitionId=0&originalCompetitionId=521567580&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-08-02",
+            "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+            "serie": "STF",
+            "disziplin": "Open Single",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
             "abgerufen": "2026-11-21"
           },
           {
@@ -1399,6 +1506,16 @@
             "disziplin": "Open Doubles",
             "rang": 3,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=436045552&lang=de&competitionId=0&originalCompetitionId=436045565&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-09-26",
+            "turnier": "STRT Tablesoccer beider Basel",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20210418055044/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=104",
             "abgerufen": "2026-11-21"
           },
           {
@@ -1589,6 +1706,16 @@
             "disziplin": "Open Singles",
             "rang": 1,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157254645&lang=de&competitionId=0&originalCompetitionId=157254735&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-18",
+            "turnier": "Swiss Garlando Finals",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
             "abgerufen": "2026-11-21"
           },
           {
@@ -1865,10 +1992,10 @@
       },
       {
         "id": "rayan-van-stokkum",
-        "gold": 16,
-        "silber": 17,
-        "bronze": 12,
-        "summe": 45,
+        "gold": 17,
+        "silber": 18,
+        "bronze": 13,
+        "summe": 48,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2251,6 +2378,16 @@
             "abgerufen": "2026-11-21"
           },
           {
+            "jahr": 2023,
+            "datum": "2023-03-12",
+            "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230607080527/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=173",
+            "abgerufen": "2026-11-21"
+          },
+          {
             "jahr": 2022,
             "datum": "2022-10-07",
             "turnier": "Sofia Grand Masters XIII 2022 - ITSF Master Tour 2022",
@@ -2312,6 +2449,16 @@
           },
           {
             "jahr": 2022,
+            "datum": "2022-05-02",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20220517211532/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=131",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
             "datum": "2022-03-04",
             "turnier": "Vienna Open II.- ITSF Master Tour 2022",
             "serie": "ITSF-Tour",
@@ -2319,254 +2466,25 @@
             "rang": 3,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=482266759&lang=de&competitionId=0&originalCompetitionId=482266894&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
             "abgerufen": "2026-11-21"
-          }
-        ]
-      },
-      {
-        "id": "arpad-wicki",
-        "gold": 7,
-        "silber": 3,
-        "bronze": 13,
-        "summe": 23,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-11-06",
-            "turnier": "P4P Championship 2026",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/210",
-            "abgerufen": "2026-11-20"
           },
           {
-            "jahr": 2026,
-            "datum": "2026-02-06",
-            "turnier": "STRT Zürich - OD - 2026/02",
+            "jahr": 2022,
+            "datum": "2022-01-08",
+            "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
             "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-05-31",
-            "turnier": "STRT Seetal - OD, MX - 2025/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZM33L7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-05-24",
-            "turnier": "Münchberg Open 2025",
-            "serie": "P4P",
-            "disziplin": "Offenes Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/201",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2024,
-            "datum": "2024-10-18",
-            "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
-            "serie": "ITSF-Tour",
-            "disziplin": "Open Classic Doubles",
+            "disziplin": "Rookie Doubles",
             "rang": 1,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121",
             "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2024,
-            "datum": "2024-07-26",
-            "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
-            "serie": "ITSF-Tour",
-            "disziplin": "Men Classic Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2024,
-            "datum": "2024-05-31",
-            "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
-            "serie": "ITSF-Tour",
-            "disziplin": "Open Classic Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2024,
-            "datum": "2024-01-06",
-            "turnier": "Allgäu Open 2024",
-            "serie": "P4P",
-            "disziplin": "Pro-Am",
-            "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/192",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2023,
-            "datum": "2023-12-01",
-            "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
-            "serie": "ITSF-Tour",
-            "disziplin": "Classic Open Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2023,
-            "datum": "2023-06-16",
-            "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
-            "serie": "ITSF-Tour",
-            "disziplin": "Classic Open Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2020,
-            "datum": "2020-01-04",
-            "turnier": "Allgäu Open 2020",
-            "serie": "P4P",
-            "disziplin": "D.Y.P.",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2020,
-            "datum": "2020-01-04",
-            "turnier": "Allgäu Open 2020",
-            "serie": "P4P",
-            "disziplin": "Elite Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2018,
-            "datum": "2018-11-30",
-            "turnier": "Czech LEONHART Open VII",
-            "serie": "ITSF-Tour",
-            "disziplin": "Doubles - A",
-            "rang": 2,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2018,
-            "datum": "2018-03-23",
-            "turnier": "Czech LEONHART Championship 2018",
-            "serie": "ITSF-Tour",
-            "disziplin": "Amateur Doubles",
-            "rang": 1,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-04-08",
-            "turnier": "Hessische Meisterschaft 2017",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/153",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-03-10",
-            "turnier": "Czech Leonhart Championship 2017",
-            "serie": "ITSF-Tour",
-            "disziplin": "Amateur Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-01-28",
-            "turnier": "Maritim Open 2017",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/150",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2016,
-            "datum": "2016-12-02",
-            "turnier": "Czech Leonhart Open V - 2016",
-            "serie": "ITSF-Tour",
-            "disziplin": "FRIDAY DYP",
-            "rang": 1,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2016,
-            "datum": "2016-12-02",
-            "turnier": "Czech Leonhart Open V - 2016",
-            "serie": "ITSF-Tour",
-            "disziplin": "AMATEUR DOUBLES",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2015,
-            "datum": "2015-09-05",
-            "turnier": "Südbadische Meisterschaft 2015",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2015,
-            "datum": "2015-09-05",
-            "turnier": "Südbadische Meisterschaft 2015",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2013,
-            "datum": "2013-09-14",
-            "turnier": "Swiss Open 2013",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2011,
-            "datum": "2011-09-03",
-            "turnier": "Swiss Open 2011",
-            "serie": "P4P",
-            "disziplin": "Neulinge Doppel",
-            "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/93",
-            "abgerufen": "2026-11-20"
           }
         ]
       },
       {
         "id": "peter-felder",
-        "gold": 6,
-        "silber": 13,
-        "bronze": 8,
-        "summe": 27,
+        "gold": 7,
+        "silber": 15,
+        "bronze": 11,
+        "summe": 33,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2642,6 +2560,16 @@
           },
           {
             "jahr": 2024,
+            "datum": "2024-04-08",
+            "turnier": "STRT TFCL",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
             "datum": "2024-01-20",
             "turnier": "Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024",
             "serie": "ITSF-Tour",
@@ -2661,6 +2589,36 @@
             "abgerufen": "2026-11-21"
           },
           {
+            "jahr": 2023,
+            "datum": "2023-06-17",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230926122628/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=195",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-05-06",
+            "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+            "serie": "STF",
+            "disziplin": "Mixed",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-03-20",
+            "turnier": "STRT Luzern",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230607101741/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=178",
+            "abgerufen": "2026-11-21"
+          },
+          {
             "jahr": 2022,
             "datum": "2022-10-08",
             "turnier": "Swiss Open 2022",
@@ -2669,6 +2627,16 @@
             "rang": 2,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/183",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2021,
+            "datum": "2021-09-09",
+            "turnier": "Swiss Tablesoccer Serie (STS) Uetendorf",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20211129030035/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=118",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2018,
@@ -2698,6 +2666,16 @@
             "disziplin": "Open Singles",
             "rang": 3,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-18",
+            "turnier": "Swiss Garlando Finals",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
             "abgerufen": "2026-11-21"
           },
           {
@@ -2843,12 +2821,499 @@
         ]
       },
       {
-        "id": "adrian-schuler",
-        "gold": 2,
+        "id": "arpad-wicki",
+        "gold": 7,
         "silber": 3,
-        "bronze": 5,
-        "summe": 10,
+        "bronze": 14,
+        "summe": 24,
         "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-11-06",
+            "turnier": "P4P Championship 2026",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/210",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2026,
+            "datum": "2026-02-06",
+            "turnier": "STRT Zürich - OD - 2026/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-05-31",
+            "turnier": "STRT Seetal - OD, MX - 2025/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZM33L7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-05-24",
+            "turnier": "Münchberg Open 2025",
+            "serie": "P4P",
+            "disziplin": "Offenes Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/201",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-10-18",
+            "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Classic Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-07-26",
+            "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Men Classic Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-05-31",
+            "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Classic Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-01-06",
+            "turnier": "Allgäu Open 2024",
+            "serie": "P4P",
+            "disziplin": "Pro-Am",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/192",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-12-01",
+            "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
+            "serie": "ITSF-Tour",
+            "disziplin": "Classic Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-16",
+            "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Classic Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-02-11",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230607084520/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=171",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-01-04",
+            "turnier": "Allgäu Open 2020",
+            "serie": "P4P",
+            "disziplin": "D.Y.P.",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-01-04",
+            "turnier": "Allgäu Open 2020",
+            "serie": "P4P",
+            "disziplin": "Elite Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-11-30",
+            "turnier": "Czech LEONHART Open VII",
+            "serie": "ITSF-Tour",
+            "disziplin": "Doubles - A",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-03-23",
+            "turnier": "Czech LEONHART Championship 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Amateur Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-04-08",
+            "turnier": "Hessische Meisterschaft 2017",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/153",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-03-10",
+            "turnier": "Czech Leonhart Championship 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Amateur Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-01-28",
+            "turnier": "Maritim Open 2017",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/150",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-02",
+            "turnier": "Czech Leonhart Open V - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "FRIDAY DYP",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-02",
+            "turnier": "Czech Leonhart Open V - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "AMATEUR DOUBLES",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-09-05",
+            "turnier": "Südbadische Meisterschaft 2015",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-09-05",
+            "turnier": "Südbadische Meisterschaft 2015",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2013,
+            "datum": "2013-09-14",
+            "turnier": "Swiss Open 2013",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2011,
+            "datum": "2011-09-03",
+            "turnier": "Swiss Open 2011",
+            "serie": "P4P",
+            "disziplin": "Neulinge Doppel",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/93",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "reto-odermatt",
+        "gold": 5,
+        "silber": 2,
+        "bronze": 6,
+        "summe": 13,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-09-05",
+            "turnier": "STS26 - Val d'Iliez",
+            "serie": "STF",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2026,
+            "datum": "2026-09-05",
+            "turnier": "STS26 - Val d'Iliez",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-08-02",
+            "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/63DVK7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-06-07",
+            "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-12-29",
+            "turnier": "STRT Bern",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/69NPJ6",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-08-17",
+            "turnier": "STRT Liestal",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320215216/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=284",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-04-08",
+            "turnier": "STRT TFCL",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-02-17",
+            "turnier": "Swiss Tablesoccer Serie (STS) Bern",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320205713/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=231",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-12-29",
+            "turnier": "STRT Bern",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320212143/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=229",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-10-05",
+            "turnier": "STRT Zürich",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20250320214307/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=219",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-08-12",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Open Singles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230926122253/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=206",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-08-18",
+            "turnier": "STRT UG Dartclub",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20191016053219/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=87",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-05-06",
+            "turnier": "Goldach ITSF Masters 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49519545&lang=de&competitionId=0&originalCompetitionId=49519547&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "matteo-cosi",
+        "gold": 3,
+        "silber": 4,
+        "bronze": 1,
+        "summe": 8,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-09-05",
+            "turnier": "STS26 - Val d'Iliez",
+            "serie": "STF",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-08-17",
+            "turnier": "STRT Liestal",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320215216/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=284",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-06-29",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320223929/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=272",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-11-12",
+            "turnier": "STRT Simmental",
+            "serie": "STF",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230928115932/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=164",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-12-08",
+            "turnier": "STRT Aarbon",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20211129021553/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=96",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-06-01",
+            "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-03-30",
+            "turnier": "Riggisberg Open 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doppel",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835773&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-01-26",
+            "turnier": "Saisoneröffnungsturnier 2019",
+            "serie": "ITSF-Tour",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=302789692&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "adrian-schuler",
+        "gold": 3,
+        "silber": 3,
+        "bronze": 7,
+        "summe": 13,
+        "platzierungen": [
+          {
+            "jahr": 2021,
+            "datum": "2021-09-09",
+            "turnier": "Swiss Tablesoccer Serie (STS) Uetendorf",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20211129030035/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=118",
+            "abgerufen": "2026-11-21"
+          },
           {
             "jahr": 2019,
             "datum": "2019-08-24",
@@ -2887,6 +3352,26 @@
             "disziplin": "Open Singles",
             "rang": 2,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=157253328&lang=de&competitionId=0&originalCompetitionId=157253418&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-18",
+            "turnier": "Swiss Garlando Finals",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-18",
+            "turnier": "Swiss Garlando Finals",
+            "serie": "STF",
+            "disziplin": "Offenes Einzel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
             "abgerufen": "2026-11-21"
           },
           {
@@ -2952,21 +3437,41 @@
         ]
       },
       {
-        "id": "matteo-cosi",
+        "id": "luca-escribano",
         "gold": 2,
-        "silber": 1,
-        "bronze": 0,
-        "summe": 3,
+        "silber": 2,
+        "bronze": 1,
+        "summe": 5,
         "platzierungen": [
           {
             "jahr": 2026,
-            "datum": "2026-09-05",
-            "turnier": "STS26 - Val d'Iliez",
+            "datum": "2026-08-15",
+            "turnier": "STS26 - Zürich - ITSF 250",
             "serie": "STF",
-            "disziplin": "Amateur Doppel",
-            "rang": 1,
-            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-12-08",
+            "turnier": "STRT Aarbon",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20211129021553/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=96",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-06-01",
+            "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2019,
@@ -2991,30 +3496,128 @@
         ]
       },
       {
-        "id": "reto-odermatt",
+        "id": "vasco-oliveira",
         "gold": 2,
-        "silber": 0,
-        "bronze": 4,
+        "silber": 1,
+        "bronze": 3,
         "summe": 6,
         "platzierungen": [
           {
             "jahr": 2026,
-            "datum": "2026-09-05",
-            "turnier": "STS26 - Val d'Iliez",
-            "serie": "STF",
-            "disziplin": "Amateur Doppel",
+            "datum": "2026-10-10",
+            "turnier": "Swiss Open 2026",
+            "serie": "P4P",
+            "disziplin": "Neulinge Einzel",
             "rang": 1,
-            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/209",
             "abgerufen": "2026-11-20"
           },
           {
             "jahr": 2026,
-            "datum": "2026-09-05",
-            "turnier": "STS26 - Val d'Iliez",
+            "datum": "2026-01-16",
+            "turnier": "STRT Zürich - OD - 2026/01",
             "serie": "STF",
-            "disziplin": "Open Singles",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/Z8524Z",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-12-11",
+            "turnier": "STRT26 - TFC Zürich - OD - Herbst Tour",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
             "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/6EO8MZ",
+            "quelle": "https://app.tablesoccer.org/p/Z452W7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-07-19",
+            "turnier": "STRT Zürich - OD - 2025/10 - Leonhart",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZOX5AZ",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-05-24",
+            "turnier": "STRT TFCZ",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320214545/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=263",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-11-18",
+            "turnier": "Swiss Garlando Finals",
+            "serie": "STF",
+            "disziplin": "Neulinge Doppel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "an-cosi",
+        "gold": 2,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Women Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-11-12",
+            "turnier": "STRT Simmental",
+            "serie": "STF",
+            "disziplin": "Mixed Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230928115932/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=164",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2019,
+            "datum": "2019-06-02",
+            "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+            "serie": "STF",
+            "disziplin": "Women Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "manuel-ragonesi",
+        "gold": 2,
+        "silber": 0,
+        "bronze": 7,
+        "summe": 9,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-03-01",
+            "turnier": "STRT26 CFTJS - OD - 2026/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/6AYJA6",
             "abgerufen": "2026-11-20"
           },
           {
@@ -3022,39 +3625,79 @@
             "datum": "2025-08-02",
             "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
             "serie": "STF",
-            "disziplin": "Open Singles",
+            "disziplin": "Open Mixed",
             "rang": 3,
             "quelle": "https://app.tablesoccer.org/p/63DVK7",
             "abgerufen": "2026-11-20"
           },
           {
-            "jahr": 2025,
-            "datum": "2025-06-07",
-            "turnier": "STS St. Gallen - 2025/04 - ITSF 500 WT 2025",
+            "jahr": 2024,
+            "datum": "2024-06-15",
+            "turnier": "STRT Seetal",
             "serie": "STF",
-            "disziplin": "Open Singles",
+            "disziplin": "Open Doubles",
             "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZQP3O6",
-            "abgerufen": "2026-11-20"
+            "quelle": "https://web.archive.org/web/20250320213316/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=270",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2024,
-            "datum": "2024-12-29",
-            "turnier": "STRT Bern",
+            "datum": "2024-04-06",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Mixed",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320220040/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=253",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-04-06",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320220040/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=253",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-09-02",
+            "turnier": "STRT Rüti",
+            "serie": "STF",
+            "disziplin": "Draw Your Partner",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230926130603/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=212",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-09-02",
+            "turnier": "STRT Rüti",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230926130603/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=212",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-08-24",
+            "turnier": "World Series by Leonhart 2023",
+            "serie": "WS",
+            "disziplin": "Thursday DYP",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=660540686&lang=de&competitionId=0&originalCompetitionId=670084108&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-05-07",
+            "turnier": "STRT TFC Seetal",
             "serie": "STF",
             "disziplin": "Open Doubles",
             "rang": 1,
-            "quelle": "https://app.tablesoccer.org/p/69NPJ6",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-05-06",
-            "turnier": "Goldach ITSF Masters 2017",
-            "serie": "ITSF-Tour",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=49519545&lang=de&competitionId=0&originalCompetitionId=49519547&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "quelle": "https://web.archive.org/web/20220517203222/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=133",
             "abgerufen": "2026-11-21"
           }
         ]
@@ -3109,139 +3752,22 @@
         ]
       },
       {
-        "id": "vasco-oliveira",
+        "id": "fabio-di-crescenzo",
         "gold": 2,
         "silber": 0,
-        "bronze": 2,
-        "summe": 4,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-10-10",
-            "turnier": "Swiss Open 2026",
-            "serie": "P4P",
-            "disziplin": "Neulinge Einzel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/209",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2026,
-            "datum": "2026-01-16",
-            "turnier": "STRT Zürich - OD - 2026/01",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 1,
-            "quelle": "https://app.tablesoccer.org/p/Z8524Z",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-12-11",
-            "turnier": "STRT26 - TFC Zürich - OD - Herbst Tour",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/Z452W7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-07-19",
-            "turnier": "STRT Zürich - OD - 2025/10 - Leonhart",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZOX5AZ",
-            "abgerufen": "2026-11-20"
-          }
-        ]
-      },
-      {
-        "id": "luca-escribano",
-        "gold": 1,
-        "silber": 1,
-        "bronze": 1,
-        "summe": 3,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-08-15",
-            "turnier": "STS26 - Zürich - ITSF 250",
-            "serie": "STF",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZMPPLZ",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2019,
-            "datum": "2019-03-30",
-            "turnier": "Riggisberg Open 2019",
-            "serie": "ITSF-Tour",
-            "disziplin": "Rookie Doppel",
-            "rang": 2,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=302153171&lang=de&competitionId=0&originalCompetitionId=315835773&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2019,
-            "datum": "2019-01-26",
-            "turnier": "Saisoneröffnungsturnier 2019",
-            "serie": "ITSF-Tour",
-            "disziplin": "Rookie Doubles",
-            "rang": 1,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=296044054&lang=de&competitionId=0&originalCompetitionId=302789692&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          }
-        ]
-      },
-      {
-        "id": "manuel-ragonesi",
-        "gold": 1,
-        "silber": 0,
-        "bronze": 2,
-        "summe": 3,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-03-01",
-            "turnier": "STRT26 CFTJS - OD - 2026/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/6AYJA6",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-08-02",
-            "turnier": "STRT Seetal - OD, OE, MX - 2025/03",
-            "serie": "STF",
-            "disziplin": "Open Mixed",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/63DVK7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2023,
-            "datum": "2023-08-24",
-            "turnier": "World Series by Leonhart 2023",
-            "serie": "WS",
-            "disziplin": "Thursday DYP",
-            "rang": 1,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=660540686&lang=de&competitionId=0&originalCompetitionId=670084108&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          }
-        ]
-      },
-      {
-        "id": "fabio-di-crescenzo",
-        "gold": 1,
-        "silber": 0,
         "bronze": 0,
-        "summe": 1,
+        "summe": 2,
         "platzierungen": [
+          {
+            "jahr": 2019,
+            "datum": "2019-08-18",
+            "turnier": "STRT UG Dartclub",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20191016053219/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=87",
+            "abgerufen": "2026-11-21"
+          },
           {
             "jahr": 2017,
             "datum": "2017-03-04",
@@ -3255,11 +3781,69 @@
         ]
       },
       {
+        "id": "alain-baumann",
+        "gold": 1,
+        "silber": 2,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-05-27",
+            "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20230926130101/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=190",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-01-28",
+            "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230926120541/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=168",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "urs-morgenegg",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2022,
+            "datum": "2022-07-30",
+            "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
         "id": "daniel-flueler",
         "gold": 0,
         "silber": 2,
-        "bronze": 0,
-        "summe": 2,
+        "bronze": 2,
+        "summe": 4,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -3280,6 +3864,123 @@
             "rang": 2,
             "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-11-18",
+            "turnier": "STRT Seetal",
+            "serie": "STF",
+            "disziplin": "Offenes Doppel",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20230607082128/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=165",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-05-02",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20220517211532/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=131",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "tomas-karajan",
+        "gold": 0,
+        "silber": 2,
+        "bronze": 1,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-02-06",
+            "turnier": "STRT Zürich - OD - 2026/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-04-04",
+            "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20220517211809/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=126",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-01-08",
+            "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "silvio-fischer",
+        "gold": 0,
+        "silber": 2,
+        "bronze": 0,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2023,
+            "datum": "2023-06-24",
+            "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-01-28",
+            "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20230926120541/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=168",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "vullnet-fazliu",
+        "gold": 0,
+        "silber": 2,
+        "bronze": 0,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2022,
+            "datum": "2022-04-04",
+            "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20220517211809/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=126",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2022,
+            "datum": "2022-01-08",
+            "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+            "serie": "STF",
+            "disziplin": "Rookie Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3318,6 +4019,44 @@
             "rang": 2,
             "quelle": "https://app.tablesoccer.org/p/G6R2MZ",
             "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
+        "id": "jorge-rodriguez",
+        "gold": 0,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2024,
+            "datum": "2024-02-23",
+            "turnier": "STRT Zürich",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20250320223546/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=233",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "marina-von-allmen",
+        "gold": 0,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "jahr": 2020,
+            "datum": "2020-03-07",
+            "turnier": "Swiss Tablesoccer Serie (STS) Genf",
+            "serie": "STF",
+            "disziplin": "Women Doubles",
+            "rang": 2,
+            "quelle": "https://web.archive.org/web/20210418054513/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=101",
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3365,25 +4104,6 @@
             "disziplin": "Neulinge Doppel",
             "rang": 3,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/83",
-            "abgerufen": "2026-11-20"
-          }
-        ]
-      },
-      {
-        "id": "tomas-karajan",
-        "gold": 0,
-        "silber": 0,
-        "bronze": 1,
-        "summe": 1,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-02-06",
-            "turnier": "STRT Zürich - OD - 2026/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
             "abgerufen": "2026-11-20"
           }
         ]

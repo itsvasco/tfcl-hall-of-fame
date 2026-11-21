@@ -15,8 +15,9 @@ Anforderungen von Vasco:
 - 2026-11-20: Champions League: jede Teilnahme des Clubs zählt als eigener Eintrag und als eigene Zahl «Teilnahmen», auch ohne Pokal, nicht in der Summe der Podestplätze. Text mit Witz.
 - 2026-11-20: Vasco als Ehrenmitglied auf Platz 1 («Ich bin Erster, weil ichs kann.») und mit Foto; Jorge Rodriguez auf Platz 2 («Aktueller Weltmeister im Fussball.»). Beide zählen nicht in die Gesamtzahl.
 
+- 2026-11-21: Gewertete Verbandsturniere (STS, STRT, STRT Pro) vor September 2024 nachtragen, wie beim TFCZ (Auslöser: Vascos STRT TFCZ 2024, Swiss Garlando Finals 2017 und Fordere.ch STS 2017 fehlten).
 - 2026-11-21: Alle Podestplätze aus FAST nachtragen («dann musst du alles nachtragen»), Auslöser Hannes mit der World Series 2023 und Jorge mit Champions-League-Silber 2017.
 
 Fertig wenn: Seite auf GitHub Pages erreichbar, Prüfer bestanden (Auftrag A-498).
 
-Offen: Verbandsturniere ohne ITSF-Wertung vor September 2024 (Verbandsseiten im Web-Archiv), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage), Goalie War (Rückfrage); Impressum; eigene Domain.
+Offen: Verbandsturniere 2008 bis 2016 und Podeste, die nur auf archivierten Spielerseiten stehen (2017, 2018, Turniere ohne archivierte Ergebnisseite; Rückfrage, siehe README Offen 8), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage), Goalie War (Rückfrage); Impressum; eigene Domain.

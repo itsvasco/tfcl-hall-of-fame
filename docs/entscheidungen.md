@@ -1,5 +1,7 @@
 # Entscheidungen
 
+- 2026-11-21: Verbandsturniere bis 2024 stehen in einer eigenen Handdatei `daten/stf-archiv.json` mit Quelle Ergebnisseite oder News im Web-Archiv. Archivierte Spielerseiten zählen hier nicht als Quelle (Verbandsnummer in der Adresse, öffentliches Repo, README Regel 8); Podeste nur von dort stehen in `zurueckgestellt`, bis Vasco entscheidet. Verworfen: die TFCZ-Ausnahme vom 2026-11-17 ohne Rückfrage übernehmen.
+- 2026-11-21: Archivplätze unter dem Namen Martin Felder zählen nicht: Auf den Ergebnisseiten gibt es nur eine Verbandsnummer mit diesem Namen, und sie trägt die SM-Plätze 2024 von «Felder Martin H.» (Entscheid 2026-11-20: nicht der Martin Felder mit Lizenz). Verworfen: nach Namen zählen.
 - 2026-11-21: Vasco bestätigt: Arpad Wicki (FAST-Lizenz SVK, 10 Plätze) ist der Arpad Wicki des TFCL, und der Goalie War zählt als Turnierplatz (Peter Felder, World Series 2017, Rang 2). Beide stehen jetzt in `daten/fast.json` unter `eintraege`.
 - 2026-11-21: FAST-Turniere stehen in drei Serien: «WS» (World Series), «ITSF» (World Cup), «ITSF-Tour» (alle übrigen ITSF-Turniere, auch die Schweizer mit ITSF-Wertung). Grund: dieselben Werte im TFCZ; Schweizer ITSF-Turniere unter «STF» hätten die Quellenregel des Verbands aufgeweicht. Verworfen: je Turnier Verband oder Ausland von Hand zuordnen.
 - 2026-11-21: Ein FAST-Platz, der schon unter P4P, Verband oder Coral steht (gleiche Person, gleicher Rang, gleiche Disziplinart, Turnierfenster ±2 Tage), zählt nicht noch einmal. Turniere mit «P4P» im Namen zählen nur unter P4P.
