@@ -5,10 +5,10 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 414,
-    "gold": 160,
-    "silber": 111,
-    "bronze": 143,
+    "podestplaetze": 418,
+    "gold": 161,
+    "silber": 113,
+    "bronze": 144,
     "personen": 27
   },
   "bereiche": [
@@ -92,10 +92,10 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 297,
-        "gold": 102,
-        "silber": 92,
-        "bronze": 103,
+        "podestplaetze": 301,
+        "gold": 103,
+        "silber": 94,
+        "bronze": 104,
         "personen": 24
       }
     }
@@ -151,16 +151,16 @@
     {
       "id": "rayan-van-stokkum",
       "name": "Rayan Van Stokkum",
-      "gold": 25,
-      "silber": 21,
-      "bronze": 18,
-      "summe": 64,
+      "gold": 26,
+      "silber": 22,
+      "bronze": 19,
+      "summe": 67,
       "bereiche": {
         "sm": 8,
         "nati": 1,
         "ranglisten": 3,
         "liga": 2,
-        "turniere": 50
+        "turniere": 53
       }
     },
     {
@@ -179,6 +179,19 @@
       }
     },
     {
+      "id": "arpad-wicki",
+      "name": "Arpad Wicki",
+      "gold": 8,
+      "silber": 4,
+      "bronze": 15,
+      "summe": 27,
+      "bereiche": {
+        "sm": 1,
+        "liga": 1,
+        "turniere": 25
+      }
+    },
+    {
       "id": "martin-felder",
       "name": "Martin Felder",
       "gold": 11,
@@ -190,19 +203,6 @@
         "nati": 2,
         "liga": 4,
         "turniere": 13
-      }
-    },
-    {
-      "id": "arpad-wicki",
-      "name": "Arpad Wicki",
-      "gold": 8,
-      "silber": 3,
-      "bronze": 15,
-      "summe": 26,
-      "bereiche": {
-        "sm": 1,
-        "liga": 1,
-        "turniere": 24
       }
     },
     {
@@ -2766,10 +2766,10 @@
       },
       {
         "id": "rayan-van-stokkum",
-        "gold": 18,
-        "silber": 18,
-        "bronze": 14,
-        "summe": 50,
+        "gold": 19,
+        "silber": 19,
+        "bronze": 15,
+        "summe": 53,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2890,6 +2890,36 @@
             "rang": 2,
             "quelle": "https://app.tablesoccer.org/p/DZWRB7",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-02-15",
+            "turnier": "17e Open National de Hoenheim - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Under 19 Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/37DJ87/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-02-07",
+            "turnier": "III Open Internacional de Valdilecha - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior individual",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/EZ4YE7/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-02-07",
+            "turnier": "III Open Internacional de Valdilecha - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "España Pro Doubles",
+            "rang": 2,
+            "quelle": "https://app.tablesoccer.org/p/EZ4YE7/",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2025,
@@ -3647,9 +3677,9 @@
       {
         "id": "arpad-wicki",
         "gold": 7,
-        "silber": 3,
+        "silber": 4,
         "bronze": 14,
-        "summe": 24,
+        "summe": 25,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -3670,6 +3700,16 @@
             "rang": 3,
             "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-07-25",
+            "turnier": "Varna Foosball Masters 2025 - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Classic Doubles",
+            "rang": 2,
+            "quelle": "https://app.tablesoccer.org/p/Z8PRGZ/",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2025,

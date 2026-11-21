@@ -329,7 +329,7 @@ export function turniereAbleiten(datei, P, bekannt) {
     hart(TAG.test(e.datum) && Number(e.datum.slice(0, 4)) === e.jahr, `Turniere: Datum oder Jahr falsch (${e.turnier})`);
     hart(e.turnier && e.disziplin && https(e.quelle) && TAG.test(e.abgerufen), `Turniere: Turnier, Disziplin, Quelle oder Abrufdatum fehlt (${e.turnier})`);
     hart(Array.isArray(e.personen) && e.personen.length, `Turniere: Eintrag ohne Personen (${e.turnier})`);
-    hart(e.serie !== 'ITSF-Tour' || FAST_QUELLE.test(e.quelle), `Turniere: ITSF-Tour ohne FAST-Wettbewerbsseite als Quelle (${e.turnier})`);
+    hart(e.serie !== 'ITSF-Tour' || FAST_QUELLE.test(e.quelle) || /^https:\/\/app\.tablesoccer\.org\/p\/[A-Z0-9]{6}\/?$/.test(e.quelle), `Turniere: ITSF-Tour ohne FAST-Wettbewerbsseite oder Coral-Turnierseite als Quelle (${e.turnier})`);
     hart(!/fast4foos/.test(e.quelle) || FAST_QUELLE.test(e.quelle), `Turniere: FAST-Quelle nicht in der Form der Wettbewerbsseite (${e.turnier})`);
     hart(e.serie !== 'STF' || /^https:\/\/app\.tablesoccer\.org\/p\/[A-Za-z0-9/-]+$/.test(e.quelle) || ARCHIV_ERGEBNIS.test(e.quelle), `Turniere: STF-Quelle ist weder Coral noch Ergebnisseite, News oder Spielerseite des Verbands im Web-Archiv (${e.turnier})`);
     for (const id of e.personen) hart(bekannt.has(id), `Turniere: Person ${id} steht nicht in der Spielerliste (${e.turnier})`);

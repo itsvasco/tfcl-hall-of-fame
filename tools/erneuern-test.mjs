@@ -243,7 +243,10 @@ await test('Turniere aus FAST: ITSF-Tour nur mit Wettbewerbsseite, nie mit Spiel
   const eine = (x) => mitT({ turniere: async () => ({ eintraege: [{ ...TU.eintraege[1], ...x }] }) });
   const s = await bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour', quelle: fast }));
   assert.equal(s.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
-  await wirft(() => bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour' })), /ITSF-Tour ohne FAST/);
+  // seit 2026-11-21 auch die Coral-Turnierseite (ITSF-Turniere 2025 ohne FAST), nie eine andere Adresse
+  const coral = await bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour', quelle: 'https://app.tablesoccer.org/p/Z8PRGZ/' }));
+  assert.equal(coral.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
+  await wirft(() => bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour', quelle: 'https://www.tablesoccer.org/page/player?numlic=75600107' })), /ITSF-Tour ohne FAST/);
   await wirft(() => bauT(PFLEGE_T, eine({ serie: 'WS', quelle: fast.replace('playerId=0', 'playerId=4890425') })), /FAST-Quelle nicht in der Form/);
 });
 await test('Turniere aus dem Web-Archiv des Verbands: Ergebnisseite, News oder archivierte Spielerseite, nie die Live-Seite', async () => {

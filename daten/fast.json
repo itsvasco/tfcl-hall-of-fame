@@ -17,6 +17,58 @@
   "eintraege": [
     {
       "jahr": 2025,
+      "datum": "2025-07-25",
+      "turnier": "Varna Foosball Masters 2025 - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Classic Doubles",
+      "rang": 2,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/Z8PRGZ/",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-15",
+      "turnier": "17e Open National de Hoenheim - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Under 19 Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/37DJ87/",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-07",
+      "turnier": "III Open Internacional de Valdilecha - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "España Pro Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/EZ4YE7/",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-02-07",
+      "turnier": "III Open Internacional de Valdilecha - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior individual",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://app.tablesoccer.org/p/EZ4YE7/",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2025,
       "datum": "2025-01-03",
       "turnier": "3. Pielachtal Leonhart Masters - ITSF 500 WT 2025",
       "serie": "ITSF-Tour",
