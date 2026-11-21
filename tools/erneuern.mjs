@@ -355,6 +355,36 @@ export function championsAbleiten(datei, P, bekannt) {
   return { teilnahmen, offen: datei.offen || [] };
 }
 
+// Kader der Clubliga (Handdatei daten/clubliga-kader.json). Mit belegtem Kader zählt ein Clubliga-Platz je Person mit
+// Lizenz, ohne Kader je Team (Vasco, 2026-11-21: «wenn du die namen der kader rausfindest, dann einzeln … Sonst nur als
+// team»). Ehrenmitglieder und Personen unter nicht_nennen fallen aus dem Kader. Gibt { eintraege, personen (Map id -> Plätze) }.
+export function ligaKaderZuordnen(eintraege, datei, P, bekannt) {
+  hart(datei && Array.isArray(datei.kader), 'clubliga-kader.json: kader fehlt');
+  const lizenz = new Set(P.alle.filter((s) => !s.ehrenmitglied).map((s) => s.id));
+  const aus = eintraege.map((e) => ({ ...e, zaehlt_je: 'Team' }));
+  const personen = new Map();
+  for (const k of datei.kader) {
+    const wo = `${k.saison} ${k.liga} «${k.team}»`;
+    const treffer = aus.filter((e) => e.saison === String(k.saison) && e.liga === k.liga && e.team === k.team);
+    hart(treffer.length === 1, `Clubliga-Kader: kein Platz in der Rangliste für ${wo}`);
+    hart(!treffer[0].kader_quelle, `Clubliga-Kader: ${wo} steht doppelt`);
+    hart(https(k.quelle) && TAG.test(k.abgerufen), `Clubliga-Kader: Quelle oder Abrufdatum fehlt (${wo})`);
+    hart(Array.isArray(k.personen) && k.personen.length, `Clubliga-Kader: ${wo} ohne Personen`);
+    for (const id of k.personen) hart(bekannt.has(id), `Clubliga-Kader: Person ${id} steht nicht in der Spielerliste (${wo})`);
+    const e = treffer[0]; const ids = [...new Set(k.personen)].filter((id) => lizenz.has(id));
+    e.kader_quelle = k.quelle;
+    e.spieler = ids.map((id) => id2name(P, id)).sort((a, b) => a.localeCompare(b, 'de'));
+    if (!ids.length) continue; // ohne Person mit Lizenz zählt der Platz weiter je Team
+    e.zaehlt_je = 'Person';
+    for (const id of ids) {
+      const l = personen.get(id) || []; personen.set(id, l);
+      l.push({ saison: e.saison, jahr: Number(e.saison), liga: e.liga, team: e.team, rang: e.rang, quelle: k.quelle, rang_quelle: e.quelle, abgerufen: k.abgerufen });
+    }
+  }
+  for (const l of personen.values()) l.sort((a, b) => b.jahr - a.jahr || a.rang - b.rang || a.liga.localeCompare(b.liga, 'de'));
+  return { eintraege: aus, personen, offen: datei.offen || [] };
+}
+
 export async function bauen({ spielerDatei, pflege, holen, datum }) {
   // Ehrenmitglieder (pflege.ehrenmitglieder) haben keine Lizenz, werden aber mit ihren Podestplätzen gesucht und zählen nicht in die Summen.
   const ehrenNamen = pflege.ehrenmitglieder || [];
@@ -395,6 +425,9 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   const liga = { eintraege: [], offen: [] };
   for (const jahr of pflege.clubliga_jahre) { const l = ligaAbleiten(await holen.pdf(jahr), jahr, datum, pflege.clubliga_muster); liga.eintraege.push(...l.eintraege); offen.push(...l.offen); }
   liga.eintraege.sort((a, b) => Number(b.saison) - Number(a.saison) || a.rang - b.rang || a.liga.localeCompare(b.liga, 'de'));
+  const lk = ligaKaderZuordnen(liga.eintraege, holen.clubligaKader ? await holen.clubligaKader() : { kader: [] }, P, bekannt);
+  liga.eintraege = lk.eintraege; offen.push(...lk.offen);
+  const ligaTeams = liga.eintraege.filter((e) => e.zaehlt_je === 'Team'); // Plätze ohne belegten Kader zählen je Team
 
   // 5. Fordere-Liga (Division Luzern)
   const fSaisons = pflege.fordere.luzern; const fAntworten = {};
@@ -409,20 +442,22 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   const cl = championsAbleiten(holen.champions ? await holen.champions() : { teilnahmen: [] }, P, bekannt); offen.push(...cl.offen);
 
   // Ergebnis
-  const smB = personenBlock(sm.eintraege, P); const rlB = personenBlock(rl, P); const naB = personenBlock(natiPersonen, P); const foB = personenBlock(fordere.eintraege, P); const tuB = personenBlock(tuPersonen, P);
+  const smB = personenBlock(sm.eintraege, P); const rlB = personenBlock(rl, P); const naB = personenBlock(natiPersonen, P); const foB = personenBlock(fordere.eintraege, P); const tuB = personenBlock(tuPersonen, P); const liB = personenBlock(lk.personen, P);
   const zaehlt = (p) => !P.alle.find((s) => s.id === p.id)?.ehrenmitglied; // Ehrenmitglieder zählen in keine Summe
-  const ligaSumme = { podestplaetze: liga.eintraege.length, ...zaehle(liga.eintraege) };
+  const teamSumme = { podestplaetze: ligaTeams.length, ...zaehle(ligaTeams) };
+  const liP = sum(liB.filter(zaehlt));
+  const ligaSumme = { podestplaetze: liP.podestplaetze + teamSumme.podestplaetze, gold: liP.gold + teamSumme.gold, silber: liP.silber + teamSumme.silber, bronze: liP.bronze + teamSumme.bronze, personen: liP.personen, teams: ligaTeams.length };
   const bereiche = [
     { schluessel: 'sm', titel: 'Schweizermeisterschaft', einheit: 'Medaillen je Person', anker: 'sm', daten: 'sm', summe: sum(smB.filter(zaehlt)) },
     { schluessel: 'nati', titel: 'Nati', einheit: 'Medaillen je Person', anker: 'nati', daten: 'nati', summe: sum(naB.filter(zaehlt)) },
     { schluessel: 'ranglisten', titel: 'Jahresrangliste', einheit: 'Podestplätze je Person', anker: 'ranglisten', daten: 'ranglisten', summe: sum(rlB.filter(zaehlt)) },
-    { schluessel: 'liga', titel: 'Clubliga', einheit: 'Podestplätze je Team', anker: 'liga', daten: 'liga', summe: ligaSumme },
+    { schluessel: 'liga', titel: 'Clubliga', einheit: 'Podestplätze je Person im belegten Kader, sonst je Team', anker: 'liga', daten: 'liga', summe: ligaSumme },
     { schluessel: 'fordere', titel: 'Fordere-Liga', untertitel: 'Bar-foos-League Luzern, Finaltag', einheit: 'Podestplätze je Person', anker: 'fordere', daten: 'fordere', summe: sum(foB.filter(zaehlt)) },
     { schluessel: 'turniere', titel: 'Turniere', untertitel: 'P4P, Verbandsturniere, World Series und World Cup', einheit: 'Podestplätze je Person', anker: 'turniere', daten: 'turniere', summe: sum(tuB.filter(zaehlt)) },
   ];
-  // Personenverzeichnis mit Gesamtzahl (Liga zählt je Team, steht nicht darin)
+  // Personenverzeichnis mit Gesamtzahl (Clubliga mit belegtem Kader je Person; Plätze ohne Kader zählen je Team und stehen nicht darin)
   const proPerson = new Map();
-  for (const [bereich, block] of [['sm', smB], ['nati', naB], ['ranglisten', rlB], ['fordere', foB], ['turniere', tuB]]) for (const p of block) {
+  for (const [bereich, block] of [['sm', smB], ['nati', naB], ['ranglisten', rlB], ['liga', liB], ['fordere', foB], ['turniere', tuB]]) for (const p of block) {
     const e = proPerson.get(p.id) || { id: p.id, name: id2name(P, p.id), gold: 0, silber: 0, bronze: 0, summe: 0, bereiche: {} };
     proPerson.set(p.id, e); e.gold += p.gold; e.silber += p.silber; e.bronze += p.bronze; e.summe += p.summe; e.bereiche[bereich] = p.summe;
   }
@@ -443,7 +478,7 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   }
   const verzeichnis = [...proPerson.values()].sort((a, b) => (a.fest || 1e9) - (b.fest || 1e9) || b.summe - a.summe || b.gold - a.gold || b.silber - a.silber || a.name.localeCompare(b.name, 'de'));
   const zaehler = verzeichnis.filter((p) => !p.ehrenmitglied);
-  const gesamt = { podestplaetze: zaehler.reduce((n, p) => n + p.summe, 0) + ligaSumme.podestplaetze, gold: zaehler.reduce((n, p) => n + p.gold, 0) + ligaSumme.gold, silber: zaehler.reduce((n, p) => n + p.silber, 0) + ligaSumme.silber, bronze: zaehler.reduce((n, p) => n + p.bronze, 0) + ligaSumme.bronze, personen: zaehler.filter((p) => p.summe > 0).length };
+  const gesamt = { podestplaetze: zaehler.reduce((n, p) => n + p.summe, 0) + teamSumme.podestplaetze, gold: zaehler.reduce((n, p) => n + p.gold, 0) + teamSumme.gold, silber: zaehler.reduce((n, p) => n + p.silber, 0) + teamSumme.silber, bronze: zaehler.reduce((n, p) => n + p.bronze, 0) + teamSumme.bronze, personen: zaehler.filter((p) => p.summe > 0).length };
   const nur = (b) => b.map(({ id, gold, silber, bronze, summe, platzierungen }) => ({ id, gold, silber, bronze, summe, platzierungen }));
   return {
     club: spielerDatei.club, clubname: pflege.clubname, erstellt: datum,
@@ -453,7 +488,7 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
     sm: { abgerufen: datum, quelle: SM_QUELLE, personen: nur(smB) },
     nati: { abgerufen: datum, eintraege: nati.eintraege },
     ranglisten: { abgerufen: datum, saisons: rlSaisons.sort((a, b) => b.saison - a.saison), personen: nur(rlB) },
-    liga: { abgerufen: datum, eintraege: liga.eintraege },
+    liga: { abgerufen: datum, eintraege: liga.eintraege, personen: nur(liB) },
     turniere: { abgerufen: datum, serien: [...new Set(tu.eintraege.map((e) => e.serie))].sort(), personen: nur(tuB) },
     champions: { abgerufen: datum, summe: { teilnahmen: cl.teilnahmen.length, podest: cl.teilnahmen.filter((t) => t.podest).length }, teilnahmen: cl.teilnahmen },
     fordere: { abgerufen: datum, seite: 'https://fordere.ch', divisionen: ['Luzern'], saisons: fordere.saisons, personen: nur(foB) },

@@ -11,7 +11,6 @@ let m = null;
 function zeichneListe() {
   const rs = zeilen(m, auswahl);
   el('liste').innerHTML = listeHtml(rs);
-  el('liste').hidden = auswahl.bereich === 'liga';
   el('satz').textContent = satzText(m, auswahl, rs.length);
   el('teams-block').hidden = !((auswahl.bereich === 'alle' || auswahl.bereich === 'liga') && !auswahl.q.trim());
 }

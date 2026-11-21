@@ -442,7 +442,7 @@ await test('Seite: jede id steht genau einmal, Suche mit Filter nennt den Bereic
   assert.deepEqual(ids.filter((x, i) => ids.indexOf(x) !== i), [], 'doppelte id (die Champions-League-Liste überschrieb die Sektion)');
   const s = await bauT(); const m = R.modell(s);
   const mitFilter = R.satzText(m, { bereich: 'turniere', q: 'Anna' }, 0); const ohneTreffer = R.satzText(m, { bereich: 'turniere', q: 'Zzzz' }, 0);
-  assert.match(R.satzText(m, { bereich: 'liga', q: 'Anna' }, 0), /Clubliga zählt Teams/);
+  assert.match(R.satzText(m, { bereich: 'liga', q: 'Anna' }, 0), /Bereich Clubliga steht keine Person/);
   assert.match(R.satzText(m, { bereich: 'nati', q: 'Erika' }, 0), /Bereich Nati steht keine Person.*Über alle Bereiche findet die Suche 1 Person/);
   assert.match(ohneTreffer, /Die Suche kennt Vor- und Nachnamen/); assert.ok(mitFilter);
   assert.match(R.satzText(m, { bereich: 'alle', q: '' }, 7), /^7 Personen stehen in der Rangliste/);
@@ -450,6 +450,53 @@ await test('Seite: jede id steht genau einmal, Suche mit Filter nennt den Bereic
   assert.match(roh, />Rohdaten fordere\.ch \(JSON\)</);
   const leit = R.leitHtml(m); assert.ok(!/Stand \d/.test(leit.split('podest')[1]), 'der Stand steht nur in der Quellenzeile'); assert.match(leit, /podest__stufe--gold/);
   assert.match(R.zeileHtml(R.zeilen(m, { bereich: 'alle', q: '' })[2]), /marke metall metall--(gold|silber|bronze)/);
+});
+
+// ---------- Clubliga je Person ----------
+// Testdaten: 2026 Challenge League «XYZC 2» Rang 3, 2019 Super League «XYZC 1» Rang 2 (beide je Team ohne Kader).
+const KADER = { kader: [{ saison: '2019', liga: 'Super League', team: 'XYZC 1', personen: ['anna-muster', 'dario-drei', 'erika-ehre'], ohne_lizenz: 1, quelle: 'https://web.archive.org/web/20190101000000/https://swisstablesoccer.ch/x', abgerufen: DATUM }], offen: ['Kader 2026 fehlt'] };
+const mitK = (k = KADER, pflege = { ...PFLEGE, ehrenmitglieder: ['Erika Ehre'] }) => bauen({ spielerDatei: SPIELER, pflege, holen: holen({ clubligaKader: async () => k }), datum: DATUM });
+await test('Clubliga: mit belegtem Kader zählt der Platz je Person mit Lizenz, ohne Kader je Team', async () => {
+  const ohne = await bauen({ spielerDatei: SPIELER, pflege: { ...PFLEGE, ehrenmitglieder: ['Erika Ehre'] }, holen: holen(), datum: DATUM });
+  const s = await mitK();
+  const b = s.bereiche.find((x) => x.schluessel === 'liga').summe;
+  assert.deepEqual([b.podestplaetze, b.personen, b.teams, b.silber, b.bronze], [3, 2, 1, 2, 1], '2 Personen Silber 2019, 1 Team Bronze 2026');
+  assert.equal(s.gesamt.podestplaetze, ohne.gesamt.podestplaetze - 1 + 2, 'der Teamplatz 2019 wird zu zwei Personenplätzen');
+  const e19 = s.liga.eintraege.find((e) => e.saison === '2019');
+  assert.equal(e19.zaehlt_je, 'Person'); assert.deepEqual(e19.spieler, ['Anna Muster', 'Dario Drei']); assert.match(e19.kader_quelle, /^https:\/\/web\.archive\.org\//);
+  assert.equal(s.liga.eintraege.find((e) => e.saison === '2026').zaehlt_je, 'Team');
+  const anna = s.liga.personen.find((p) => p.id === 'anna-muster').platzierungen[0];
+  assert.deepEqual([anna.liga, anna.team, anna.rang, anna.rang_quelle], ['Super League', 'XYZC 1', 2, s.liga.eintraege.find((e) => e.saison === '2019').quelle]);
+  assert.equal(s.verzeichnis.find((p) => p.id === 'anna-muster').bereiche.liga, 1);
+  assert.ok(!s.liga.personen.some((p) => p.id === 'erika-ehre'), 'Ehrenmitglieder nie im Kader');
+  assert.ok(s.offen.includes('Kader 2026 fehlt'));
+  const m = R.modell(s);
+  assert.equal(R.zeilen(m, { bereich: 'liga', q: '' }).length, 2, 'der Filter Clubliga zeigt die Personen');
+  assert.match(R.teamsHtml(m), /Im Kader standen Anna Muster, Dario Drei/); assert.match(R.teamsHtml(m), /Kader nicht belegt, zählt je Team/);
+  assert.match(R.satzText(m, { bereich: 'liga', q: '' }, 2), /2 Personen aus belegten Kadern zusammen 2-mal.*Für 1 Podestplatz nennt keine Quelle den Kader, er zählt je Team/);
+});
+await test('Clubliga-Kader: nicht_nennen fällt weg, ohne Person mit Lizenz zählt das Team', async () => {
+  const s = await mitK(KADER, { ...PFLEGE, ehrenmitglieder: ['Erika Ehre'], nicht_nennen: ['MUSTER Anna', 'DREI Dario'] });
+  const e19 = s.liga.eintraege.find((e) => e.saison === '2019');
+  assert.equal(e19.zaehlt_je, 'Team'); assert.deepEqual(e19.spieler, []);
+  assert.ok(!alsText(s).includes('Anna Muster') && !alsText(s).includes('anna-muster'));
+});
+await test('Clubliga-Kader: Abbruch bei fremdem Platz, doppeltem Platz, fehlender Quelle oder fremder Person', async () => {
+  const k = (x) => ({ kader: [{ ...KADER.kader[0], ...x }] });
+  await wirft(() => mitK(k({ team: 'XYZC 9' })), /kein Platz in der Rangliste/);
+  await wirft(() => mitK({ kader: [KADER.kader[0], KADER.kader[0]] }), /doppelt/);
+  await wirft(() => mitK(k({ quelle: 'http://x.example' })), /Quelle/);
+  await wirft(() => mitK(k({ personen: ['franz-fremd'] })), /nicht in der Spielerliste/);
+  await wirft(() => mitK(k({ personen: [] })), /ohne Personen/);
+});
+await test('Clubliga-Kader der Handdatei: jeder Platz trifft die Rangliste im Schnappschuss, nur Personen mit Lizenz', () => {
+  const k = JSON.parse(fs.readFileSync(new URL('../daten/clubliga-kader.json', import.meta.url), 'utf8'));
+  const hof = JSON.parse(fs.readFileSync(new URL('../daten/hall-of-fame.json', import.meta.url), 'utf8'));
+  const sp = new Set(JSON.parse(fs.readFileSync(new URL('../daten/spieler.json', import.meta.url), 'utf8')).spieler.map((x) => x.id));
+  for (const x of k.kader) {
+    assert.equal(hof.liga.eintraege.filter((e) => e.saison === x.saison && e.liga === x.liga && e.team === x.team).length, 1, `${x.saison} ${x.liga} ${x.team}`);
+    for (const id of x.personen) assert.ok(sp.has(id), `${id} ohne Lizenz`);
+  }
 });
 
 console.log(`${ok} Tests bestanden${fehler.length ? `, ${fehler.length} FEHLER:\n- ${fehler.join('\n- ')}` : ''}`);

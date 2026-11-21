@@ -32,12 +32,13 @@ export function modell(j) {
   for (const e of j.nati.eintraege) for (const id of e.personen) hinzu(id, { bereich: 'nati', jahr: e.jahr, rang: e.rang, team: e.team, turnier: e.turnier, quelle: e.quelle });
   for (const p of j.ranglisten.personen) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'ranglisten', jahr: x.saison, rang: x.rang, kategorie: x.kategorie, quelle: x.quelle });
   for (const p of j.fordere.personen) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'fordere', jahr: x.jahr, saison: x.saison, rang: x.rang, liga: x.liga, tischart: x.tischart, quelle: x.quelle });
+  for (const p of (j.liga.personen || [])) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'liga', jahr: Number(x.saison), rang: x.rang, liga: x.liga, team: x.team, quelle: x.quelle });
   for (const p of (j.turniere ? j.turniere.personen : [])) for (const x of p.platzierungen) hinzu(p.id, { bereich: 'turniere', jahr: x.jahr, rang: x.rang, kategorie: x.disziplin, serie: x.serie, turnier: x.turnier, ort: x.ort || '', wm: x.titel === 'Weltmeister', quelle: x.quelle });
   for (const p of personen.values()) {
     if (p.eintraege.length !== p.soll) throw new Error(`${p.name}: ${p.eintraege.length} Einträge, Verzeichnis nennt ${p.soll}`);
     p.eintraege.sort((a, b) => b.jahr - a.jahr || a.rang - b.rang || a.bereich.localeCompare(b.bereich));
   }
-  const teams = j.liga.eintraege.map((e) => ({ saison: e.saison, liga: e.liga, team: e.team, rang: e.rang, quelle: e.quelle }))
+  const teams = j.liga.eintraege.map((e) => ({ saison: e.saison, liga: e.liga, team: e.team, rang: e.rang, quelle: e.quelle, spieler: e.spieler || [], jePerson: e.zaehlt_je === 'Person' }))
     .sort((a, b) => b.saison - a.saison || a.rang - b.rang);
   const bereiche = j.bereiche.map((b) => ({ k: b.schluessel, titel: b.titel, summe: b.summe }));
   const cl = j.champions || { teilnahmen: [], summe: { teilnahmen: 0, podest: 0 } };
@@ -57,7 +58,7 @@ const BEREICH_REIHE = { sm: 0, ranglisten: 1, turniere: 2, liga: 3, fordere: 4, 
 const klasse = (k = '') => /^(open|herren|offen)/i.test(k) ? 0 : /damen/i.test(k) ? 2 : /senioren/i.test(k) ? 3 : /mixed/i.test(k) ? 4 : /junior/i.test(k) ? 8 : 9;
 /* Reihenfolge: Nati-Gold, Weltmeister (World Cup), Schweizer Meister, Nati-Silber, Nati-Bronze, alles andere. */
 const stufe = (e) => e.bereich === 'nati' && e.rang === 1 ? 0 : e.wm ? 1 : e.bereich === 'sm' && e.rang === 1 ? 2 : e.bereich === 'nati' && e.rang === 2 ? 3 : e.bereich === 'nati' && e.rang === 3 ? 4 : 5;
-const kennung = (e) => `${e.bereich}|${e.kategorie || e.team || ''}|${e.rang}${e.wm ? '|wm' : ''}`;
+const kennung = (e) => `${e.bereich}|${e.kategorie || e.liga || e.team || ''}|${e.rang}${e.wm ? '|wm' : ''}`;
 const vergleich = (a, b) => stufe(a) - stufe(b) || a.rang - b.rang || BEREICH_REIHE[a.bereich] - BEREICH_REIHE[b.bereich] || klasse(a.kategorie) - klasse(b.kategorie);
 
 function titelWort(e) {
@@ -67,6 +68,7 @@ function titelWort(e) {
     case 'sm': return e.rang === 1 ? `Schweizer Meister ${k}` : `${e.rang}. Rang Schweizermeisterschaft ${k}`;
     case 'ranglisten': return e.rang === 1 ? `Jahresbester ${k}` : `${e.rang}. Rang Jahresrangliste ${k}`;
     case 'fordere': return e.rang === 1 ? 'Fordere-Sieg' : `${e.rang}. Rang Fordere-Liga`;
+    case 'liga': return e.rang === 1 ? `Clubliga-Meister ${e.liga}` : `${e.rang}. Rang Clubliga ${e.liga}`;
     case 'turniere': return e.wm ? `Weltmeister ${k} ${e.jahr}` : e.rang === 1 ? `Turniersieg ${k}` : `${e.rang}. Rang an Turnieren ${k}`;
     default: return `${e.rang}. Rang`;
   }
@@ -85,7 +87,6 @@ export function hoechsterTitel(liste) {
 const glatt = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 
 export function zeilen(m, auswahl = { bereich: 'alle', q: '' }) {
-  if (auswahl.bereich === 'liga') return [];
   const q = glatt((auswahl.q || '').trim());
   const aus = [];
   for (const p of m.personen) {
@@ -120,13 +121,13 @@ export function satzText(m, auswahl, anzahl) {
     /* Mit Filter: nennen, dass der Bereich leer ist und wie viele Personen die Suche über alle Bereiche findet. */
     if (b) {
       const ueberall = zeilen(m, { bereich: 'alle', q }).length;
-      const hier = auswahl.bereich === 'liga' ? 'Die Clubliga zählt Teams, keine Personen.' : `Im Bereich ${b.titel} steht keine Person mit diesem Namen.`;
+      const hier = `Im Bereich ${b.titel} steht keine Person mit diesem Namen.`;
       return ueberall ? `${hier} Über alle Bereiche findet die Suche ${pl(ueberall, 'Person', 'Personen')}. Wähle «Alle Bereiche».` : `${hier} Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.`;
     }
     return 'Keine Person gefunden. Die Suche kennt Vor- und Nachnamen, auch einzelne Buchstaben.';
   }
   if (auswahl.bereich === 'alle') {
-    return `${pl(anzahl, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Oben stehen die festen Plätze. Das Ehrenmitglied zählt in keine Summe. Die Clubliga zählt je Team und steht darum darunter.`;
+    return `${pl(anzahl, 'Person steht', 'Personen stehen')} in der Rangliste, geordnet nach Podestplätzen, bei Gleichstand nach Gold. Oben stehen die festen Plätze. Das Ehrenmitglied zählt in keine Summe. Die Clubliga zählt je Person, wenn der Kader belegt ist, sonst je Team. Alle Teams stehen darunter.`;
   }
   const s = b.summe;
   switch (auswahl.bereich) {
@@ -135,7 +136,7 @@ export function satzText(m, auswahl, anzahl) {
     case 'ranglisten': return `Auf den Jahresranglisten des Verbands standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Gezählt sind nur Schlussstände.`;
     case 'fordere': return `Am Finaltag der Fordere-Liga Luzern standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest.`;
     case 'turniere': return `An Turnieren von P4P, vom Verband, der ITSF, der World Series und am World Cup standen ${pl(s.personen, 'Person', 'Personen')} zusammen ${fmt(s.podestplaetze)}-mal auf dem Podest. Ein Doppel zählt für jeden Partner mit Lizenz.`;
-    case 'liga': return `In der Clubliga holten die Teams des TFC Luzern ${pl(s.podestplaetze, 'Podestplatz', 'Podestplätze')}. Der Verband nennt keine Spieler, darum stehen hier die Teams.`;
+    case 'liga': return `In der Clubliga standen ${pl(s.personen || 0, 'Person', 'Personen')} aus belegten Kadern zusammen ${fmt(s.podestplaetze - (s.teams || 0))}-mal auf dem Podest.${s.teams ? ` Für ${pl(s.teams, 'Podestplatz', 'Podestplätze')} nennt keine Quelle den Kader, ${s.teams === 1 ? 'er zählt' : 'sie zählen'} je Team.` : ''}`;
     default: return '';
   }
 }
@@ -157,6 +158,7 @@ function eintragText(e) {
     case 'nati': return `Nati ${e.team}, ${e.turnier}`;
     case 'ranglisten': return `Jahresrangliste, ${e.kategorie}`;
     case 'fordere': return `Fordere-Liga Luzern, ${e.liga} ${e.tischart}`;
+    case 'liga': return `Clubliga, ${e.liga}, ${e.team}`;
     case 'turniere': return `${e.serie === 'P4P' ? 'P4P' : e.serie === 'STF' ? 'Verbandsturnier' : e.serie === 'WS' ? 'World Series' : e.serie === 'ITSF' ? 'ITSF' : e.serie === 'ITSF-Tour' ? 'ITSF-Turnier' : e.serie}, ${e.turnier}, ${e.kategorie}${e.wm ? `, Weltmeister${e.ort ? ` in ${e.ort}` : ''}` : ''}`;
     default: return '';
   }
@@ -185,7 +187,8 @@ export function zeileHtml(r) {
 export const listeHtml = (rs) => rs.map(zeileHtml).join('');
 
 export function teamsHtml(m) {
-  return m.teams.map((t) => `<li><span class="rang__jahr t-data">${esc(t.saison)}</span><span class="rang__was">${esc(t.liga)}, ${esc(t.team)}</span><b class="rang__metall">${METALL[t.rang]}</b>${link(t.quelle, `${t.liga} ${t.saison}, ${t.team}`)}</li>`).join('');
+  const kader = (t) => t.spieler && t.spieler.length ? `. Im Kader ${t.spieler.length === 1 ? 'stand' : 'standen'} ${t.spieler.join(', ')}` : '. Kader nicht belegt, zählt je Team';
+  return m.teams.map((t) => `<li><span class="rang__jahr t-data">${esc(t.saison)}</span><span class="rang__was">${esc(t.liga)}, ${esc(t.team)}${esc(kader(t))}</span><b class="rang__metall">${METALL[t.rang]}</b>${link(t.quelle, `${t.liga} ${t.saison}, ${t.team}`)}</li>`).join('');
 }
 
 export function filterHtml(m, aktiv = 'alle') {
@@ -198,7 +201,7 @@ export function leitHtml(m) {
   const stand = datumLang(m.stand);
   return `<div class="leitzahl__aufbau"><div class="leitzahl__haupt">`
     + `<h2 class="leitzahl__titel"><span class="leitzahl__zahl">${fmt(g.podestplaetze)}</span>Podestplätze holten die Spieler des TFC Luzern</h2>`
-    + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten, die Fordere-Liga Luzern und die Turniere je Person, dazu die Clubliga je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
+    + `<p class="leitzahl__lead">Gezählt sind die Schweizermeisterschaft, die Nati, die Jahresranglisten, die Clubliga, die Fordere-Liga Luzern und die Turniere je Person. Clubliga-Plätze ohne belegten Kader zählen je Team. ${pl(g.personen, 'Person steht', 'Personen stehen')} auf dem Podest, von ${fmt(m.lizenzen)} Spielern mit Lizenz.</p>`
     + (m.champions.summe.teilnahmen ? `<p class="leitzahl__lead">Dazu kommen ${pl(m.champions.summe.teilnahmen, 'Teilnahme', 'Teilnahmen')} an der Champions League. Sie stehen weiter unten und zählen in keine Summe.</p>` : '')
     + `<p class="leitzahl__quelle">Quelle: Schweizer Verband, Coral, tablesoccer.org, FAST (ITSF), players4players.de und fordere.ch, abgerufen am ${stand}.</p></div>`
     + `<dl class="podest">`

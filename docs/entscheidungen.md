@@ -1,5 +1,6 @@
 # Entscheidungen
 
+- 2026-11-21: Clubliga zählt je Person, wenn der Kader eines Podest-Teams mit Quelle belegt ist; ohne Kader weiter je Team (Vasco: «wenn du die namen der kader rausfindest, dann einzeln. Auch im TFCZ so. Sonst nur als team»). Gilt für alle Clubliga-Podestplätze, nicht nur die Titel, und die Plätze je Person zählen in die Gesamtzahl. Kader stehen in `daten/clubliga-kader.json`, nur mit Lizenz LUZE. Anlass: Jorge Rodriguez mit Screenshot der Aufstellung (deckt sich mit Coral STL 2026). Ersetzt den Entscheid «Clubliga-Titel bleiben beim Team» vom selben Tag (siehe `gestrichen.md`).
 - 2026-11-21: Verbandsturniere bis 2024 stehen in einer eigenen Handdatei `daten/stf-archiv.json` mit Quelle Ergebnisseite oder News im Web-Archiv. Archivierte Spielerseiten zählen hier nicht als Quelle (Verbandsnummer in der Adresse, öffentliches Repo, README Regel 8); Podeste nur von dort stehen in `zurueckgestellt`, bis Vasco entscheidet. Verworfen: die TFCZ-Ausnahme vom 2026-11-17 ohne Rückfrage übernehmen.
 - 2026-11-21: Archivplätze unter dem Namen Martin Felder zählen nicht: Auf den Ergebnisseiten gibt es nur eine Verbandsnummer mit diesem Namen, und sie trägt die SM-Plätze 2024 von «Felder Martin H.» (Entscheid 2026-11-20: nicht der Martin Felder mit Lizenz). Verworfen: nach Namen zählen.
 - 2026-11-21: Vasco bestätigt: Arpad Wicki (FAST-Lizenz SVK, 10 Plätze) ist der Arpad Wicki des TFCL, und der Goalie War zählt als Turnierplatz (Peter Felder, World Series 2017, Rang 2). Beide stehen jetzt in `daten/fast.json` unter `eintraege`.
@@ -8,7 +9,6 @@
 - 2026-11-21: Namenstreffer in FAST mit fremder Lizenz (Arpad Wicki, SVK) zählen erst nach Vascos Bestätigung; sie stehen vorbereitet in `daten/fast.json` unter `zurueckgestellt`.
 - 2026-11-21: Champions League 2017 (Rang 2), 2018 und 2022 (je Rang 9) aus FAST zählen als Teilnahmen ohne Kader: FAST zeigt keine Aufstellungen. Jorges Silber 2017 ist damit für den Club belegt, für ihn persönlich nicht.
 
-- 2026-11-21: Clubliga-Titel bleiben beim Team und stehen nicht unter den Namen der Spieler (Vasco zu Jorges fünf Super-League-Titeln: «nein soll es nicht»). Verworfen: Teamaufstellungen beim Club anfragen und je Person zählen.
 - 2026-11-20 (CEO, Bugfix Runde 1): Jorge Rodriguez hat eine LUZE-Lizenz. Seine echten Podestplätze zählen in die Gesamtzahl wie bei allen Lizenzierten; nur Vasco (Ehrenmitglied ohne Lizenz) zählt in keine Summe. Fester Platz und Spruch bleiben für beide. Test: «Lizenzierter mit festem Platz».
 - 2026-11-20 (CEO, Bugfix Runde 1): Der öffentliche Schnappschuss nennt keine Namen von Nicht-Lizenzierten ausser Vasco. SM-Partner ohne Lizenz stehen als «Partner». `nicht_gleich` in `daten/pflege.json` trägt nur einen Kurzwert des Namens, nicht den Namen.
 - 2026-11-20 (CEO, Bugfix Runde 1): `tools/datenschutz-pruefen.mjs` prüft «Spielerprofil als Quelle» nur in `daten/` und `site/`, nicht in Code unter `tools/`. Die übrigen Verbote gelten überall.

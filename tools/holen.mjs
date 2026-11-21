@@ -26,6 +26,8 @@ export const echt = {
   // tools/stf-archiv.mjs); beide nachgeführt von Hand und vom Sammelskript nie überschrieben
   turniere: async () => { const t = hand('turniere.json'); return { ...t, eintraege: [...t.eintraege, ...hand('fast.json').eintraege, ...hand('stf-archiv.json').eintraege] }; },
   champions: async () => { const c = hand('champions-league.json'); return { ...c, teilnahmen: [...c.teilnahmen, ...(hand('fast.json').champions || [])] }; },
+  // Kader der Clubliga-Teams auf dem Podest (Handdatei, von Hand nachgeführt)
+  clubligaKader: async () => hand('clubliga-kader.json'),
   fordere: (nr) => holeJson(`https://fordere.ch/api/seasons/${nr}/final-day`),
   // PDF der Clubliga als Textstücke mit Lage: [{ seite, x, y, str }]
   async pdf(jahr) {

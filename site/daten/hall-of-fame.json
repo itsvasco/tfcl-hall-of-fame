@@ -5,11 +5,11 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 340,
-    "gold": 123,
+    "podestplaetze": 372,
+    "gold": 145,
     "silber": 100,
-    "bronze": 117,
-    "personen": 25
+    "bronze": 127,
+    "personen": 27
   },
   "bereiche": [
     {
@@ -57,14 +57,16 @@
     {
       "schluessel": "liga",
       "titel": "Clubliga",
-      "einheit": "Podestplätze je Team",
+      "einheit": "Podestplätze je Person im belegten Kader, sonst je Team",
       "anker": "liga",
       "daten": "liga",
       "summe": {
-        "podestplaetze": 14,
-        "gold": 6,
+        "podestplaetze": 46,
+        "gold": 28,
         "silber": 4,
-        "bronze": 4
+        "bronze": 14,
+        "personen": 17,
+        "teams": 8
       }
     },
     {
@@ -119,11 +121,12 @@
     {
       "id": "jorge-rodriguez",
       "name": "Jorge Rodriguez",
-      "gold": 1,
+      "gold": 5,
       "silber": 1,
       "bronze": 0,
-      "summe": 2,
+      "summe": 6,
       "bereiche": {
+        "liga": 4,
         "fordere": 1,
         "turniere": 1
       },
@@ -133,14 +136,15 @@
     {
       "id": "hannes-wallimann",
       "name": "Hannes Wallimann",
-      "gold": 45,
+      "gold": 49,
       "silber": 26,
       "bronze": 25,
-      "summe": 96,
+      "summe": 100,
       "bereiche": {
         "sm": 18,
         "nati": 1,
         "ranglisten": 1,
+        "liga": 4,
         "turniere": 76
       }
     },
@@ -149,25 +153,27 @@
       "name": "Rayan Van Stokkum",
       "gold": 24,
       "silber": 21,
-      "bronze": 15,
-      "summe": 60,
+      "bronze": 17,
+      "summe": 62,
       "bereiche": {
         "sm": 8,
         "nati": 1,
         "ranglisten": 3,
+        "liga": 2,
         "turniere": 48
       }
     },
     {
       "id": "peter-felder",
       "name": "Peter Felder",
-      "gold": 11,
+      "gold": 15,
       "silber": 16,
       "bronze": 15,
-      "summe": 42,
+      "summe": 46,
       "bereiche": {
         "sm": 4,
         "nati": 2,
+        "liga": 4,
         "fordere": 3,
         "turniere": 33
       }
@@ -175,23 +181,25 @@
     {
       "id": "arpad-wicki",
       "name": "Arpad Wicki",
-      "gold": 7,
+      "gold": 8,
       "silber": 3,
       "bronze": 15,
-      "summe": 25,
+      "summe": 26,
       "bereiche": {
         "sm": 1,
+        "liga": 1,
         "turniere": 24
       }
     },
     {
       "id": "reto-odermatt",
       "name": "Reto Odermatt",
-      "gold": 6,
+      "gold": 9,
       "silber": 3,
       "bronze": 6,
-      "summe": 15,
+      "summe": 18,
       "bereiche": {
+        "liga": 3,
         "fordere": 2,
         "turniere": 13
       }
@@ -199,50 +207,67 @@
     {
       "id": "adrian-schuler",
       "name": "Adrian Schuler",
-      "gold": 3,
+      "gold": 4,
       "silber": 3,
       "bronze": 9,
-      "summe": 15,
+      "summe": 16,
       "bereiche": {
         "sm": 2,
+        "liga": 1,
         "turniere": 13
       }
     },
     {
       "id": "matteo-cosi",
       "name": "Matteo Cosi",
-      "gold": 4,
+      "gold": 7,
       "silber": 5,
       "bronze": 1,
-      "summe": 10,
+      "summe": 13,
       "bereiche": {
         "ranglisten": 1,
+        "liga": 3,
         "fordere": 1,
         "turniere": 8
       }
     },
     {
+      "id": "martin-felder",
+      "name": "Martin Felder",
+      "gold": 6,
+      "silber": 0,
+      "bronze": 6,
+      "summe": 12,
+      "bereiche": {
+        "sm": 2,
+        "nati": 2,
+        "liga": 4,
+        "turniere": 4
+      }
+    },
+    {
       "id": "manuel-ragonesi",
       "name": "Manuel Ragonesi",
-      "gold": 2,
+      "gold": 3,
       "silber": 0,
-      "bronze": 7,
-      "summe": 9,
+      "bronze": 8,
+      "summe": 11,
       "bereiche": {
+        "liga": 2,
         "turniere": 9
       }
     },
     {
-      "id": "martin-felder",
-      "name": "Martin Felder",
-      "gold": 2,
+      "id": "pascal-felber",
+      "name": "Pascal Felber",
+      "gold": 1,
       "silber": 0,
       "bronze": 6,
-      "summe": 8,
+      "summe": 7,
       "bereiche": {
-        "sm": 2,
-        "nati": 2,
-        "turniere": 4
+        "liga": 3,
+        "fordere": 2,
+        "turniere": 2
       }
     },
     {
@@ -255,6 +280,19 @@
       "bereiche": {
         "ranglisten": 1,
         "turniere": 5
+      }
+    },
+    {
+      "id": "daniel-flueler",
+      "name": "Daniel Flüeler",
+      "gold": 0,
+      "silber": 2,
+      "bronze": 4,
+      "summe": 6,
+      "bereiche": {
+        "nati": 1,
+        "liga": 1,
+        "turniere": 4
       }
     },
     {
@@ -282,27 +320,29 @@
       }
     },
     {
-      "id": "daniel-flueler",
-      "name": "Daniel Flüeler",
+      "id": "vullnet-fazliu",
+      "name": "Vullnet Fazliu",
       "gold": 0,
       "silber": 2,
-      "bronze": 3,
-      "summe": 5,
+      "bronze": 2,
+      "summe": 4,
       "bereiche": {
-        "nati": 1,
-        "turniere": 4
+        "liga": 1,
+        "fordere": 1,
+        "turniere": 2
       }
     },
     {
-      "id": "pascal-felber",
-      "name": "Pascal Felber",
+      "id": "marc-burri",
+      "name": "Marc Burri",
       "gold": 0,
-      "silber": 0,
-      "bronze": 4,
+      "silber": 1,
+      "bronze": 3,
       "summe": 4,
       "bereiche": {
-        "fordere": 2,
-        "turniere": 2
+        "sm": 1,
+        "liga": 2,
+        "turniere": 1
       }
     },
     {
@@ -317,6 +357,18 @@
       }
     },
     {
+      "id": "fabio-di-crescenzo",
+      "name": "Fabio Di Crescenzo",
+      "gold": 2,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 3,
+      "bereiche": {
+        "liga": 1,
+        "turniere": 2
+      }
+    },
+    {
       "id": "tomas-karajan",
       "name": "Tomas Karajan",
       "gold": 0,
@@ -328,29 +380,6 @@
       }
     },
     {
-      "id": "vullnet-fazliu",
-      "name": "Vullnet Fazliu",
-      "gold": 0,
-      "silber": 2,
-      "bronze": 1,
-      "summe": 3,
-      "bereiche": {
-        "fordere": 1,
-        "turniere": 2
-      }
-    },
-    {
-      "id": "fabio-di-crescenzo",
-      "name": "Fabio Di Crescenzo",
-      "gold": 2,
-      "silber": 0,
-      "bronze": 0,
-      "summe": 2,
-      "bereiche": {
-        "turniere": 2
-      }
-    },
-    {
       "id": "michele-sabbatini",
       "name": "Michele Sabbatini",
       "gold": 1,
@@ -359,18 +388,6 @@
       "summe": 2,
       "bereiche": {
         "fordere": 2
-      }
-    },
-    {
-      "id": "marc-burri",
-      "name": "Marc Burri",
-      "gold": 0,
-      "silber": 1,
-      "bronze": 1,
-      "summe": 2,
-      "bereiche": {
-        "sm": 1,
-        "turniere": 1
       }
     },
     {
@@ -415,6 +432,28 @@
       "summe": 1,
       "bereiche": {
         "turniere": 1
+      }
+    },
+    {
+      "id": "carsten-schedding",
+      "name": "Carsten Schedding",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 1,
+      "bereiche": {
+        "liga": 1
+      }
+    },
+    {
+      "id": "sascha-ernst",
+      "name": "Sascha Ernst",
+      "gold": 0,
+      "silber": 0,
+      "bronze": 1,
+      "summe": 1,
+      "bereiche": {
+        "liga": 1
       }
     }
   ],
@@ -1103,7 +1142,18 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+        "spieler": [
+          "Hannes Wallimann",
+          "Jorge Rodriguez",
+          "Martin Felder",
+          "Matteo Cosi",
+          "Pascal Felber",
+          "Peter Felder",
+          "Reto Odermatt"
+        ]
       },
       {
         "saison": "2025",
@@ -1111,7 +1161,18 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+        "spieler": [
+          "Hannes Wallimann",
+          "Jorge Rodriguez",
+          "Manuel Ragonesi",
+          "Martin Felder",
+          "Matteo Cosi",
+          "Peter Felder",
+          "Reto Odermatt"
+        ]
       },
       {
         "saison": "2025",
@@ -1119,7 +1180,18 @@
         "team": "TFCL 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+        "spieler": [
+          "Carsten Schedding",
+          "Daniel Flüeler",
+          "Fabio Di Crescenzo",
+          "Marc Burri",
+          "Pascal Felber",
+          "Rayan Van Stokkum",
+          "Vullnet Fazliu"
+        ]
       },
       {
         "saison": "2024",
@@ -1127,7 +1199,18 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+        "spieler": [
+          "Arpad Wicki",
+          "Hannes Wallimann",
+          "Jorge Rodriguez",
+          "Martin Felder",
+          "Matteo Cosi",
+          "Peter Felder",
+          "Reto Odermatt"
+        ]
       },
       {
         "saison": "2024",
@@ -1135,7 +1218,16 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+        "spieler": [
+          "Manuel Ragonesi",
+          "Marc Burri",
+          "Pascal Felber",
+          "Rayan Van Stokkum",
+          "Sascha Ernst"
+        ]
       },
       {
         "saison": "2023",
@@ -1143,7 +1235,8 @@
         "team": "TFC Luzern 1",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2023",
@@ -1151,7 +1244,8 @@
         "team": "TFC Luzern Damen",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2023",
@@ -1159,7 +1253,8 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2019",
@@ -1167,7 +1262,8 @@
         "team": "TFC Luzern 1",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2019",
@@ -1175,7 +1271,8 @@
         "team": "TFC Luzern Damen",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2019",
@@ -1183,7 +1280,8 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2018",
@@ -1191,7 +1289,8 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2018",
@@ -1199,7 +1298,8 @@
         "team": "TFC Luzern woman 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Team"
       },
       {
         "saison": "2017",
@@ -1207,7 +1307,551 @@
         "team": "TFC Luzern",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
-        "abgerufen": "2026-11-21"
+        "abgerufen": "2026-11-21",
+        "zaehlt_je": "Person",
+        "kader_quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+        "spieler": [
+          "Adrian Schuler",
+          "Hannes Wallimann",
+          "Jorge Rodriguez",
+          "Martin Felder",
+          "Peter Felder"
+        ]
+      }
+    ],
+    "personen": [
+      {
+        "id": "hannes-wallimann",
+        "gold": 4,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 4,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2017",
+            "jahr": 2017,
+            "liga": "Super League",
+            "team": "TFC Luzern",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "jorge-rodriguez",
+        "gold": 4,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 4,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2017",
+            "jahr": 2017,
+            "liga": "Super League",
+            "team": "TFC Luzern",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "martin-felder",
+        "gold": 4,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 4,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2017",
+            "jahr": 2017,
+            "liga": "Super League",
+            "team": "TFC Luzern",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "peter-felder",
+        "gold": 4,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 4,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2017",
+            "jahr": 2017,
+            "liga": "Super League",
+            "team": "TFC Luzern",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "matteo-cosi",
+        "gold": 3,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "reto-odermatt",
+        "gold": 3,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "pascal-felber",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 3,
+        "platzierungen": [
+          {
+            "saison": "2026",
+            "jahr": 2026,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Challenge League",
+            "team": "TFC Luzern 2",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "manuel-ragonesi",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Challenge League",
+            "team": "TFC Luzern 2",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "adrian-schuler",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2017",
+            "jahr": 2017,
+            "liga": "Super League",
+            "team": "TFC Luzern",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "arpad-wicki",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 0,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Super League",
+            "team": "TFC Luzern 1",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "marc-burri",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Challenge League",
+            "team": "TFC Luzern 2",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "rayan-van-stokkum",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 2,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Challenge League",
+            "team": "TFC Luzern 2",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "carsten-schedding",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "daniel-flueler",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "fabio-di-crescenzo",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "sascha-ernst",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2024",
+            "jahr": 2024,
+            "liga": "Challenge League",
+            "team": "TFC Luzern 2",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "vullnet-fazliu",
+        "gold": 0,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 1,
+        "platzierungen": [
+          {
+            "saison": "2025",
+            "jahr": 2025,
+            "liga": "Challenge League",
+            "team": "TFCL 2",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+            "rang_quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
+            "abgerufen": "2026-11-21"
+          }
+        ]
       }
     ]
   },
@@ -4557,6 +5201,7 @@
     "Jahresrangliste 2017, 2018, 2021, 2022 und alles vor 2017: nur über archivierte Spielerseiten mit Verbandsnummern belegbar, nicht aufgenommen",
     "Jahresrangliste 2023: der Archivstand vom 2023-12-03 liegt vor dem Saisonende (2023-12-10), ein Schlussstand ist ohne Spielerseiten nicht belegt",
     "Jahresrangliste 2020: keine eigene Saison",
+    "Clubliga-Kader 2018 (Super League und Women League), 2019 und 2023 nicht belegt: Teamlisten des Verbands nennen nur Teams, die Teamseite und die Resultatseiten von 2018 sind im Web-Archiv leer. Diese Plätze zählen je Team",
     "Fordere Luzern 2019/20: «3/4. Liga Single-KO Final Turnier 2020» ist ein KO, aber Liga oder Tischart nicht eindeutig, übersprungen (Podest mit Lizenz: Michele Sabbatini Rang 2)",
     "Fordere Luzern 2021/22: «Cup» ist ein KO, aber Liga oder Tischart nicht eindeutig, übersprungen",
     "STF Saison 191: die Abfrage liefert höchstens 50 Turniere, vollständig nur über die Orte",

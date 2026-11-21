@@ -1,0 +1,69 @@
+{
+  "abgerufen": "2026-11-21",
+  "hinweis": "Handdatei: Kader der Clubliga-Teams des TFC Luzern auf dem Podest, je Platz mit Quelle. Mit belegtem Kader zählt der Platz je Person mit Lizenz LUZE, ohne Kader je Team (Vasco, 2026-11-21). saison, liga und team wie in der Rangliste des Verbands. personen nennt nur Personen mit Lizenz; ohne_lizenz zählt die übrigen ohne Namen.",
+  "kader": [
+    {
+      "saison": "2026",
+      "liga": "Super League",
+      "team": "TFC Luzern 1",
+      "personen": ["matteo-cosi", "pascal-felber", "peter-felder", "martin-felder", "reto-odermatt", "jorge-rodriguez", "hannes-wallimann"],
+      "ohne_lizenz": 0,
+      "quelle": "https://app.tablesoccer.org/p/6RVO9Z",
+      "quelle_art": "Coral, Swiss Tablesoccer League 2026, Wettbewerb Super League, Team TFC Luzern 1, gemeldete Spieler (bestätigt)",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "saison": "2025",
+      "liga": "Super League",
+      "team": "TFC Luzern 1",
+      "personen": ["matteo-cosi", "peter-felder", "martin-felder", "reto-odermatt", "manuel-ragonesi", "jorge-rodriguez", "hannes-wallimann"],
+      "ohne_lizenz": 0,
+      "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+      "quelle_art": "Coral, Swiss Tablesoccer League 2025, Wettbewerb Super League, Team TFC Luzern 1; deckt sich mit der Teamliste des Verbands (league-2025-teams.pdf, TFCL 1)",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "saison": "2025",
+      "liga": "Challenge League",
+      "team": "TFCL 2",
+      "personen": ["fabio-di-crescenzo", "vullnet-fazliu", "pascal-felber", "carsten-schedding", "rayan-van-stokkum", "marc-burri", "daniel-flueler"],
+      "ohne_lizenz": 0,
+      "quelle": "https://app.tablesoccer.org/p/ZV5QDZ",
+      "quelle_art": "Coral, Swiss Tablesoccer League 2025, Wettbewerb Challenge League, Team TFC Luzern 2; die Teamliste des Verbands nennt sechs davon, ohne Daniel Flüeler",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "saison": "2024",
+      "liga": "Super League",
+      "team": "TFC Luzern 1",
+      "personen": ["hannes-wallimann", "peter-felder", "martin-felder", "reto-odermatt", "matteo-cosi", "jorge-rodriguez", "arpad-wicki"],
+      "ohne_lizenz": 0,
+      "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+      "quelle_art": "Verband, Teams und Personen der STL 2024 (PDF im Web-Archiv), Team TFCL 1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "saison": "2024",
+      "liga": "Challenge League",
+      "team": "TFC Luzern 2",
+      "personen": ["manuel-ragonesi", "marc-burri", "sascha-ernst", "pascal-felber", "rayan-van-stokkum"],
+      "ohne_lizenz": 2,
+      "quelle": "https://web.archive.org/web/20240809000216/https://swisstablesoccer.ch/media/attachments/2024/07/30/stl_2024_teams_personen_alle.pdf",
+      "quelle_art": "Verband, Teams und Personen der STL 2024 (PDF im Web-Archiv), Team TFCL 2",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "saison": "2017",
+      "liga": "Super League",
+      "team": "TFC Luzern",
+      "personen": ["hannes-wallimann", "martin-felder", "peter-felder", "jorge-rodriguez", "adrian-schuler"],
+      "ohne_lizenz": 1,
+      "quelle": "https://web.archive.org/web/20201101005953/https://swisstablesoccer.ch/index.php/de/news/192-capricorn-und-luzern-gewinnen-die-swiss-tablesoccer-league",
+      "quelle_art": "Verband, News «Capricorn und Luzern gewinnen die Swiss Tablesoccer League» vom 4. Dezember 2017 (Web-Archiv)",
+      "abgerufen": "2026-11-21"
+    }
+  ],
+  "offen": [
+    "Clubliga-Kader 2018 (Super League und Women League), 2019 und 2023 nicht belegt: Teamlisten des Verbands nennen nur Teams, die Teamseite und die Resultatseiten von 2018 sind im Web-Archiv leer. Diese Plätze zählen je Team"
+  ]
+}
