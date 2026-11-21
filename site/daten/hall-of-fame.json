@@ -5,9 +5,9 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 408,
-    "gold": 155,
-    "silber": 110,
+    "podestplaetze": 413,
+    "gold": 159,
+    "silber": 111,
     "bronze": 143,
     "personen": 27
   },
@@ -19,9 +19,9 @@
       "anker": "sm",
       "daten": "sm",
       "summe": {
-        "podestplaetze": 36,
-        "gold": 15,
-        "silber": 9,
+        "podestplaetze": 41,
+        "gold": 19,
+        "silber": 10,
         "bronze": 12,
         "personen": 7
       }
@@ -179,6 +179,20 @@
       }
     },
     {
+      "id": "martin-felder",
+      "name": "Martin Felder",
+      "gold": 11,
+      "silber": 5,
+      "bronze": 10,
+      "summe": 26,
+      "bereiche": {
+        "sm": 7,
+        "nati": 2,
+        "liga": 4,
+        "turniere": 13
+      }
+    },
+    {
       "id": "arpad-wicki",
       "name": "Arpad Wicki",
       "gold": 8,
@@ -189,20 +203,6 @@
         "sm": 1,
         "liga": 1,
         "turniere": 24
-      }
-    },
-    {
-      "id": "martin-felder",
-      "name": "Martin Felder",
-      "gold": 7,
-      "silber": 4,
-      "bronze": 10,
-      "summe": 21,
-      "bereiche": {
-        "sm": 2,
-        "nati": 2,
-        "liga": 4,
-        "turniere": 13
       }
     },
     {
@@ -804,6 +804,93 @@
         ]
       },
       {
+        "id": "martin-felder",
+        "gold": 4,
+        "silber": 1,
+        "bronze": 2,
+        "summe": 7,
+        "platzierungen": [
+          {
+            "jahr": 2025,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Partner",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "event": null,
+            "kategorie": "Herren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Partner",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "event": null,
+            "kategorie": "Herren Einzel",
+            "rang": 3,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Partner",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "event": null,
+            "kategorie": "Junioren Einzel",
+            "rang": 1,
+            "partner": [],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
         "id": "peter-felder",
         "gold": 2,
         "silber": 0,
@@ -918,33 +1005,6 @@
                 "id": "peter-felder"
               }
             ],
-            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-21"
-          }
-        ]
-      },
-      {
-        "id": "martin-felder",
-        "gold": 0,
-        "silber": 0,
-        "bronze": 2,
-        "summe": 2,
-        "platzierungen": [
-          {
-            "jahr": 2025,
-            "event": null,
-            "kategorie": "Herren Einzel",
-            "rang": 3,
-            "partner": [],
-            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2018,
-            "event": null,
-            "kategorie": "Herren Einzel",
-            "rang": 3,
-            "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
             "abgerufen": "2026-11-21"
           }

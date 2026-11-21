@@ -3,9 +3,7 @@
   "club": "LUZE",
   "clubname": "TFC Luzern",
   "kontakt": "vasco.oliveira@gmx.ch",
-  "nicht_gleich": {
-    "334dc30c02fe8095": "Kurzwert eines SM-Namens mit Zusatz, der nicht zu einer Lizenz gehört (Vasco, 2026-11-20: «nein»); zählt nicht und steht nicht in offen"
-  },
+  "nicht_gleich": {},
   "nicht_nennen": [],
   "ranglisten": {
     "cms": [
