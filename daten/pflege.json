@@ -166,5 +166,28 @@
       "datei": "bilder/vasco-oliveira.webp",
       "alt": "Vasco Oliveira, Ehrenmitglied, lächelnd im blauen Trikot"
     }
-  }
+  },
+  "junioren": [
+    {
+      "id": "theodor-k",
+      "name": "Theodor K.",
+      "kurzwert": "4880d4dddf3af68f",
+      "verein": "TFC Luzern",
+      "hinweis": "Junior ohne Lizenz (Vasco 2026-11-21). Club je Platz belegt: News 560 des Verbands (Finals 2023, «TFC Luzern») und archivierte Spielerseite vom 2025-01-24 («Club TFC Luzern»).",
+      "sm": [
+        {
+          "jahr": 2023,
+          "kategorie": "Junioren Doppel",
+          "rang": 1,
+          "verein_beleg": "https://web.archive.org/web/20240228033814/https://swisstablesoccer.ch/index.php/de/news/560-resultate-finals-2023"
+        },
+        {
+          "jahr": 2024,
+          "kategorie": "Junioren Doppel",
+          "rang": 2,
+          "verein_beleg": "https://web.archive.org/web/20250124033446/https://www.swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=2110&ua=1"
+        }
+      ]
+    }
+  ]
 }

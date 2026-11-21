@@ -17,6 +17,7 @@ Anforderungen von Vasco:
 
 - 2026-11-21: Gewertete Verbandsturniere (STS, STRT, STRT Pro) vor September 2024 nachtragen, wie beim TFCZ (Auslöser: Vascos STRT TFCZ 2024, Swiss Garlando Finals 2017 und Fordere.ch STS 2017 fehlten).
 - 2026-11-21: Alle Podestplätze aus FAST nachtragen («dann musst du alles nachtragen»), Auslöser Hannes mit der World Series 2023 und Jorge mit Champions-League-Silber 2017.
+- 2026-11-21: Junioren ohne Lizenz zählen, wenn eine Quelle von damals den TFCL als Verein nennt; auf der Seite mit Vorname und Initial und der Marke «Junior», in der Gesamtzahl («Junioren haben evtl nicht immer eine Lizenz, aber sie holten Titel für einen bestimmten Verein»).
 
 Fertig wenn: Seite auf GitHub Pages erreichbar, Prüfer bestanden (Auftrag A-498).
 

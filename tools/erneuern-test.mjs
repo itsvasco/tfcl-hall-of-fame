@@ -504,5 +504,32 @@ await test('Clubliga-Kader der Handdatei: jeder Platz trifft die Rangliste im Sc
   }
 });
 
+// ---------- Junioren ohne Lizenz (Vasco 2026-11-21) ----------
+await test('Junior ohne Lizenz: zählt nur belegte Plätze, Name nur Vorname und Initial, Partner ohne Lizenz anonym', async () => {
+  const SMJ = { ...SM, 'Junior Doubles': { '2023': { 1: { rank: 1, players: [{ name: 'Jung Jonas' }, { name: 'Fremd Franz' }] } }, '2019': { 2: { rank: 2, players: [{ name: 'Jung Jonas' }, { name: 'Muster Anna' }] } } } };
+  const J = { id: 'jonas-j', name: 'Jonas J.', kurzwert: kurzwert('Jung Jonas'), verein: 'Club Xyzc', sm: [{ jahr: 2023, kategorie: 'Junioren Doppel', rang: 1, verein_beleg: 'https://web.archive.org/web/20240101000000/https://example.org/news' }] };
+  const tuJ = { eintraege: [{ jahr: 2024, datum: '2024-03-24', turnier: 'STS Beispiel', serie: 'STF', disziplin: 'Junioren Singles U13', rang: 1, personen: ['jonas-j'], quelle: 'https://app.tablesoccer.org/p/EEE555', verein_beleg: 'https://example.org/beleg', abgerufen: DATUM }] };
+  const ohne = await bauT({ ...PFLEGE_T, ehrenmitglieder: [], feste_plaetze: [], fotos: {} }, mitT({ sm: async () => SMJ, turniere: async () => ({ eintraege: [] }) }));
+  const mit = await bauT({ ...PFLEGE_T, ehrenmitglieder: [], feste_plaetze: [], fotos: {}, junioren: [J] }, mitT({ sm: async () => SMJ, turniere: async () => tuJ }));
+  const v = mit.verzeichnis.find((p) => p.id === 'jonas-j');
+  assert.ok(v && v.junior && v.summe === 2, 'SM 2023 und Turnier, nicht SM 2019 (ohne Beleg)');
+  assert.equal(mit.gesamt.podestplaetze, ohne.gesamt.podestplaetze + 2, 'Junioren zählen in die Gesamtzahl');
+  const sm = mit.sm.personen.find((p) => p.id === 'jonas-j').platzierungen;
+  assert.deepEqual(sm.map((e) => [e.jahr, e.rang, e.partner[0].name]), [[2023, 1, 'Partner']]);
+  assert.ok(!alsText(mit).includes('Jung') && !alsText(mit).includes('Franz'), 'kein voller Name im Schnappschuss');
+  await wirft(() => bauT({ ...PFLEGE_T, junioren: [{ ...J, name: 'Jonas Jung' }] }, mitT({ sm: async () => SMJ })), /Vorname X\./);
+  await wirft(() => bauT({ ...PFLEGE_T, junioren: [{ ...J, sm: [{ ...J.sm[0], rang: 3 }] }] }, mitT({ sm: async () => SMJ })), /nicht in der SM-Antwort/);
+  await wirft(() => bauT({ ...PFLEGE_T, junioren: [{ ...J, sm: [{ ...J.sm[0], verein_beleg: '' }] }] }, mitT({ sm: async () => SMJ })), /Beleg des Clubs/);
+  await wirft(() => bauT({ ...PFLEGE_T, junioren: [J] }, mitT({ sm: async () => SMJ, turniere: async () => ({ eintraege: [{ ...tuJ.eintraege[0], verein_beleg: undefined }] }) })), /Junior ohne Beleg/);
+});
+await test('Junioren der Handdatei: Name nur Vorname und Initial, jeder Turnierplatz mit Beleg des Clubs', () => {
+  const pf = JSON.parse(fs.readFileSync(new URL('../daten/pflege.json', import.meta.url), 'utf8'));
+  const st = JSON.parse(fs.readFileSync(new URL('../daten/stf-archiv.json', import.meta.url), 'utf8'));
+  for (const j of pf.junioren || []) {
+    assert.match(j.name, /^\p{Lu}[\p{L}-]+ \p{Lu}\.$/u);
+    for (const e of st.eintraege.filter((x) => x.personen.includes(j.id))) assert.match(e.verein_beleg || '', /^https:\/\//, `${e.turnier} ${e.disziplin}`);
+  }
+});
+
 console.log(`${ok} Tests bestanden${fehler.length ? `, ${fehler.length} FEHLER:\n- ${fehler.join('\n- ')}` : ''}`);
 process.exit(fehler.length ? 1 : 0);

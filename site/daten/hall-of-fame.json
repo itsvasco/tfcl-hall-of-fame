@@ -2,14 +2,14 @@
   "club": "LUZE",
   "clubname": "TFC Luzern",
   "erstellt": "2026-11-21",
-  "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
-  "spieler_mit_lizenz": 37,
+  "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club, dazu Junioren ohne Lizenz mit Plätzen, für die eine Quelle von damals den Club nennt (nur Vorname und Initial), und Ehrenmitglieder, die in keine Summe zählen. Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
+  "spieler_mit_lizenz": 38,
   "gesamt": {
-    "podestplaetze": 418,
-    "gold": 161,
-    "silber": 113,
-    "bronze": 144,
-    "personen": 27
+    "podestplaetze": 422,
+    "gold": 163,
+    "silber": 114,
+    "bronze": 145,
+    "personen": 28
   },
   "bereiche": [
     {
@@ -19,11 +19,11 @@
       "anker": "sm",
       "daten": "sm",
       "summe": {
-        "podestplaetze": 41,
-        "gold": 19,
-        "silber": 10,
+        "podestplaetze": 43,
+        "gold": 20,
+        "silber": 11,
         "bronze": 12,
-        "personen": 7
+        "personen": 8
       }
     },
     {
@@ -92,11 +92,11 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 301,
-        "gold": 103,
+        "podestplaetze": 303,
+        "gold": 104,
         "silber": 94,
-        "bronze": 104,
-        "personen": 24
+        "bronze": 105,
+        "personen": 25
       }
     }
   ],
@@ -329,6 +329,19 @@
         "fordere": 3,
         "turniere": 2
       }
+    },
+    {
+      "id": "theodor-k",
+      "name": "Theodor K.",
+      "gold": 2,
+      "silber": 1,
+      "bronze": 1,
+      "summe": 4,
+      "bereiche": {
+        "sm": 2,
+        "turniere": 2
+      },
+      "junior": true
     },
     {
       "id": "marina-von-allmen",
@@ -946,6 +959,45 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "theodor-k",
+        "gold": 1,
+        "silber": 1,
+        "bronze": 0,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2024,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 2,
+            "partner": [
+              {
+                "name": "Partner",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "verein_beleg": "https://web.archive.org/web/20250124033446/https://www.swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=2110&ua=1",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "event": null,
+            "kategorie": "Junioren Doppel",
+            "rang": 1,
+            "partner": [
+              {
+                "name": "Partner",
+                "id": null
+              }
+            ],
+            "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
+            "verein_beleg": "https://web.archive.org/web/20240228033814/https://swisstablesoccer.ch/index.php/de/news/560-resultate-finals-2023",
             "abgerufen": "2026-11-21"
           }
         ]
@@ -4948,6 +5000,37 @@
             "disziplin": "Damen Doppel",
             "rang": 1,
             "quelle": "https://web.archive.org/web/20250807132614/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=540&ua=1",
+            "abgerufen": "2026-11-21"
+          }
+        ]
+      },
+      {
+        "id": "theodor-k",
+        "gold": 1,
+        "silber": 0,
+        "bronze": 1,
+        "summe": 2,
+        "platzierungen": [
+          {
+            "jahr": 2024,
+            "datum": "2024-03-24",
+            "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+            "serie": "STF",
+            "disziplin": "Junioren Singles U13",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20250320220557/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=240",
+            "verein_beleg": "https://web.archive.org/web/20250124033446/https://www.swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=2110&ua=1",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-03-24",
+            "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+            "serie": "STF",
+            "disziplin": "Junioren Doubles U19",
+            "rang": 3,
+            "quelle": "https://web.archive.org/web/20250320220557/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=240",
+            "verein_beleg": "https://web.archive.org/web/20250124033446/https://www.swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=2110&ua=1",
             "abgerufen": "2026-11-21"
           }
         ]

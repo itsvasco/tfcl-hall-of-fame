@@ -16,7 +16,7 @@ const PFEIL = '<svg class="symbol symbol--klein symbol--pfeil" viewBox="0 0 24 2
 
 export function modell(j) {
   if (!j || !Array.isArray(j.verzeichnis) || !j.gesamt || !Array.isArray(j.bereiche)) throw new Error('Schnappschuss hat ein fremdes Format');
-  const personen = new Map(j.verzeichnis.map((p) => [p.id, { id: p.id, name: p.name, eintraege: [], soll: p.summe, fest: p.fest || 0, spruch: p.spruch || '', ehren: !!p.ehrenmitglied, foto: p.foto || null, fotoAlt: p.foto_alt || '' }]));
+  const personen = new Map(j.verzeichnis.map((p) => [p.id, { id: p.id, name: p.name, eintraege: [], soll: p.summe, fest: p.fest || 0, spruch: p.spruch || '', ehren: !!p.ehrenmitglied, junior: !!p.junior, foto: p.foto || null, fotoAlt: p.foto_alt || '' }]));
   const hinzu = (id, e) => {
     const p = personen.get(id);
     if (!p) throw new Error(`Person ${id} fehlt im Verzeichnis`);
@@ -176,10 +176,11 @@ export function zeileHtml(r) {
   const n = r.z.summe;
   const foto = r.p.foto ? `<img class="rang__foto" src="${esc(r.p.foto)}" alt="${esc(r.p.fotoAlt)}" width="160" height="160" loading="lazy" decoding="async">` : '';
   const ehren = r.p.ehren ? '<span class="marke">Ehrenmitglied, zählt in keine Summe</span>' : '';
+  const junior = r.p.junior ? '<span class="marke">Junior, Titel für den Club ohne Lizenz</span>' : '';
   const titel = r.p.spruch || hoechsterTitel(r.e);
   const aufklapp = n ? `<details class="aufklapp"><summary>${pl(n, 'Podestplatz', 'Podestplätze')} ansehen${PFEIL}</summary><ul class="rang__eintraege">${r.e.map(eintragHtml).join('')}</ul></details>` : '';
   const zahl = `<b>${fmt(n)}</b><small>${n === 1 ? 'Podestplatz' : 'Podestplätze'}</small>`;
-  return `<li class="rang"><span class="rang__nr" aria-label="Rang ${r.rang}">${r.rang}</span><div class="rang__text"><div class="rang__kopf">${foto}<h3>${esc(r.p.name)}</h3>${ehren}</div><p class="rang__titel">${esc(titel)}</p><div class="rang__chips">${chips(r.z)}</div>`
+  return `<li class="rang"><span class="rang__nr" aria-label="Rang ${r.rang}">${r.rang}</span><div class="rang__text"><div class="rang__kopf">${foto}<h3>${esc(r.p.name)}</h3>${ehren}${junior}</div><p class="rang__titel">${esc(titel)}</p><div class="rang__chips">${chips(r.z)}</div>`
     + `${aufklapp}</div>`
     + `<div class="rang__zahl">${zahl}</div></li>`;
 }

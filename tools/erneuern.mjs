@@ -91,6 +91,31 @@ export function smAbleiten(antwort, P, datum, nichtGleich = {}) {
   return { eintraege, offen };
 }
 
+// Junioren ohne Lizenz (pflege.junioren, Vasco 2026-11-21): zählen nur mit den SM-Plätzen, für die eine Quelle von damals den
+// Club nennt (`sm`, je mit `verein_beleg`). Die Person steht im Repo nur als Kurzwert und «Vorname Initial.»; der Abgleich mit
+// der SM-Antwort geht über den Kurzwert. Fehlt ein belegter Platz in der Antwort, bricht der Lauf ab (Quelle verändert).
+export function smJunioren(antwort, junioren, P, datum) {
+  const eintraege = new Map();
+  for (const j of junioren) {
+    for (const b of j.sm || []) {
+      hart(https(b.verein_beleg), `Junioren: ${j.id} SM ${b.jahr} ohne Beleg des Clubs`);
+      let treffer = null;
+      for (const [kat, jahre] of Object.entries(antwort)) {
+        if (SM_KATEGORIEN[kat] !== b.kategorie) continue;
+        for (const [jahrKey, raenge] of Object.entries(jahre || {})) {
+          if (Number(jahrKey.slice(0, 4)) !== b.jahr) continue;
+          for (const e of Object.values(raenge || {})) if (Number(e.rank) === b.rang && e.players.some((p) => kurzwert(p.name) === j.kurzwert)) treffer = e;
+        }
+      }
+      hart(treffer, `Junioren: ${j.id} SM ${b.jahr} ${b.kategorie} Rang ${b.rang} steht nicht in der SM-Antwort`);
+      const partner = treffer.players.filter((p) => kurzwert(p.name) !== j.kurzwert).map((p) => { const x = P.finde(p.name); return x ? { name: x.name, id: x.id } : { name: 'Partner', id: null }; });
+      const l = eintraege.get(j.id) || []; eintraege.set(j.id, l);
+      l.push({ jahr: b.jahr, event: null, kategorie: b.kategorie, rang: b.rang, partner, quelle: SM_QUELLE, verein_beleg: b.verein_beleg, abgerufen: datum });
+    }
+  }
+  return eintraege;
+}
+
 // ---------- Jahresrangliste ----------
 const CMS_KATEGORIEN = { 312: 'Open Doppel', 308: 'Open Einzel', 314: 'Damen Doppel', 310: 'Damen Einzel', 316: 'Mixed', 315: 'Senioren Doppel', 311: 'Senioren Einzel', 313: 'Junior Doppel', 309: 'Junior Einzel' };
 export const CMS_URL = (saison, kat) => `https://api.tablesoccer.org/cms.rankings?tour=78&season=${saison}&rule=1&category=${kat}`;
@@ -335,8 +360,9 @@ export function turniereAbleiten(datei, P, bekannt) {
     for (const id of e.personen) hart(bekannt.has(id), `Turniere: Person ${id} steht nicht in der Spielerliste (${e.turnier})`);
     const ids = e.personen.filter((id) => P.alle.some((s) => s.id === id));
     if (!ids.length) continue;
+    hart(!ids.some((id) => P.alle.find((s) => s.id === id)?.junior) || https(e.verein_beleg), `Turniere: Junior ohne Beleg des Clubs (${e.turnier})`);
     const wm = e.serie === 'ITSF' && e.rang === 1 && /world cup/i.test(e.turnier);
-    aus.push({ jahr: e.jahr, datum: e.datum, turnier: e.turnier, serie: e.serie, disziplin: e.disziplin, rang: e.rang, ...(e.ort ? { ort: ortDeutsch(e.ort) } : {}), ...(wm ? { titel: 'Weltmeister' } : {}), personen: ids, quelle: e.quelle, abgerufen: e.abgerufen });
+    aus.push({ jahr: e.jahr, datum: e.datum, turnier: e.turnier, serie: e.serie, disziplin: e.disziplin, rang: e.rang, ...(e.ort ? { ort: ortDeutsch(e.ort) } : {}), ...(wm ? { titel: 'Weltmeister' } : {}), personen: ids, quelle: e.quelle, ...(e.verein_beleg ? { verein_beleg: e.verein_beleg } : {}), abgerufen: e.abgerufen });
   }
   return { eintraege: aus, offen: datei.offen || [] };
 }
@@ -389,13 +415,20 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   // Ehrenmitglieder (pflege.ehrenmitglieder) haben keine Lizenz, werden aber mit ihren Podestplätzen gesucht und zählen nicht in die Summen.
   const ehrenNamen = pflege.ehrenmitglieder || [];
   const ehren = ehrenNamen.map((n) => ({ id: slug(n), name: n, ehrenmitglied: true }));
-  const bekannt = new Set([...spielerDatei.spieler.map((s) => s.id), ...ehren.map((x) => x.id)]);
-  const P = personen({ ...spielerDatei, spieler: [...spielerDatei.spieler, ...ehren.filter((x) => !spielerDatei.spieler.some((s) => s.id === x.id))] }, pflege.nicht_nennen || []);
+  // Junioren ohne Lizenz (pflege.junioren): nur mit belegten Plätzen, Name nur «Vorname Initial.», zählen in die Summen.
+  const junioren = (pflege.junioren || []).map((j) => {
+    hart(j.id && /^\p{Lu}[\p{L}-]+ \p{Lu}\.$/u.test(j.name) && /^[0-9a-f]{16}$/.test(j.kurzwert) && j.verein, `Junioren: Eintrag ${j.id || '?'} braucht id, Name «Vorname X.», Kurzwert und Verein`);
+    return j;
+  });
+  const bekannt = new Set([...spielerDatei.spieler.map((s) => s.id), ...ehren.map((x) => x.id), ...junioren.map((j) => j.id)]);
+  const P = personen({ ...spielerDatei, spieler: [...spielerDatei.spieler, ...ehren.filter((x) => !spielerDatei.spieler.some((s) => s.id === x.id)), ...junioren.map((j) => ({ id: j.id, name: j.name, junior: true }))] }, pflege.nicht_nennen || []);
   hart(P.alle.filter((s) => !s.ehrenmitglied).length, 'spieler.json ohne Spieler');
   const offen = [];
 
   // 1. Schweizermeisterschaft
-  const sm = smAbleiten(await holen.sm(), P, datum, pflege.nicht_gleich || {}); offen.push(...sm.offen);
+  const smAntwort = await holen.sm();
+  const sm = smAbleiten(smAntwort, P, datum, pflege.nicht_gleich || {}); offen.push(...sm.offen);
+  for (const [id, l] of smJunioren(smAntwort, junioren.filter((j) => P.alle.some((s) => s.id === j.id)), P, datum)) sm.eintraege.set(id, [...(sm.eintraege.get(id) || []), ...l].sort((a, b) => b.jahr - a.jahr || a.rang - b.rang));
 
   // 2. Jahresrangliste
   const rl = new Map(); const rlSaisons = [];
@@ -469,7 +502,7 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
     const e = proPerson.get(sp.id) || { id: sp.id, name: sp.name, gold: 0, silber: 0, bronze: 0, summe: 0, bereiche: {} };
     proPerson.set(sp.id, e); e.fest = feste.length + 1; e.spruch = f.spruch; feste.push(sp.id);
   }
-  for (const [id, e] of proPerson) if (P.alle.find((s) => s.id === id)?.ehrenmitglied) e.ehrenmitglied = true;
+  for (const [id, e] of proPerson) { const s = P.alle.find((x) => x.id === id); if (s?.ehrenmitglied) e.ehrenmitglied = true; if (s?.junior) e.junior = true; }
   // Fotos (pflege.fotos): nur die hier genannten Personen haben eines (Vasco, 2026-11-20: «als einziger ein foto»), Datei im Ordner site/
   for (const [name, f] of Object.entries(pflege.fotos || {})) {
     const sp = P.finde(name); const e = sp && proPerson.get(sp.id); if (!e) continue;
@@ -482,7 +515,7 @@ export async function bauen({ spielerDatei, pflege, holen, datum }) {
   const nur = (b) => b.map(({ id, gold, silber, bronze, summe, platzierungen }) => ({ id, gold, silber, bronze, summe, platzierungen }));
   return {
     club: spielerDatei.club, clubname: pflege.clubname, erstellt: datum,
-    hinweis: 'Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.',
+    hinweis: 'Podestplätze der Spieler mit heutiger Lizenz beim Club, dazu Junioren ohne Lizenz mit Plätzen, für die eine Quelle von damals den Club nennt (nur Vorname und Initial), und Ehrenmitglieder, die in keine Summe zählen. Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.',
     spieler_mit_lizenz: P.alle.filter((s) => !s.ehrenmitglied).length,
     gesamt, bereiche, verzeichnis,
     sm: { abgerufen: datum, quelle: SM_QUELLE, personen: nur(smB) },
