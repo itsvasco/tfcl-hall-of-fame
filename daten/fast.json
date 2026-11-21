@@ -1596,6 +1596,20 @@
       ],
       "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=9005955&lang=de&competitionId=0&originalCompetitionId=9052429&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
       "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2012,
+      "datum": "2012-07-26",
+      "turnier": "Garlando World Championship Series 2012",
+      "serie": "WS",
+      "disziplin": "Rookie Singles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20120917091554/http://www.table-soccer.org/tournaments/itsf_live_results.php?tour=2012&id=423",
+      "abgerufen": "2026-11-21",
+      "hinweis": "FAST liefert dieses Turnier nicht mehr; Beleg ist die archivierte Live-Ergebnisseite der ITSF während des Turniers (Final Wallimann gegen Schöb, 5:2 5:3 5:1)."
     }
   ],
   "champions": [

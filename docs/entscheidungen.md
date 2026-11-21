@@ -1,5 +1,7 @@
 # Entscheidungen
 
+
+- 2026-11-21: Aus dem Internet Archive (archivierte Live-Ergebnisseite der ITSF) zählt Hannes Wallimann, Garlando WCS 2012, Rookie Singles, Rang 1 (Vasco «F2 ja»). Plätze, deren einzige Quelle eine Spielerseite mit Lizenznummer ist (Rayan van Stokkum und Arpad Wicki 2025), kommen erst mit einer Quelle ohne Nummer ins Repo (Vasco 2026-11-21).
 - 2026-11-21: «Felder Martin H.» ist Martin Felder (Vasco «F1 ja»). Grund: Dieselbe Verbandsnummer trägt beide Namen. Die Schreibweise steht in `daten/spieler.json`, der Kurzwert in `nicht_gleich` ist entfernt, die fünf SM-Plätze zählen. Ersetzt den Entscheid vom 2026-11-20. Verworfen: nur die Archivplätze zählen und die SM-Plätze nicht.
 - 2026-11-21: Archivierte Spielerseiten des Verbands zählen als Quelle eines Verbandsturniers (Vasco «F1 ja»), wie beim TFCZ seit 2026-11-17. Die Verbandsnummer steht nur in der Adresse; `datenschutz-pruefen.mjs` lässt genau diese Adressen durch. Verworfen: Plätze nur aus Spielerseiten zurückstellen (Entscheid vom Morgen desselben Tags, ersetzt).
 - 2026-11-21: Die Archivplätze von Martin Felder zählen (Vasco «F2 nein» auf die Frage, ob sie ausgeschlossen bleiben). Den Widerspruch zur SM hat der Entscheid «Felder Martin H.» vom selben Tag aufgelöst.

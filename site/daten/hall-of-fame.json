@@ -5,8 +5,8 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 413,
-    "gold": 159,
+    "podestplaetze": 414,
+    "gold": 160,
     "silber": 111,
     "bronze": 143,
     "personen": 27
@@ -92,8 +92,8 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 296,
-        "gold": 101,
+        "podestplaetze": 297,
+        "gold": 102,
         "silber": 92,
         "bronze": 103,
         "personen": 24
@@ -136,16 +136,16 @@
     {
       "id": "hannes-wallimann",
       "name": "Hannes Wallimann",
-      "gold": 52,
+      "gold": 53,
       "silber": 29,
       "bronze": 25,
-      "summe": 106,
+      "summe": 107,
       "bereiche": {
         "sm": 18,
         "nati": 1,
         "ranglisten": 1,
         "liga": 4,
-        "turniere": 82
+        "turniere": 83
       }
     },
     {
@@ -1927,10 +1927,10 @@
     "personen": [
       {
         "id": "hannes-wallimann",
-        "gold": 40,
+        "gold": 41,
         "silber": 23,
         "bronze": 19,
-        "summe": 82,
+        "summe": 83,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2741,6 +2741,16 @@
             "rang": 2,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2012,
+            "datum": "2012-07-26",
+            "turnier": "Garlando World Championship Series 2012",
+            "serie": "WS",
+            "disziplin": "Rookie Singles",
+            "rang": 1,
+            "quelle": "https://web.archive.org/web/20120917091554/http://www.table-soccer.org/tournaments/itsf_live_results.php?tour=2012&id=423",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2011,
