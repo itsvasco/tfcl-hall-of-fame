@@ -884,7 +884,7 @@
   ],
   "offen": [
     "STF Saison 191: die Abfrage liefert höchstens 50 Turniere, vollständig nur über die Orte",
-    "Verbandsturniere bis 2024 aus dem Web-Archiv nachgetragen (daten/stf-archiv.json): 157 gewertete Turniere 2019 bis 2024 mit archivierter Ergebnisseite, die Swiss Garlando Finals 2017 und archivierte Spielerseiten. Offen: 2008 bis 2016 (nicht ausgewertet) und Spieler, die nur 2017 oder 2018 spielten",
+    "Verbandsturniere bis 2024 aus dem Web-Archiv nachgetragen (daten/stf-archiv.json): 157 gewertete Turniere 2019 bis 2024 mit archivierter Ergebnisseite, die Swiss Garlando Finals 2017 und archivierte Spielerseiten. 2008 bis 2016 geprüft (2026-11-21): Ergebnisse im Web-Archiv fast nie erhalten, kein TFCL-Platz belegt; Berichte von tfcl.ch 2014 bis 2016 warten auf Vascos Entscheid. Offen: Spieler, die nur 2017 oder 2018 spielten",
     "DTFB und Bundesliga: noch nicht durchsucht",
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
     "FAST nachgetragen (daten/fast.json): 850 Turniere der ITSF-Liste und 368 weitere FAST-Turniere aus dem Web-Archiv. Offen: 446 Turniere der Liste 2005 bis 2014, die FAST nicht mehr liefert (im Web-Archiv nur die Startseite), und FAST-Turniere, die weder in der Liste noch im Web-Archiv stehen (eine vollständige Liste gibt es nicht)",

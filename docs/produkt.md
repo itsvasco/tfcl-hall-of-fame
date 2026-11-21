@@ -21,4 +21,4 @@ Anforderungen von Vasco:
 
 Fertig wenn: Seite auf GitHub Pages erreichbar, Prüfer bestanden (Auftrag A-498).
 
-Offen: Clubliga-Kader 2018, 2019 und 2023 (zählen je Team); Verbandsturniere 2008 bis 2016 und Spieler, die nur 2017 oder 2018 spielten (README Offen 8), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage), Goalie War (Rückfrage); Impressum; eigene Domain.
+Offen: Clubliga-Kader 2018, 2019 und 2023 (zählen je Team); Verbandsturniere 2008 bis 2016 (geprüft, Ergebnisse nicht archiviert; Clubberichte tfcl.ch warten auf Entscheid) und Spieler, die nur 2017 oder 2018 spielten (README Offen 8), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage), Goalie War (Rückfrage); Impressum; eigene Domain.
