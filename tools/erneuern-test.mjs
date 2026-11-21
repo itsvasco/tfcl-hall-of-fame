@@ -246,7 +246,7 @@ await test('Turniere aus FAST: ITSF-Tour nur mit Wettbewerbsseite, nie mit Spiel
   await wirft(() => bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour' })), /ITSF-Tour ohne FAST/);
   await wirft(() => bauT(PFLEGE_T, eine({ serie: 'WS', quelle: fast.replace('playerId=0', 'playerId=4890425') })), /FAST-Quelle nicht in der Form/);
 });
-await test('Turniere aus dem Web-Archiv des Verbands: nur Ergebnisseite oder News, nie eine Spielerseite', async () => {
+await test('Turniere aus dem Web-Archiv des Verbands: Ergebnisseite, News oder archivierte Spielerseite, nie die Live-Seite', async () => {
   const erg = 'https://web.archive.org/web/20250320214545/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=263';
   const news = 'https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey';
   const eine = (x) => mitT({ turniere: async () => ({ eintraege: [{ ...TU.eintraege[1], serie: 'STF', ...x }] }) });
@@ -255,7 +255,9 @@ await test('Turniere aus dem Web-Archiv des Verbands: nur Ergebnisseite oder New
     assert.equal(s.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
   }
   const spieler = 'https://web.archive.org/web/20251116183207/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=' + 'spieler_details&id=1&ua=1';
-  await wirft(() => bauT(PFLEGE_T, eine({ quelle: spieler })), /weder Ergebnisseite noch News/);
+  assert.equal((await bauT(PFLEGE_T, eine({ quelle: spieler }))).bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
+  await wirft(() => bauT(PFLEGE_T, eine({ quelle: spieler.replace(/^https:\/\/web\.archive\.org\/web\/\d+\//, '') })), /weder Coral noch/);
+  await wirft(() => bauT(PFLEGE_T, eine({ quelle: 'https://example.org/irgendwas' })), /weder Coral noch/);
 });
 await test('STF-Archiv: Ergebnisseite lesen und Dubletten über Disziplinart und ±2 Tage', async () => {
   const h = '<h2 class="stf-page-subtitle-1">STRT Test</h2><h2 class="stf-page-subtitle-2">Rookie Doubles</h2> Beginn: 08.01.22 '

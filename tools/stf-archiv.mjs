@@ -14,6 +14,7 @@ import os from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { liesJson, schreibeJson, heute, schluessel } from './gemeinsam.mjs';
 import { personen } from './erneuern.mjs';
+import { STF_AUSGESCHLOSSEN } from './turniere.mjs';
 
 const HIER = path.dirname(fileURLToPath(import.meta.url));
 const DATEN = path.join(HIER, '..', 'daten');
@@ -23,7 +24,7 @@ fs.mkdirSync(cache, { recursive: true });
 const trocken = process.argv.includes('--trocken');
 
 const ent = (s) => s.replace(/&amp;/g, '&').replace(/&#0?39;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
-  .replace(/&auml;/g, 'ä').replace(/&ouml;/g, 'ö').replace(/&uuml;/g, 'ü').replace(/&Auml;/g, 'Ä').replace(/&Ouml;/g, 'Ö').replace(/&Uuml;/g, 'Ü').replace(/&eacute;/g, 'é').replace(/&egrave;/g, 'è');
+  .replace(/&auml;/g, 'ä').replace(/&ouml;/g, 'ö').replace(/&uuml;/g, 'ü').replace(/&Auml;/g, 'Ä').replace(/&Ouml;/g, 'Ö').replace(/&Uuml;/g, 'Ü').replace(/&eacute;/g, 'é').replace(/&egrave;/g, 'è').replace(/&Uuml;/g, 'Ü');
 
 // Ergebnisseite: Name, Kopfzeile, je Disziplin Titel, Beginn und Rang 1 bis 3 mit Namen (und Verbandsnummer im Link).
 export function ergebnisseite(h) {
@@ -40,7 +41,22 @@ export function ergebnisseite(h) {
     }).filter(Boolean);
     return { titel, beginn: b ? `20${b[3]}-${b[2]}-${b[1]}` : null, plaetze };
   });
-  return { name, disz };
+  const teilnehmer = [...h.matchAll(/<a[^>]*[?&;]id=(\d+)[^>]*>([\s\S]*?)<\/a>/g)].map((m) => ({ nr: m[1], name: ent(m[2]).replace(/^\d+\.\s*/, '') })).filter((x) => x.name);
+  return { name, disz, teilnehmer };
+}
+
+// Archivierte Spielerseite des Verbands: Abschnitt «Turnier Platzierungen», je Zeile Saison, Turnier, Disziplin, Datum, Rang.
+export function spielerseite(h) {
+  const i = h.indexOf('Turnier Platzierungen'); if (i < 0) return null;
+  const j = h.indexOf('Einzel Resultate', i); const t = h.slice(i, j > i ? j : undefined);
+  const zeilen = []; let saison = null;
+  const re = /stf-spieler-detail__ranking-year">([^<]*)<|stf-spieler-detail-ranking__tournament">([\s\S]*?)<\/span>\s*<span class="stf-spieler-detail-ranking__discipline">([\s\S]*?)<\/span>\s*<span class="stf-spieler-detail-ranking__date">([\s\S]*?)<\/span>\s*<span class="stf-spieler-detail-ranking__rank">([\s\S]*?)<\/span>/g;
+  for (const m of t.matchAll(re)) {
+    if (m[1] !== undefined) { saison = ent(m[1]); continue; }
+    const [d, mo, y] = ent(m[4]).split('.'); const r = ent(m[5]).match(/^(\d+)\s*von\s*(\d+)/);
+    if (r && y) zeilen.push({ saison, turnier: ent(m[2]), disziplin: ent(m[3]), datum: `${y}-${mo}-${d}`, rang: +r[1] });
+  }
+  return zeilen;
 }
 
 // Disziplinart wie beim FAST-Abgleich: Einzel oder Doppel und Klasse («Rookie Doubles» = «Neulinge Doppel»).
@@ -94,7 +110,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (b.length && Math.max(...b) - Math.min(...b) > 3 && !t.hinweis) console.log(`Hinweis: ${t.turnier} ${t.datum}, Beginn der Disziplinen liegt mehr als 3 Tage auseinander`);
   }
   const nrVon = new Map();
-  for (const { s } of seiten) for (const d of s.disz) for (const p of d.plaetze) p.namen.forEach((n, i) => { const x = P.finde(n); if (x && p.nrn[i]) nrVon.set(p.nrn[i], x); });
+  for (const { s } of seiten) for (const x of s.teilnehmer) { const p = P.finde(x.name); if (p) nrVon.set(x.nr, p); }
 
   // 2. Rang 1 bis 3 je Disziplin
   const eintraege = [], dubletten = [], nichtGezaehlt = [];
@@ -125,8 +141,46 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     }
     if (e.personen.length) { eintraege.push(e); plaetze += e.personen.length; }
   }
+  // 4. Archivierte Spielerseiten (Vasco 2026-11-21, «F1 ja»): Plätze aus Turnieren ohne archivierte Ergebnisseite.
+  //    Je Verbandsnummer einer Person die Seiten im Web-Archiv (CDX), davon die jüngste, älteste und mittlere Fassung.
+  //    Eine Zeile zählt nicht, wenn die Person dort schon steht (Ergebnisseite, News, FAST, Coral, P4P: gleiche Disziplinart
+  //    und Rang, ±2 Tage, oder gleicher Turniername ±60 Tage, weil Spielerseiten teils ein anderes Datum nennen).
+  const cdx = [];
+  for (const host of ['swisstablesoccer.ch', 'stf-tischfussball.ch', 'www.swisstablesoccer.ch', 'www.stf-tischfussball.ch']) {
+    const t = await hole(`https://web.archive.org/cdx/search/cdx?url=${host}/index.php/&matchType=prefix&filter=original:.*task=spieler_details.*&filter=statuscode:200&fl=timestamp,original&output=json&collapse=original`);
+    try { cdx.push(...JSON.parse(t).slice(1).map((x) => x[1])); } catch { throw new Error(`CDX ${host}: Antwort nicht lesbar`); }
+  }
+  const nrsVon = new Map(); for (const [nr, p] of nrVon) { if (!nrsVon.has(p.id)) nrsVon.set(p.id, []); nrsVon.get(p.id).push(nr); }
+  const schon = (id) => [...bestand, ...eintraege, ...dubletten.map((x) => ({ ...x, personen: [x.person] })), ...nichtGezaehlt.map((x) => ({ ...x, personen: [x.person] }))].filter((b) => b.personen.includes(id));
+  const nameGleich = (a, b) => a.toLowerCase().replace(/[^a-z]/g, '') === b.toLowerCase().replace(/[^a-z]/g, '');
+  let ausSpielerseiten = 0;
+  for (const [id, nrs] of nrsVon) {
+    const originale = cdx.filter((o) => !/turnierid/.test(o) && nrs.some((nr) => new RegExp(`[?&;]id=${nr}(&|$)`).test(o)));
+    const fassungen = [];
+    for (const o of originale) { const t = await hole(`https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(o)}&output=json&fl=timestamp,original&filter=statuscode:200`); try { fassungen.push(...JSON.parse(t).slice(1)); } catch {} }
+    fassungen.sort((a, b) => a[0].localeCompare(b[0]));
+    if (!fassungen.length) continue;
+    const zeilen = new Map();
+    for (const [ts, o] of [...new Set([fassungen[fassungen.length - 1], fassungen[0], fassungen[Math.floor(fassungen.length / 2)]])]) {
+      const z = spielerseite(await hole(`https://web.archive.org/web/${ts}id_/${o}`)); if (!z) continue;
+      for (const r of z) { const k = `${r.turnier}|${r.disziplin}|${r.datum}`; if (!zeilen.has(k)) zeilen.set(k, { ...r, quelle: `https://web.archive.org/web/${ts}/${o}` }); }
+    }
+    for (const r of zeilen.values()) {
+      if (r.rang > 3 || r.datum >= '2024-09-01' || !/^\d{4}-\d\d-\d\d$/.test(r.datum)) continue;
+      if (STF_AUSGESCHLOSSEN.test(r.turnier) && !/Garlando Finals|Foos Finals/i.test(r.turnier)) continue;
+      const e = { jahr: Number(r.datum.slice(0, 4)), datum: r.datum, turnier: r.turnier, serie: 'STF', disziplin: r.disziplin, rang: r.rang, personen: [id], quelle: r.quelle, abgerufen: datum };
+      const da = schon(id);
+      const b = dublette(e, id, da) || da.find((x) => x.rang === e.rang && art(x.disziplin) === art(e.disziplin) && nameGleich(x.turnier, e.turnier) && Math.abs(tage(x.datum) - tage(e.datum)) <= 60);
+      if (b) continue;
+      if (nichtZaehlen.has(id)) { nichtGezaehlt.push({ person: id, datum: e.datum, turnier: e.turnier, disziplin: e.disziplin, rang: e.rang, grund: nichtZaehlen.get(id) }); continue; }
+      const gleich = eintraege.find((x) => x.quelle.includes('spieler_details') && x.datum === e.datum && x.turnier === e.turnier && x.disziplin === e.disziplin && x.rang === e.rang);
+      if (gleich) gleich.personen = [...new Set([...gleich.personen, id])].sort(); else eintraege.push(e);
+      plaetze++; ausSpielerseiten++;
+    }
+  }
+  console.log(`Aus Spielerseiten: ${ausSpielerseiten} Plätze`);
   eintraege.sort((a, b) => b.datum.localeCompare(a.datum) || a.turnier.localeCompare(b.turnier) || a.disziplin.localeCompare(b.disziplin) || a.rang - b.rang);
-  const neu = { ...alt, abgerufen: datum, eintraege, dubletten, nicht_gezaehlt: nichtGezaehlt };
+  const neu = { ...alt, abgerufen: datum, eintraege, dubletten, nicht_gezaehlt: nichtGezaehlt, zurueckgestellt: [] };
   console.log(`Seiten ${seiten.length}, Einträge ${eintraege.length}, Plätze ${plaetze}, Dubletten ${dubletten.length}, nicht gezählt ${nichtGezaehlt.length}`);
   for (const r of [1, 2, 3]) console.log(`Rang ${r}: ${eintraege.filter((e) => e.rang === r).reduce((n, e) => n + e.personen.length, 0)}`);
   if (!trocken) schreibeJson(datei, neu);

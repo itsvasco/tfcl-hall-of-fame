@@ -913,6 +913,19 @@
     },
     {
       "jahr": 2024,
+      "datum": "2024-05-19",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20250320211308/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=262",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
       "datum": "2024-05-04",
       "turnier": "Swiss Tablesoccer Serie (STS) Jura",
       "serie": "STF",
@@ -920,6 +933,19 @@
       "rang": 2,
       "personen": [
         "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20250320212941/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=260",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "martin-felder"
       ],
       "quelle": "https://web.archive.org/web/20250320212941/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=260",
       "abgerufen": "2026-11-21"
@@ -946,6 +972,19 @@
       "rang": 2,
       "personen": [
         "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-08",
+      "turnier": "STRT TFCL",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "martin-felder"
       ],
       "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
       "abgerufen": "2026-11-21"
@@ -998,9 +1037,23 @@
       "disziplin": "Open Doubles",
       "rang": 2,
       "personen": [
+        "martin-felder",
         "reto-odermatt"
       ],
       "quelle": "https://web.archive.org/web/20250320205713/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=231",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20250320222102/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=230",
       "abgerufen": "2026-11-21"
     },
     {
@@ -1028,6 +1081,45 @@
         "reto-odermatt"
       ],
       "quelle": "https://web.archive.org/web/20250320214307/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=219",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-09-23",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-09-23",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-09-23",
+      "turnier": "Swiss Tablesoccer Serie (STS) Val-d'Illiez",
+      "serie": "STF",
+      "disziplin": "Women Doubles",
+      "rang": 1,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192728/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=315&ua=1",
       "abgerufen": "2026-11-21"
     },
     {
@@ -1243,6 +1335,32 @@
     },
     {
       "jahr": 2022,
+      "datum": "2022-09-17",
+      "turnier": "1. Juniorenturnier TFC Freiburg-Sense",
+      "serie": "STF",
+      "disziplin": "Doppel U18 & Ü18",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192300/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1783&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-27",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20250624031842/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=861&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
       "datum": "2022-08-02",
       "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
       "serie": "STF",
@@ -1250,6 +1368,32 @@
       "rang": 1,
       "personen": [
         "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "serie": "STF",
+      "disziplin": "Open Single",
+      "rang": 3,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "martin-felder"
       ],
       "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
       "abgerufen": "2026-11-21"
@@ -1265,6 +1409,58 @@
         "urs-morgenegg"
       ],
       "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-06-09",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Open Single",
+      "rang": 1,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20251116184408/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=396&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-06-09",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Open Single",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20251116184737/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=397&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-06-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-06-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192300/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1783&ua=1",
       "abgerufen": "2026-11-21"
     },
     {
@@ -1443,6 +1639,139 @@
       "abgerufen": "2026-11-21"
     },
     {
+      "jahr": 2019,
+      "datum": "2019-02-24",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "serie": "STF",
+      "disziplin": "Women Single",
+      "rang": 3,
+      "personen": [
+        "marina-von-allmen"
+      ],
+      "quelle": "https://web.archive.org/web/20250807132614/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=540&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-02-23",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 3,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20250807125617/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1487&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-10-13",
+      "turnier": "STRT Rüti",
+      "serie": "STF",
+      "disziplin": "Drow your Partner",
+      "rang": 3,
+      "personen": [
+        "marina-von-allmen"
+      ],
+      "quelle": "https://web.archive.org/web/20250807132614/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=540&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-09-01",
+      "turnier": "Simmental Open 2018",
+      "serie": "STF",
+      "disziplin": "Rookie Doppel",
+      "rang": 3,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192728/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=315&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-07-14",
+      "turnier": "Regio Tour TC Emmental",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "adrian-schuler",
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-05-05",
+      "turnier": "STS Goldach Pro Tour",
+      "serie": "STF",
+      "disziplin": "Neuling Doppel",
+      "rang": 3,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20250807125617/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1487&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-02-04",
+      "turnier": "Swiss Foos Finals",
+      "serie": "STF",
+      "disziplin": "Herren Einzel",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-02-03",
+      "turnier": "Swiss Foos Finals",
+      "serie": "STF",
+      "disziplin": "Herren Doppel",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20251206004452/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=1103",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
+      "datum": "2018-01-06",
+      "turnier": "Jahreseröffnugsturnier 2018",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192728/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=315&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Damen Doppel",
+      "rang": 1,
+      "personen": [
+        "marina-von-allmen"
+      ],
+      "quelle": "https://web.archive.org/web/20250807132614/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=540&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
       "jahr": 2017,
       "datum": "2017-11-18",
       "turnier": "Swiss Garlando Finals",
@@ -1493,6 +1822,98 @@
         "adrian-schuler"
       ],
       "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-08-26",
+      "turnier": "Simmental Open 2017",
+      "serie": "STF",
+      "disziplin": "DYP",
+      "rang": 1,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20251116192728/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=315&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-08-26",
+      "turnier": "Simmental Open 2017",
+      "serie": "STF",
+      "disziplin": "DYP",
+      "rang": 3,
+      "personen": [
+        "jorge-rodriguez"
+      ],
+      "quelle": "https://web.archive.org/web/20251116185250/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=893&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-06-11",
+      "turnier": "WTFV STS Turnier",
+      "serie": "STF",
+      "disziplin": "Offenes Einzel",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20251116184737/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=397&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-06-10",
+      "turnier": "WTFV STS Turnier",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 1,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20250915225749/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=968&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-05-06",
+      "turnier": "ITSF Masters Goldach",
+      "serie": "STF",
+      "disziplin": "Offenes Einzel",
+      "rang": 2,
+      "personen": [
+        "martin-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20251116184408/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=396&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-04-01",
+      "turnier": "Fordere.ch STS-Turnier",
+      "serie": "STF",
+      "disziplin": "Mixed",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://web.archive.org/web/20250915225749/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=968&ua=1",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-04-01",
+      "turnier": "Fordere.ch STS-Turnier",
+      "serie": "STF",
+      "disziplin": "Neuling Doppel",
+      "rang": 1,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://web.archive.org/web/20251010113611/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=spieler_details&id=825&ua=1",
       "abgerufen": "2026-11-21"
     }
   ],
@@ -1698,393 +2119,6 @@
       "schon": "ITSF-Tour: STS Teufenthal Open - ITSF 250 WT 2024, Open Doubles"
     }
   ],
-  "nicht_gezaehlt": [
-    {
-      "person": "martin-felder",
-      "datum": "2022-07-30",
-      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
-      "disziplin": "Open Doubles",
-      "rang": 2,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2022-08-02",
-      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
-      "disziplin": "Open Single",
-      "rang": 3,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2024-01-20",
-      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
-      "disziplin": "Open Singles",
-      "rang": 3,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2024-02-17",
-      "turnier": "Swiss Tablesoccer Serie (STS) Bern",
-      "disziplin": "Open Doubles",
-      "rang": 2,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2024-04-08",
-      "turnier": "STRT TFCL",
-      "disziplin": "Open Singles",
-      "rang": 3,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2024-05-04",
-      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
-      "disziplin": "Open Singles",
-      "rang": 2,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    },
-    {
-      "person": "martin-felder",
-      "datum": "2024-05-19",
-      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
-      "disziplin": "Open Singles",
-      "rang": 3,
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    }
-  ],
-  "zurueckgestellt": [
-    {
-      "jahr": 2017,
-      "datum": "2017-04-01",
-      "turnier": "Fordere.ch STS-Turnier",
-      "serie": "STF",
-      "disziplin": "Mixed",
-      "rang": 3,
-      "personen": [
-        "adrian-schuler"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 23
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-04-01",
-      "turnier": "Fordere.ch STS-Turnier",
-      "serie": "STF",
-      "disziplin": "Neuling Doppel",
-      "rang": 1,
-      "personen": [
-        "vasco-oliveira"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 12
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-06-10",
-      "turnier": "WTFV STS Turnier",
-      "serie": "STF",
-      "disziplin": "Offenes Doppel",
-      "rang": 1,
-      "personen": [
-        "adrian-schuler",
-        "peter-felder"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 35
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-06-11",
-      "turnier": "WTFV STS Turnier",
-      "serie": "STF",
-      "disziplin": "Offenes Einzel",
-      "rang": 2,
-      "personen": [
-        "peter-felder"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 26
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-08-26",
-      "turnier": "Simmental Open 2017",
-      "serie": "STF",
-      "disziplin": "DYP",
-      "rang": 1,
-      "personen": [
-        "an-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 15
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-08-26",
-      "turnier": "Simmental Open 2017",
-      "serie": "STF",
-      "disziplin": "DYP",
-      "rang": 3,
-      "personen": [
-        "jorge-rodriguez"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 15
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-11-18",
-      "turnier": "Swiss Garlando Finals",
-      "serie": "STF",
-      "disziplin": "Damen Doppel",
-      "rang": 1,
-      "personen": [
-        "marina-von-allmen"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 11
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-01-06",
-      "turnier": "Jahreseröffnungsturnier 2018",
-      "serie": "STF",
-      "disziplin": "Rookie Doubles",
-      "rang": 2,
-      "personen": [
-        "an-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 40
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-02-03",
-      "turnier": "Swiss Foos Finals",
-      "serie": "STF",
-      "disziplin": "Herren Doppel",
-      "rang": 1,
-      "personen": [
-        "hannes-wallimann"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 24
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-02-04",
-      "turnier": "Swiss Foos Finals",
-      "serie": "STF",
-      "disziplin": "Herren Einzel",
-      "rang": 2,
-      "personen": [
-        "hannes-wallimann"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 24
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-05-05",
-      "turnier": "STS Goldach Pro Tour",
-      "serie": "STF",
-      "disziplin": "Neuling Doppel",
-      "rang": 3,
-      "personen": [
-        "luca-escribano",
-        "matteo-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 11
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-07-14",
-      "turnier": "Regio Tour TC Emmental",
-      "serie": "STF",
-      "disziplin": "Open Doubles",
-      "rang": 2,
-      "personen": [
-        "hannes-wallimann",
-        "adrian-schuler"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 56
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-09-01",
-      "turnier": "Simmental Open 2018",
-      "serie": "STF",
-      "disziplin": "Rookie Doppel",
-      "rang": 3,
-      "personen": [
-        "an-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 12
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-10-13",
-      "turnier": "STRT Rüti",
-      "serie": "STF",
-      "disziplin": "Drow your Partner",
-      "rang": 3,
-      "personen": [
-        "marina-von-allmen"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 7
-    },
-    {
-      "jahr": 2019,
-      "datum": "2019-02-23",
-      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
-      "serie": "STF",
-      "disziplin": "Rookie Doubles",
-      "rang": 3,
-      "personen": [
-        "luca-escribano",
-        "matteo-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 19
-    },
-    {
-      "jahr": 2019,
-      "datum": "2019-02-24",
-      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
-      "serie": "STF",
-      "disziplin": "Women Single",
-      "rang": 3,
-      "personen": [
-        "marina-von-allmen"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 22
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-06-08",
-      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
-      "serie": "STF",
-      "disziplin": "Open Doubles",
-      "rang": 1,
-      "personen": [
-        "hannes-wallimann"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 59
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-06-08",
-      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
-      "serie": "STF",
-      "disziplin": "Rookie Doubles",
-      "rang": 3,
-      "personen": [
-        "rayan-van-stokkum"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 16
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-06-09",
-      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
-      "serie": "STF",
-      "disziplin": "Open Single",
-      "rang": 3,
-      "personen": [
-        "peter-felder"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 45
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-08-27",
-      "turnier": "STRT Seetal",
-      "serie": "STF",
-      "disziplin": "Open Doubles",
-      "rang": 3,
-      "personen": [
-        "manuel-ragonesi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 12
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-09-17",
-      "turnier": "1. Juniorenturnier TFC Freiburg-Sense",
-      "serie": "STF",
-      "disziplin": "Doppel U18 & Ü18",
-      "rang": 1,
-      "personen": [
-        "rayan-van-stokkum"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 12
-    },
-    {
-      "jahr": 2022,
-      "datum": "2022-09-17",
-      "turnier": "1. Juniorenturnier TFC Freiburg-Sense",
-      "serie": "STF",
-      "disziplin": "Juniorendoppel U18",
-      "rang": 1,
-      "personen": [
-        "rayan-van-stokkum"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 2
-    },
-    {
-      "jahr": 2023,
-      "datum": "2023-09-23",
-      "turnier": "STRT Seetal",
-      "serie": "STF",
-      "disziplin": "Mixed Doubles",
-      "rang": 2,
-      "personen": [
-        "hannes-wallimann"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 7
-    },
-    {
-      "jahr": 2023,
-      "datum": "2023-09-23",
-      "turnier": "STRT Seetal",
-      "serie": "STF",
-      "disziplin": "Open Doubles",
-      "rang": 1,
-      "personen": [
-        "hannes-wallimann"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 11
-    },
-    {
-      "jahr": 2023,
-      "datum": "2023-09-23",
-      "turnier": "Swiss Tablesoccer Serie (STS) Val-d'Illiez",
-      "serie": "STF",
-      "disziplin": "Women Doubles",
-      "rang": 1,
-      "personen": [
-        "an-cosi"
-      ],
-      "beleg": "archivierte Spielerseite des Verbands (Adresse mit Verbandsnummer, darum nicht im Repo)",
-      "feld": 8
-    }
-  ]
+  "nicht_gezaehlt": [],
+  "zurueckgestellt": []
 }

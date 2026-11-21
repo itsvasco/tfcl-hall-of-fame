@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Prüft das ganze Repo, jeden Commit aller Zweige (git log --all -p) und den Arbeitsstand, auf Daten, die nie hineingehören:
-// Spieler-IDs, Punkte, Coral-Kennungen, Mailadressen ausser der Kontaktadresse, Schlüssel. Spielerprofile als Quelle nur in daten/ und site/ (Daten und Texte), nicht in Code unter tools/.
+// Spieler-IDs, Punkte, Coral-Kennungen, Mailadressen ausser der Kontaktadresse, Schlüssel. Spielerprofile als Quelle sind in daten/ und site/ verboten, ausser archivierten Spielerseiten des Verbands (Web-Archiv).
 // Aufruf: node tools/datenschutz-pruefen.mjs   (Exit 0 = 0 Treffer, 1 = Treffer, 2 = Aufruf oder Git-Fehler)
 // Vor einem Commit mit git add vormerken, dann prüfen: der Arbeitsstand umfasst alle verfolgten Dateien.
 // Die Muster stehen hier zerlegt, damit diese Datei sich nicht selbst trifft.
@@ -34,6 +34,9 @@ const DATEN = [
 const DATEN_UND_SITE = [
   { name: 'Spielerprofil als Quelle', re: new RegExp([z('task=spieler', '_details'), z('p4p', 'placements'), z('s3\\.tablesoccer', '\\.org/person'), z('/spieler', '/\\d+')].join('|'), 'gi') },
 ];
+// Ausnahme (Vasco 2026-11-21, «F1 ja»): archivierte Spielerseiten des Schweizer Verbands im Web-Archiv sind als Quelle
+// eines Verbandsturniers erlaubt; die Verbandsnummer steht nur in der Adresse, nie in einem eigenen Feld.
+const ARCHIV_SPIELERSEITE = new RegExp(z('https://web\\.archive\\.org/web/\\d{14}/https?://(?:www\\.)?(?:stf-tischfussball|swisstablesoccer)\\.ch/index\\.php/[^"\\s]*task=spieler', '_details[^"\\s]*'), 'g');
 const istDatenOderSite = (datei) => /^(daten|site)\//.test(datei);
 const istDaten = (datei) => /^daten\//.test(datei) || /\.md$/.test(datei);
 const ausnahme = (datei) => datei === 'package-lock.json' || /\.(zip|png|jpe?g|webp|gif|ico|woff2?|ttf|pdf)$/i.test(datei);
@@ -43,7 +46,8 @@ function git(args) { return execFileSync('git', args, { cwd: WURZEL, encoding: '
 function pruefeZeile(datei, zeile, herkunft, treffer) {
   for (const r of [...ALLE, ...(istDaten(datei) ? DATEN : []), ...(istDatenOderSite(datei) ? DATEN_UND_SITE : [])]) {
     r.re.lastIndex = 0;
-    for (const m of zeile.matchAll(r.re)) if (!(r.erlaubt && r.erlaubt(m[0]))) treffer.push(`${herkunft} ${datei}: ${r.name} («${m[0].slice(0, 40)}»)`);
+    const text = DATEN_UND_SITE.includes(r) ? zeile.replace(ARCHIV_SPIELERSEITE, '') : zeile;
+    for (const m of text.matchAll(r.re)) if (!(r.erlaubt && r.erlaubt(m[0]))) treffer.push(`${herkunft} ${datei}: ${r.name} («${m[0].slice(0, 40)}»)`);
   }
 }
 

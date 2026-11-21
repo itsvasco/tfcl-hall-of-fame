@@ -157,7 +157,7 @@
     "Champions League 2014 bis 2022 in FAST durchsucht: TFC Luzern 2017 (Rang 2), 2018 und 2022 (je Rang 9). FAST zeigt keinen Kader und keinen Ort; vor 2014 nicht belegt"
   ],
   "turniere_offen": [
-    "Verbandsturniere bis 2024 aus dem Web-Archiv nachgetragen (daten/stf-archiv.json): 157 gewertete Turniere 2019 bis 2024 mit archivierter Ergebnisseite und die Swiss Garlando Finals 2017. Offen: 2008 bis 2016 (nicht ausgewertet) und Podeste, die nur auf archivierten Spielerseiten stehen (2017, 2018, Turniere ohne Ergebnisseite), siehe zurueckgestellt",
+    "Verbandsturniere bis 2024 aus dem Web-Archiv nachgetragen (daten/stf-archiv.json): 157 gewertete Turniere 2019 bis 2024 mit archivierter Ergebnisseite, die Swiss Garlando Finals 2017 und archivierte Spielerseiten. Offen: 2008 bis 2016 (nicht ausgewertet) und Spieler, die nur 2017 oder 2018 spielten",
     "DTFB und Bundesliga: noch nicht durchsucht",
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
     "FAST nachgetragen (daten/fast.json): 850 Turniere der ITSF-Liste und 368 weitere FAST-Turniere aus dem Web-Archiv. Offen: 446 Turniere der Liste 2005 bis 2014, die FAST nicht mehr liefert (im Web-Archiv nur die Startseite), und FAST-Turniere, die weder in der Liste noch im Web-Archiv stehen (eine vollständige Liste gibt es nicht)",
@@ -168,11 +168,5 @@
       "datei": "bilder/vasco-oliveira.webp",
       "alt": "Vasco Oliveira, Ehrenmitglied, lächelnd im blauen Trikot"
     }
-  },
-  "stf_nicht_zaehlen": [
-    {
-      "person": "martin-felder",
-      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze der Schreibweise mit Zusatz aus nicht_gleich. Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
-    }
-  ]
+  }
 }
