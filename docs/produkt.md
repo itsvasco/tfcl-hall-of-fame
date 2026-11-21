@@ -19,4 +19,4 @@ Anforderungen von Vasco:
 
 Fertig wenn: Seite auf GitHub Pages erreichbar, Prüfer bestanden (Auftrag A-498).
 
-Offen: Verbandsturniere ohne ITSF-Wertung vor September 2024 (Verbandsseiten im Web-Archiv), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage); Impressum; eigene Domain.
+Offen: Verbandsturniere ohne ITSF-Wertung vor September 2024 (Verbandsseiten im Web-Archiv), ITSF-Turniere 2005 bis 2014 (nur Startseiten im Web-Archiv), DTFB und Bundesliga, Kader der Champions League vor 2023 und der Nati-Medaillen aus FAST, Arpad Wicki in FAST (Lizenz SVK, Rückfrage), Goalie War (Rückfrage); Impressum; eigene Domain.

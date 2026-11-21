@@ -1,14 +1,14 @@
 {
   "club": "LUZE",
   "clubname": "TFC Luzern",
-  "erstellt": "2026-11-20",
+  "erstellt": "2026-11-21",
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 268,
+    "podestplaetze": 269,
     "gold": 102,
     "silber": 74,
-    "bronze": 92,
+    "bronze": 93,
     "personen": 22
   },
   "bereiche": [
@@ -90,10 +90,10 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 188,
+        "podestplaetze": 189,
         "gold": 70,
         "silber": 56,
-        "bronze": 62,
+        "bronze": 63,
         "personen": 17
       }
     }
@@ -147,28 +147,28 @@
       "id": "rayan-van-stokkum",
       "name": "Rayan Van Stokkum",
       "gold": 23,
-      "silber": 19,
-      "bronze": 13,
-      "summe": 55,
+      "silber": 20,
+      "bronze": 14,
+      "summe": 57,
       "bereiche": {
         "sm": 8,
         "nati": 1,
         "ranglisten": 3,
-        "turniere": 43
+        "turniere": 45
       }
     },
     {
       "id": "peter-felder",
       "name": "Peter Felder",
       "gold": 10,
-      "silber": 14,
+      "silber": 13,
       "bronze": 12,
-      "summe": 36,
+      "summe": 35,
       "bereiche": {
         "sm": 4,
         "nati": 2,
         "fordere": 3,
-        "turniere": 27
+        "turniere": 26
       }
     },
     {
@@ -382,7 +382,7 @@
     }
   ],
   "sm": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
     "personen": [
       {
@@ -404,7 +404,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2024,
@@ -418,7 +418,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2023,
@@ -427,7 +427,7 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -441,7 +441,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -450,7 +450,7 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2021,
@@ -464,7 +464,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2019,
@@ -478,7 +478,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2019,
@@ -487,7 +487,7 @@
             "rang": 2,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2018,
@@ -501,7 +501,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2017,
@@ -515,7 +515,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2017,
@@ -524,7 +524,7 @@
             "rang": 2,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2016,
@@ -538,7 +538,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2016,
@@ -552,7 +552,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2016,
@@ -561,7 +561,7 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2016,
@@ -575,7 +575,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2014,
@@ -589,7 +589,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2013,
@@ -603,7 +603,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2013,
@@ -617,7 +617,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -640,7 +640,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2024,
@@ -649,7 +649,7 @@
             "rang": 1,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2023,
@@ -658,7 +658,7 @@
             "rang": 1,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2023,
@@ -672,7 +672,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -681,7 +681,7 @@
             "rang": 1,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -695,7 +695,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2021,
@@ -709,7 +709,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2019,
@@ -723,7 +723,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -741,7 +741,7 @@
             "rang": 1,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -755,7 +755,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2022,
@@ -769,7 +769,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2015,
@@ -783,7 +783,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -806,7 +806,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -829,7 +829,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2015,
@@ -843,7 +843,7 @@
               }
             ],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -861,7 +861,7 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2018,
@@ -870,7 +870,7 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -888,14 +888,14 @@
             "rang": 3,
             "partner": [],
             "quelle": "https://tournaments.swisstablesoccer.ch/hall-of-fame/",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       }
     ]
   },
   "nati": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "eintraege": [
       {
         "jahr": 2025,
@@ -908,7 +908,7 @@
           "peter-felder"
         ],
         "quelle": "https://app.tablesoccer.org/p/world-cup-2025",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "jahr": 2024,
@@ -920,7 +920,7 @@
           "rayan-van-stokkum"
         ],
         "quelle": "https://app.tablesoccer.org/p/ws-leonhart-2024",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "jahr": 2024,
@@ -934,7 +934,7 @@
           "peter-felder"
         ],
         "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "jahr": 2024,
@@ -946,12 +946,12 @@
           "daniel-flueler"
         ],
         "quelle": "https://app.tablesoccer.org/p/ws-garlando-2024",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       }
     ]
   },
   "ranglisten": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "saisons": [
       {
         "saison": 2026,
@@ -984,7 +984,7 @@
             "kategorie": "Junior Einzel",
             "rang": 1,
             "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=192&rule=1&category=309",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": 2025,
@@ -992,7 +992,7 @@
             "kategorie": "Junior Einzel",
             "rang": 1,
             "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=191&rule=1&category=309",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": 2025,
@@ -1000,7 +1000,7 @@
             "kategorie": "Junior Doppel",
             "rang": 3,
             "quelle": "https://api.tablesoccer.org/cms.rankings?tour=78&season=191&rule=1&category=313",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1017,7 +1017,7 @@
             "kategorie": "Neulinge Doppel",
             "rang": 1,
             "quelle": "https://web.archive.org/web/20191016043842/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1034,7 +1034,7 @@
             "kategorie": "Neulinge Doppel",
             "rang": 1,
             "quelle": "https://web.archive.org/web/20191016043842/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -1051,14 +1051,14 @@
             "kategorie": "Open Doppel",
             "rang": 3,
             "quelle": "https://web.archive.org/web/20250124021613/https://swisstablesoccer.ch/index.php/de/spielbetrieb/ranglisten",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       }
     ]
   },
   "liga": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "eintraege": [
       {
         "saison": "2026",
@@ -1066,7 +1066,7 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2026-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2025",
@@ -1074,7 +1074,7 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2025",
@@ -1082,7 +1082,7 @@
         "team": "TFCL 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2025-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2024",
@@ -1090,7 +1090,7 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2024",
@@ -1098,7 +1098,7 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2024-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2023",
@@ -1106,7 +1106,7 @@
         "team": "TFC Luzern 1",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2023",
@@ -1114,7 +1114,7 @@
         "team": "TFC Luzern Damen",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2023",
@@ -1122,7 +1122,7 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2023-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2019",
@@ -1130,7 +1130,7 @@
         "team": "TFC Luzern 1",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2019",
@@ -1138,7 +1138,7 @@
         "team": "TFC Luzern Damen",
         "rang": 2,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2019",
@@ -1146,7 +1146,7 @@
         "team": "TFC Luzern 2",
         "rang": 3,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2019-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2018",
@@ -1154,7 +1154,7 @@
         "team": "TFC Luzern 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2018",
@@ -1162,7 +1162,7 @@
         "team": "TFC Luzern woman 1",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2018-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       },
       {
         "saison": "2017",
@@ -1170,12 +1170,12 @@
         "team": "TFC Luzern",
         "rang": 1,
         "quelle": "https://tournaments.swisstablesoccer.ch/assets/docs/stl/league-2017-standings.pdf",
-        "abgerufen": "2026-11-20"
+        "abgerufen": "2026-11-21"
       }
     ]
   },
   "turniere": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "serien": [
       "ITSF",
       "ITSF-Tour",
@@ -1866,9 +1866,9 @@
       {
         "id": "rayan-van-stokkum",
         "gold": 16,
-        "silber": 16,
-        "bronze": 11,
-        "summe": 43,
+        "silber": 17,
+        "bronze": 12,
+        "summe": 45,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -1989,6 +1989,26 @@
             "rang": 2,
             "quelle": "https://app.tablesoccer.org/p/DZWRB7",
             "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-01-03",
+            "turnier": "3. Pielachtal Leonhart Masters - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Singles",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=736363725&lang=de&competitionId=0&originalCompetitionId=736363840&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-01-03",
+            "turnier": "3. Pielachtal Leonhart Masters - ITSF 500 WT 2025",
+            "serie": "ITSF-Tour",
+            "disziplin": "Junior Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=736363725&lang=de&competitionId=0&originalCompetitionId=736363763&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
           },
           {
             "jahr": 2024,
@@ -2305,9 +2325,9 @@
       {
         "id": "peter-felder",
         "gold": 6,
-        "silber": 13,
+        "silber": 12,
         "bronze": 8,
-        "summe": 27,
+        "summe": 26,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2439,16 +2459,6 @@
             "disziplin": "Open Singles",
             "rang": 3,
             "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=187971151&lang=de&competitionId=0&originalCompetitionId=187971231&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-            "abgerufen": "2026-11-21"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-07-06",
-            "turnier": "World Series by Garlando - 2017",
-            "serie": "WS",
-            "disziplin": "Goalie War",
-            "rang": 2,
-            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
             "abgerufen": "2026-11-21"
           },
           {
@@ -3271,7 +3281,7 @@
     ]
   },
   "champions": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "summe": {
       "teilnahmen": 6,
       "podest": 1
@@ -3381,7 +3391,7 @@
     ]
   },
   "fordere": {
-    "abgerufen": "2026-11-20",
+    "abgerufen": "2026-11-21",
     "seite": "https://fordere.ch",
     "divisionen": [
       "Luzern"
@@ -3422,7 +3432,7 @@
             "rang_quelle": "abgeleitet",
             "team": "De Töggu ond de Chaschte",
             "quelle": "https://fordere.ch/api/seasons/33/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2021/22",
@@ -3434,7 +3444,7 @@
             "rang_quelle": "abgeleitet",
             "team": "De Töggu ond de Chaschte",
             "quelle": "https://fordere.ch/api/seasons/31/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2019/20",
@@ -3446,7 +3456,7 @@
             "rang_quelle": "abgeleitet",
             "team": "De Töggu ond de Chaschte",
             "quelle": "https://fordere.ch/api/seasons/24/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3467,7 +3477,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Veteranos",
             "quelle": "https://fordere.ch/api/seasons/31/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2018/19",
@@ -3479,7 +3489,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Veteranos",
             "quelle": "https://fordere.ch/api/seasons/20/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3500,7 +3510,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Hüpfburgamateure",
             "quelle": "https://fordere.ch/api/seasons/33/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2021/22",
@@ -3512,7 +3522,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Hüpfburgprofis",
             "quelle": "https://fordere.ch/api/seasons/31/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3533,7 +3543,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Desi zwöi",
             "quelle": "https://fordere.ch/api/seasons/31/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2019/20",
@@ -3545,7 +3555,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Fisherman's",
             "quelle": "https://fordere.ch/api/seasons/24/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2018/19",
@@ -3557,7 +3567,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Borussia Scheisskasten",
             "quelle": "https://fordere.ch/api/seasons/20/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3578,7 +3588,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Vulain",
             "quelle": "https://fordere.ch/api/seasons/33/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2019/20",
@@ -3590,7 +3600,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Fisherman's",
             "quelle": "https://fordere.ch/api/seasons/24/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3611,7 +3621,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Tornado Team",
             "quelle": "https://fordere.ch/api/seasons/20/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3632,7 +3642,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Sie mitem Grosse",
             "quelle": "https://fordere.ch/api/seasons/24/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3653,7 +3663,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Sprengmajestros",
             "quelle": "https://fordere.ch/api/seasons/20/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3674,7 +3684,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Selectiongroove",
             "quelle": "https://fordere.ch/api/seasons/24/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           },
           {
             "saison": "2018/19",
@@ -3686,7 +3696,7 @@
             "rang_quelle": "abgeleitet",
             "team": "P not P",
             "quelle": "https://fordere.ch/api/seasons/20/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       },
@@ -3707,7 +3717,7 @@
             "rang_quelle": "abgeleitet",
             "team": "Vulain",
             "quelle": "https://fordere.ch/api/seasons/33/final-day",
-            "abgerufen": "2026-11-20"
+            "abgerufen": "2026-11-21"
           }
         ]
       }
@@ -3723,10 +3733,11 @@
     "STF 2019 bis August 2024: archivierte Verbandsseiten, noch nicht ausgewertet",
     "DTFB und Bundesliga: noch nicht durchsucht",
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
-    "ITSF bis 2024 aus FAST nachgetragen (daten/fast.json, 850 Turniere der ITSF-Liste, die FAST noch kennt). Offen: 446 Turniere 2005 bis 2014, von denen das Web-Archiv nur die Startseite hält, ohne Rangliste je Wettbewerb",
-    "FAST kennt nur Turniere mit ITSF-Wertung; Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter",
+    "FAST nachgetragen (daten/fast.json): 850 Turniere der ITSF-Liste und 368 weitere FAST-Turniere aus dem Web-Archiv. Offen: 446 Turniere der Liste 2005 bis 2014, die FAST nicht mehr liefert (im Web-Archiv nur die Startseite), und FAST-Turniere, die weder in der Liste noch im Web-Archiv stehen (eine vollständige Liste gibt es nicht)",
+    "Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter (FAST hält vor allem ITSF- und französische Turniere)",
     "FAST: 10 Podestplätze von «Arpad Wicki» mit Lizenz SVK zurückgestellt, bis Vasco bestätigt, dass es der Arpad Wicki des TFCL ist",
-    "FAST: Medaillen der Schweizer Nationalteams 2014 bis 2023 gefunden, FAST zeigt aber keine Kader; keiner Person zugeordnet",
+    "FAST: 35 Medaillen der Schweizer Nationalteams 2010 bis 2024 gefunden (daten/fast.json, nati_ohne_kader), FAST zeigt aber keine Kader; keiner Person zugeordnet",
+    "FAST: Peter Felder, Goalie War World Series Garlando 2017 Rang 2 zurückgestellt (Geschicklichkeitswettbewerb, Vasco entscheidet)",
     "Champions League 2014 bis 2022 in FAST durchsucht: TFC Luzern 2017 (Rang 2), 2018 und 2022 (je Rang 9). FAST zeigt keinen Kader und keinen Ort; vor 2014 nicht belegt"
   ]
 }

@@ -6,9 +6,41 @@
     "turniere": 1301,
     "jahre": "2005 bis 2024",
     "abrufbar_in_fast": 850,
-    "nur_archiv": 446
+    "nur_archiv": 446,
+    "dazu_aus_web_archiv": {
+      "quelle": "https://web.archive.org/cdx/search/cdx?url=extranet.fast4foos.org/*",
+      "kennungen": 383,
+      "abrufbar_in_fast": 368,
+      "hinweis": "FAST-Kennungen, die das Web-Archiv kennt und die nicht in der ITSF-Liste stehen (auch französische Verbandsturniere und ITSF-Turniere 2004 bis 2025). Eine vollständige Liste aller FAST-Turniere gibt es nicht."
+    }
   },
   "eintraege": [
+    {
+      "jahr": 2025,
+      "datum": "2025-01-03",
+      "turnier": "3. Pielachtal Leonhart Masters - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=736363725&lang=de&competitionId=0&originalCompetitionId=736363763&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2025,
+      "datum": "2025-01-03",
+      "turnier": "3. Pielachtal Leonhart Masters - ITSF 500 WT 2025",
+      "serie": "ITSF-Tour",
+      "disziplin": "Junior Singles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=736363725&lang=de&competitionId=0&originalCompetitionId=736363840&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
     {
       "jahr": 2024,
       "datum": "2024-09-06",
@@ -1071,19 +1103,6 @@
       "datum": "2017-07-06",
       "turnier": "World Series by Garlando - 2017",
       "serie": "WS",
-      "disziplin": "Goalie War",
-      "rang": 2,
-      "personen": [
-        "peter-felder"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21"
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-07-06",
-      "turnier": "World Series by Garlando - 2017",
-      "serie": "WS",
       "disziplin": "Mixed Doubles",
       "rang": 2,
       "personen": [
@@ -1476,6 +1495,21 @@
   ],
   "zurueckgestellt": [
     {
+      "jahr": 2017,
+      "datum": "2017-07-06",
+      "turnier": "World Series by Garlando - 2017",
+      "serie": "WS",
+      "disziplin": "Goalie War",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21",
+      "land": "CHE",
+      "grund": "Goalie War ist ein Geschicklichkeitswettbewerb, kein Spiel; ob er zählt, entscheidet Vasco"
+    },
+    {
       "jahr": 2016,
       "datum": "2016-12-02",
       "turnier": "Czech Leonhart Open V - 2016",
@@ -1627,8 +1661,62 @@
     }
   ],
   "nati_ohne_kader": {
-    "hinweis": "Medaillen Schweizer Nationalteams in FAST. FAST nennt kein Kader, darum zählt keine davon (Nati zählt je Person im Kader).",
+    "hinweis": "Medaillen Schweizer Nationalteams in FAST. FAST nennt keinen Kader, darum zählt keine davon (Nati zählt je Person im Kader).",
     "medaillen": [
+      {
+        "jahr": 2010,
+        "datum": "2010-04-15",
+        "turnier": "Tecball WCS - 2010",
+        "wettbewerb": "Women National Teams",
+        "team": "SWITZERLAND 0",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=6368042&lang=de&competitionId=0&originalCompetitionId=6382775&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2010,
+        "datum": "2010-10-14",
+        "turnier": "WCS Roberto Sport - 2010",
+        "wettbewerb": "Men National Teams",
+        "team": "SWITZERLAND0",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=6652583&lang=de&competitionId=0&originalCompetitionId=6666683&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2011,
+        "datum": "2011-09-15",
+        "turnier": "Leonhart WCS - 2011",
+        "wettbewerb": "NATIONS - Women",
+        "team": "SWITZERLAND0",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=7117571&lang=de&competitionId=0&originalCompetitionId=7133187&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2012,
+        "datum": "2012-09-28",
+        "turnier": "Leonhart WCS - 2012",
+        "wettbewerb": "Women National Teams",
+        "team": "SWITZERLAND0",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=7694460&lang=de&competitionId=0&originalCompetitionId=7706576&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2013,
+        "datum": "2013-07-12",
+        "turnier": "Garlando World Championship Series - 2013",
+        "wettbewerb": "Men National Team",
+        "team": "SWITZERLAND0",
+        "rang": 3,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=8112238&lang=de&competitionId=0&originalCompetitionId=8123901&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
+      {
+        "jahr": 2013,
+        "datum": "2013-07-12",
+        "turnier": "Garlando World Championship Series - 2013",
+        "wettbewerb": "Women National Team",
+        "team": "SWITZERLAND0",
+        "rang": 2,
+        "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=8112238&lang=de&competitionId=0&originalCompetitionId=8124353&playerId=0&barCode=null&screenIndex=-1&view=final_ranking"
+      },
       {
         "jahr": 2014,
         "datum": "2014-07-11",
