@@ -889,8 +889,6 @@
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
     "FAST nachgetragen (daten/fast.json): 850 Turniere der ITSF-Liste und 368 weitere FAST-Turniere aus dem Web-Archiv. Offen: 446 Turniere der Liste 2005 bis 2014, die FAST nicht mehr liefert (im Web-Archiv nur die Startseite), und FAST-Turniere, die weder in der Liste noch im Web-Archiv stehen (eine vollständige Liste gibt es nicht)",
     "Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter (FAST hält vor allem ITSF- und französische Turniere)",
-    "FAST: 10 Podestplätze von «Arpad Wicki» mit Lizenz SVK zurückgestellt, bis Vasco bestätigt, dass es der Arpad Wicki des TFCL ist",
-    "FAST: 35 Medaillen der Schweizer Nationalteams 2010 bis 2024 gefunden (daten/fast.json, nati_ohne_kader), FAST zeigt aber keine Kader; keiner Person zugeordnet",
-    "FAST: Peter Felder, Goalie War World Series Garlando 2017 Rang 2 zurückgestellt (Geschicklichkeitswettbewerb, Vasco entscheidet)"
+    "FAST: 35 Medaillen der Schweizer Nationalteams 2010 bis 2024 gefunden (daten/fast.json, nati_ohne_kader), FAST zeigt aber keine Kader; keiner Person zugeordnet"
   ]
 }

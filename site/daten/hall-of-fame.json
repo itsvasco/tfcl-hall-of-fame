@@ -5,10 +5,10 @@
   "hinweis": "Podestplätze der Spieler mit heutiger Lizenz beim Club (dazu Ehrenmitglieder, die in keine Summe zählen). Jeder Eintrag trägt quelle und abgerufen. Keine Spieler-IDs, keine Punkte, keine Coral-Kennungen. Teilnahmen an der Champions League zählen nicht in die Podestplätze.",
   "spieler_mit_lizenz": 37,
   "gesamt": {
-    "podestplaetze": 269,
-    "gold": 102,
-    "silber": 74,
-    "bronze": 93,
+    "podestplaetze": 280,
+    "gold": 105,
+    "silber": 76,
+    "bronze": 99,
     "personen": 22
   },
   "bereiche": [
@@ -90,10 +90,10 @@
       "anker": "turniere",
       "daten": "turniere",
       "summe": {
-        "podestplaetze": 189,
-        "gold": 70,
-        "silber": 56,
-        "bronze": 63,
+        "podestplaetze": 200,
+        "gold": 73,
+        "silber": 58,
+        "bronze": 69,
         "personen": 17
       }
     }
@@ -161,26 +161,26 @@
       "id": "peter-felder",
       "name": "Peter Felder",
       "gold": 10,
-      "silber": 13,
+      "silber": 14,
       "bronze": 12,
-      "summe": 35,
+      "summe": 36,
       "bereiche": {
         "sm": 4,
         "nati": 2,
         "fordere": 3,
-        "turniere": 26
+        "turniere": 27
       }
     },
     {
       "id": "arpad-wicki",
       "name": "Arpad Wicki",
-      "gold": 4,
-      "silber": 2,
-      "bronze": 8,
-      "summe": 14,
+      "gold": 7,
+      "silber": 3,
+      "bronze": 14,
+      "summe": 24,
       "bereiche": {
         "sm": 1,
-        "turniere": 13
+        "turniere": 23
       }
     },
     {
@@ -2323,11 +2323,250 @@
         ]
       },
       {
+        "id": "arpad-wicki",
+        "gold": 7,
+        "silber": 3,
+        "bronze": 13,
+        "summe": 23,
+        "platzierungen": [
+          {
+            "jahr": 2026,
+            "datum": "2026-11-06",
+            "turnier": "P4P Championship 2026",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/210",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2026,
+            "datum": "2026-02-06",
+            "turnier": "STRT Zürich - OD - 2026/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-05-31",
+            "turnier": "STRT Seetal - OD, MX - 2025/02",
+            "serie": "STF",
+            "disziplin": "Open Doubles",
+            "rang": 3,
+            "quelle": "https://app.tablesoccer.org/p/ZM33L7",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2025,
+            "datum": "2025-05-24",
+            "turnier": "Münchberg Open 2025",
+            "serie": "P4P",
+            "disziplin": "Offenes Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/201",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-10-18",
+            "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Classic Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-07-26",
+            "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Men Classic Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-05-31",
+            "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
+            "serie": "ITSF-Tour",
+            "disziplin": "Open Classic Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2024,
+            "datum": "2024-01-06",
+            "turnier": "Allgäu Open 2024",
+            "serie": "P4P",
+            "disziplin": "Pro-Am",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/192",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-12-01",
+            "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
+            "serie": "ITSF-Tour",
+            "disziplin": "Classic Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2023,
+            "datum": "2023-06-16",
+            "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
+            "serie": "ITSF-Tour",
+            "disziplin": "Classic Open Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-01-04",
+            "turnier": "Allgäu Open 2020",
+            "serie": "P4P",
+            "disziplin": "D.Y.P.",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2020,
+            "datum": "2020-01-04",
+            "turnier": "Allgäu Open 2020",
+            "serie": "P4P",
+            "disziplin": "Elite Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-11-30",
+            "turnier": "Czech LEONHART Open VII",
+            "serie": "ITSF-Tour",
+            "disziplin": "Doubles - A",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2018,
+            "datum": "2018-03-23",
+            "turnier": "Czech LEONHART Championship 2018",
+            "serie": "ITSF-Tour",
+            "disziplin": "Amateur Doubles",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-04-08",
+            "turnier": "Hessische Meisterschaft 2017",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/153",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-03-10",
+            "turnier": "Czech Leonhart Championship 2017",
+            "serie": "ITSF-Tour",
+            "disziplin": "Amateur Doubles",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
+            "datum": "2017-01-28",
+            "turnier": "Maritim Open 2017",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/150",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-02",
+            "turnier": "Czech Leonhart Open V - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "FRIDAY DYP",
+            "rang": 1,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2016,
+            "datum": "2016-12-02",
+            "turnier": "Czech Leonhart Open V - 2016",
+            "serie": "ITSF-Tour",
+            "disziplin": "AMATEUR DOUBLES",
+            "rang": 3,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-09-05",
+            "turnier": "Südbadische Meisterschaft 2015",
+            "serie": "P4P",
+            "disziplin": "Amateur Doppel",
+            "rang": 1,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2015,
+            "datum": "2015-09-05",
+            "turnier": "Südbadische Meisterschaft 2015",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2013,
+            "datum": "2013-09-14",
+            "turnier": "Swiss Open 2013",
+            "serie": "P4P",
+            "disziplin": "Amateur Einzel",
+            "rang": 3,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
+            "abgerufen": "2026-11-20"
+          },
+          {
+            "jahr": 2011,
+            "datum": "2011-09-03",
+            "turnier": "Swiss Open 2011",
+            "serie": "P4P",
+            "disziplin": "Neulinge Doppel",
+            "rang": 2,
+            "quelle": "https://www.players4players.de/index.php/de/p4presults/93",
+            "abgerufen": "2026-11-20"
+          }
+        ]
+      },
+      {
         "id": "peter-felder",
         "gold": 6,
-        "silber": 12,
+        "silber": 13,
         "bronze": 8,
-        "summe": 26,
+        "summe": 27,
         "platzierungen": [
           {
             "jahr": 2026,
@@ -2463,6 +2702,16 @@
           },
           {
             "jahr": 2017,
+            "datum": "2017-07-06",
+            "turnier": "World Series by Garlando - 2017",
+            "serie": "WS",
+            "disziplin": "Goalie War",
+            "rang": 2,
+            "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+            "abgerufen": "2026-11-21"
+          },
+          {
+            "jahr": 2017,
             "datum": "2017-05-13",
             "turnier": "ITSF Pro Tour Pfullingen 2017",
             "serie": "ITSF-Tour",
@@ -2589,145 +2838,6 @@
             "disziplin": "D.Y.P.",
             "rang": 3,
             "quelle": "https://www.players4players.de/index.php/de/p4presults/116",
-            "abgerufen": "2026-11-20"
-          }
-        ]
-      },
-      {
-        "id": "arpad-wicki",
-        "gold": 4,
-        "silber": 2,
-        "bronze": 7,
-        "summe": 13,
-        "platzierungen": [
-          {
-            "jahr": 2026,
-            "datum": "2026-11-06",
-            "turnier": "P4P Championship 2026",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/210",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2026,
-            "datum": "2026-02-06",
-            "turnier": "STRT Zürich - OD - 2026/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZXD9K7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-05-31",
-            "turnier": "STRT Seetal - OD, MX - 2025/02",
-            "serie": "STF",
-            "disziplin": "Open Doubles",
-            "rang": 3,
-            "quelle": "https://app.tablesoccer.org/p/ZM33L7",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2025,
-            "datum": "2025-05-24",
-            "turnier": "Münchberg Open 2025",
-            "serie": "P4P",
-            "disziplin": "Offenes Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/201",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2024,
-            "datum": "2024-01-06",
-            "turnier": "Allgäu Open 2024",
-            "serie": "P4P",
-            "disziplin": "Pro-Am",
-            "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/192",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2020,
-            "datum": "2020-01-04",
-            "turnier": "Allgäu Open 2020",
-            "serie": "P4P",
-            "disziplin": "D.Y.P.",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2020,
-            "datum": "2020-01-04",
-            "turnier": "Allgäu Open 2020",
-            "serie": "P4P",
-            "disziplin": "Elite Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/177",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-04-08",
-            "turnier": "Hessische Meisterschaft 2017",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/153",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2017,
-            "datum": "2017-01-28",
-            "turnier": "Maritim Open 2017",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/150",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2015,
-            "datum": "2015-09-05",
-            "turnier": "Südbadische Meisterschaft 2015",
-            "serie": "P4P",
-            "disziplin": "Amateur Doppel",
-            "rang": 1,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2015,
-            "datum": "2015-09-05",
-            "turnier": "Südbadische Meisterschaft 2015",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/134",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2013,
-            "datum": "2013-09-14",
-            "turnier": "Swiss Open 2013",
-            "serie": "P4P",
-            "disziplin": "Amateur Einzel",
-            "rang": 3,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/113",
-            "abgerufen": "2026-11-20"
-          },
-          {
-            "jahr": 2011,
-            "datum": "2011-09-03",
-            "turnier": "Swiss Open 2011",
-            "serie": "P4P",
-            "disziplin": "Neulinge Doppel",
-            "rang": 2,
-            "quelle": "https://www.players4players.de/index.php/de/p4presults/93",
             "abgerufen": "2026-11-20"
           }
         ]
@@ -3735,9 +3845,7 @@
     "P4P: Spieler ohne Galerie-Eintrag oder mit anderer Schreibweise nicht gefunden",
     "FAST nachgetragen (daten/fast.json): 850 Turniere der ITSF-Liste und 368 weitere FAST-Turniere aus dem Web-Archiv. Offen: 446 Turniere der Liste 2005 bis 2014, die FAST nicht mehr liefert (im Web-Archiv nur die Startseite), und FAST-Turniere, die weder in der Liste noch im Web-Archiv stehen (eine vollständige Liste gibt es nicht)",
     "Verbandsturniere ohne ITSF-Status vor September 2024 fehlen weiter (FAST hält vor allem ITSF- und französische Turniere)",
-    "FAST: 10 Podestplätze von «Arpad Wicki» mit Lizenz SVK zurückgestellt, bis Vasco bestätigt, dass es der Arpad Wicki des TFCL ist",
     "FAST: 35 Medaillen der Schweizer Nationalteams 2010 bis 2024 gefunden (daten/fast.json, nati_ohne_kader), FAST zeigt aber keine Kader; keiner Person zugeordnet",
-    "FAST: Peter Felder, Goalie War World Series Garlando 2017 Rang 2 zurückgestellt (Geschicklichkeitswettbewerb, Vasco entscheidet)",
     "Champions League 2014 bis 2022 in FAST durchsucht: TFC Luzern 2017 (Rang 2), 2018 und 2022 (je Rang 9). FAST zeigt keinen Kader und keinen Ort; vor 2014 nicht belegt"
   ]
 }

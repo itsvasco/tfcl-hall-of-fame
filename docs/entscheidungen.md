@@ -1,5 +1,6 @@
 # Entscheidungen
 
+- 2026-11-21: Vasco bestätigt: Arpad Wicki (FAST-Lizenz SVK, 10 Plätze) ist der Arpad Wicki des TFCL, und der Goalie War zählt als Turnierplatz (Peter Felder, World Series 2017, Rang 2). Beide stehen jetzt in `daten/fast.json` unter `eintraege`.
 - 2026-11-21: FAST-Turniere stehen in drei Serien: «WS» (World Series), «ITSF» (World Cup), «ITSF-Tour» (alle übrigen ITSF-Turniere, auch die Schweizer mit ITSF-Wertung). Grund: dieselben Werte im TFCZ; Schweizer ITSF-Turniere unter «STF» hätten die Quellenregel des Verbands aufgeweicht. Verworfen: je Turnier Verband oder Ausland von Hand zuordnen.
 - 2026-11-21: Ein FAST-Platz, der schon unter P4P, Verband oder Coral steht (gleiche Person, gleicher Rang, gleiche Disziplinart, Turnierfenster ±2 Tage), zählt nicht noch einmal. Turniere mit «P4P» im Namen zählen nur unter P4P.
 - 2026-11-21: Namenstreffer in FAST mit fremder Lizenz (Arpad Wicki, SVK) zählen erst nach Vascos Bestätigung; sie stehen vorbereitet in `daten/fast.json` unter `zurueckgestellt`.

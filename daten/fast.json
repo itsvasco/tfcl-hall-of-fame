@@ -43,6 +43,19 @@
     },
     {
       "jahr": 2024,
+      "datum": "2024-10-18",
+      "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Classic Doubles",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
       "datum": "2024-09-06",
       "turnier": "Roberto Sport Prague Masters 2024 - ITSF 500 WT 2024",
       "serie": "ITSF-Tour",
@@ -82,6 +95,19 @@
     },
     {
       "jahr": 2024,
+      "datum": "2024-07-26",
+      "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Men Classic Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
       "datum": "2024-07-20",
       "turnier": "1. Saar Youth Trophy - ITSF 500 WT 2024",
       "serie": "ITSF-Tour",
@@ -91,6 +117,19 @@
         "rayan-van-stokkum"
       ],
       "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=708191148&lang=de&competitionId=0&originalCompetitionId=708242088&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-31",
+      "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
+      "serie": "ITSF-Tour",
+      "disziplin": "Open Classic Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
       "abgerufen": "2026-11-21"
     },
     {
@@ -251,6 +290,19 @@
     },
     {
       "jahr": 2023,
+      "datum": "2023-12-01",
+      "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
+      "serie": "ITSF-Tour",
+      "disziplin": "Classic Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
       "datum": "2023-11-18",
       "turnier": "2. ITSF YOUTH MASTERS - ITSF Master Tour 2023",
       "serie": "ITSF-Tour",
@@ -403,6 +455,19 @@
         "peter-felder"
       ],
       "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652280471&lang=de&competitionId=0&originalCompetitionId=652280572&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-16",
+      "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
+      "serie": "ITSF-Tour",
+      "disziplin": "Classic Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
       "abgerufen": "2026-11-21"
     },
     {
@@ -851,6 +916,19 @@
     },
     {
       "jahr": 2018,
+      "datum": "2018-11-30",
+      "turnier": "Czech LEONHART Open VII",
+      "serie": "ITSF-Tour",
+      "disziplin": "Doubles - A",
+      "rang": 2,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
       "datum": "2018-09-29",
       "turnier": "Buchs Pro Tour",
       "serie": "ITSF-Tour",
@@ -982,6 +1060,19 @@
     },
     {
       "jahr": 2018,
+      "datum": "2018-03-23",
+      "turnier": "Czech LEONHART Championship 2018",
+      "serie": "ITSF-Tour",
+      "disziplin": "Amateur Doubles",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2018,
       "datum": "2018-03-10",
       "turnier": "Haldenstein Masters 2018",
       "serie": "ITSF-Tour",
@@ -1103,6 +1194,19 @@
       "datum": "2017-07-06",
       "turnier": "World Series by Garlando - 2017",
       "serie": "WS",
+      "disziplin": "Goalie War",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-07-06",
+      "turnier": "World Series by Garlando - 2017",
+      "serie": "WS",
       "disziplin": "Mixed Doubles",
       "rang": 2,
       "personen": [
@@ -1149,6 +1253,19 @@
         "hannes-wallimann"
       ],
       "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115589752&lang=de&competitionId=0&originalCompetitionId=115590441&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-03-10",
+      "turnier": "Czech Leonhart Championship 2017",
+      "serie": "ITSF-Tour",
+      "disziplin": "Amateur Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
       "abgerufen": "2026-11-21"
     },
     {
@@ -1267,6 +1384,32 @@
         "peter-felder"
       ],
       "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=34164993&lang=de&competitionId=0&originalCompetitionId=34165073&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-02",
+      "turnier": "Czech Leonhart Open V - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "AMATEUR DOUBLES",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2016,
+      "datum": "2016-12-02",
+      "turnier": "Czech Leonhart Open V - 2016",
+      "serie": "ITSF-Tour",
+      "disziplin": "FRIDAY DYP",
+      "rang": 1,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
       "abgerufen": "2026-11-21"
     },
     {
@@ -1493,173 +1636,7 @@
       "abgerufen": "2026-11-21"
     }
   ],
-  "zurueckgestellt": [
-    {
-      "jahr": 2017,
-      "datum": "2017-07-06",
-      "turnier": "World Series by Garlando - 2017",
-      "serie": "WS",
-      "disziplin": "Goalie War",
-      "rang": 2,
-      "personen": [
-        "peter-felder"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=115651517&lang=de&competitionId=0&originalCompetitionId=116542698&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "CHE",
-      "grund": "Goalie War ist ein Geschicklichkeitswettbewerb, kein Spiel; ob er zählt, entscheidet Vasco"
-    },
-    {
-      "jahr": 2016,
-      "datum": "2016-12-02",
-      "turnier": "Czech Leonhart Open V - 2016",
-      "serie": "ITSF-Tour",
-      "disziplin": "FRIDAY DYP",
-      "rang": 1,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45335552&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2016,
-      "datum": "2016-12-02",
-      "turnier": "Czech Leonhart Open V - 2016",
-      "serie": "ITSF-Tour",
-      "disziplin": "AMATEUR DOUBLES",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=12342682&lang=de&competitionId=0&originalCompetitionId=45333584&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-03-23",
-      "turnier": "Czech LEONHART Championship 2018",
-      "serie": "ITSF-Tour",
-      "disziplin": "Amateur Doubles",
-      "rang": 1,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=169949822&lang=de&competitionId=0&originalCompetitionId=174897676&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2018,
-      "datum": "2018-11-30",
-      "turnier": "Czech LEONHART Open VII",
-      "serie": "ITSF-Tour",
-      "disziplin": "Doubles - A",
-      "rang": 2,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=275692712&lang=de&competitionId=0&originalCompetitionId=286182973&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2017,
-      "datum": "2017-03-10",
-      "turnier": "Czech Leonhart Championship 2017",
-      "serie": "ITSF-Tour",
-      "disziplin": "Amateur Doubles",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=45796565&lang=de&competitionId=0&originalCompetitionId=54005701&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2023,
-      "datum": "2023-06-16",
-      "turnier": "Balkan Cup Belgrad - ITSF Master Tour 2023",
-      "serie": "ITSF-Tour",
-      "disziplin": "Classic Open Doubles",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=652279805&lang=de&competitionId=0&originalCompetitionId=652285126&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2023,
-      "datum": "2023-12-01",
-      "turnier": "Polish Leonhart Championships 2023 | Barbara Kurtyka Memorial - ITSF Master",
-      "serie": "ITSF-Tour",
-      "disziplin": "Classic Open Doubles",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=706009871&lang=de&competitionId=0&originalCompetitionId=708088436&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2024,
-      "datum": "2024-07-26",
-      "turnier": "Varna Foosball Festival 2024 - The Final - ITSF 500 WT 2024",
-      "serie": "ITSF-Tour",
-      "disziplin": "Men Classic Doubles",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713929902&lang=de&competitionId=0&originalCompetitionId=722274415&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2024,
-      "datum": "2024-05-31",
-      "turnier": "Belgrade Open 2024 - ITSF 500 WT 2024",
-      "serie": "ITSF-Tour",
-      "disziplin": "Open Classic Doubles",
-      "rang": 3,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=713959463&lang=de&competitionId=0&originalCompetitionId=713959482&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    },
-    {
-      "jahr": 2024,
-      "datum": "2024-10-18",
-      "turnier": "Croatia Open 2024 - ITSF 500 WT 2024",
-      "serie": "ITSF-Tour",
-      "disziplin": "Open Classic Doubles",
-      "rang": 1,
-      "personen": [
-        "arpad-wicki"
-      ],
-      "quelle": "https://extranet.fast4foos.org/fast/tournament/players_station/players_station_competition.jsp?tournamentId=0&originalTournamentId=733233493&lang=de&competitionId=0&originalCompetitionId=733233536&playerId=0&barCode=null&screenIndex=-1&view=final_ranking",
-      "abgerufen": "2026-11-21",
-      "land": "SVK",
-      "grund": "Lizenz SVK (die einzige ITSF-Lizenz mit diesem Namen); ob das der TFCL-Arpad-Wicki ist, ist offen"
-    }
-  ],
+  "zurueckgestellt": [],
   "nati_ohne_kader": {
     "hinweis": "Medaillen Schweizer Nationalteams in FAST. FAST nennt keinen Kader, darum zählt keine davon (Nati zählt je Person im Kader).",
     "medaillen": [
