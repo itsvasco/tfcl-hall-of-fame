@@ -311,6 +311,9 @@ const sum = (liste) => ({ podestplaetze: liste.reduce((n, p) => n + p.summe, 0),
 const SERIEN = ['P4P', 'STF', 'WS', 'ITSF', 'ITSF-Tour', 'DTFB', 'Bundesliga'];
 // FAST (altes Turniersystem der ITSF): Quelle ist die Schlussrangliste eines Wettbewerbs, ohne Spieler-ID (playerId=0).
 const FAST_QUELLE = /^https:\/\/extranet\.fast4foos\.org\/fast\/tournament\/players_station\/players_station_competition\.jsp\?tournamentId=0&originalTournamentId=\d+&lang=de&competitionId=0&originalCompetitionId=\d+&playerId=0&barCode=null&screenIndex=-1&view=final_ranking$/;
+// Verbandsturniere bis 2024: Quelle ist die archivierte Ergebnisseite des Turniers (Turniernummer, keine Spielernummer)
+// oder eine archivierte News des Verbands mit dem Podest.
+const ARCHIV_ERGEBNIS = /^https:\/\/web\.archive\.org\/web\/\d{14}\/https?:\/\/(www\.)?(swisstablesoccer|stf-tischfussball)\.ch\/index\.php\/([a-z]{2}\/[a-z]+\/[a-z]+\?(view=sportsmanager&)?task=turnierdisziplinen&turnierid=\d+|stf-news\/\d+-[a-z0-9-]+)$/;
 const LAENDER = { Spain: 'Spanien', Italy: 'Italien', Germany: 'Deutschland', Switzerland: 'Schweiz', France: 'Frankreich', Austria: 'Österreich', Portugal: 'Portugal', Netherlands: 'Niederlande', Belgium: 'Belgien', Poland: 'Polen' };
 const ortDeutsch = (o) => String(o || '').split(', ').map((t) => LAENDER[t] || t).join(', ');
 const TAG = /^\d{4}-\d{2}-\d{2}$/;
@@ -328,6 +331,7 @@ export function turniereAbleiten(datei, P, bekannt) {
     hart(Array.isArray(e.personen) && e.personen.length, `Turniere: Eintrag ohne Personen (${e.turnier})`);
     hart(e.serie !== 'ITSF-Tour' || FAST_QUELLE.test(e.quelle), `Turniere: ITSF-Tour ohne FAST-Wettbewerbsseite als Quelle (${e.turnier})`);
     hart(!/fast4foos/.test(e.quelle) || FAST_QUELLE.test(e.quelle), `Turniere: FAST-Quelle nicht in der Form der Wettbewerbsseite (${e.turnier})`);
+    hart(!/web\.archive\.org/.test(e.quelle) || e.serie !== 'STF' || ARCHIV_ERGEBNIS.test(e.quelle), `Turniere: STF-Quelle im Web-Archiv ist weder Ergebnisseite noch News des Verbands (${e.turnier})`);
     for (const id of e.personen) hart(bekannt.has(id), `Turniere: Person ${id} steht nicht in der Spielerliste (${e.turnier})`);
     const ids = e.personen.filter((id) => P.alle.some((s) => s.id === id));
     if (!ids.length) continue;

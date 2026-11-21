@@ -11,6 +11,7 @@ import { lizenzen, alsDatei } from './spieler.mjs';
 import { pruefeText } from './datenschutz-pruefen.mjs';
 import { coralAbleiten, championsAbleiten, doppelte, turnierName, turnierDatum } from './turniere.mjs';
 import { galerie, platzierungen, ergebnis } from './p4p.mjs';
+import { ergebnisseite, art, dublette } from './stf-archiv.mjs';
 import * as R from '../site/js/rendern.js';
 
 let ok = 0; const fehler = [];
@@ -244,6 +245,32 @@ await test('Turniere aus FAST: ITSF-Tour nur mit Wettbewerbsseite, nie mit Spiel
   assert.equal(s.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
   await wirft(() => bauT(PFLEGE_T, eine({ serie: 'ITSF-Tour' })), /ITSF-Tour ohne FAST/);
   await wirft(() => bauT(PFLEGE_T, eine({ serie: 'WS', quelle: fast.replace('playerId=0', 'playerId=4890425') })), /FAST-Quelle nicht in der Form/);
+});
+await test('Turniere aus dem Web-Archiv des Verbands: nur Ergebnisseite oder News, nie eine Spielerseite', async () => {
+  const erg = 'https://web.archive.org/web/20250320214545/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=263';
+  const news = 'https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey';
+  const eine = (x) => mitT({ turniere: async () => ({ eintraege: [{ ...TU.eintraege[1], serie: 'STF', ...x }] }) });
+  for (const quelle of [erg, news]) {
+    const s = await bauT(PFLEGE_T, eine({ quelle }));
+    assert.equal(s.bereiche.find((x) => x.schluessel === 'turniere').summe.podestplaetze, TU.eintraege[1].personen.length);
+  }
+  const spieler = 'https://web.archive.org/web/20251116183207/https://stf-tischfussball.ch/index.php/de/spielbetrieb/ranglisten?view=sportsmanager&task=' + 'spieler_details&id=1&ua=1';
+  await wirft(() => bauT(PFLEGE_T, eine({ quelle: spieler })), /weder Ergebnisseite noch News/);
+});
+await test('STF-Archiv: Ergebnisseite lesen und Dubletten über Disziplinart und ±2 Tage', async () => {
+  const h = '<h2 class="stf-page-subtitle-1">STRT Test</h2><h2 class="stf-page-subtitle-2">Rookie Doubles</h2> Beginn: 08.01.22 '
+    + '<div class="stf-tournamentresult-detail-result-item"> <span><a href="?id=1">1. Anna Muster</a> <a href="?id=2">Bert Beispiel</a></span> </div>'
+    + '<div class="stf-tournamentresult-detail-result-item"> <span><a href="?id=3">4. Carl Vier</a></span> </div>';
+  const s = ergebnisseite(h);
+  assert.equal(s.name, 'STRT Test');
+  assert.deepEqual(s.disz[0], { titel: 'Rookie Doubles', beginn: '2022-01-08', plaetze: [{ rang: 1, namen: ['Anna Muster', 'Bert Beispiel'], nrn: ['1', '2'] }, { rang: 4, namen: ['Carl Vier'], nrn: ['3'] }] });
+  assert.equal(art('Rookie Doubles'), art('Neulinge Doppel'));
+  assert.notEqual(art('Open Doubles'), art('Open Singles'));
+  const bestand = [{ datum: '2022-01-09', rang: 1, disziplin: 'Neuling Doppel', personen: ['anna-muster'], serie: 'ITSF-Tour', turnier: 'X' }];
+  assert.ok(dublette({ datum: '2022-01-08', rang: 1, disziplin: 'Rookie Doubles' }, 'anna-muster', bestand));
+  assert.equal(dublette({ datum: '2022-01-12', rang: 1, disziplin: 'Rookie Doubles' }, 'anna-muster', bestand), null, 'mehr als 2 Tage');
+  assert.equal(dublette({ datum: '2022-01-08', rang: 2, disziplin: 'Rookie Doubles' }, 'anna-muster', bestand), null, 'anderer Rang');
+  assert.equal(dublette({ datum: '2022-01-08', rang: 1, disziplin: 'Open Doubles' }, 'anna-muster', bestand), null, 'andere Klasse');
 });
 await test('Champions League: eigene Zahl, nicht in den Podestplätzen, Kader nur mit Lizenz', async () => {
   const s = await bauT();

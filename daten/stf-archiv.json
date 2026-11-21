@@ -1,0 +1,1760 @@
+{
+  "abgerufen": "2026-11-21",
+  "hinweis": "Handdatei: Podestplätze aus den gewerteten Verbandsturnieren (STS, STRT, STRT Pro) vor der Coral-Zeit, gelesen aus den archivierten Ergebnisseiten des Verbands (Web-Archiv). Geschrieben von tools/stf-archiv.mjs, vom Sammelskript nie überschrieben. Turnierliste aus der Liste des TFCZ (157 gewertete Turniere 2019 bis 2024 mit archivierter Ergebnisseite; Swiss Tablesoccer Finals = Schweizermeisterschaft und Swiss Tablesoccer League = Clubliga stehen nicht darin). Plätze, die schon unter P4P, Coral oder FAST stehen, stehen nicht doppelt hier.",
+  "turnierliste": [
+    {
+      "datum": "2019-03-30",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "quelle": "https://web.archive.org/web/20191016043858/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=76"
+    },
+    {
+      "datum": "2019-04-20",
+      "turnier": "STRT Osterturnier Laupen",
+      "quelle": "https://web.archive.org/web/20190722120150/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=71"
+    },
+    {
+      "datum": "2019-05-23",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20191016043918/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=72"
+    },
+    {
+      "datum": "2019-06-01",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73"
+    },
+    {
+      "datum": "2019-06-15",
+      "turnier": "Zürich Open 2019",
+      "quelle": "https://web.archive.org/web/20191016050105/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=74"
+    },
+    {
+      "datum": "2019-07-12",
+      "turnier": "Swiss Tablesoccer Regio Tour (STRT) Emmenmatt",
+      "quelle": "https://web.archive.org/web/20191016051915/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=77"
+    },
+    {
+      "datum": "2019-07-20",
+      "turnier": "STRT UG Dartclub",
+      "quelle": "https://web.archive.org/web/20191016044825/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=78"
+    },
+    {
+      "datum": "2019-08-18",
+      "turnier": "STRT UG Dartclub",
+      "quelle": "https://web.archive.org/web/20191016053219/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=87"
+    },
+    {
+      "datum": "2019-08-24",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "quelle": "https://web.archive.org/web/20191016043924/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=86"
+    },
+    {
+      "datum": "2019-09-19",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20191016044005/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=89"
+    },
+    {
+      "datum": "2019-10-05",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "quelle": "https://web.archive.org/web/20191016054018/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=90"
+    },
+    {
+      "datum": "2019-10-26",
+      "turnier": "STRT Herbstturnier TFC Simmental",
+      "quelle": "https://web.archive.org/web/20211129015339/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=93"
+    },
+    {
+      "datum": "2019-10-27",
+      "turnier": "Fordere Kids",
+      "quelle": "https://web.archive.org/web/20211129030700/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=91"
+    },
+    {
+      "datum": "2019-11-02",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20201030110307/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=94"
+    },
+    {
+      "datum": "2019-11-09",
+      "turnier": "STRT TFC Laupen",
+      "quelle": "https://web.archive.org/web/20211129025236/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=95"
+    },
+    {
+      "datum": "2019-11-16",
+      "turnier": "Fordere Kids",
+      "quelle": "https://web.archive.org/web/20210418061932/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=98"
+    },
+    {
+      "datum": "2019-12-08",
+      "turnier": "STRT Aarbon",
+      "quelle": "https://web.archive.org/web/20211129021553/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=96"
+    },
+    {
+      "datum": "2020-01-18",
+      "turnier": "Fordere Kids",
+      "quelle": "https://web.archive.org/web/20210418063306/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=102"
+    },
+    {
+      "datum": "2020-02-01",
+      "turnier": "Swiss Tablesoccer Serie (STS) TFC Luzern",
+      "quelle": "https://web.archive.org/web/20211129023811/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=99"
+    },
+    {
+      "datum": "2020-02-28",
+      "turnier": "STRT TFC Thun",
+      "quelle": "https://web.archive.org/web/20210418044920/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=100"
+    },
+    {
+      "datum": "2020-03-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Genf",
+      "quelle": "https://web.archive.org/web/20210418054513/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=101"
+    },
+    {
+      "datum": "2020-03-14",
+      "turnier": "Fordere Kids",
+      "quelle": "https://web.archive.org/web/20210418045606/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=103"
+    },
+    {
+      "datum": "2020-09-26",
+      "turnier": "STRT Tablesoccer beider Basel",
+      "quelle": "https://web.archive.org/web/20210418055044/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=104"
+    },
+    {
+      "datum": "2021-08-03",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20210927081402/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=105"
+    },
+    {
+      "datum": "2021-08-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Tablesoccer beider B",
+      "quelle": "https://web.archive.org/web/20210927081951/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=108"
+    },
+    {
+      "datum": "2021-08-17",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20210927064335/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=109"
+    },
+    {
+      "datum": "2021-08-24",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20210927081130/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=110"
+    },
+    {
+      "datum": "2021-08-28",
+      "turnier": "Swiss Tablesoccer Serie (STS) Tablesoccer SG",
+      "quelle": "https://web.archive.org/web/20210927063102/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=111"
+    },
+    {
+      "datum": "2021-08-31",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20210927072827/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=112"
+    },
+    {
+      "datum": "2021-09-09",
+      "turnier": "Swiss Tablesoccer Serie (STS) Uetendorf",
+      "quelle": "https://web.archive.org/web/20211129030035/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=118"
+    },
+    {
+      "datum": "2021-09-14",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20210927081718/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=113"
+    },
+    {
+      "datum": "2021-09-18",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "quelle": "https://web.archive.org/web/20211129021047/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=114"
+    },
+    {
+      "datum": "2021-09-21",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20211129025558/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=115"
+    },
+    {
+      "datum": "2021-09-28",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20211129033555/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=116"
+    },
+    {
+      "datum": "2021-10-05",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20211129021633/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=117"
+    },
+    {
+      "datum": "2022-01-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121"
+    },
+    {
+      "datum": "2022-03-05",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20220517202232/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=122"
+    },
+    {
+      "datum": "2022-03-14",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220517211024/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=123"
+    },
+    {
+      "datum": "2022-03-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Tappa Ticinese",
+      "quelle": "https://web.archive.org/web/20220517215427/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=124"
+    },
+    {
+      "datum": "2022-03-25",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220517202839/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=125"
+    },
+    {
+      "datum": "2022-04-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "quelle": "https://web.archive.org/web/20220517211809/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=126"
+    },
+    {
+      "datum": "2022-04-04",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220517194707/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=127"
+    },
+    {
+      "datum": "2022-04-08",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20220517203544/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=128"
+    },
+    {
+      "datum": "2022-04-23",
+      "turnier": "STRT Laupen",
+      "quelle": "https://web.archive.org/web/20220517202550/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=130"
+    },
+    {
+      "datum": "2022-04-25",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220517212431/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=129"
+    },
+    {
+      "datum": "2022-05-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "quelle": "https://web.archive.org/web/20220517211532/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=131"
+    },
+    {
+      "datum": "2022-05-06",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220517215742/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=132"
+    },
+    {
+      "datum": "2022-05-07",
+      "turnier": "STRT TFC Seetal",
+      "quelle": "https://web.archive.org/web/20220517203222/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=133"
+    },
+    {
+      "datum": "2022-05-16",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220706164724/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=134"
+    },
+    {
+      "datum": "2022-05-20",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20220706161339/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=136"
+    },
+    {
+      "datum": "2022-06-17",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20220706152551/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=140"
+    },
+    {
+      "datum": "2022-06-18",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220706162102/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=139"
+    },
+    {
+      "datum": "2022-06-19",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20220814130742/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=142"
+    },
+    {
+      "datum": "2022-06-27",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220814122204/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=141"
+    },
+    {
+      "datum": "2022-07-15",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20220814114043/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=143"
+    },
+    {
+      "datum": "2022-07-18",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20220814122655/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=144"
+    },
+    {
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145"
+    },
+    {
+      "datum": "2022-10-14",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20230926132013/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=161"
+    },
+    {
+      "datum": "2022-10-15",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20230926115414/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=162"
+    },
+    {
+      "datum": "2022-10-29",
+      "turnier": "STRT Laupen",
+      "quelle": "https://web.archive.org/web/20230926124859/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=163"
+    },
+    {
+      "datum": "2022-11-12",
+      "turnier": "STRT Simmental",
+      "quelle": "https://web.archive.org/web/20230928115932/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=164"
+    },
+    {
+      "datum": "2022-11-18",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20230607082128/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=165"
+    },
+    {
+      "datum": "2022-12-29",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20230926133115/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=167"
+    },
+    {
+      "datum": "2023-01-28",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "quelle": "https://web.archive.org/web/20230926120541/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=168"
+    },
+    {
+      "datum": "2023-02-11",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20230607084520/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=171"
+    },
+    {
+      "datum": "2023-03-03",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20230926132829/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=172"
+    },
+    {
+      "datum": "2023-03-06",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230928112057/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=169"
+    },
+    {
+      "datum": "2023-03-12",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "quelle": "https://web.archive.org/web/20230607080527/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=173"
+    },
+    {
+      "datum": "2023-03-17",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230928111814/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=174"
+    },
+    {
+      "datum": "2023-03-18",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20230607100856/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=175"
+    },
+    {
+      "datum": "2023-03-20",
+      "turnier": "STRT Luzern",
+      "quelle": "https://web.archive.org/web/20230607101741/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=178"
+    },
+    {
+      "datum": "2023-03-31",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20230928120620/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=180"
+    },
+    {
+      "datum": "2023-04-06",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230607092707/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=177"
+    },
+    {
+      "datum": "2023-04-14",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20230607082948/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=181"
+    },
+    {
+      "datum": "2023-04-22",
+      "turnier": "Swiss Tablesoccer Serie (STS) Seetal",
+      "quelle": "https://web.archive.org/web/20230607092436/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=182"
+    },
+    {
+      "datum": "2023-04-28",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230607101322/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=183"
+    },
+    {
+      "datum": "2023-04-28",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20230607083649/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=184"
+    },
+    {
+      "datum": "2023-04-29",
+      "turnier": "STRT Laupen",
+      "quelle": "https://web.archive.org/web/20230928112655/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=185"
+    },
+    {
+      "datum": "2023-04-29",
+      "turnier": "STRT Monthey",
+      "quelle": "https://web.archive.org/web/20230928100144/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=189"
+    },
+    {
+      "datum": "2023-05-06",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186"
+    },
+    {
+      "datum": "2023-05-08",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230607084309/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=187"
+    },
+    {
+      "datum": "2023-05-13",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20230607093828/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=188"
+    },
+    {
+      "datum": "2023-05-27",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "quelle": "https://web.archive.org/web/20230926130101/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=190"
+    },
+    {
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+      "hinweis": "Die Ergebnisseite nennt für die offenen Disziplinen den Beginn 27.05.2023 (Datum der STS St. Gallen), für Junioren und Senioren 24. und 25.06.2023; FAST führt das Turnier am 2023-06-24."
+    },
+    {
+      "datum": "2023-06-02",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20230926121824/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=192"
+    },
+    {
+      "datum": "2023-06-08",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926130509/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=193"
+    },
+    {
+      "datum": "2023-06-17",
+      "turnier": "STRT Tropic Valais",
+      "quelle": "https://web.archive.org/web/20230926112535/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=194"
+    },
+    {
+      "datum": "2023-06-17",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20230926122628/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=195"
+    },
+    {
+      "datum": "2023-06-30",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926130847/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=196"
+    },
+    {
+      "datum": "2023-07-07",
+      "turnier": "STRT TFK Rüti",
+      "quelle": "https://web.archive.org/web/20230926120912/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=200"
+    },
+    {
+      "datum": "2023-07-10",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926113712/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=197"
+    },
+    {
+      "datum": "2023-07-19",
+      "turnier": "STRT Thayngen",
+      "quelle": "https://web.archive.org/web/20230926131345/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=199"
+    },
+    {
+      "datum": "2023-07-21",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926123243/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=198"
+    },
+    {
+      "datum": "2023-07-29",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20230926125833/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=201"
+    },
+    {
+      "datum": "2023-08-03",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926133829/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=202"
+    },
+    {
+      "datum": "2023-08-10",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20230926121558/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=203"
+    },
+    {
+      "datum": "2023-08-11",
+      "turnier": "STRT Thayngen",
+      "quelle": "https://web.archive.org/web/20230926130346/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=204"
+    },
+    {
+      "datum": "2023-08-12",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20230926122253/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=206"
+    },
+    {
+      "datum": "2023-08-25",
+      "turnier": "STRT Thayngen",
+      "quelle": "https://web.archive.org/web/20230926134421/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=205"
+    },
+    {
+      "datum": "2023-08-26",
+      "turnier": "STRT Vernayaz",
+      "quelle": "https://web.archive.org/web/20230926113236/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=208"
+    },
+    {
+      "datum": "2023-08-31",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20230926123038/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=209"
+    },
+    {
+      "datum": "2023-09-02",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20230926130603/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=212"
+    },
+    {
+      "datum": "2023-09-04",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926121914/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=211"
+    },
+    {
+      "datum": "2023-09-10",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20230926112658/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=213"
+    },
+    {
+      "datum": "2023-09-16",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20230926122751/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=214"
+    },
+    {
+      "datum": "2023-10-05",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320214307/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=219"
+    },
+    {
+      "datum": "2023-10-07",
+      "turnier": "STRT Laupen",
+      "quelle": "https://web.archive.org/web/20250320223951/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=220"
+    },
+    {
+      "datum": "2023-10-13",
+      "turnier": "STRT Courtlary",
+      "quelle": "https://web.archive.org/web/20250320212527/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=221"
+    },
+    {
+      "datum": "2023-10-20",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320221055/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=222"
+    },
+    {
+      "datum": "2023-11-04",
+      "turnier": "STRT St. Ursen",
+      "quelle": "https://web.archive.org/web/20250320214108/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=224"
+    },
+    {
+      "datum": "2023-11-06",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320203601/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=223"
+    },
+    {
+      "datum": "2023-11-18",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20250320222321/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=225"
+    },
+    {
+      "datum": "2023-11-24",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320210015/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=226"
+    },
+    {
+      "datum": "2023-12-29",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20250320212143/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=229"
+    },
+    {
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "quelle": "https://web.archive.org/web/20250320222102/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=230"
+    },
+    {
+      "datum": "2024-02-10",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20250320211636/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=234"
+    },
+    {
+      "datum": "2024-02-17",
+      "turnier": "Swiss Tablesoccer Serie (STS) Bern",
+      "quelle": "https://web.archive.org/web/20250320205713/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=231"
+    },
+    {
+      "datum": "2024-02-22",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20250320215255/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=232"
+    },
+    {
+      "datum": "2024-02-23",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320223546/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=233"
+    },
+    {
+      "datum": "2024-03-02",
+      "turnier": "STRT Genève",
+      "quelle": "https://web.archive.org/web/20250320205408/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=239"
+    },
+    {
+      "datum": "2024-03-04",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320220907/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=235"
+    },
+    {
+      "datum": "2024-03-08",
+      "turnier": "STRT Courtlary",
+      "quelle": "https://web.archive.org/web/20250320224139/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=238"
+    },
+    {
+      "datum": "2024-03-09",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20250320213529/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=237"
+    },
+    {
+      "datum": "2024-03-10",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20250320202853/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=236"
+    },
+    {
+      "datum": "2024-03-16",
+      "turnier": "STRT Liestal",
+      "quelle": "https://web.archive.org/web/20250320204549/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=257"
+    },
+    {
+      "datum": "2024-03-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "quelle": "https://web.archive.org/web/20250320220557/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=240"
+    },
+    {
+      "datum": "2024-03-27",
+      "turnier": "STRT Thayngen",
+      "quelle": "https://web.archive.org/web/20250320202719/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=241"
+    },
+    {
+      "datum": "2024-03-29",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20241111234326/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=242"
+    },
+    {
+      "datum": "2024-03-30",
+      "turnier": "STRT Thayngen",
+      "quelle": "https://web.archive.org/web/20250320221651/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=243"
+    },
+    {
+      "datum": "2024-04-05",
+      "turnier": "STRT Courtlary",
+      "quelle": "https://web.archive.org/web/20250320210847/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=247"
+    },
+    {
+      "datum": "2024-04-06",
+      "turnier": "STRT Laupen",
+      "quelle": "https://web.archive.org/web/20250320222933/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=251"
+    },
+    {
+      "datum": "2024-04-06",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20250320220040/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=253"
+    },
+    {
+      "datum": "2024-04-08",
+      "turnier": "STRT TFCL",
+      "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248"
+    },
+    {
+      "datum": "2024-04-11",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20250320201203/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=249"
+    },
+    {
+      "datum": "2024-04-11",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320210507/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=252"
+    },
+    {
+      "datum": "2024-04-13",
+      "turnier": "STRT Rüti",
+      "quelle": "https://web.archive.org/web/20250320224506/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=254"
+    },
+    {
+      "datum": "2024-04-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Seetal",
+      "quelle": "https://web.archive.org/web/20250320221355/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=256"
+    },
+    {
+      "datum": "2024-04-26",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320214658/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=258"
+    },
+    {
+      "datum": "2024-04-27",
+      "turnier": "STRT Freiburg Sense",
+      "quelle": "https://web.archive.org/web/20250320222747/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=259"
+    },
+    {
+      "datum": "2024-05-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "quelle": "https://web.archive.org/web/20250320212941/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=260"
+    },
+    {
+      "datum": "2024-05-18",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "quelle": "https://web.archive.org/web/20250320211308/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=262"
+    },
+    {
+      "datum": "2024-05-24",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320214545/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=263"
+    },
+    {
+      "datum": "2024-05-25",
+      "turnier": "STRT TGB Bern",
+      "quelle": "https://web.archive.org/web/20250320215522/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=271"
+    },
+    {
+      "datum": "2024-06-06",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320222610/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=264"
+    },
+    {
+      "datum": "2024-06-07",
+      "turnier": "STRT Courtlary",
+      "quelle": "https://web.archive.org/web/20250320215710/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=266"
+    },
+    {
+      "datum": "2024-06-08",
+      "turnier": "STRT Bern",
+      "quelle": "https://web.archive.org/web/20250320221206/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=269"
+    },
+    {
+      "datum": "2024-06-15",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20250320213316/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=270"
+    },
+    {
+      "datum": "2024-06-16",
+      "turnier": "STRT St. Gallen",
+      "quelle": "https://web.archive.org/web/20250320212649/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=268"
+    },
+    {
+      "datum": "2024-06-29",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "quelle": "https://web.archive.org/web/20250320223929/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=272"
+    },
+    {
+      "datum": "2024-07-08",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320203448/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=275"
+    },
+    {
+      "datum": "2024-07-27",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250211221643/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=276"
+    },
+    {
+      "datum": "2024-08-08",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320222246/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=277"
+    },
+    {
+      "datum": "2024-08-10",
+      "turnier": "STRT Seetal",
+      "quelle": "https://web.archive.org/web/20250320205929/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=278"
+    },
+    {
+      "datum": "2024-08-17",
+      "turnier": "STRT Liestal",
+      "quelle": "https://web.archive.org/web/20250320215216/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=284"
+    },
+    {
+      "datum": "2024-08-30",
+      "turnier": "STRT Zürich",
+      "quelle": "https://web.archive.org/web/20250320203226/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=280"
+    },
+    {
+      "datum": "2024-09-02",
+      "turnier": "STRT TFCZ",
+      "quelle": "https://web.archive.org/web/20250320213737/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=281"
+    },
+    {
+      "datum": "2024-09-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Simmental",
+      "quelle": "https://web.archive.org/web/20250320205630/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=283"
+    }
+  ],
+  "news": [
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Neulinge Doppel",
+      "rang": 3,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Einzel",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    }
+  ],
+  "eintraege": [
+    {
+      "jahr": 2024,
+      "datum": "2024-09-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Simmental",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20250320205630/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=283",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-08-17",
+      "turnier": "STRT Liestal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "matteo-cosi",
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20250320215216/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=284",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-06-29",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20250320223929/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=272",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-06-15",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20250320213316/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?view=sportsmanager&task=turnierdisziplinen&turnierid=270",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-24",
+      "turnier": "STRT TFCZ",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://web.archive.org/web/20250320214545/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=263",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-05-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20250320212941/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=260",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-08",
+      "turnier": "STRT TFCL",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-08",
+      "turnier": "STRT TFCL",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20250320220243/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=248",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-06",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Mixed",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20250320220040/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=253",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-04-06",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20250320220040/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=253",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-02-23",
+      "turnier": "STRT Zürich",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann",
+        "jorge-rodriguez"
+      ],
+      "quelle": "https://web.archive.org/web/20250320223546/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=233",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2024,
+      "datum": "2024-02-17",
+      "turnier": "Swiss Tablesoccer Serie (STS) Bern",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20250320205713/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=231",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-12-29",
+      "turnier": "STRT Bern",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann",
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20250320212143/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=229",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-10-05",
+      "turnier": "STRT Zürich",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20250320214307/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?view=sportsmanager&task=turnierdisziplinen&turnierid=219",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-09-02",
+      "turnier": "STRT Rüti",
+      "serie": "STF",
+      "disziplin": "Draw Your Partner",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20230926130603/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=212",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-09-02",
+      "turnier": "STRT Rüti",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20230926130603/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=212",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-08-12",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "personen": [
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20230926122253/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=206",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "alain-baumann",
+        "silvio-fischer"
+      ],
+      "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "serie": "STF",
+      "disziplin": "Women Doubles",
+      "rang": 1,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20230926134108/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=191",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-06-17",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20230926122628/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=195",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-27",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "alain-baumann"
+      ],
+      "quelle": "https://web.archive.org/web/20230926130101/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=190",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-06",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "serie": "STF",
+      "disziplin": "Mixed",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-06",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "serie": "STF",
+      "disziplin": "Mixed",
+      "rang": 3,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-05-06",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20230607101913/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=186",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-03-20",
+      "turnier": "STRT Luzern",
+      "serie": "STF",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "personen": [
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20230607101741/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=178",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-03-12",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 3,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://web.archive.org/web/20230607080527/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=173",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-02-11",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "personen": [
+        "arpad-wicki"
+      ],
+      "quelle": "https://web.archive.org/web/20230607084520/https://swisstablesoccer.ch/index.php/fr/competitions/resultats?task=turnierdisziplinen&turnierid=171",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2023,
+      "datum": "2023-01-28",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "alain-baumann",
+        "silvio-fischer"
+      ],
+      "quelle": "https://web.archive.org/web/20230926120541/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=168",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-11-18",
+      "turnier": "STRT Seetal",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 3,
+      "personen": [
+        "daniel-flueler"
+      ],
+      "quelle": "https://web.archive.org/web/20230607082128/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=165",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-11-12",
+      "turnier": "STRT Simmental",
+      "serie": "STF",
+      "disziplin": "Mixed Doubles",
+      "rang": 2,
+      "personen": [
+        "an-cosi",
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20230928115932/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=164",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-08-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "serie": "STF",
+      "disziplin": "Open Single",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "urs-morgenegg"
+      ],
+      "quelle": "https://web.archive.org/web/20220814131647/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=145",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-05-07",
+      "turnier": "STRT TFC Seetal",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "manuel-ragonesi"
+      ],
+      "quelle": "https://web.archive.org/web/20220517203222/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=133",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-05-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://web.archive.org/web/20220517211532/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=131",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-05-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 3,
+      "personen": [
+        "daniel-flueler"
+      ],
+      "quelle": "https://web.archive.org/web/20220517211532/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=131",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-04-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "tomas-karajan",
+        "vullnet-fazliu"
+      ],
+      "quelle": "https://web.archive.org/web/20220517211809/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=126",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-01-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "rayan-van-stokkum"
+      ],
+      "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2022,
+      "datum": "2022-01-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "tomas-karajan",
+        "vullnet-fazliu"
+      ],
+      "quelle": "https://web.archive.org/web/20220925121659/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=121",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2021,
+      "datum": "2021-09-09",
+      "turnier": "Swiss Tablesoccer Serie (STS) Uetendorf",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20211129030035/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=118",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2020,
+      "datum": "2020-09-26",
+      "turnier": "STRT Tablesoccer beider Basel",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20210418055044/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=104",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2020,
+      "datum": "2020-03-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Genf",
+      "serie": "STF",
+      "disziplin": "Women Doubles",
+      "rang": 2,
+      "personen": [
+        "marina-von-allmen"
+      ],
+      "quelle": "https://web.archive.org/web/20210418054513/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=101",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-12-08",
+      "turnier": "STRT Aarbon",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 1,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20211129021553/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=96",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-08-18",
+      "turnier": "STRT UG Dartclub",
+      "serie": "STF",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "personen": [
+        "fabio-di-crescenzo",
+        "reto-odermatt"
+      ],
+      "quelle": "https://web.archive.org/web/20191016053219/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=87",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-06-02",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "serie": "STF",
+      "disziplin": "Women Doubles",
+      "rang": 1,
+      "personen": [
+        "an-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2019,
+      "datum": "2019-06-01",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "serie": "STF",
+      "disziplin": "Rookie Doubles",
+      "rang": 2,
+      "personen": [
+        "luca-escribano",
+        "matteo-cosi"
+      ],
+      "quelle": "https://web.archive.org/web/20191016053154/https://swisstablesoccer.ch/index.php/de/spielbetrieb/resultate?task=turnierdisziplinen&turnierid=73",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Neulinge Doppel",
+      "rang": 3,
+      "personen": [
+        "vasco-oliveira"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 1,
+      "personen": [
+        "hannes-wallimann"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Doppel",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler",
+        "peter-felder"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    },
+    {
+      "jahr": 2017,
+      "datum": "2017-11-18",
+      "turnier": "Swiss Garlando Finals",
+      "serie": "STF",
+      "disziplin": "Offenes Einzel",
+      "rang": 3,
+      "personen": [
+        "adrian-schuler"
+      ],
+      "quelle": "https://web.archive.org/web/20171201162901/http://www.stf-tischfussball.ch/index.php/stf-news/90-garlando-finals-in-oey",
+      "abgerufen": "2026-11-21"
+    }
+  ],
+  "dubletten": [
+    {
+      "person": "hannes-wallimann",
+      "datum": "2019-06-01",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "disziplin": "Mixed",
+      "rang": 1,
+      "schon": "ITSF-Tour: Simmental Open 2019, Mixed Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2019-06-01",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "schon": "ITSF-Tour: Simmental Open 2019, Open Doubles"
+    },
+    {
+      "person": "adrian-schuler",
+      "datum": "2019-08-24",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "schon": "ITSF-Tour: Haldenstein Masters 2019, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2019-10-05",
+      "turnier": "HELVETIA Swiss Tablesoccer Serie (STS)",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Gams Open 2019, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2020-02-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) TFC Luzern",
+      "disziplin": "Open Single",
+      "rang": 3,
+      "schon": "ITSF-Tour: Jahreseröffnungsturnier 2020, Open Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2021-08-07",
+      "turnier": "Swiss Tablesoccer Serie (STS) Tablesoccer beider B",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "schon": "ITSF-Tour: STS Liestal - ITSF Master Tour 2021, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2021-09-18",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Open Doubles",
+      "rang": 3,
+      "schon": "ITSF-Tour: STS Riggisberg - ITSF Master Tour 2021, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2022-01-08",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2022-01-09",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Single",
+      "rang": 2,
+      "schon": "ITSF-Tour: Jahreseröffnungsturnier 2022 Luzern - ITSF Pro Tour 2022, Open Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2022-05-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Riggisberg - ITSF Pro Tour 2022, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2022-08-01",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "disziplin": "Mixed",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022, Mixed Doubles"
+    },
+    {
+      "person": "rayan-van-stokkum",
+      "datum": "2022-07-31",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "disziplin": "Junioren Einzel",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Liestal - ITSF Master Tour 2022, Junior Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2023-01-28",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023, Open Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2023-01-29",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Jahreseröffnungsturnier 2023 Luzern - ITSF Master Tour 2023, Open Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2023-05-27",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series St. Gallen - ITSF Pro Tour 2023, Open Doubles"
+    },
+    {
+      "person": "rayan-van-stokkum",
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Junioren Doppel",
+      "rang": 2,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023, Junior Doubles"
+    },
+    {
+      "person": "rayan-van-stokkum",
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Junioren Einzel",
+      "rang": 3,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023, Junior Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023, Open Doubles"
+    },
+    {
+      "person": "peter-felder",
+      "datum": "2023-06-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Riggisberg",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series Riggisberg - ITSF Master Tour 2023, Open Singles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024, Open Doubles"
+    },
+    {
+      "person": "peter-felder",
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Singles",
+      "rang": 1,
+      "schon": "ITSF-Tour: Swiss Tablesoccer Series 2024 Rothenburg - ITSF 250 WT 2024, Open Singles"
+    },
+    {
+      "person": "rayan-van-stokkum",
+      "datum": "2024-03-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "disziplin": "Junioren Doubles U19",
+      "rang": 1,
+      "schon": "ITSF-Tour: STS Richterswil Open - ITSF 500 WT 2024, Junioren U19 Doppel"
+    },
+    {
+      "person": "rayan-van-stokkum",
+      "datum": "2024-03-24",
+      "turnier": "Swiss Tablesoccer Serie (STS) Richterswil",
+      "disziplin": "Junioren Singles U19",
+      "rang": 1,
+      "schon": "ITSF-Tour: STS Richterswil Open - ITSF 500 WT 2024, Junioren U19 Einzel"
+    },
+    {
+      "person": "peter-felder",
+      "datum": "2024-04-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Seetal",
+      "disziplin": "Mixed",
+      "rang": 2,
+      "schon": "ITSF-Tour: STS Teufenthal Open - ITSF 250 WT 2024, Mixed Doubles"
+    },
+    {
+      "person": "hannes-wallimann",
+      "datum": "2024-04-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Seetal",
+      "disziplin": "Open Doubles",
+      "rang": 1,
+      "schon": "ITSF-Tour: STS Teufenthal Open - ITSF 250 WT 2024, Open Doubles"
+    }
+  ],
+  "nicht_gezaehlt": [
+    {
+      "person": "martin-felder",
+      "datum": "2022-07-30",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2022-08-02",
+      "turnier": "Swiss Tablesoccer Serie (STS) Gelterkinden",
+      "disziplin": "Open Single",
+      "rang": 3,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2024-01-20",
+      "turnier": "Swiss Tablesoccer Serie (STS) Luzern",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2024-02-17",
+      "turnier": "Swiss Tablesoccer Serie (STS) Bern",
+      "disziplin": "Open Doubles",
+      "rang": 2,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2024-04-08",
+      "turnier": "STRT TFCL",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2024-05-04",
+      "turnier": "Swiss Tablesoccer Serie (STS) Jura",
+      "disziplin": "Open Singles",
+      "rang": 2,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    },
+    {
+      "person": "martin-felder",
+      "datum": "2024-05-19",
+      "turnier": "Swiss Tablesoccer Serie (STS) St. Gallen",
+      "disziplin": "Open Singles",
+      "rang": 3,
+      "grund": "Auf den archivierten Ergebnisseiten des Verbands steht genau ein Martin Felder; er hat dort die Swiss Tablesoccer Finals 2024 im Herren Einzel gewonnen und im Herren Doppel Rang 2 geholt, die SM-Plätze von «Felder Martin H.». Nach Vascos Entscheid vom 2026-11-20 ist das nicht der Martin Felder mit Lizenz."
+    }
+  ],
+  "zurueckgestellt": []
+}
