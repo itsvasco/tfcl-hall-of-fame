@@ -34,7 +34,7 @@ Exit 1 heisst: eine Quelle ist nicht erreichbar oder hat ihr Format verändert. 
 1. **Mitglied heisst nur: heutige Lizenz `LUZE`.** Der Name steht heute mit `LUZE` in `memberships` der Rangliste auf tablesoccer.org (die Lizenz von heute, nicht die von damals). Keine Clubliste, keine Okapi-Liste. Stand 2026-11-20: 37 Spieler (die letzten zwei Saisons, alle Kategorien Official und Classic).
 2. **Schweizermeisterschaft:** alle Podestplätze heutiger Mitglieder zählen, auch aus der Zeit vor der Lizenz. Doppelpartner ohne Lizenz stehen mit Namen beim Eintrag des Mitglieds, so wie der Verband sie führt; in den übrigen Bereichen stehen keine Partner und keine Nicht-Mitglieder.
 3. **Nati:** nur Medaillen (Rang 1 bis 3) Schweizer Nationalteams, je Person im gemeldeten Kader (Coral nennt nicht, wer gespielt hat).
-4. **Jahresrangliste:** nur Schlussstände. Laufende Stände zählen nie (Saison 2026/2027, Nr. 193, läuft). Nicht gezählt: Open Combined (322), Amateur Doppel (317) und Classic (`rule=2`).
+4. **Jahresrangliste:** nur Schlussstände. Laufende Stände zählen nie (Saison 2026/2027, Nr. 193, läuft). Nicht gezählt: Open Combined (322), Amateur Doppel (317) und Classic (`rule=2`). Amateur Doppel (317) ist in den Saisons 2025/26 und 2026/27 leer, eine Kategorie Amateur Einzel führt der Verband nicht (geprüft 2026-11-21).
 5. **Clubliga:** je Person, wenn der Kader des Teams mit Quelle belegt ist (`daten/clubliga-kader.json`, nur Lizenz LUZE); sonst je Team. Der Swiss Tablesoccer Cup zählt nicht.
 6. **Fordere-Liga:** nur Division Luzern, nur der Finaltag (KO, `single_ko`), nie die Ligatabelle. Ein Team aus zwei Mitgliedern zählt für beide.
 7. **Zählweise:** SM, Nati, Jahresrangliste, Fordere-Liga, Turniere und die Clubliga mit belegtem Kader zählen je Person, Clubliga-Plätze ohne Kader je Team. Die Gesamtsumme im Schnappschuss (`gesamt`) addiert alle fünf.
@@ -69,6 +69,10 @@ Erster Lauf von `node tools/erneuern.mjs` am 2026-11-20 mit 37 Spielern: **80 Po
 | Fordere-Liga | 17 | 7 | 4 | 6 | 9 |
 
 Die Zahlen stehen im Schnappschuss unter `gesamt` und `bereiche[].summe`; `node tools/erneuern.mjs --trocken` rechnet sie neu.
+
+### Amateur Einzel und Doppel (STF, seit 2026)
+
+Seit 2026 trägt jede Swiss Tablesoccer Series (STS) die Disziplinen «Amateur Einzel» und «Amateur Doppel». Ihre Podestplätze zählen unter Turniere wie jede andere Klasse (Vasco, 2026-11-21: «Kannst du bitte diese Pokale auch zählen»). `tools/turniere.mjs` liest sie ohne Filter. Geprüft am 2026-11-21 in Coral für alle 50 beendeten Turniere der Saisons 192 und 193 (ohne Finals, League, Cup): Amateur-Disziplinen gibt es nur an den fünf STS 2026 (Luzern, Seetal, St. Gallen, Zürich, Val-d'Illiez), alle zehn sind beendet. Lizenzierte stehen auf zwei der 30 Podestplätze, beide sind im Schnappschuss: Zürich Amateur Einzel Rang 3 und Val-d'Illiez Amateur Doppel Rang 1 (zwei Personen). Neue STS nach jedem Turnier mit `node tools/turniere-sammeln.mjs` holen.
 
 ## Offen
 
